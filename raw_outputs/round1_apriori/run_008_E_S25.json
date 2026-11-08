@@ -1,0 +1,421 @@
+{
+  "run_id": "20261108T072829Z_7f68599d",
+  "run_label": "round1_apriori",
+  "created_utc": "2026-11-08T07:28:29+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 5,
+      "min_distinct_matched": 3,
+      "min_ordered": 0.45,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_ordered": 0.3,
+      "min_lex": 0.15,
+      "min_rare": 0.08
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "E_S25",
+  "source_title": "E_S25 [EXACT]",
+  "input_sha256": "7f68599d2e1763f6de8683dfa03daec79fbfeb7cd4b51ef0568dd2d856a718da",
+  "input_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+  "input_beats": 1,
+  "input_warnings": [
+    "Very short pitch (1 beats): too little plot to compare reliably."
+  ],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S25",
+      "candidate_title": "Twin in the Wedding Dress",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.9633,
+      "review_priority": "High",
+      "components": {
+        "ordered_event_overlap": 0.944,
+        "lexical_cosine": 0.9523,
+        "rare_detail_overlap": 1.0,
+        "event_set_overlap": 1.0,
+        "plain_tfidf_cosine": 0.9686
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SECRET_CHILD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 0,
+          "candidate_text": "Twin sister Hina is begged to take her runaway sister Heer's place at a wedding to billionaire Zayn."
+        },
+        {
+          "events": [
+            "IDENTITY_SWAP"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wears the dress and keeps up the act in the groom's mansion."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE",
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 2,
+          "candidate_text": "Hina finds out that Heer ran away to escape a debt to a gangster."
+        },
+        {
+          "events": [
+            "CONFRONTATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 4,
+          "candidate_text": "He confronts her in the garden and she confesses everything."
+        },
+        {
+          "events": [
+            "ROMANTIC_TURN"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 5,
+          "candidate_text": "Zayn pays the gangster, then asks to marry Hina for real."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "CRIME_VIOLENCE",
+        "ROMANTIC_TURN"
+      ],
+      "shared_distinctive_events": [
+        "CONFRONTATION",
+        "IDENTITY_SWAP",
+        "SECRET_CHILD"
+      ],
+      "shared_rare_details": [
+        "act",
+        "ask",
+        "behav",
+        "confront",
+        "dress",
+        "garden",
+        "mafia",
+        "met",
+        "plac",
+        "ran",
+        "runaway",
+        "suspicious"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Zayn becomes suspicious when Hina behaves unlike the girl he met."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S25#beat0",
+        "S25#beat1",
+        "S25#beat2",
+        "S25#beat4",
+        "S25#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S17",
+      "candidate_title": "The Mafia Boss's Nanny",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1899,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.3324,
+        "lexical_cosine": 0.0574,
+        "rare_detail_overlap": 0.0667,
+        "event_set_overlap": 0.2633,
+        "plain_tfidf_cosine": 0.0097
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 2,
+          "candidate_text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+        },
+        {
+          "events": [
+            "CONFRONTATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 3,
+          "candidate_text": "Viktor catches her searching his office and demands the truth."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [
+        "CONFRONTATION"
+      ],
+      "shared_rare_details": [
+        "mafia"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She is secretly looking for the man who killed her brother."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S17#beat2",
+        "S17#beat3"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S11",
+      "candidate_title": "Twins He Never Knew",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1878,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.2875,
+        "lexical_cosine": 0.0724,
+        "rare_detail_overlap": 0.125,
+        "event_set_overlap": 0.2604,
+        "plain_tfidf_cosine": 0.0266
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SECRET_CHILD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 3,
+          "candidate_text": "He demands a paternity test and fights for custody."
+        },
+        {
+          "events": [
+            "CONFRONTATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 5,
+          "candidate_text": "Armaan confronts his mother, and the boys ask their parents to come to the school play together."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONFRONTATION",
+        "SECRET_CHILD"
+      ],
+      "shared_rare_details": [
+        "ask",
+        "confront",
+        "twin"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She raises twin boys alone in a small town."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S11#beat3",
+        "S11#beat5"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S18",
+      "candidate_title": "Undercover Bride",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1365,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2786,
+        "lexical_cosine": 0.025,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1761,
+        "plain_tfidf_cosine": 0.01
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 0,
+          "candidate_text": "Detective Rhea goes undercover and marries crime boss Armand Cole to collect evidence for her department."
+        },
+        {
+          "events": [
+            "ROMANTIC_TURN"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 2,
+          "candidate_text": "She falls for him despite her mission."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "ROMANTIC_TURN"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Living in his mansion she begins to see that he protects his workers and fights a corrupt commissioner."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "She exposes the handler on a live broadcast and has to choose between her badge and Armand."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S18#beat0",
+        "S18#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1237,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2662,
+        "lexical_cosine": 0.0063,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1535,
+        "plain_tfidf_cosine": 0.0041
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SECRET_CHILD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "twin sister hina is begged to take her runaway sister heers place at a wedding to billionaire zayn she wears the dress and keeps up the act in the grooms mansion hina finds out that heer ran away to escape a debt to a gangster zayn becomes suspicious when hina behaves unlike the girl he met he confronts her in the garden and she confesses everything zayn pays the gangster then asks to marry hina for real",
+          "candidate_beat_index": 2,
+          "candidate_text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "SECRET_CHILD"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wins the national maths olympiad."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "EXACT",
+    "relevant": [
+      "S25"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

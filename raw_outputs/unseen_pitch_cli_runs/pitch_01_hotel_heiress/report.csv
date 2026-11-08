@@ -1,0 +1,6 @@
+query_id,rank,candidate_id,candidate_title,review_priority,retrieval_score,ordered_event_overlap,lexical_cosine,rare_detail_overlap,n_matched_beats,shared_distinctive_events,shared_generic_tropes,reviewer_decision,failure_notes
+unseen_pitch_01,1,S05,The Intern Who Owns the Floor,High,0.9989,0.5144,0.2287,0.2083,3,HUMILIATION,COMEUPPANCE;EVIDENCE;INHERITANCE;PUBLIC_REVEAL,,
+unseen_pitch_01,2,S02,Night Shift Owner,Medium,0.4401,0.4384,0.1668,0.1818,2,FRAMED,EVIDENCE;PUBLIC_REVEAL,,
+unseen_pitch_01,3,S13,The Widow's Ledger,Low,0.0099,0.1908,0.136,0.1,1,,BUSINESS_PRESSURE;COMEUPPANCE,,
+unseen_pitch_01,4,S06,Ashes at the Altar,Low,0.0037,0.318,0.0875,0.1,1,,COMEUPPANCE;EVIDENCE;INHERITANCE;PUBLIC_REVEAL,,
+unseen_pitch_01,5,S03,The Noodle Stall Husband,Low,0.0015,0.2781,0.0682,0.0952,2,BEGGING_APOLOGY;HUMILIATION,BUSINESS_PRESSURE;COMEUPPANCE,,

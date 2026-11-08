@@ -1,0 +1,831 @@
+{
+ "run_id": "20261108T080119Z_c95e20b7",
+ "run_label": "run1_first_and_only/auto",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "H02",
+ "source_title": "H02",
+ "input_sha256": "c95e20b777e910bfe192a35c38123f6623d3eba80a8cce1c943e1557f868c770",
+ "input_text": "Meera ko uska pati Aarav aur sahelli Kavita jaaydaad ke laalach mein ghar mein aag lagakar maar dete hain. Wo teen saal peeche, apni mangni ke din, aankh kholti hai. Sab kuch yaad hone ki wajah se wo chupchaap apna vasiyatnama badal deti hai aur dono ki saazish ki recording kar leti hai. Aag wale din se pehle wo poore parivaar ko ghar se door bhej deti hai. Is baar aag khaali ghar ko jalati hai aur police Aarav ko pakad leti hai. Kavita khud ko bachane ke liye sab kuch maan leti hai.",
+ "working_text_en": "Meera sets fire kills husband Aarav friend Kavita inheritance laalach house.\nThree years in the past, engagement days, wakes up.\nWajah remembers changes secretly will saazish recording.\nFire moves out days pehle poore family house.\nIs baar fire khaali house jalati police Aarav pakad.\nKavita saves admits khud.",
+ "language": {
+  "detected": "hi-Latn",
+  "name": "Hindi in Roman letters (Hinglish)",
+  "script": "latin",
+  "confidence": 0.415,
+  "evidence": "41% Hindi function words vs 1% English",
+  "method": "glossary",
+  "reliable": true,
+  "recognised_share": 0.722,
+  "unrecognised_sample": [
+   "baar",
+   "jalati",
+   "khaali",
+   "khud",
+   "laalach",
+   "pakad",
+   "pehle",
+   "poore",
+   "saazish",
+   "wajah"
+  ]
+ },
+ "input_beats": 6,
+ "input_warnings": [
+  "Hindi text was converted to English with a small offline glossary (approximate; a model gives better results: set STORYDNA_PROVIDER/MODEL/KEY and tick 'translate with model')."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S08",
+   "candidate_title": "Reborn Before the Fire",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 1.0,
+   "review_priority": "High",
+   "components": {
+    "beat_alignment": 0.6152,
+    "ordered_event_overlap": 0.8214,
+    "lexical_cosine": 0.5108,
+    "rare_detail_overlap": 0.4706,
+    "event_set_overlap": 0.8419,
+    "plain_tfidf_cosine": 0.3177
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "FIRE_ACCIDENT",
+      "INHERITANCE"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.838,
+     "pitch_beat_index": 0,
+     "pitch_text": "Meera sets fire kills husband Aarav friend Kavita inheritance laalach house.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance.",
+     "pitch_text_original": "Meera ko uska pati Aarav aur sahelli Kavita jaaydaad ke laalach mein ghar mein aag lagakar maar dete hain."
+    },
+    {
+     "events": [
+      "REBIRTH_TIME"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 1.0,
+     "pitch_beat_index": 1,
+     "pitch_text": "Three years in the past, engagement days, wakes up.",
+     "candidate_beat_index": 1,
+     "candidate_text": "She wakes up three years in the past on the day of her engagement.",
+     "pitch_text_original": "Wo teen saal peeche, apni mangni ke din, aankh kholti hai."
+    },
+    {
+     "events": [
+      "EVIDENCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.66,
+     "pitch_beat_index": 2,
+     "pitch_text": "Wajah remembers changes secretly will saazish recording.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Remembering everything, she quietly changes her will and records the couple plotting.",
+     "pitch_text_original": "Sab kuch yaad hone ki wajah se wo chupchaap apna vasiyatnama badal deti hai aur dono ki saazish ki recording kar leti hai."
+    },
+    {
+     "events": [
+      "FIRE_ACCIDENT"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.33,
+     "pitch_beat_index": 3,
+     "pitch_text": "Fire moves out days pehle poore family house.",
+     "candidate_beat_index": 3,
+     "candidate_text": "She avoids the engagement and takes the fire's date to move her family out of the house.",
+     "pitch_text_original": "Aag wale din se pehle wo poore parivaar ko ghar se door bhej deti hai."
+    },
+    {
+     "events": [
+      "FIRE_ACCIDENT",
+      "CRIME_VIOLENCE"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.573,
+     "pitch_beat_index": 4,
+     "pitch_text": "Is baar fire khaali house jalati police Aarav pakad.",
+     "candidate_beat_index": 4,
+     "candidate_text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil.",
+     "pitch_text_original": "Is baar aag khaali ghar ko jalati hai aur police Aarav ko pakad leti hai."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.289,
+     "pitch_beat_index": 5,
+     "pitch_text": "Kavita saves admits khud.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Ishita confesses to save herself, and Leena finally lives the life she was denied.",
+     "pitch_text_original": "Kavita khud ko bachane ke liye sab kuch maan leti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "CRIME_VIOLENCE",
+    "EVIDENCE",
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [
+    "FIRE_ACCIDENT",
+    "REBIRTH_TIME"
+   ],
+   "shared_rare_details": [
+    "chang",
+    "engagement",
+    "friend",
+    "inheritanc",
+    "past",
+    "polic",
+    "remember",
+    "set"
+   ],
+   "differentiating_beats": [],
+   "supporting_excerpt_or_scene_id": [
+    "S08#beat0",
+    "S08#beat1",
+    "S08#beat2",
+    "S08#beat3",
+    "S08#beat4",
+    "S08#beat5"
+   ],
+   "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S27",
+   "candidate_title": "The Same Wedding Day",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0034,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0818,
+    "ordered_event_overlap": 0.5165,
+    "lexical_cosine": 0.0182,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.521,
+    "plain_tfidf_cosine": 0.016
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "REBIRTH_TIME"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 1,
+     "pitch_text": "Three years in the past, engagement days, wakes up.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Wedding planner Tanvi relives the same wedding day every morning after a lightning strike.",
+     "pitch_text_original": "Wo teen saal peeche, apni mangni ke din, aankh kholti hai."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.491,
+     "pitch_beat_index": 1,
+     "pitch_text": "Three years in the past, engagement days, wakes up.",
+     "candidate_beat_index": 5,
+     "candidate_text": "She wakes up on the day after.",
+     "pitch_text_original": "Wo teen saal peeche, apni mangni ke din, aankh kholti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "CRIME_VIOLENCE"
+   ],
+   "shared_distinctive_events": [
+    "FIRE_ACCIDENT",
+    "REBIRTH_TIME"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Meera sets fire kills husband Aarav friend Kavita inheritance laalach house."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out days pehle poore family house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "The loop breaks only when she lets the wedding go ahead with its imperfections."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "She traps the saboteur, the bride's ex, with a fake gift."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S27#beat0",
+    "S27#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S06",
+   "candidate_title": "Ashes at the Altar",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0021,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.1246,
+    "ordered_event_overlap": 0.1581,
+    "lexical_cosine": 0.08,
+    "rare_detail_overlap": 0.05,
+    "event_set_overlap": 0.1202,
+    "plain_tfidf_cosine": 0.0586
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.747,
+     "pitch_beat_index": 3,
+     "pitch_text": "Fire moves out days pehle poore family house.",
+     "candidate_beat_index": 2,
+     "candidate_text": "She moves into the Malhotra house, where Rohan and Kavya must now call her aunt.",
+     "pitch_text_original": "Aag wale din se pehle wo poore parivaar ko ghar se door bhej deti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE",
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "move"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Is baar fire khaali house jalati police Aarav pakad."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Kavita saves admits khud."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S06#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S12",
+   "candidate_title": "The Maid Who Was His Wife",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0015,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0635,
+    "ordered_event_overlap": 0.2288,
+    "lexical_cosine": 0.1032,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.2126,
+    "plain_tfidf_cosine": 0.0733
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "FIRE_ACCIDENT"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 0,
+     "pitch_text": "Meera sets fire kills husband Aarav friend Kavita inheritance laalach house.",
+     "candidate_beat_index": 0,
+     "candidate_text": "After a car crash, Zoya wakes up with no memory.",
+     "pitch_text_original": "Meera ko uska pati Aarav aur sahelli Kavita jaaydaad ke laalach mein ghar mein aag lagakar maar dete hain."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.196,
+     "pitch_beat_index": 1,
+     "pitch_text": "Three years in the past, engagement days, wakes up.",
+     "candidate_beat_index": 0,
+     "candidate_text": "After a car crash, Zoya wakes up with no memory.",
+     "pitch_text_original": "Wo teen saal peeche, apni mangni ke din, aankh kholti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE"
+   ],
+   "shared_distinctive_events": [
+    "FIRE_ACCIDENT"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out days pehle poore family house."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Kavita saves admits khud."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "She slowly recovers her memory but pretends to still be confused."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Her husband's mistress Diya convinces her that she is only the household maid and makes her scrub floors."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S12#beat0",
+    "S12#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.076,
+    "ordered_event_overlap": 0.1519,
+    "lexical_cosine": 0.0492,
+    "rare_detail_overlap": 0.05,
+    "event_set_overlap": 0.1354,
+    "plain_tfidf_cosine": 0.1099
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.192,
+     "pitch_beat_index": 1,
+     "pitch_text": "Three years in the past, engagement days, wakes up.",
+     "candidate_beat_index": 3,
+     "candidate_text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor.",
+     "pitch_text_original": "Wo teen saal peeche, apni mangni ke din, aankh kholti hai."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.265,
+     "pitch_beat_index": 5,
+     "pitch_text": "Kavita saves admits khud.",
+     "candidate_beat_index": 4,
+     "candidate_text": "Arjun walks in as the investor, reveals his real identity in front of everyone and saves the firm.",
+     "pitch_text_original": "Kavita khud ko bachane ke liye sab kuch maan leti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [
+    "BEGGING_APOLOGY"
+   ],
+   "shared_rare_details": [
+    "engagement"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Is baar fire khaali house jalati police Aarav pakad."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out days pehle poore family house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Meera stands by him and quietly pays his fake debts from her own savings."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S01#beat3",
+    "S01#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S26",
+   "candidate_title": "Kidnapped on the Mandap",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0003,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0561,
+    "ordered_event_overlap": 0.2422,
+    "lexical_cosine": 0.0547,
+    "rare_detail_overlap": 0.0769,
+    "event_set_overlap": 0.1921,
+    "plain_tfidf_cosine": 0.032
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.336,
+     "pitch_beat_index": 4,
+     "pitch_text": "Is baar fire khaali house jalati police Aarav pakad.",
+     "candidate_beat_index": 3,
+     "candidate_text": "She records the stepmother's call to the kidnapper and brings it to the police.",
+     "pitch_text_original": "Is baar aag khaali ghar ko jalati hai aur police Aarav ko pakad leti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "CRIME_VIOLENCE",
+    "EVIDENCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "polic"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out days pehle poore family house."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Kavita saves admits khud."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "The stepmother is arrested at the reception."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Bride Anjali is abducted from her own wedding by masked men."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S26#beat3"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S07",
+   "candidate_title": "Divorce Papers, Diamond Return",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0364,
+    "ordered_event_overlap": 0.0951,
+    "lexical_cosine": 0.0657,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0719,
+    "plain_tfidf_cosine": 0.0557
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.219,
+     "pitch_beat_index": 0,
+     "pitch_text": "Meera sets fire kills husband Aarav friend Kavita inheritance laalach house.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing.",
+     "pitch_text_original": "Meera ko uska pati Aarav aur sahelli Kavita jaaydaad ke laalach mein ghar mein aag lagakar maar dete hain."
+    },
+    {
+     "events": [
+      "BEGGING_APOLOGY"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 5,
+     "pitch_text": "Kavita saves admits khud.",
+     "candidate_beat_index": 4,
+     "candidate_text": "He shows up at her studio begging to remarry.",
+     "pitch_text_original": "Kavita khud ko bachane ke liye sab kuch maan leti hai."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [
+    "BEGGING_APOLOGY"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Is baar fire khaali house jalati police Aarav pakad."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out days pehle poore family house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Sana builds a rival brand under a new name and starts winning his clients."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "She secretly is the anonymous jewellery designer whose collections made his company famous."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S07#beat0",
+    "S07#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S17",
+   "candidate_title": "The Mafia Boss's Nanny",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.031,
+    "ordered_event_overlap": 0.2194,
+    "lexical_cosine": 0.0565,
+    "rare_detail_overlap": 0.0625,
+    "event_set_overlap": 0.1003,
+    "plain_tfidf_cosine": 0.0103
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.186,
+     "pitch_beat_index": 0,
+     "pitch_text": "Meera sets fire kills husband Aarav friend Kavita inheritance laalach house.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Together they set a trap at the daughter's birthday party and Marco is arrested.",
+     "pitch_text_original": "Meera ko uska pati Aarav aur sahelli Kavita jaaydaad ke laalach mein ghar mein aag lagakar maar dete hain."
+    }
+   ],
+   "shared_generic_tropes": [
+    "CRIME_VIOLENCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "set"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out days pehle poore family house."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Kavita saves admits khud."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Viktor catches her searching his office and demands the truth."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Nina takes a job as nanny to the five-year-old daughter of mafia boss Viktor Rossi."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S17#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S10",
+   "candidate_title": "Swapped at Birth",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0683,
+    "ordered_event_overlap": 0.1078,
+    "lexical_cosine": 0.0464,
+    "rare_detail_overlap": 0.0455,
+    "event_set_overlap": 0.0818,
+    "plain_tfidf_cosine": 0.0371
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "BEGGING_APOLOGY"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.284,
+     "pitch_beat_index": 5,
+     "pitch_text": "Kavita saves admits khud.",
+     "candidate_beat_index": 5,
+     "candidate_text": "The rich mother must publicly admit she chose the wrong child.",
+     "pitch_text_original": "Kavita khud ko bachane ke liye sab kuch maan leti hai."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [
+    "BEGGING_APOLOGY"
+   ],
+   "shared_rare_details": [
+    "admit"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Is baar fire khaali house jalati police Aarav pakad."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Meera sets fire kills husband Aarav friend Kavita inheritance laalach house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S10#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S21",
+   "candidate_title": "Kidney for a Contract",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0483,
+    "ordered_event_overlap": 0.1638,
+    "lexical_cosine": 0.0328,
+    "rare_detail_overlap": 0.0455,
+    "event_set_overlap": 0.131,
+    "plain_tfidf_cosine": 0.0341
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "BEGGING_APOLOGY"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.29,
+     "pitch_beat_index": 5,
+     "pitch_text": "Kavita saves admits khud.",
+     "candidate_beat_index": 5,
+     "candidate_text": "His mother survives, and Samaira finally admits she needs a bodyguard for her heart.",
+     "pitch_text_original": "Kavita khud ko bachane ke liye sab kuch maan leti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [
+    "BEGGING_APOLOGY"
+   ],
+   "shared_rare_details": [
+    "admit"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Is baar fire khaali house jalati police Aarav pakad."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out days pehle poore family house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Samaira secretly agrees to donate a kidney and swears the doctors to silence."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "Karan finds out on the day of the operation and storms into the operating theatre."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S21#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

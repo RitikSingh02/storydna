@@ -1,0 +1,485 @@
+{
+  "run_id": "20261108T073749Z_dcd52796",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "P02",
+  "source_title": "P02 [PARAPHRASE]",
+  "input_sha256": "dcd527962645992ad1e232e2fa949446535c743fe7491eb8643440c72c3e0836",
+  "input_text": "Kavya enters a marriage on paper with Samar, who cooks at a street-side ramen cart, because her grandmother is very ill and wishes to see her wed. Samar is ridiculed by her mother and her aunts at every gathering, and they urge Kavya to leave him. Without a word, Samar settles the unpaid rent the relatives owe. When the owner of the property serves the entire household an eviction warning, we learn Samar secretly holds the title to the building. At dinner he rips the warning and says he is the owner. Kavya sees that the arrangement on paper has grown into something real, and her mother has to say sorry to a ramen cook.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S03",
+      "candidate_title": "The Noodle Stall Husband",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.3387,
+        "ordered_event_overlap": 0.7641,
+        "lexical_cosine": 0.3737,
+        "rare_detail_overlap": 0.4286,
+        "event_set_overlap": 1.0,
+        "plain_tfidf_cosine": 0.2429
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTRACT_ARRANGEMENT",
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.463,
+          "pitch_beat_index": 0,
+          "pitch_text": "Kavya enters a marriage on paper with Samar, who cooks at a street-side ramen cart, because her grandmother is very ill and wishes to see her wed.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Riya agrees to a paper marriage with Dev, a noodle stall cook, so that her dying grandfather can see her settled."
+        },
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.272,
+          "pitch_beat_index": 1,
+          "pitch_text": "Samar is ridiculed by her mother and her aunts at every gathering, and they urge Kavya to leave him.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her mother-in-law and aunts humiliate Dev at every family dinner and tell Riya to divorce him."
+        },
+        {
+          "events": [
+            "SECRET_HELP",
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.273,
+          "pitch_beat_index": 2,
+          "pitch_text": "Without a word, Samar settles the unpaid rent the relatives owe.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Dev quietly pays the family's overdue rent."
+        },
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "Without a word, Samar settles the unpaid rent the relatives owe.",
+          "candidate_beat_index": 4,
+          "candidate_text": "At a family dinner he tears up the eviction notice and announces that he is the landlord."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.189,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the owner of the property serves the entire household an eviction warning, we learn Samar secretly holds the title to the building.",
+          "candidate_beat_index": 3,
+          "candidate_text": "When the landlord threatens to evict the whole family, it turns out Dev secretly owns the building."
+        },
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the owner of the property serves the entire household an eviction warning, we learn Samar secretly holds the title to the building.",
+          "candidate_beat_index": 4,
+          "candidate_text": "At a family dinner he tears up the eviction notice and announces that he is the landlord."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "COMEUPPANCE",
+        "HIDDEN_IDENTITY",
+        "ROMANTIC_TURN"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "CONTRACT_ARRANGEMENT",
+        "FAMILY_PRESSURE",
+        "HUMILIATION",
+        "ILLNESS_MEDICAL",
+        "REJECTION_EXPULSION",
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [
+        "aunt",
+        "build",
+        "cart",
+        "chef",
+        "dinner",
+        "eviction",
+        "noodl",
+        "rent",
+        "settl"
+      ],
+      "differentiating_beats": [],
+      "supporting_excerpt_or_scene_id": [
+        "S03#beat0",
+        "S03#beat1",
+        "S03#beat2",
+        "S03#beat4",
+        "S03#beat3",
+        "S03#beat4"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S06",
+      "candidate_title": "Ashes at the Altar",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0029,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0583,
+        "ordered_event_overlap": 0.2198,
+        "lexical_cosine": 0.0752,
+        "rare_detail_overlap": 0.1,
+        "event_set_overlap": 0.2444,
+        "plain_tfidf_cosine": 0.1004
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.35,
+          "pitch_beat_index": 1,
+          "pitch_text": "Samar is ridiculed by her mother and her aunts at every gathering, and they urge Kavya to leave him.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Ananya gathers proof that Kavya and Rohan stole from her late mother's trust fund."
+        },
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the owner of the property serves the entire household an eviction warning, we learn Samar secretly holds the title to the building.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE",
+        "ROMANTIC_TURN"
+      ],
+      "shared_distinctive_events": [
+        "FAMILY_PRESSURE",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "aunt",
+        "gather"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Kavya enters a marriage on paper with Samar, who cooks at a street-side ramen cart, because her grandmother is very ill and wishes to see her wed."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Without a word, Samar settles the unpaid rent the relatives owe."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "At the family anniversary she plays the evidence on the dining room screen."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "She moves into the Malhotra house, where Rohan and Kavya must now call her aunt."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S06#beat3",
+        "S06#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0011,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0587,
+        "ordered_event_overlap": 0.3105,
+        "lexical_cosine": 0.0506,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.3616,
+        "plain_tfidf_cosine": 0.0359
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Samar is ridiculed by her mother and her aunts at every gathering, and they urge Kavya to leave him.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.216,
+          "pitch_beat_index": 2,
+          "pitch_text": "Without a word, Samar settles the unpaid rent the relatives owe.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Ishaan gives him a job as security guard and walks away without a word."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "HUMILIATION",
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [
+        "word"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When the owner of the property serves the entire household an eviction warning, we learn Samar secretly holds the title to the building."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At dinner he rips the warning and says he is the owner."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat0",
+        "S22#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S23",
+      "candidate_title": "Fake Girlfriend, Real Problem",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0008,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0544,
+        "ordered_event_overlap": 0.4278,
+        "lexical_cosine": 0.0572,
+        "rare_detail_overlap": 0.0556,
+        "event_set_overlap": 0.2724,
+        "plain_tfidf_cosine": 0.0214
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.188,
+          "pitch_beat_index": 0,
+          "pitch_text": "Kavya enters a marriage on paper with Samar, who cooks at a street-side ramen cart, because her grandmother is very ill and wishes to see her wed.",
+          "candidate_beat_index": 1,
+          "candidate_text": "His grandmother grows fond of Pari and invites her to every family event."
+        },
+        {
+          "events": [
+            "CONTRACT_ARRANGEMENT"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Kavya enters a marriage on paper with Samar, who cooks at a street-side ramen cart, because her grandmother is very ill and wishes to see her wed.",
+          "candidate_beat_index": 3,
+          "candidate_text": "The contract is extended for another month."
+        }
+      ],
+      "shared_generic_tropes": [
+        "HIDDEN_IDENTITY",
+        "ROMANTIC_TURN"
+      ],
+      "shared_distinctive_events": [
+        "CONTRACT_ARRANGEMENT"
+      ],
+      "shared_rare_details": [
+        "grandmother"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Without a word, Samar settles the unpaid rent the relatives owe."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Samar is ridiculed by her mother and her aunts at every gathering, and they urge Kavya to leave him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Employee Pari is hired by her boss Neil to pretend to be his girlfriend at his sister's wedding."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Neil's ex-fiancee shows up and tries to expose the deal."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S23#beat1",
+        "S23#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S20",
+      "candidate_title": "The Stolen Recipe",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0007,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0741,
+        "ordered_event_overlap": 0.0789,
+        "lexical_cosine": 0.1039,
+        "rare_detail_overlap": 0.12,
+        "event_set_overlap": 0.0565,
+        "plain_tfidf_cosine": 0.0615
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.266,
+          "pitch_beat_index": 0,
+          "pitch_text": "Kavya enters a marriage on paper with Samar, who cooks at a street-side ramen cart, because her grandmother is very ill and wishes to see her wed.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Mallika is fired from the restaurant and starts selling biryani from a street cart."
+        },
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the owner of the property serves the entire household an eviction warning, we learn Samar secretly holds the title to the building.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Mallika is fired from the restaurant and starts selling biryani from a street cart."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "cart",
+        "chef",
+        "cook"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Without a word, Samar settles the unpaid rent the relatives owe."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Samar is ridiculed by her mother and her aunts at every gathering, and they urge Kavya to leave him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Chef Mallika's sous-chef Dhruv steals her secret biryani recipe and wins a televised cooking contest with it."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "A food vlogger films her cart, and the video goes viral overnight."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S20#beat1",
+        "S20#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S03"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

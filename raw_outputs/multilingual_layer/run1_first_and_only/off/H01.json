@@ -1,0 +1,627 @@
+{
+ "run_id": "20261108T080119Z_e383055c",
+ "run_label": "run1_first_and_only/off",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "H01",
+ "source_title": "H01",
+ "input_sha256": "e383055c630b705ccd7bb49718490b9951aa0f64b2edbee19e8c0d8d6e631351",
+ "input_text": "Karan ek bade karobari ka beta hai. Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se. Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain. Sneha uska saath nahi chhodti aur chupke se apni bachat se uska jhootha karz chukati hai. Mangni ki party wale din Sneha ke pita ki company doobne wali hoti hai aur bank ek anjaan niveshak bhejta hai. Karan niveshak banke andar aata hai, sabke saamne apni asli pehchaan batata hai aur company bacha leta hai. Sneha ke pita us se maafi maangte hain.",
+ "working_text_en": null,
+ "language": {
+  "detected": "hi-Latn",
+  "name": "Hindi in Roman letters (Hinglish)",
+  "script": "latin",
+  "confidence": 0.441,
+  "evidence": "44% Hindi function words vs 1% English",
+  "method": "none",
+  "reliable": true,
+  "recognised_share": null,
+  "unrecognised_sample": []
+ },
+ "input_beats": 7,
+ "input_warnings": [
+  "The text does not look like English (very few English function words; e.g. Hindi written in Roman letters). The lexicon and vocabulary are English-only, so a Low result here is NOT evidence of originality."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0068,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.1207,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.1762,
+    "rare_detail_overlap": 0.15,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0706
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.207,
+     "pitch_beat_index": 1,
+     "pitch_text": "Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.461,
+     "pitch_beat_index": 4,
+     "pitch_text": "Mangni ki party wale din Sneha ke pita ki company doobne wali hoti hai aur bank ek anjaan niveshak bhejta hai.",
+     "candidate_beat_index": 3,
+     "candidate_text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "bank",
+    "driver",
+    "party"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Sneha uska saath nahi chhodti aur chupke se apni bachat se uska jhootha karz chukati hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Meera stands by him and quietly pays his fake debts from her own savings."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S01#beat0",
+    "S01#beat3"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S07",
+   "candidate_title": "Divorce Papers, Diamond Return",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0469,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0645,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0908
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.204,
+     "pitch_beat_index": 5,
+     "pitch_text": "Karan niveshak banke andar aata hai, sabke saamne apni asli pehchaan batata hai aur company bacha leta hai.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Sana signs one paper only: the sale of his failing company to her."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Sana builds a rival brand under a new name and starts winning his clients."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S07#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S16",
+   "candidate_title": "Villainess Transmigrated",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0501,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0574,
+    "rare_detail_overlap": 0.0385,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.351,
+     "pitch_beat_index": 2,
+     "pitch_text": "Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain.",
+     "candidate_beat_index": 4,
+     "candidate_text": "In the final trial Mira uses her knowledge of the novel to expose the heroine's fake visions."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "use"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Karan niveshak banke andar aata hai, sabke saamne apni asli pehchaan batata hai aur company bacha leta hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Modern office worker Mira falls asleep over a web novel and wakes up inside it as the villainess who is executed in chapter thirty."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The novel's heroine turns out to be another transmigrator who wants the duke for herself."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S16#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S05",
+   "candidate_title": "The Intern Who Owns the Floor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0256,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0463,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0685
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S02",
+   "candidate_title": "Night Shift Owner",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0201,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0427,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.064
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The finance chief learns about the leak and frames Tanya for the theft."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S06",
+   "candidate_title": "Ashes at the Altar",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0358,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0399,
+    "rare_detail_overlap": 0.05,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.251,
+     "pitch_beat_index": 4,
+     "pitch_text": "Mangni ki party wale din Sneha ke pita ki company doobne wali hoti hai aur bank ek anjaan niveshak bhejta hai.",
+     "candidate_beat_index": 4,
+     "candidate_text": "At the family anniversary she plays the evidence on the dining room screen."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "din"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S06#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S28",
+   "candidate_title": "Last Round",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0316,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0388,
+    "rare_detail_overlap": 0.0476,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.221,
+     "pitch_beat_index": 1,
+     "pitch_text": "Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Disgraced former boxing champion Ravi is banned after a match-fixing scandal."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "ban"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Karan niveshak banke andar aata hai, sabke saamne apni asli pehchaan batata hai aur company bacha leta hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "Gudiya fights in the state final, takes a heavy hit in round three and gets up."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "She wins on points as Ravi cries in her corner."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S28#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S17",
+   "candidate_title": "The Mafia Boss's Nanny",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0304,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0336,
+    "rare_detail_overlap": 0.0625,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0348
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.213,
+     "pitch_beat_index": 4,
+     "pitch_text": "Mangni ki party wale din Sneha ke pita ki company doobne wali hoti hai aur bank ek anjaan niveshak bhejta hai.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "party"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Viktor catches her searching his office and demands the truth."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S17#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S29",
+   "candidate_title": "The Scholarship Girl",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0232,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0295,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.042
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S30",
+   "candidate_title": "The Last Will Game",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0241,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0291,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Isha inherits everything, and she gives the cousins a salary."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

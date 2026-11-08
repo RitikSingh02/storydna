@@ -1,0 +1,464 @@
+{
+  "run_id": "20261108T073749Z_fa38b4d5",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "E_S08",
+  "source_title": "E_S08 [EXACT]",
+  "input_sha256": "fa38b4d504882df4c6eeba181042a572df9048a385ed0d791f789ce5b8390318",
+  "input_text": "leena is killed in a house fire set by her husband nikhil and her best friend ishita who want her inheritance she wakes up three years in the past on the day of her engagement remembering everything she quietly changes her will and records the couple plotting she avoids the engagement and takes the fires date to move her family out of the house when the fire is set again it burns an empty house and the police trace the arson to nikhil ishita confesses to save herself and leena finally lives the life she was denied",
+  "input_beats": 7,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S08",
+      "candidate_title": "Reborn Before the Fire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.5642,
+        "ordered_event_overlap": 0.8655,
+        "lexical_cosine": 0.944,
+        "rare_detail_overlap": 1.0,
+        "event_set_overlap": 1.0,
+        "plain_tfidf_cosine": 0.9939
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE",
+            "FIRE_ACCIDENT"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.636,
+          "pitch_beat_index": 0,
+          "pitch_text": "leena is killed in a house fire set by her husband nikhil",
+          "candidate_beat_index": 0,
+          "candidate_text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+        },
+        {
+          "events": [
+            "REBIRTH_TIME"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.533,
+          "pitch_beat_index": 1,
+          "pitch_text": "and her best friend ishita who want her inheritance she wakes up three years in the past on the day of her engagement remembering everything she quietly changes her will",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wakes up three years in the past on the day of her engagement."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.549,
+          "pitch_beat_index": 2,
+          "pitch_text": "and records the couple plotting she avoids the engagement",
+          "candidate_beat_index": 2,
+          "candidate_text": "Remembering everything, she quietly changes her will and records the couple plotting."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.645,
+          "pitch_beat_index": 3,
+          "pitch_text": "and takes the fires date to move her family out of the house",
+          "candidate_beat_index": 3,
+          "candidate_text": "She avoids the engagement and takes the fire's date to move her family out of the house."
+        },
+        {
+          "events": [
+            "FIRE_ACCIDENT"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 4,
+          "pitch_text": "when the fire is set again it burns an empty house",
+          "candidate_beat_index": 3,
+          "candidate_text": "She avoids the engagement and takes the fire's date to move her family out of the house."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.754,
+          "pitch_beat_index": 4,
+          "pitch_text": "when the fire is set again it burns an empty house",
+          "candidate_beat_index": 4,
+          "candidate_text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "EVIDENCE",
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [
+        "FIRE_ACCIDENT",
+        "REBIRTH_TIME"
+      ],
+      "shared_rare_details": [
+        "best",
+        "chang",
+        "coupl",
+        "date",
+        "deny",
+        "engagement",
+        "fire",
+        "friend",
+        "inheritanc",
+        "life",
+        "past",
+        "plot"
+      ],
+      "differentiating_beats": [],
+      "supporting_excerpt_or_scene_id": [
+        "S08#beat0",
+        "S08#beat1",
+        "S08#beat2",
+        "S08#beat3",
+        "S08#beat3",
+        "S08#beat4"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S27",
+      "candidate_title": "The Same Wedding Day",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0019,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0374,
+        "ordered_event_overlap": 0.555,
+        "lexical_cosine": 0.0103,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.6056,
+        "plain_tfidf_cosine": 0.0185
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REBIRTH_TIME"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "and her best friend ishita who want her inheritance she wakes up three years in the past on the day of her engagement remembering everything she quietly changes her will",
+          "candidate_beat_index": 0,
+          "candidate_text": "Wedding planner Tanvi relives the same wedding day every morning after a lightning strike."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.262,
+          "pitch_beat_index": 1,
+          "pitch_text": "and her best friend ishita who want her inheritance she wakes up three years in the past on the day of her engagement remembering everything she quietly changes her will",
+          "candidate_beat_index": 5,
+          "candidate_text": "She wakes up on the day after."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [
+        "FIRE_ACCIDENT",
+        "REBIRTH_TIME"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "and records the couple plotting she avoids the engagement"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "leena is killed in a house fire set by her husband nikhil"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "The loop breaks only when she lets the wedding go ahead with its imperfections."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She traps the saboteur, the bride's ex, with a fake gift."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S27#beat0",
+        "S27#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S16",
+      "candidate_title": "Villainess Transmigrated",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0007,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0558,
+        "ordered_event_overlap": 0.3195,
+        "lexical_cosine": 0.0609,
+        "rare_detail_overlap": 0.0769,
+        "event_set_overlap": 0.3213,
+        "plain_tfidf_cosine": 0.0064
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.182,
+          "pitch_beat_index": 0,
+          "pitch_text": "leena is killed in a house fire set by her husband nikhil",
+          "candidate_beat_index": 2,
+          "candidate_text": "She befriends the cold duke who in the novel kills her."
+        },
+        {
+          "events": [
+            "REBIRTH_TIME"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "and her best friend ishita who want her inheritance she wakes up three years in the past on the day of her engagement remembering everything she quietly changes her will",
+          "candidate_beat_index": 3,
+          "candidate_text": "The novel's heroine turns out to be another transmigrator who wants the duke for herself."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [
+        "REBIRTH_TIME"
+      ],
+      "shared_rare_details": [
+        "plot",
+        "want"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "and the police trace the arson to nikhil ishita confesses to save herself"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "when the fire is set again it burns an empty house"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Modern office worker Mira falls asleep over a web novel and wakes up inside it as the villainess who is executed in chapter thirty."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "In the final trial Mira uses her knowledge of the novel to expose the heroine's fake visions."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S16#beat2",
+        "S16#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S12",
+      "candidate_title": "The Maid Who Was His Wife",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0388,
+        "ordered_event_overlap": 0.2418,
+        "lexical_cosine": 0.0584,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2362,
+        "plain_tfidf_cosine": 0.0343
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "FIRE_ACCIDENT"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "leena is killed in a house fire set by her husband nikhil",
+          "candidate_beat_index": 0,
+          "candidate_text": "After a car crash, Zoya wakes up with no memory."
+        }
+      ],
+      "shared_generic_tropes": [
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [
+        "FIRE_ACCIDENT"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "and her best friend ishita who want her inheritance she wakes up three years in the past on the day of her engagement remembering everything she quietly changes her will"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "and the police trace the arson to nikhil ishita confesses to save herself"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She slowly recovers her memory but pretends to still be confused."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "The husband realises how he was deceived, and Diya is removed."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S12#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S17",
+      "candidate_title": "The Mafia Boss's Nanny",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0651,
+        "ordered_event_overlap": 0.2348,
+        "lexical_cosine": 0.0523,
+        "rare_detail_overlap": 0.0625,
+        "event_set_overlap": 0.114,
+        "plain_tfidf_cosine": 0.0358
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.207,
+          "pitch_beat_index": 0,
+          "pitch_text": "leena is killed in a house fire set by her husband nikhil",
+          "candidate_beat_index": 1,
+          "candidate_text": "She is secretly looking for the man who killed her brother."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.249,
+          "pitch_beat_index": 4,
+          "pitch_text": "when the fire is set again it burns an empty house",
+          "candidate_beat_index": 5,
+          "candidate_text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "set"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "and her best friend ishita who want her inheritance she wakes up three years in the past on the day of her engagement remembering everything she quietly changes her will"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "and records the couple plotting she avoids the engagement"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Viktor catches her searching his office and demands the truth."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Nina takes a job as nanny to the five-year-old daughter of mafia boss Viktor Rossi."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S17#beat1",
+        "S17#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "EXACT",
+    "relevant": [
+      "S08"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

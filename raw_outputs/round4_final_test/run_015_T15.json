@@ -1,0 +1,439 @@
+{
+  "run_id": "20261108T073303Z_5bc0163a",
+  "run_label": "round4_final_test",
+  "created_utc": "2026-11-08T07:33:03+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "T15",
+  "source_title": "T15 [UNRELATED]",
+  "input_sha256": "5bc0163a4da7d2d9c8f696a6b8ba39ad5e82de4923c8c4026629841c9c2ad865",
+  "input_text": "Marine biologist Anika studies a dying coral reef. She discovers that a hotel's drainage pipes are poisoning it. She collects samples, teaches local fishermen to test the water and files a case at the green tribunal. The hotel installs a treatment plant.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S13",
+      "candidate_title": "The Widow's Ledger",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (5 beats)",
+      "retrieval_score": 0.0298,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.1414,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.1666,
+        "rare_detail_overlap": 0.05,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.161
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.315,
+          "pitch_beat_index": 1,
+          "pitch_text": "She discovers that a hotel's drainage pipes are poisoning it.",
+          "candidate_beat_index": 2,
+          "candidate_text": "She tracks him to a luxury hotel in another city living under a new name."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.391,
+          "pitch_beat_index": 3,
+          "pitch_text": "The hotel installs a treatment plant.",
+          "candidate_beat_index": 3,
+          "candidate_text": "In the hotel lobby she serves him with papers showing that she now owns every debt he ran from."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "hotel"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She collects samples, teaches local fishermen to test the water and files a case at the green tribunal."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Marine biologist Anika studies a dying coral reef."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She works at a tailoring shop and secretly buys up his creditors' notes one by one."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Widow Lakshmi discovers that her husband faked his death to escape his debts and left her with the loan sharks."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S13#beat2",
+        "S13#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S15",
+      "candidate_title": "Blood Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0004,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0577,
+        "ordered_event_overlap": 0.2111,
+        "lexical_cosine": 0.0879,
+        "rare_detail_overlap": 0.0526,
+        "event_set_overlap": 0.2015,
+        "plain_tfidf_cosine": 0.0213
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Marine biologist Anika studies a dying coral reef.",
+          "candidate_beat_index": 0,
+          "candidate_text": "To save her sick brother, Lena signs a blood contract to serve vampire prince Dorian for one year."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.346,
+          "pitch_beat_index": 1,
+          "pitch_text": "She discovers that a hotel's drainage pipes are poisoning it.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She discovers that the poison is being delivered through the royal wine by the prince's own steward."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "She discovers that a hotel's drainage pipes are poisoning it.",
+          "candidate_beat_index": 5,
+          "candidate_text": "The steward drinks the poison, and Dorian offers to tear up the contract."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "poison"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She collects samples, teaches local fishermen to test the water and files a case at the green tribunal."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "The hotel installs a treatment plant."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "In his castle she learns that the court plans to kill the prince before the coronation."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "She switches the goblets at the coronation banquet."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S15#beat0",
+        "S15#beat3",
+        "S15#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S30",
+      "candidate_title": "The Last Will Game",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0003,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0576,
+        "ordered_event_overlap": 0.3387,
+        "lexical_cosine": 0.0276,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2824,
+        "plain_tfidf_cosine": 0.026
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.346,
+          "pitch_beat_index": 0,
+          "pitch_text": "Marine biologist Anika studies a dying coral reef.",
+          "candidate_beat_index": 0,
+          "candidate_text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+        },
+        {
+          "events": [
+            "THEFT_FRAUD"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "She discovers that a hotel's drainage pipes are poisoning it.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Two rich grandchildren spend the month fighting each other and bribing the lawyer."
+        }
+      ],
+      "shared_generic_tropes": [
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She collects samples, teaches local fishermen to test the water and files a case at the green tribunal."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "The hotel installs a treatment plant."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Isha inherits everything, and she gives the cousins a salary."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S30#beat0",
+        "S30#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S10",
+      "candidate_title": "Swapped at Birth",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0516,
+        "ordered_event_overlap": 0.1525,
+        "lexical_cosine": 0.0878,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.0967,
+        "plain_tfidf_cosine": 0.0328
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Marine biologist Anika studies a dying coral reef.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.31,
+          "pitch_beat_index": 2,
+          "pitch_text": "She collects samples, teaches local fishermen to test the water and files a case at the green tribunal.",
+          "candidate_beat_index": 4,
+          "candidate_text": "At the family's charity gala she reveals the file."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "file"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "The hotel installs a treatment plant."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She discovers that a hotel's drainage pipes are poisoning it."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S10#beat3",
+        "S10#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S27",
+      "candidate_title": "The Same Wedding Day",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0306,
+        "ordered_event_overlap": 0.1851,
+        "lexical_cosine": 0.0394,
+        "rare_detail_overlap": 0.05,
+        "event_set_overlap": 0.2272,
+        "plain_tfidf_cosine": 0.0466
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.184,
+          "pitch_beat_index": 1,
+          "pitch_text": "She discovers that a hotel's drainage pipes are poisoning it.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Each loop she finds a different disaster: a missing ring, a food poisoning, a runaway groom."
+        },
+        {
+          "events": [
+            "THEFT_FRAUD"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "She discovers that a hotel's drainage pipes are poisoning it.",
+          "candidate_beat_index": 2,
+          "candidate_text": "She slowly realises one guest is sabotaging every loop."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "poison"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She collects samples, teaches local fishermen to test the water and files a case at the green tribunal."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Marine biologist Anika studies a dying coral reef."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Wedding planner Tanvi relives the same wedding day every morning after a lightning strike."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "The loop breaks only when she lets the wedding go ahead with its imperfections."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S27#beat1",
+        "S27#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "UNRELATED",
+    "relevant": [],
+    "expected_tiers": [
+      "Low"
+    ]
+  }
+}

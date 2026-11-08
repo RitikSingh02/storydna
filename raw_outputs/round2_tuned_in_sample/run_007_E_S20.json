@@ -1,0 +1,484 @@
+{
+  "run_id": "20261108T072919Z_3da85352",
+  "run_label": "round2_tuned_in_sample",
+  "created_utc": "2026-11-08T07:29:19+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 3,
+      "min_distinct_matched": 2,
+      "min_ordered": 0.5,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_lex": 0.2,
+      "min_rare": 0.15,
+      "min_ordered": 0.5,
+      "min_distinct_for_ordered": 3,
+      "min_detail_with_ordered": 0.1
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "E_S20",
+  "source_title": "E_S20 [EXACT]",
+  "input_sha256": "3da853521685119138dc28c03602dfe691da4225442336905bcc610c938a8651",
+  "input_text": "chef mallikas souschef dhruv steals her secret biryani recipe and wins a televised cooking contest with it mallika is fired from the restaurant and starts selling biryani from a street cart a food vlogger films her cart and the video goes viral overnight dhruvs restaurant cannot reproduce the recipes key ingredient mallika challenges dhruv to a live cookoff in front of a studio audience she wins and opens her own restaurant",
+  "input_beats": 5,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S20",
+      "candidate_title": "The Stolen Recipe",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.9092,
+      "review_priority": "High",
+      "components": {
+        "ordered_event_overlap": 0.8784,
+        "lexical_cosine": 0.9129,
+        "rare_detail_overlap": 0.92,
+        "event_set_overlap": 1.0,
+        "plain_tfidf_cosine": 0.9272
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "THEFT_FRAUD"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "chef mallikas souschef dhruv steals her secret biryani recipe",
+          "candidate_beat_index": 0,
+          "candidate_text": "Chef Mallika's sous-chef Dhruv steals her secret biryani recipe and wins a televised cooking contest with it."
+        },
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "and wins a televised cooking contest with it mallika is fired from the restaurant",
+          "candidate_beat_index": 0,
+          "candidate_text": "Chef Mallika's sous-chef Dhruv steals her secret biryani recipe and wins a televised cooking contest with it."
+        },
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "and wins a televised cooking contest with it mallika is fired from the restaurant",
+          "candidate_beat_index": 1,
+          "candidate_text": "Mallika is fired from the restaurant and starts selling biryani from a street cart."
+        },
+        {
+          "events": [
+            "COMEBACK_BUILD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 2,
+          "pitch_text": "and starts selling biryani from a street cart a food vlogger films her cart",
+          "candidate_beat_index": 1,
+          "candidate_text": "Mallika is fired from the restaurant and starts selling biryani from a street cart."
+        },
+        {
+          "events": [
+            "VIRAL_FAME"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "and the video goes viral overnight dhruvs restaurant cannot reproduce the recipes key ingredient mallika challenges dhruv to a live cookoff in front of a studio audience she wins",
+          "candidate_beat_index": 2,
+          "candidate_text": "A food vlogger films her cart, and the video goes viral overnight."
+        },
+        {
+          "events": [
+            "CONFRONTATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "and the video goes viral overnight dhruvs restaurant cannot reproduce the recipes key ingredient mallika challenges dhruv to a live cookoff in front of a studio audience she wins",
+          "candidate_beat_index": 4,
+          "candidate_text": "Mallika challenges Dhruv to a live cook-off in front of a studio audience."
+        },
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "and the video goes viral overnight dhruvs restaurant cannot reproduce the recipes key ingredient mallika challenges dhruv to a live cookoff in front of a studio audience she wins",
+          "candidate_beat_index": 5,
+          "candidate_text": "She wins and opens her own restaurant."
+        },
+        {
+          "events": [
+            "COMEBACK_BUILD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "and opens her own restaurant",
+          "candidate_beat_index": 5,
+          "candidate_text": "She wins and opens her own restaurant."
+        }
+      ],
+      "shared_generic_tropes": [
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "COMEBACK_BUILD",
+        "CONFRONTATION",
+        "CONTEST_WIN",
+        "REJECTION_EXPULSION",
+        "VIRAL_FAME"
+      ],
+      "shared_rare_details": [
+        "audienc",
+        "cart",
+        "challeng",
+        "contest",
+        "cook",
+        "dish",
+        "film",
+        "fir",
+        "goe",
+        "ingredient",
+        "key",
+        "open"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Dhruv's restaurant cannot reproduce the recipe's key ingredient."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S20#beat0",
+        "S20#beat0",
+        "S20#beat1",
+        "S20#beat1",
+        "S20#beat2",
+        "S20#beat4",
+        "S20#beat5",
+        "S20#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S28",
+      "candidate_title": "Last Round",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1729,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.3563,
+        "lexical_cosine": 0.0265,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2248,
+        "plain_tfidf_cosine": 0.021
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTEST_WIN",
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "and wins a televised cooking contest with it mallika is fired from the restaurant",
+          "candidate_beat_index": 0,
+          "candidate_text": "Disgraced former boxing champion Ravi is banned after a match-fixing scandal."
+        },
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "and the video goes viral overnight dhruvs restaurant cannot reproduce the recipes key ingredient mallika challenges dhruv to a live cookoff in front of a studio audience she wins",
+          "candidate_beat_index": 5,
+          "candidate_text": "She wins on points as Ravi cries in her corner."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONTEST_WIN",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "and starts selling biryani from a street cart a food vlogger films her cart"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "chef mallikas souschef dhruv steals her secret biryani recipe"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Gudiya fights in the state final, takes a heavy hit in round three and gets up."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "A rival gym owner tries to buy Gudiya's contract and threatens Ravi."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S28#beat0",
+        "S28#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S07",
+      "candidate_title": "Divorce Papers, Diamond Return",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1385,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2336,
+        "lexical_cosine": 0.0471,
+        "rare_detail_overlap": 0.0526,
+        "event_set_overlap": 0.2036,
+        "plain_tfidf_cosine": 0.0179
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "and wins a televised cooking contest with it mallika is fired from the restaurant",
+          "candidate_beat_index": 0,
+          "candidate_text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+        },
+        {
+          "events": [
+            "COMEBACK_BUILD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 2,
+          "pitch_text": "and starts selling biryani from a street cart a food vlogger films her cart",
+          "candidate_beat_index": 2,
+          "candidate_text": "Sana builds a rival brand under a new name and starts winning his clients."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "COMEBACK_BUILD",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "studio"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "and the video goes viral overnight dhruvs restaurant cannot reproduce the recipes key ingredient mallika challenges dhruv to a live cookoff in front of a studio audience she wins"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "chef mallikas souschef dhruv steals her secret biryani recipe"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She secretly is the anonymous jewellery designer whose collections made his company famous."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "He shows up at her studio begging to remarry."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S07#beat0",
+        "S07#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S24",
+      "candidate_title": "The Street Singer's Voice",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1076,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.1589,
+        "lexical_cosine": 0.0369,
+        "rare_detail_overlap": 0.0625,
+        "event_set_overlap": 0.2044,
+        "plain_tfidf_cosine": 0.0196
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "VIRAL_FAME"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 2,
+          "pitch_text": "and starts selling biryani from a street cart a food vlogger films her cart",
+          "candidate_beat_index": 0,
+          "candidate_text": "Orphan singer Ria performs on busy streets, and a viral video reaches the wealthy Kapoor family."
+        }
+      ],
+      "shared_generic_tropes": [
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "VIRAL_FAME"
+      ],
+      "shared_rare_details": [
+        "video",
+        "viral"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "and the video goes viral overnight dhruvs restaurant cannot reproduce the recipes key ingredient mallika challenges dhruv to a live cookoff in front of a studio audience she wins"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "and wins a televised cooking contest with it mallika is fired from the restaurant"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Ria is welcomed home, but her stepbrother schemes to push her out before the inheritance is divided."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Mrs. Kapoor sees a birthmark and believes Ria is her long-lost daughter."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S24#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0901,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.1425,
+        "lexical_cosine": 0.0406,
+        "rare_detail_overlap": 0.05,
+        "event_set_overlap": 0.1096,
+        "plain_tfidf_cosine": 0.0143
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "and wins a televised cooking contest with it mallika is fired from the restaurant",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wins the national maths olympiad."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [
+        "recip"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "and the video goes viral overnight dhruvs restaurant cannot reproduce the recipes key ingredient mallika challenges dhruv to a live cookoff in front of a studio audience she wins"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "and starts selling biryani from a street cart a food vlogger films her cart"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "EXACT",
+    "relevant": [
+      "S20"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

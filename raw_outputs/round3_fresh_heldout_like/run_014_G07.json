@@ -1,0 +1,481 @@
+{
+  "run_id": "20261108T073000Z_eabb5851",
+  "run_label": "round3_fresh_heldout_like",
+  "created_utc": "2026-11-08T07:30:00+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 3,
+      "min_distinct_matched": 2,
+      "min_ordered": 0.5,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_lex": 0.2,
+      "min_rare": 0.15,
+      "min_ordered": 0.5,
+      "min_distinct_for_ordered": 3,
+      "min_detail_with_ordered": 0.1
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "G07",
+  "source_title": "G07 [PARTIAL]",
+  "input_sha256": "eabb585108e9ca30ac01bc83e039aed9451d85ac2018a23434b3395c17e7f0e4",
+  "input_text": "Bookshop-chain heir Armaan rides a bicycle as a courier for a week to see how his readers live. He falls for Sia, who runs a failing second-hand bookstore. A property developer wants her land and tries to force her to close. Armaan secretly buys the developer's loan so he must back off. Sia finds the papers and suspects Armaan of spying on her. After a fierce quarrel he confesses who he is and she leaves. He reopens the bookstore in her name.",
+  "input_beats": 7,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S04",
+      "candidate_title": "Delivery Boy, Dining Empire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (7 beats)",
+      "retrieval_score": 0.5136,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.6831,
+        "lexical_cosine": 0.3807,
+        "rare_detail_overlap": 0.3684,
+        "event_set_overlap": 0.5246,
+        "plain_tfidf_cosine": 0.2816
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ROMANTIC_TURN"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 1,
+          "pitch_text": "He falls for Sia, who runs a failing second-hand bookstore.",
+          "candidate_beat_index": 1,
+          "candidate_text": "He falls for Pooja, a waitress at a small family cafe that is failing."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 1,
+          "pitch_text": "He falls for Sia, who runs a failing second-hand bookstore.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A rival tycoon tries to buy the cafe and shut it down for its land."
+        },
+        {
+          "events": [
+            "SECRET_HELP",
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "Armaan secretly buys the developer's loan so he must back off.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Vikram secretly buys the tycoon's debt, forcing the tycoon to withdraw."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "ROMANTIC_TURN"
+      ],
+      "shared_distinctive_events": [
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [
+        "fail",
+        "forc",
+        "land",
+        "reopen",
+        "spy",
+        "suspect",
+        "week"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A property developer wants her land and tries to force her to close."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Bookshop-chain heir Armaan rides a bicycle as a courier for a week to see how his readers live."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Vikram, owner of a restaurant chain, delivers food on a scooter for a week to see how his customers live."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Pooja finds the paperwork and suspects Vikram has been spying on her."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S04#beat1",
+        "S04#beat2",
+        "S04#beat3"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S13",
+      "candidate_title": "The Widow's Ledger",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (5 beats)",
+      "retrieval_score": 0.2611,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.4673,
+        "lexical_cosine": 0.125,
+        "rare_detail_overlap": 0.0526,
+        "event_set_overlap": 0.261,
+        "plain_tfidf_cosine": 0.1018
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 1,
+          "pitch_text": "He falls for Sia, who runs a failing second-hand bookstore.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Widow Lakshmi discovers that her husband faked his death to escape his debts and left her with the loan sharks."
+        },
+        {
+          "events": [
+            "SECRET_HELP"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "Armaan secretly buys the developer's loan so he must back off.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She works at a tailoring shop and secretly buys up his creditors' notes one by one."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "Armaan secretly buys the developer's loan so he must back off.",
+          "candidate_beat_index": 3,
+          "candidate_text": "In the hotel lobby she serves him with papers showing that she now owns every debt he ran from."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [
+        "paper"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A property developer wants her land and tries to force her to close."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Bookshop-chain heir Armaan rides a bicycle as a courier for a week to see how his readers live."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "She tracks him to a luxury hotel in another city living under a new name."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "He signs over his hidden accounts to avoid prison."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S13#beat0",
+        "S13#beat1",
+        "S13#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1997,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.4129,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.3453,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 1,
+          "pitch_text": "He falls for Sia, who runs a failing second-hand bookstore.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Rahul, now a struggling shopkeeper, mocks him before learning who he is."
+        },
+        {
+          "events": [
+            "SECRET_HELP"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "Armaan secretly buys the developer's loan so he must back off.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Ishaan gives him a job as security guard and walks away without a word."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A property developer wants her land and tries to force her to close."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Bookshop-chain heir Armaan rides a bicycle as a courier for a week to see how his readers live."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat2",
+        "S22#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S01",
+      "candidate_title": "The Chauffeur's Secret",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1565,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.296,
+        "lexical_cosine": 0.0336,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.28,
+        "plain_tfidf_cosine": 0.0165
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "INHERITANCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "Bookshop-chain heir Armaan rides a bicycle as a courier for a week to see how his readers live.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+        },
+        {
+          "events": [
+            "SECRET_HELP"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "Armaan secretly buys the developer's loan so he must back off.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Meera stands by him and quietly pays his fake debts from her own savings."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "Armaan secretly buys the developer's loan so he must back off.",
+          "candidate_beat_index": 3,
+          "candidate_text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A property developer wants her land and tries to force her to close."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "He falls for Sia, who runs a failing second-hand bookstore."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S01#beat0",
+        "S01#beat2",
+        "S01#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S21",
+      "candidate_title": "Kidney for a Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1199,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2284,
+        "lexical_cosine": 0.0375,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1731,
+        "plain_tfidf_cosine": 0.0157
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "INHERITANCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "Bookshop-chain heir Armaan rides a bicycle as a courier for a week to see how his readers live.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Karan needs money for his mother's kidney transplant and signs a contract to work as bodyguard to heiress Samaira."
+        },
+        {
+          "events": [
+            "SECRET_HELP"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "Armaan secretly buys the developer's loan so he must back off.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Samaira secretly agrees to donate a kidney and swears the doctors to silence."
+        }
+      ],
+      "shared_generic_tropes": [
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A property developer wants her land and tries to force her to close."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "He falls for Sia, who runs a failing second-hand bookstore."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Karan finds out on the day of the operation and storms into the operating theatre."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "His mother survives, and Samaira finally admits she needs a bodyguard for her heart."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S21#beat0",
+        "S21#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARTIAL",
+    "relevant": [
+      "S04"
+    ],
+    "expected_tiers": [
+      "Medium",
+      "High"
+    ]
+  }
+}

@@ -1,0 +1,422 @@
+{
+  "run_id": "20261108T073303Z_b44ffb19",
+  "run_label": "round4_final_test",
+  "created_utc": "2026-11-08T07:33:03+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "T16",
+  "source_title": "T16 [UNRELATED]",
+  "input_sha256": "b44ffb19c277c735bb39a4b199b8a7677ef0a622d4875f913d860c7414c73ae6",
+  "input_text": "Two brothers run a failing tea stall at a railway station. During the world cup they put up a rooftop screen and the stall becomes a hit. The older brother wants to expand while the younger wants to stay small. They agree on a second stall run by their mother.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S06",
+      "candidate_title": "Ashes at the Altar",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0004,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0645,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.1085,
+        "rare_detail_overlap": 0.15,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0575
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.197,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two brothers run a failing tea stall at a railway station.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.189,
+          "pitch_beat_index": 1,
+          "pitch_text": "During the world cup they put up a rooftop screen and the stall becomes a hit.",
+          "candidate_beat_index": 4,
+          "candidate_text": "At the family anniversary she plays the evidence on the dining room screen."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "run",
+        "screen",
+        "younger"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The older brother wants to expand while the younger wants to stay small."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "They agree on a second stall run by their mother."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "In front of the shocked guests she proposes to Rohan's powerful uncle Mr. Malhotra, who accepts."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S06#beat0",
+        "S06#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S03",
+      "candidate_title": "The Noodle Stall Husband",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0004,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0602,
+        "ordered_event_overlap": 0.096,
+        "lexical_cosine": 0.0808,
+        "rare_detail_overlap": 0.0952,
+        "event_set_overlap": 0.0766,
+        "plain_tfidf_cosine": 0.0704
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two brothers run a failing tea stall at a railway station.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Dev quietly pays the family's overdue rent."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.361,
+          "pitch_beat_index": 3,
+          "pitch_text": "They agree on a second stall run by their mother.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Riya agrees to a paper marriage with Dev, a noodle stall cook, so that her dying grandfather can see her settled."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "agre",
+        "cart"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The older brother wants to expand while the younger wants to stay small."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "During the world cup they put up a rooftop screen and the stall becomes a hit."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Her mother-in-law and aunts humiliate Dev at every family dinner and tell Riya to divorce him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Riya realises the paper marriage has become real, and her mother-in-law has to apologise to a noodle cook."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S03#beat2",
+        "S03#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S04",
+      "candidate_title": "Delivery Boy, Dining Empire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (7 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0306,
+        "ordered_event_overlap": 0.2401,
+        "lexical_cosine": 0.0467,
+        "rare_detail_overlap": 0.1053,
+        "event_set_overlap": 0.1876,
+        "plain_tfidf_cosine": 0.0463
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.214,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two brothers run a failing tea stall at a railway station.",
+          "candidate_beat_index": 1,
+          "candidate_text": "He falls for Pooja, a waitress at a small family cafe that is failing."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two brothers run a failing tea stall at a railway station.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Vikram secretly buys the tycoon's debt, forcing the tycoon to withdraw."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "fail",
+        "small"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The older brother wants to expand while the younger wants to stay small."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "During the world cup they put up a rooftop screen and the stall becomes a hit."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Vikram, owner of a restaurant chain, delivers food on a scooter for a week to see how his customers live."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Pooja finds the paperwork and suspects Vikram has been spying on her."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S04#beat1",
+        "S04#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S17",
+      "candidate_title": "The Mafia Boss's Nanny",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0701,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0749,
+        "rare_detail_overlap": 0.0625,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0398
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.252,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two brothers run a failing tea stall at a railway station.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She is secretly looking for the man who killed her brother."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.168,
+          "pitch_beat_index": 2,
+          "pitch_text": "The older brother wants to expand while the younger wants to stay small.",
+          "candidate_beat_index": 2,
+          "candidate_text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "brother"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "During the world cup they put up a rooftop screen and the stall becomes a hit."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "They agree on a second stall run by their mother."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Viktor catches her searching his office and demands the truth."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S17#beat1",
+        "S17#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S28",
+      "candidate_title": "Last Round",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0368,
+        "ordered_event_overlap": 0.221,
+        "lexical_cosine": 0.0301,
+        "rare_detail_overlap": 0.0476,
+        "event_set_overlap": 0.1952,
+        "plain_tfidf_cosine": 0.0287
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two brothers run a failing tea stall at a railway station.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A rival gym owner tries to buy Gudiya's contract and threatens Ravi."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.221,
+          "pitch_beat_index": 1,
+          "pitch_text": "During the world cup they put up a rooftop screen and the stall becomes a hit.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Gudiya fights in the state final, takes a heavy hit in round three and gets up."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "hit"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The older brother wants to expand while the younger wants to stay small."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "They agree on a second stall run by their mother."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Disgraced former boxing champion Ravi is banned after a match-fixing scandal."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "She wins on points as Ravi cries in her corner."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S28#beat2",
+        "S28#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "UNRELATED",
+    "relevant": [],
+    "expected_tiers": [
+      "Low"
+    ]
+  }
+}

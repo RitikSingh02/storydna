@@ -1,0 +1,507 @@
+{
+  "run_id": "20261108T073303Z_c244b51e",
+  "run_label": "round4_final_test",
+  "created_utc": "2026-11-08T07:33:03+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "T04",
+  "source_title": "T04 [PARAPHRASE]",
+  "input_sha256": "c244b51ed4174025212a484d213c49c3f1801dc7097f3b875f6d9bb58a5cd4f3",
+  "input_text": "Anya becomes a governess for the little daughter of crime lord Damon Rizzo while quietly searching for her brother's murderer. In his mansion she comes across a photograph showing that the real killer was Damon's sibling Carlo. Damon catches her snooping in his study and wants answers. She tells him everything, and he admits he too has been tracking Carlo. At his daughter's birthday party they lay a trap and Carlo is taken by police.",
+  "input_beats": 5,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S17",
+      "candidate_title": "The Mafia Boss's Nanny",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.2795,
+        "ordered_event_overlap": 0.5672,
+        "lexical_cosine": 0.3534,
+        "rare_detail_overlap": 0.375,
+        "event_set_overlap": 0.2185,
+        "plain_tfidf_cosine": 0.274
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.229,
+          "pitch_beat_index": 0,
+          "pitch_text": "Anya becomes a governess for the little daughter of crime lord Damon Rizzo while quietly searching for her brother's murderer.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She is secretly looking for the man who killed her brother."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.357,
+          "pitch_beat_index": 1,
+          "pitch_text": "In his mansion she comes across a photograph showing that the real killer was Damon's sibling Carlo.",
+          "candidate_beat_index": 2,
+          "candidate_text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.356,
+          "pitch_beat_index": 2,
+          "pitch_text": "Damon catches her snooping in his study and wants answers.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Viktor catches her searching his office and demands the truth."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.734,
+          "pitch_beat_index": 4,
+          "pitch_text": "At his daughter's birthday party they lay a trap and Carlo is taken by police.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "birthday",
+        "brother",
+        "catch",
+        "killer",
+        "party",
+        "search"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "She tells him everything, and he admits he too has been tracking Carlo."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Nina takes a job as nanny to the five-year-old daughter of mafia boss Viktor Rossi."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "She confesses, and Viktor reveals he has also been hunting Marco."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S17#beat1",
+        "S17#beat2",
+        "S17#beat3",
+        "S17#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S08",
+      "candidate_title": "Reborn Before the Fire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0007,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0738,
+        "ordered_event_overlap": 0.2523,
+        "lexical_cosine": 0.0671,
+        "rare_detail_overlap": 0.1176,
+        "event_set_overlap": 0.1317,
+        "plain_tfidf_cosine": 0.0362
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Anya becomes a governess for the little daughter of crime lord Damon Rizzo while quietly searching for her brother's murderer.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.242,
+          "pitch_beat_index": 2,
+          "pitch_text": "Damon catches her snooping in his study and wants answers.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.201,
+          "pitch_beat_index": 4,
+          "pitch_text": "At his daughter's birthday party they lay a trap and Carlo is taken by police.",
+          "candidate_beat_index": 4,
+          "candidate_text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "polic",
+        "want"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "She tells him everything, and he admits he too has been tracking Carlo."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "In his mansion she comes across a photograph showing that the real killer was Damon's sibling Carlo."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She avoids the engagement and takes the fire's date to move her family out of the house."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Remembering everything, she quietly changes her will and records the couple plotting."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S08#beat0",
+        "S08#beat0",
+        "S08#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S26",
+      "candidate_title": "Kidnapped on the Mandap",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0005,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0459,
+        "ordered_event_overlap": 0.3655,
+        "lexical_cosine": 0.0521,
+        "rare_detail_overlap": 0.1538,
+        "event_set_overlap": 0.1821,
+        "plain_tfidf_cosine": 0.0237
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Anya becomes a governess for the little daughter of crime lord Damon Rizzo while quietly searching for her brother's murderer.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She records the stepmother's call to the kidnapper and brings it to the police."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "In his mansion she comes across a photograph showing that the real killer was Damon's sibling Carlo.",
+          "candidate_beat_index": 4,
+          "candidate_text": "The stepmother is arrested at the reception."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.276,
+          "pitch_beat_index": 3,
+          "pitch_text": "She tells him everything, and he admits he too has been tracking Carlo.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Veer reveals that he refused to pay because he had already tracked the kidnappers."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 4,
+          "pitch_text": "At his daughter's birthday party they lay a trap and Carlo is taken by police.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Veer reveals that he refused to pay because he had already tracked the kidnappers."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "polic",
+        "track"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Damon catches her snooping in his study and wants answers."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Anjali escapes and discovers the kidnapper was hired by her stepmother."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Bride Anjali is abducted from her own wedding by masked men."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S26#beat3",
+        "S26#beat4",
+        "S26#beat5",
+        "S26#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S18",
+      "candidate_title": "Undercover Bride",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0005,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0509,
+        "ordered_event_overlap": 0.3951,
+        "lexical_cosine": 0.0492,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.1633,
+        "plain_tfidf_cosine": 0.0472
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.182,
+          "pitch_beat_index": 0,
+          "pitch_text": "Anya becomes a governess for the little daughter of crime lord Damon Rizzo while quietly searching for her brother's murderer.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Detective Rhea goes undercover and marries crime boss Armand Cole to collect evidence for her department."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.123,
+          "pitch_beat_index": 1,
+          "pitch_text": "In his mansion she comes across a photograph showing that the real killer was Damon's sibling Carlo.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Living in his mansion she begins to see that he protects his workers and fights a corrupt commissioner."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "In his mansion she comes across a photograph showing that the real killer was Damon's sibling Carlo.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Her handler orders her to arrest Armand on their anniversary."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "crim"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At his daughter's birthday party they lay a trap and Carlo is taken by police."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Damon catches her snooping in his study and wants answers."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "She exposes the handler on a live broadcast and has to choose between her badge and Armand."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Rhea discovers the handler is the commissioner's informant who has been selling every secret."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S18#beat0",
+        "S18#beat1",
+        "S18#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S25",
+      "candidate_title": "Twin in the Wedding Dress",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0243,
+        "ordered_event_overlap": 0.2934,
+        "lexical_cosine": 0.0674,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1038,
+        "plain_tfidf_cosine": 0.0345
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Anya becomes a governess for the little daughter of crime lord Damon Rizzo while quietly searching for her brother's murderer.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Hina finds out that Heer ran away to escape a debt to a gangster."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.146,
+          "pitch_beat_index": 1,
+          "pitch_text": "In his mansion she comes across a photograph showing that the real killer was Damon's sibling Carlo.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wears the dress and keeps up the act in the groom's mansion."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "In his mansion she comes across a photograph showing that the real killer was Damon's sibling Carlo.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Zayn pays the gangster, then asks to marry Hina for real."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At his daughter's birthday party they lay a trap and Carlo is taken by police."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Damon catches her snooping in his study and wants answers."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Twin sister Hina is begged to take her runaway sister Heer's place at a wedding to billionaire Zayn."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "He confronts her in the garden and she confesses everything."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S25#beat2",
+        "S25#beat1",
+        "S25#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S17"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

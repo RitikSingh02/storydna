@@ -1,0 +1,558 @@
+{
+  "run_id": "20261108T072919Z_502c8a3e",
+  "run_label": "round2_tuned_in_sample",
+  "created_utc": "2026-11-08T07:29:19+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 3,
+      "min_distinct_matched": 2,
+      "min_ordered": 0.5,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_lex": 0.2,
+      "min_rare": 0.15,
+      "min_ordered": 0.5,
+      "min_distinct_for_ordered": 3,
+      "min_detail_with_ordered": 0.1
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "E_S06",
+  "source_title": "E_S06 [EXACT]",
+  "input_sha256": "502c8a3e3fb9ba03835e7bd8aaa5d23a2334b75c058ee8e743fb7fc44e1c1da4",
+  "input_text": "ananya is left at the altar when her groom rohan runs away with her younger sister kavya in front of the shocked guests she proposes to rohans powerful uncle mr malhotra who accepts she moves into the malhotra house where rohan and kavya must now call her aunt ananya gathers proof that kavya and rohan stole from her late mothers trust fund at the family anniversary she plays the evidence on the dining room screen rohan and kavya are thrown out and ananya learns why the uncle really said yes",
+  "input_beats": 5,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S06",
+      "candidate_title": "Ashes at the Altar",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.9752,
+      "review_priority": "High",
+      "components": {
+        "ordered_event_overlap": 0.9643,
+        "lexical_cosine": 0.965,
+        "rare_detail_overlap": 1.0,
+        "event_set_overlap": 1.0,
+        "plain_tfidf_cosine": 0.978
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REJECTION_EXPULSION",
+            "BETRAYAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "ananya is left at the altar when her groom rohan runs away with her younger sister kavya in front of the shocked guests she proposes to rohans powerful uncle mr malhotra who",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+        },
+        {
+          "events": [
+            "ROMANTIC_TURN"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "ananya is left at the altar when her groom rohan runs away with her younger sister kavya in front of the shocked guests she proposes to rohans powerful uncle mr malhotra who",
+          "candidate_beat_index": 1,
+          "candidate_text": "In front of the shocked guests she proposes to Rohan's powerful uncle Mr. Malhotra, who accepts."
+        },
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 2,
+          "pitch_text": "and kavya must now call her aunt ananya gathers proof that kavya",
+          "candidate_beat_index": 2,
+          "candidate_text": "She moves into the Malhotra house, where Rohan and Kavya must now call her aunt."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "and kavya must now call her aunt ananya gathers proof that kavya",
+          "candidate_beat_index": 3,
+          "candidate_text": "Ananya gathers proof that Kavya and Rohan stole from her late mother's trust fund."
+        },
+        {
+          "events": [
+            "THEFT_FRAUD",
+            "INHERITANCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "and rohan stole from her late mothers trust fund at the family anniversary she plays the evidence on the dining room screen rohan",
+          "candidate_beat_index": 3,
+          "candidate_text": "Ananya gathers proof that Kavya and Rohan stole from her late mother's trust fund."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL",
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "and rohan stole from her late mothers trust fund at the family anniversary she plays the evidence on the dining room screen rohan",
+          "candidate_beat_index": 4,
+          "candidate_text": "At the family anniversary she plays the evidence on the dining room screen."
+        },
+        {
+          "events": [
+            "COMEUPPANCE",
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "and kavya are thrown out and ananya learns why the uncle really said yes",
+          "candidate_beat_index": 5,
+          "candidate_text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE",
+        "EVIDENCE",
+        "INHERITANCE",
+        "PUBLIC_REVEAL",
+        "ROMANTIC_TURN",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "BETRAYAL",
+        "FAMILY_PRESSURE",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "accept",
+        "altar",
+        "anniversary",
+        "aunt",
+        "din",
+        "gather",
+        "move",
+        "powerful",
+        "proof",
+        "propos",
+        "room",
+        "run"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "accepts she moves into the malhotra house where rohan"
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S06#beat0",
+        "S06#beat1",
+        "S06#beat2",
+        "S06#beat3",
+        "S06#beat3",
+        "S06#beat4",
+        "S06#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S05",
+      "candidate_title": "The Intern Who Owns the Floor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.2047,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.3514,
+        "lexical_cosine": 0.0321,
+        "rare_detail_overlap": 0.0833,
+        "event_set_overlap": 0.3783,
+        "plain_tfidf_cosine": 0.0171
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "and kavya must now call her aunt ananya gathers proof that kavya",
+          "candidate_beat_index": 2,
+          "candidate_text": "Naina keeps a dated sketchbook as proof while she watches him pitch her designs."
+        },
+        {
+          "events": [
+            "THEFT_FRAUD"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "and rohan stole from her late mothers trust fund at the family anniversary she plays the evidence on the dining room screen rohan",
+          "candidate_beat_index": 3,
+          "candidate_text": "At the product launch Sunil unveils her collection as his own."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "and rohan stole from her late mothers trust fund at the family anniversary she plays the evidence on the dining room screen rohan",
+          "candidate_beat_index": 4,
+          "candidate_text": "Naina shows the sketchbook on the big screen and announces that she is the owner's daughter."
+        },
+        {
+          "events": [
+            "COMEUPPANCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 4,
+          "pitch_text": "and kavya are thrown out and ananya learns why the uncle really said yes",
+          "candidate_beat_index": 5,
+          "candidate_text": "Sunil is escorted out and the company changes its credit policy."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE",
+        "EVIDENCE",
+        "INHERITANCE",
+        "PUBLIC_REVEAL",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "proof",
+        "screen"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "ananya is left at the altar when her groom rohan runs away with her younger sister kavya in front of the shocked guests she proposes to rohans powerful uncle mr malhotra who"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "accepts she moves into the malhotra house where rohan"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S05#beat2",
+        "S05#beat3",
+        "S05#beat4",
+        "S05#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S02",
+      "candidate_title": "Night Shift Owner",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1958,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.3801,
+        "lexical_cosine": 0.0427,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.3094,
+        "plain_tfidf_cosine": 0.019
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ROMANTIC_TURN"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "ananya is left at the altar when her groom rohan runs away with her younger sister kavya in front of the shocked guests she proposes to rohans powerful uncle mr malhotra who",
+          "candidate_beat_index": 1,
+          "candidate_text": "He befriends Tanya, a lonely accountant who works late and slowly trusts him."
+        },
+        {
+          "events": [
+            "THEFT_FRAUD"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "and rohan stole from her late mothers trust fund at the family anniversary she plays the evidence on the dining room screen rohan",
+          "candidate_beat_index": 2,
+          "candidate_text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL",
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "and rohan stole from her late mothers trust fund at the family anniversary she plays the evidence on the dining room screen rohan",
+          "candidate_beat_index": 5,
+          "candidate_text": "At an emergency board meeting he reveals he is the owner, plays the recording and clears Tanya."
+        }
+      ],
+      "shared_generic_tropes": [
+        "EVIDENCE",
+        "PUBLIC_REVEAL",
+        "ROMANTIC_TURN",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "and kavya are thrown out and ananya learns why the uncle really said yes"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "and kavya must now call her aunt ananya gathers proof that kavya"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "The finance chief learns about the leak and frames Tanya for the theft."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Billionaire Kabir Rao takes a job as the night janitor in his own tech company because money is disappearing from its accounts."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S02#beat1",
+        "S02#beat2",
+        "S02#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S19",
+      "candidate_title": "The Mother-in-Law Test",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1949,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.3047,
+        "lexical_cosine": 0.0522,
+        "rare_detail_overlap": 0.0588,
+        "event_set_overlap": 0.456,
+        "plain_tfidf_cosine": 0.0121
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 2,
+          "pitch_text": "and kavya must now call her aunt ananya gathers proof that kavya",
+          "candidate_beat_index": 0,
+          "candidate_text": "Daughter-in-law Aarti is treated like a servant by her mother-in-law Savitri, who criticises every dish and every task."
+        },
+        {
+          "events": [
+            "INHERITANCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "and rohan stole from her late mothers trust fund at the family anniversary she plays the evidence on the dining room screen rohan",
+          "candidate_beat_index": 2,
+          "candidate_text": "A family lawyer reveals that Savitri has been running a secret test to find out who is worthy to inherit the family temple trust."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "and rohan stole from her late mothers trust fund at the family anniversary she plays the evidence on the dining room screen rohan",
+          "candidate_beat_index": 3,
+          "candidate_text": "At the reading of the will, Savitri names Aarti the trustee because she alone never complained or cheated."
+        }
+      ],
+      "shared_generic_tropes": [
+        "INHERITANCE",
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "BETRAYAL",
+        "FAMILY_PRESSURE"
+      ],
+      "shared_rare_details": [
+        "run"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "ananya is left at the altar when her groom rohan runs away with her younger sister kavya in front of the shocked guests she proposes to rohans powerful uncle mr malhotra who"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "and kavya are thrown out and ananya learns why the uncle really said yes"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Aarti's sisters-in-law are furious."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Aarti endures it quietly for her husband's sake."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S19#beat0",
+        "S19#beat2",
+        "S19#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S07",
+      "candidate_title": "Divorce Papers, Diamond Return",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1679,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2969,
+        "lexical_cosine": 0.025,
+        "rare_detail_overlap": 0.0526,
+        "event_set_overlap": 0.311,
+        "plain_tfidf_cosine": 0.0157
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REJECTION_EXPULSION",
+            "BETRAYAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "ananya is left at the altar when her groom rohan runs away with her younger sister kavya in front of the shocked guests she proposes to rohans powerful uncle mr malhotra who",
+          "candidate_beat_index": 0,
+          "candidate_text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "ananya is left at the altar when her groom rohan runs away with her younger sister kavya in front of the shocked guests she proposes to rohans powerful uncle mr malhotra who",
+          "candidate_beat_index": 4,
+          "candidate_text": "He shows up at her studio begging to remarry."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE",
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "BETRAYAL",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "thrown"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "and kavya are thrown out and ananya learns why the uncle really said yes"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "and rohan stole from her late mothers trust fund at the family anniversary she plays the evidence on the dining room screen rohan"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Sana builds a rival brand under a new name and starts winning his clients."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She secretly is the anonymous jewellery designer whose collections made his company famous."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S07#beat0",
+        "S07#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "EXACT",
+    "relevant": [
+      "S06"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

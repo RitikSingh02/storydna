@@ -1,0 +1,681 @@
+{
+ "run_id": "20261108T080119Z_28ad5b80",
+ "run_label": "run1_first_and_only/off",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "R08",
+ "source_title": "R08",
+ "input_sha256": "28ad5b805ab888974d277fe52beb1ec841093ad64dd423da434a499c0dba1d09",
+ "input_text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai. Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain. Ab Rohan aur Kavya ko use chachi kehna padta hai. Ananya saboot jutati hai ki dono ne uski maa ke trust fund se paise churaaye the. Salgirah ki party mein wo dining room ki screen par saboot chala deti hai. Rohan aur Kavya ko ghar se nikaal diya jaata hai.",
+ "working_text_en": null,
+ "language": {
+  "detected": "hi-Latn",
+  "name": "Hindi in Roman letters (Hinglish)",
+  "script": "latin",
+  "confidence": 0.426,
+  "evidence": "43% Hindi function words vs 1% English",
+  "method": "none",
+  "reliable": true,
+  "recognised_share": null,
+  "unrecognised_sample": []
+ },
+ "input_beats": 6,
+ "input_warnings": [
+  "The text does not look like English (very few English function words; e.g. Hindi written in Roman letters). The lexicon and vocabulary are English-only, so a Low result here is NOT evidence of originality."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S06",
+   "candidate_title": "Ashes at the Altar",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.9997,
+   "review_priority": "High",
+   "components": {
+    "beat_alignment": 0.1881,
+    "ordered_event_overlap": 0.1496,
+    "lexical_cosine": 0.3029,
+    "rare_detail_overlap": 0.15,
+    "event_set_overlap": 0.0975,
+    "plain_tfidf_cosine": 0.4776
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "INHERITANCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.494,
+     "pitch_beat_index": 3,
+     "pitch_text": "Ananya saboot jutati hai ki dono ne uski maa ke trust fund se paise churaaye the.",
+     "candidate_beat_index": 3,
+     "candidate_text": "Ananya gathers proof that Kavya and Rohan stole from her late mother's trust fund."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.635,
+     "pitch_beat_index": 4,
+     "pitch_text": "Salgirah ki party mein wo dining room ki screen par saboot chala deti hai.",
+     "candidate_beat_index": 4,
+     "candidate_text": "At the family anniversary she plays the evidence on the dining room screen."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "din",
+    "room",
+    "screen"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S06#beat3",
+    "S06#beat4"
+   ],
+   "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S05",
+   "candidate_title": "The Intern Who Owns the Floor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.033,
+    "ordered_event_overlap": 0.2212,
+    "lexical_cosine": 0.0326,
+    "rare_detail_overlap": 0.0417,
+    "event_set_overlap": 0.142,
+    "plain_tfidf_cosine": 0.0166
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.198,
+     "pitch_beat_index": 4,
+     "pitch_text": "Salgirah ki party mein wo dining room ki screen par saboot chala deti hai.",
+     "candidate_beat_index": 4,
+     "candidate_text": "Naina shows the sketchbook on the big screen and announces that she is the owner's daughter."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "screen"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Naina keeps a dated sketchbook as proof while she watches him pitch her designs."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S05#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0341,
+    "ordered_event_overlap": 0.1104,
+    "lexical_cosine": 0.0506,
+    "rare_detail_overlap": 0.05,
+    "event_set_overlap": 0.0921,
+    "plain_tfidf_cosine": 0.0267
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "INHERITANCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.204,
+     "pitch_beat_index": 3,
+     "pitch_text": "Ananya saboot jutati hai ki dono ne uski maa ke trust fund se paise churaaye the.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "party"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S01#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S02",
+   "candidate_title": "Night Shift Owner",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0365,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.044,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.219,
+     "pitch_beat_index": 3,
+     "pitch_text": "Ananya saboot jutati hai ki dono ne uski maa ke trust fund se paise churaaye the.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The finance chief learns about the leak and frames Tanya for the theft."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Billionaire Kabir Rao takes a job as the night janitor in his own tech company because money is disappearing from its accounts."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S02#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S16",
+   "candidate_title": "Villainess Transmigrated",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0585,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0381,
+    "rare_detail_overlap": 0.0385,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.351,
+     "pitch_beat_index": 2,
+     "pitch_text": "Ab Rohan aur Kavya ko use chachi kehna padta hai.",
+     "candidate_beat_index": 4,
+     "candidate_text": "In the final trial Mira uses her knowledge of the novel to expose the heroine's fake visions."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "use"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Modern office worker Mira falls asleep over a web novel and wakes up inside it as the villainess who is executed in chapter thirty."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The novel's heroine turns out to be another transmigrator who wants the duke for herself."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S16#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S17",
+   "candidate_title": "The Mafia Boss's Nanny",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0346,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0378,
+    "rare_detail_overlap": 0.0625,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0173
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.208,
+     "pitch_beat_index": 4,
+     "pitch_text": "Salgirah ki party mein wo dining room ki screen par saboot chala deti hai.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "party"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Viktor catches her searching his office and demands the truth."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S17#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S09",
+   "candidate_title": "The Framed Surgeon",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.025,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0348,
+    "rare_detail_overlap": 0.0417,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0167
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "room"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Meghna takes a job as a night nurse in a rural clinic under another name."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S22",
+   "candidate_title": "The Reunion Investor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0381,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0312,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0175
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.229,
+     "pitch_beat_index": 3,
+     "pitch_text": "Ananya saboot jutati hai ki dono ne uski maa ke trust fund se paise churaaye the.",
+     "candidate_beat_index": 1,
+     "candidate_text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Ishaan gives him a job as security guard and walks away without a word."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S22#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S19",
+   "candidate_title": "The Mother-in-Law Test",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.031,
+    "ordered_event_overlap": 0.2024,
+    "lexical_cosine": 0.0232,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.1557,
+    "plain_tfidf_cosine": 0.0125
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.186,
+     "pitch_beat_index": 3,
+     "pitch_text": "Ananya saboot jutati hai ki dono ne uski maa ke trust fund se paise churaaye the.",
+     "candidate_beat_index": 2,
+     "candidate_text": "A family lawyer reveals that Savitri has been running a secret test to find out who is worthy to inherit the family temple trust."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Daughter-in-law Aarti is treated like a servant by her mother-in-law Savitri, who criticises every dish and every task."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "Aarti's sisters-in-law are furious."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S19#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S15",
+   "candidate_title": "Blood Contract",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0586,
+    "ordered_event_overlap": 0.1211,
+    "lexical_cosine": 0.0215,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.1284,
+    "plain_tfidf_cosine": 0.0123
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "INHERITANCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.351,
+     "pitch_beat_index": 3,
+     "pitch_text": "Ananya saboot jutati hai ki dono ne uski maa ke trust fund se paise churaaye the.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Lena befriends Dorian and he starts to trust her."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "To save her sick brother, Lena signs a blood contract to serve vampire prince Dorian for one year."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "In his castle she learns that the court plans to kill the prince before the coronation."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S15#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

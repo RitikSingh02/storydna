@@ -1,0 +1,394 @@
+{
+  "run_id": "20261108T073538Z_e2c61cea",
+  "run_label": "",
+  "created_utc": "2026-11-08T07:35:38+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "r09_bullet_outline",
+  "source_title": "r09_bullet_outline",
+  "input_sha256": "e2c61ceacb15d54a72878f898cf528ca5c6984e68efb80d11e97bd94ac2d7352",
+  "input_text": "- Heir poses as driver\n- Family humiliates him\n- Fiancee stands by him\n- He reveals identity at engagement party and saves her father's firm",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S01",
+      "candidate_title": "The Chauffeur's Secret",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.227,
+        "ordered_event_overlap": 0.5405,
+        "lexical_cosine": 0.394,
+        "rare_detail_overlap": 0.3,
+        "event_set_overlap": 0.5837,
+        "plain_tfidf_cosine": 0.3637
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "INHERITANCE",
+            "HIDDEN_IDENTITY"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.45,
+          "pitch_beat_index": 0,
+          "pitch_text": "Heir poses as driver",
+          "candidate_beat_index": 0,
+          "candidate_text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+        },
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Family humiliates him",
+          "candidate_beat_index": 1,
+          "candidate_text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests."
+        },
+        {
+          "events": [
+            "LOYALTY_TEST"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.36,
+          "pitch_beat_index": 2,
+          "pitch_text": "Fiancee stands by him",
+          "candidate_beat_index": 2,
+          "candidate_text": "Meera stands by him and quietly pays his fake debts from her own savings."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.553,
+          "pitch_beat_index": 3,
+          "pitch_text": "He reveals identity at engagement party and saves her father's firm",
+          "candidate_beat_index": 4,
+          "candidate_text": "Arjun walks in as the investor, reveals his real identity in front of everyone and saves the firm."
+        }
+      ],
+      "shared_generic_tropes": [
+        "HIDDEN_IDENTITY",
+        "INHERITANCE",
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION",
+        "LOYALTY_TEST"
+      ],
+      "shared_rare_details": [
+        "driver",
+        "engagement",
+        "fianc",
+        "identity",
+        "party",
+        "stand"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S01#beat0",
+        "S01#beat1",
+        "S01#beat2",
+        "S01#beat4"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S05",
+      "candidate_title": "The Intern Who Owns the Floor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0023,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0298,
+        "ordered_event_overlap": 0.5855,
+        "lexical_cosine": 0.0705,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.4591,
+        "plain_tfidf_cosine": 0.0215
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Family humiliates him",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+        }
+      ],
+      "shared_generic_tropes": [
+        "HIDDEN_IDENTITY",
+        "INHERITANCE",
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Fiancee stands by him"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Naina keeps a dated sketchbook as proof while she watches him pitch her designs."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Sunil is escorted out and the company changes its credit policy."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S05#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S08",
+      "candidate_title": "Reborn Before the Fire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0493,
+        "ordered_event_overlap": 0.1112,
+        "lexical_cosine": 0.0908,
+        "rare_detail_overlap": 0.0588,
+        "event_set_overlap": 0.0853,
+        "plain_tfidf_cosine": 0.0557
+      },
+      "matched_plot_beats": [],
+      "shared_generic_tropes": [
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "engagement"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Fiancee stands by him"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S03",
+      "candidate_title": "The Noodle Stall Husband",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0795,
+        "ordered_event_overlap": 0.0917,
+        "lexical_cosine": 0.0562,
+        "rare_detail_overlap": 0.0476,
+        "event_set_overlap": 0.1342,
+        "plain_tfidf_cosine": 0.0211
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.477,
+          "pitch_beat_index": 1,
+          "pitch_text": "Family humiliates him",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her mother-in-law and aunts humiliate Dev at every family dinner and tell Riya to divorce him."
+        }
+      ],
+      "shared_generic_tropes": [
+        "HIDDEN_IDENTITY"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "humiliat"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Fiancee stands by him"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "He reveals identity at engagement party and saves her father's firm"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Riya realises the paper marriage has become real, and her mother-in-law has to apologise to a noodle cook."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Riya agrees to a paper marriage with Dev, a noodle stall cook, so that her dying grandfather can see her settled."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S03#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0373,
+        "ordered_event_overlap": 0.2041,
+        "lexical_cosine": 0.0704,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1136,
+        "plain_tfidf_cosine": 0.0469
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Family humiliates him",
+          "candidate_beat_index": 0,
+          "candidate_text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.224,
+          "pitch_beat_index": 3,
+          "pitch_text": "He reveals identity at engagement party and saves her father's firm",
+          "candidate_beat_index": 3,
+          "candidate_text": "Rani recognises a formula on his company's patent as her late father's work."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Fiancee stands by him"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Heir poses as driver"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wins the national maths olympiad."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat0",
+        "S29#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "run_id": "20261108T072919Z_853381f9",
+  "run_label": "round2_tuned_in_sample",
+  "created_utc": "2026-11-08T07:29:19+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 3,
+      "min_distinct_matched": 2,
+      "min_ordered": 0.5,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_lex": 0.2,
+      "min_rare": 0.15,
+      "min_ordered": 0.5,
+      "min_distinct_for_ordered": 3,
+      "min_detail_with_ordered": 0.1
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "P09",
+  "source_title": "P09 [PARAPHRASE]",
+  "input_sha256": "853381f98972b3fb8702ce599cb31f9d97b25519df8c4e1e213d0a571aaac803",
+  "input_text": "Sister Mehr is pressured to stand in for her sister Noor, who fled before her wedding to tycoon Aarav. Mehr puts on the gown and plays the part at the groom's palace. She learns Noor escaped to avoid owing money to a loan shark. Aarav grows doubtful as Mehr acts nothing like the woman he knew. He challenges her in the courtyard and she tells him all. Aarav clears the loan shark's claim and then asks Mehr to marry him for real.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S25",
+      "candidate_title": "Twin in the Wedding Dress",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.5233,
+      "review_priority": "High",
+      "components": {
+        "ordered_event_overlap": 0.7533,
+        "lexical_cosine": 0.3464,
+        "rare_detail_overlap": 0.2,
+        "event_set_overlap": 0.7814,
+        "plain_tfidf_cosine": 0.1467
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "IDENTITY_SWAP"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "Mehr puts on the gown and plays the part at the groom's palace.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wears the dress and keeps up the act in the groom's mansion."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE",
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "She learns Noor escaped to avoid owing money to a loan shark.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Hina finds out that Heer ran away to escape a debt to a gangster."
+        },
+        {
+          "events": [
+            "CONFRONTATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "He challenges her in the courtyard and she tells him all.",
+          "candidate_beat_index": 4,
+          "candidate_text": "He confronts her in the garden and she confesses everything."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE",
+            "ROMANTIC_TURN"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 5,
+          "pitch_text": "Aarav clears the loan shark's claim and then asks Mehr to marry him for real.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Zayn pays the gangster, then asks to marry Hina for real."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "CRIME_VIOLENCE",
+        "ROMANTIC_TURN"
+      ],
+      "shared_distinctive_events": [
+        "CONFRONTATION",
+        "IDENTITY_SWAP"
+      ],
+      "shared_rare_details": [
+        "act",
+        "ask",
+        "dress"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Aarav grows doubtful as Mehr acts nothing like the woman he knew."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Sister Mehr is pressured to stand in for her sister Noor, who fled before her wedding to tycoon Aarav."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Twin sister Hina is begged to take her runaway sister Heer's place at a wedding to billionaire Zayn."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Zayn becomes suspicious when Hina behaves unlike the girl he met."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S25#beat1",
+        "S25#beat2",
+        "S25#beat4",
+        "S25#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S17",
+      "candidate_title": "The Mafia Boss's Nanny",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.2001,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.405,
+        "lexical_cosine": 0.0176,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.328,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "She learns Noor escaped to avoid owing money to a loan shark.",
+          "candidate_beat_index": 2,
+          "candidate_text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+        },
+        {
+          "events": [
+            "CONFRONTATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "He challenges her in the courtyard and she tells him all.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Viktor catches her searching his office and demands the truth."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 5,
+          "pitch_text": "Aarav clears the loan shark's claim and then asks Mehr to marry him for real.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [
+        "CONFRONTATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Aarav grows doubtful as Mehr acts nothing like the woman he knew."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Sister Mehr is pressured to stand in for her sister Noor, who fled before her wedding to tycoon Aarav."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She is secretly looking for the man who killed her brother."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Nina takes a job as nanny to the five-year-old daughter of mafia boss Viktor Rossi."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S17#beat2",
+        "S17#beat3",
+        "S17#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S10",
+      "candidate_title": "Swapped at Birth",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.196,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.4031,
+        "lexical_cosine": 0.0299,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.1671,
+        "plain_tfidf_cosine": 0.037
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "IDENTITY_SWAP"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Sister Mehr is pressured to stand in for her sister Noor, who fled before her wedding to tycoon Aarav.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+        },
+        {
+          "events": [
+            "IDENTITY_SWAP"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "Mehr puts on the gown and plays the part at the groom's palace.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "IDENTITY_SWAP"
+      ],
+      "shared_rare_details": [
+        "knew"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Aarav grows doubtful as Mehr acts nothing like the woman he knew."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "Aarav clears the loan shark's claim and then asks Mehr to marry him for real."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "The rich mother must publicly admit she chose the wrong child."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S10#beat0",
+        "S10#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S13",
+      "candidate_title": "The Widow's Ledger",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (5 beats)",
+      "retrieval_score": 0.1505,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.204,
+        "lexical_cosine": 0.168,
+        "rare_detail_overlap": 0.0526,
+        "event_set_overlap": 0.0801,
+        "plain_tfidf_cosine": 0.0722
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "She learns Noor escaped to avoid owing money to a loan shark.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She works at a tailoring shop and secretly buys up his creditors' notes one by one."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 5,
+          "pitch_text": "Aarav clears the loan shark's claim and then asks Mehr to marry him for real.",
+          "candidate_beat_index": 3,
+          "candidate_text": "In the hotel lobby she serves him with papers showing that she now owns every debt he ran from."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "shark"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Aarav grows doubtful as Mehr acts nothing like the woman he knew."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Sister Mehr is pressured to stand in for her sister Noor, who fled before her wedding to tycoon Aarav."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "She tracks him to a luxury hotel in another city living under a new name."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Widow Lakshmi discovers that her husband faked his death to escape his debts and left her with the loan sharks."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S13#beat1",
+        "S13#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S18",
+      "candidate_title": "Undercover Bride",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1268,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2403,
+        "lexical_cosine": 0.0321,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2102,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "She learns Noor escaped to avoid owing money to a loan shark.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Detective Rhea goes undercover and marries crime boss Armand Cole to collect evidence for her department."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 5,
+          "pitch_text": "Aarav clears the loan shark's claim and then asks Mehr to marry him for real.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Her handler orders her to arrest Armand on their anniversary."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "ROMANTIC_TURN"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Aarav grows doubtful as Mehr acts nothing like the woman he knew."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Sister Mehr is pressured to stand in for her sister Noor, who fled before her wedding to tycoon Aarav."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Living in his mansion she begins to see that he protects his workers and fights a corrupt commissioner."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "She exposes the handler on a live broadcast and has to choose between her badge and Armand."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S18#beat0",
+        "S18#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S25"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

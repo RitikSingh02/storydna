@@ -1,0 +1,458 @@
+{
+  "run_id": "20261108T073749Z_ec936a49",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "P08",
+  "source_title": "P08 [PARAPHRASE]",
+  "input_sha256": "ec936a49c1212b9b49c2e6a579107216801f0cc0a864b769d4c72e24d02d7763",
+  "input_text": "Naveen, who works under head cook Shalini, takes her private kebab formula and uses it to win a TV cooking showdown. Shalini loses her job and begins selling kebabs from a roadside cart. A food blogger posts a clip of her stall that blows up overnight. Naveen's kitchen can't recreate the secret spice. Shalini dares him to a live cooking duel before a studio crowd. She prevails and starts her own eatery.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S20",
+      "candidate_title": "The Stolen Recipe",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.4172,
+        "ordered_event_overlap": 0.9641,
+        "lexical_cosine": 0.4784,
+        "rare_detail_overlap": 0.36,
+        "event_set_overlap": 0.8934,
+        "plain_tfidf_cosine": 0.2554
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.575,
+          "pitch_beat_index": 0,
+          "pitch_text": "Naveen, who works under head cook Shalini, takes her private kebab formula and uses it to win a TV cooking showdown.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Chef Mallika's sous-chef Dhruv steals her secret biryani recipe and wins a televised cooking contest with it."
+        },
+        {
+          "events": [
+            "REJECTION_EXPULSION",
+            "COMEBACK_BUILD"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.464,
+          "pitch_beat_index": 1,
+          "pitch_text": "Shalini loses her job and begins selling kebabs from a roadside cart.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Mallika is fired from the restaurant and starts selling biryani from a street cart."
+        },
+        {
+          "events": [
+            "VIRAL_FAME"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.599,
+          "pitch_beat_index": 2,
+          "pitch_text": "A food blogger posts a clip of her stall that blows up overnight.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A food vlogger films her cart, and the video goes viral overnight."
+        },
+        {
+          "events": [
+            "CONFRONTATION",
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.422,
+          "pitch_beat_index": 4,
+          "pitch_text": "Shalini dares him to a live cooking duel before a studio crowd.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Mallika challenges Dhruv to a live cook-off in front of a studio audience."
+        },
+        {
+          "events": [
+            "CONTEST_WIN",
+            "COMEBACK_BUILD"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.442,
+          "pitch_beat_index": 5,
+          "pitch_text": "She prevails and starts her own eatery.",
+          "candidate_beat_index": 5,
+          "candidate_text": "She wins and opens her own restaurant."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "COMEBACK_BUILD",
+        "CONFRONTATION",
+        "CONTEST_WIN",
+        "REJECTION_EXPULSION",
+        "VIRAL_FAME"
+      ],
+      "shared_rare_details": [
+        "cart",
+        "chef",
+        "cook",
+        "dish",
+        "overnight",
+        "recip",
+        "restaurant",
+        "sell",
+        "studio"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Naveen's kitchen can't recreate the secret spice."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Dhruv's restaurant cannot reproduce the recipe's key ingredient."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S20#beat0",
+        "S20#beat1",
+        "S20#beat2",
+        "S20#beat4",
+        "S20#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S07",
+      "candidate_title": "Divorce Papers, Diamond Return",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0011,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0903,
+        "ordered_event_overlap": 0.2482,
+        "lexical_cosine": 0.065,
+        "rare_detail_overlap": 0.0526,
+        "event_set_overlap": 0.2168,
+        "plain_tfidf_cosine": 0.0368
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Shalini loses her job and begins selling kebabs from a roadside cart.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+        },
+        {
+          "events": [
+            "COMEBACK_BUILD"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Shalini loses her job and begins selling kebabs from a roadside cart.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Sana builds a rival brand under a new name and starts winning his clients."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "COMEBACK_BUILD",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "studio"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Naveen, who works under head cook Shalini, takes her private kebab formula and uses it to win a TV cooking showdown."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A food blogger posts a clip of her stall that blows up overnight."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Aditya's company slides toward bankruptcy, and he discovers who is behind the new brand."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Sana signs one paper only: the sale of his failing company to her."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S07#beat0",
+        "S07#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S04",
+      "candidate_title": "Delivery Boy, Dining Empire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (7 beats)",
+      "retrieval_score": 0.0005,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.1347,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0901,
+        "rare_detail_overlap": 0.0526,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.032
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.278,
+          "pitch_beat_index": 3,
+          "pitch_text": "Naveen's kitchen can't recreate the secret spice.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Vikram secretly buys the tycoon's debt, forcing the tycoon to withdraw."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.508,
+          "pitch_beat_index": 5,
+          "pitch_text": "She prevails and starts her own eatery.",
+          "candidate_beat_index": 6,
+          "candidate_text": "He reopens the cafe in her name."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "restaurant"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Shalini loses her job and begins selling kebabs from a roadside cart."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Naveen, who works under head cook Shalini, takes her private kebab formula and uses it to win a TV cooking showdown."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "He falls for Pooja, a waitress at a small family cafe that is failing."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Pooja finds the paperwork and suspects Vikram has been spying on her."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S04#beat3",
+        "S04#beat6"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S18",
+      "candidate_title": "Undercover Bride",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0004,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0959,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0709,
+        "rare_detail_overlap": 0.0909,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0793
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.254,
+          "pitch_beat_index": 3,
+          "pitch_text": "Naveen's kitchen can't recreate the secret spice.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Rhea discovers the handler is the commissioner's informant who has been selling every secret."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "begin",
+        "sell"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Naveen, who works under head cook Shalini, takes her private kebab formula and uses it to win a TV cooking showdown."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A food blogger posts a clip of her stall that blows up overnight."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Detective Rhea goes undercover and marries crime boss Armand Cole to collect evidence for her department."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Her handler orders her to arrest Armand on their anniversary."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S18#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S28",
+      "candidate_title": "Last Round",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0004,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0405,
+        "ordered_event_overlap": 0.5201,
+        "lexical_cosine": 0.0412,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2455,
+        "plain_tfidf_cosine": 0.0238
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Naveen, who works under head cook Shalini, takes her private kebab formula and uses it to win a TV cooking showdown.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Disgraced former boxing champion Ravi is banned after a match-fixing scandal."
+        },
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Shalini loses her job and begins selling kebabs from a roadside cart.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Disgraced former boxing champion Ravi is banned after a match-fixing scandal."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONTEST_WIN",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A food blogger posts a clip of her stall that blows up overnight."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Naveen's kitchen can't recreate the secret spice."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "A rival gym owner tries to buy Gudiya's contract and threatens Ravi."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Ravi proves in public that the match-fixing was ordered by that same owner."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S28#beat0",
+        "S28#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S20"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

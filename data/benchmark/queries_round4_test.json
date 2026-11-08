@@ -1,0 +1,41 @@
+{
+  "_comment": "FINAL TEST SET. Written after the scorer was calibrated; the tool version that scores it was frozen first and this set was run exactly once. Same author as catalogue - not independent.",
+  "exact_ids": [],
+  "queries": [
+    {"qid": "T01", "category": "PARAPHRASE", "relevant": ["S09"], "expected": ["High"],
+     "text": "A patient dies on the table and the blame lands on cardiac specialist Dr. Iyer, who is stripped of her medical registration. In truth her competitor, Dr. Pillai, had secretly replaced the drug vial's label. Iyer hides in a remote village health post, working nights as a nurse under another surname. An old patient there gives her a dusty laptop containing footage from the operating theatre. She mails the footage to the medical board while a conference is being streamed. Pillai is taken away in handcuffs and Iyer is begged to return."},
+    {"qid": "T02", "category": "PARAPHRASE", "relevant": ["S13"], "expected": ["High"],
+     "text": "Savitri learns that her husband staged his own passing to dodge what he owed, leaving her at the mercy of moneylenders. She takes a seamstress job and, bit by bit, acquires every IOU he left behind. Following his trail to a five-star hotel in another town, she finds him living under a different name. In the lobby she hands him documents proving she now holds all his debts. He surrenders his concealed bank accounts to stay out of jail."},
+    {"qid": "T03", "category": "PARAPHRASE", "relevant": ["S26"], "expected": ["High"],
+     "text": "Masked men snatch Divya from her own wedding hall. Her fiance Kabir declines to hand over the ransom money, which makes her relatives hate him. Divya gets away and learns her stepmother paid the abductors. She records the stepmother's phone call to the gang and gives it to the police. At the wedding reception the stepmother is taken into custody. Kabir explains he refused because he had already located the gang."},
+    {"qid": "T04", "category": "PARAPHRASE", "relevant": ["S17"], "expected": ["High"],
+     "text": "Anya becomes a governess for the little daughter of crime lord Damon Rizzo while quietly searching for her brother's murderer. In his mansion she comes across a photograph showing that the real killer was Damon's sibling Carlo. Damon catches her snooping in his study and wants answers. She tells him everything, and he admits he too has been tracking Carlo. At his daughter's birthday party they lay a trap and Carlo is taken by police."},
+    {"qid": "T05", "category": "PARAPHRASE", "relevant": ["S29"], "expected": ["High"],
+     "text": "A village girl on a free place at an elite school is laughed at for her patched uniform and rural accent. She wins the national mathematics championship. The trophies are handed out by Mr. Verma, the father of the classmate who tormented her most. She notices that a formula in his firm's patent is the work of her dead father. She locates her father's old diary and takes it to an attorney. Mr. Verma has to give her a share of the patent."},
+
+    {"qid": "T06", "category": "PARTIAL", "relevant": ["S10"], "expected": ["Medium", "High"],
+     "text": "Teen Sana learns through a DNA test that she was swapped at birth with a wealthy couple's child. The wealthy family welcomes her warmly, but the girl raised in their home feels pushed out and sabotages Sana's school admission. Sana finds the hospital register showing the swap was an honest mix-up and presents it at the family's anniversary dinner. Both girls are accepted as daughters."},
+    {"qid": "T07", "category": "PARTIAL", "relevant": ["S08"], "expected": ["Medium", "High"],
+     "text": "Kiran is killed in a staged car crash by her brother-in-law Veer, who wants the family business. She wakes up two years earlier at her father's birthday. She secretly records Veer's phone calls, sells her shares to a trusted friend and warns her father to avoid the highway on the crash date. When the crash is attempted, an empty car goes off the road and the police trace it to Veer. Veer's accomplice talks and Kiran takes over the company."},
+
+    {"qid": "T08", "category": "TROPE_ONLY", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "Fresh graduate Tara joins an advertising firm as an intern. Her boss steals her campaign idea and gets promoted for it. Tara quits and goes freelance, and her next campaign wins an industry award. Her old boss applies for a job at her agency."},
+    {"qid": "T09", "category": "TROPE_CHAIN_TRAP", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "Rich college student Yash pretends to be a scholarship kid for one semester to make real friends. His roommate bullies him for his cheap clothes. Yash tutors the bully for exams and they become friends. At graduation Yash invites everyone to his family's farmhouse, and the roommate laughs and says he knew all along."},
+    {"qid": "T10", "category": "TROPE_ONLY", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "Vampire princess Esme is promised in marriage to a rival clan's prince. She refuses on the wedding night and flees to the human world, where she opens a flower shop. The prince follows her and learns to garden. The two clans sign a peace treaty in her shop."},
+    {"qid": "T11", "category": "TROPE_ONLY", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "After a hiking accident, climber Vir loses his memory and is taken in by a village family. He learns farming and falls in love with their daughter. When his memory returns he must decide whether to go back to his billionaire life. He chooses the village."},
+    {"qid": "T12", "category": "TROPE_ONLY", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "Four cousins gather to hear their grandmother's will. She has left her bungalow to the family cook. The cousins sue the cook, but the court finds that the grandmother wrote the will in her own hand. The cook turns the bungalow into a school."},
+    {"qid": "T13", "category": "TROPE_CHAIN_TRAP", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "At her school reunion, caterer Jaya serves classmates who once mocked her. Nobody recognises her. A former friend quietly apologises. Jaya wins the catering contract for the class's company event."},
+    {"qid": "T14", "category": "TROPE_ONLY", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "Village girl Lata is picked for the national kabaddi trials. She trains with a retired coach and is injured the week before the trial. She plays anyway and wins a place on the team."},
+
+    {"qid": "T15", "category": "UNRELATED", "relevant": [], "expected": ["Low"],
+     "text": "Marine biologist Anika studies a dying coral reef. She discovers that a hotel's drainage pipes are poisoning it. She collects samples, teaches local fishermen to test the water and files a case at the green tribunal. The hotel installs a treatment plant."},
+    {"qid": "T16", "category": "UNRELATED", "relevant": [], "expected": ["Low"],
+     "text": "Two brothers run a failing tea stall at a railway station. During the world cup they put up a rooftop screen and the stall becomes a hit. The older brother wants to expand while the younger wants to stay small. They agree on a second stall run by their mother."}
+  ]
+}

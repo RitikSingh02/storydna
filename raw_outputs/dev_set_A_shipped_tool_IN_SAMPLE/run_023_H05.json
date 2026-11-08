@@ -1,0 +1,404 @@
+{
+  "run_id": "20261108T073749Z_f1db4acf",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "H05",
+  "source_title": "H05 [TROPE_CHAIN_TRAP]",
+  "input_sha256": "f1db4acf51cfba56b4902e2ba63fa66732b05040f03d73bb99465bd720926d4b",
+  "input_text": "Baker Mira is betrayed by her business partner and fiance, who sells her shop behind her back and leaves her with nothing. She rebuilds a bakery from a rented kitchen under a new name and wins the city's best customers. The partner's chain of stores starts losing money. Mira buys his company through a trust, and when he comes begging for a job she hands him an apron.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S07",
+      "candidate_title": "Divorce Papers, Diamond Return",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1244,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0478,
+        "ordered_event_overlap": 0.5976,
+        "lexical_cosine": 0.1035,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.6636,
+        "plain_tfidf_cosine": 0.1106
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BETRAYAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Baker Mira is betrayed by her business partner and fiance, who sells her shop behind her back and leaves her with nothing.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+        },
+        {
+          "events": [
+            "COMEBACK_BUILD",
+            "HIDDEN_IDENTITY"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "She rebuilds a bakery from a rented kitchen under a new name and wins the city's best customers.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Sana builds a rival brand under a new name and starts winning his clients."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "HIDDEN_IDENTITY"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "BETRAYAL",
+        "COMEBACK_BUILD",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She secretly is the anonymous jewellery designer whose collections made his company famous."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Sana signs one paper only: the sale of his failing company to her."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S07#beat0",
+        "S07#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S13",
+      "candidate_title": "The Widow's Ledger",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (5 beats)",
+      "retrieval_score": 0.0037,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0787,
+        "ordered_event_overlap": 0.2113,
+        "lexical_cosine": 0.0985,
+        "rare_detail_overlap": 0.1,
+        "event_set_overlap": 0.1332,
+        "plain_tfidf_cosine": 0.0998
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.212,
+          "pitch_beat_index": 0,
+          "pitch_text": "Baker Mira is betrayed by her business partner and fiance, who sells her shop behind her back and leaves her with nothing.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She works at a tailoring shop and secretly buys up his creditors' notes one by one."
+        },
+        {
+          "events": [
+            "HIDDEN_IDENTITY"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.182,
+          "pitch_beat_index": 1,
+          "pitch_text": "She rebuilds a bakery from a rented kitchen under a new name and wins the city's best customers.",
+          "candidate_beat_index": 2,
+          "candidate_text": "She tracks him to a luxury hotel in another city living under a new name."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "HIDDEN_IDENTITY"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "city",
+        "stor"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Mira buys his company through a trust, and when he comes begging for a job she hands him an apron."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Widow Lakshmi discovers that her husband faked his death to escape his debts and left her with the loan sharks."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "He signs over his hidden accounts to avoid prison."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S13#beat1",
+        "S13#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S01",
+      "candidate_title": "The Chauffeur's Secret",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0026,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0711,
+        "ordered_event_overlap": 0.2349,
+        "lexical_cosine": 0.1239,
+        "rare_detail_overlap": 0.05,
+        "event_set_overlap": 0.2455,
+        "plain_tfidf_cosine": 0.0432
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.221,
+          "pitch_beat_index": 0,
+          "pitch_text": "Baker Mira is betrayed by her business partner and fiance, who sells her shop behind her back and leaves her with nothing.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.206,
+          "pitch_beat_index": 3,
+          "pitch_text": "Mira buys his company through a trust, and when he comes begging for a job she hands him an apron.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "HIDDEN_IDENTITY",
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY"
+      ],
+      "shared_rare_details": [
+        "fianc"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Meera stands by him and quietly pays his fake debts from her own savings."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S01#beat0",
+        "S01#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S20",
+      "candidate_title": "The Stolen Recipe",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0016,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0579,
+        "ordered_event_overlap": 0.3778,
+        "lexical_cosine": 0.0666,
+        "rare_detail_overlap": 0.04,
+        "event_set_overlap": 0.3087,
+        "plain_tfidf_cosine": 0.0445
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.17,
+          "pitch_beat_index": 0,
+          "pitch_text": "Baker Mira is betrayed by her business partner and fiance, who sells her shop behind her back and leaves her with nothing.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Mallika is fired from the restaurant and starts selling biryani from a street cart."
+        },
+        {
+          "events": [
+            "COMEBACK_BUILD"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "She rebuilds a bakery from a rented kitchen under a new name and wins the city's best customers.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Mallika is fired from the restaurant and starts selling biryani from a street cart."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "COMEBACK_BUILD",
+        "CONTEST_WIN",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "sell"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Mira buys his company through a trust, and when he comes begging for a job she hands him an apron."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The partner's chain of stores starts losing money."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Chef Mallika's sous-chef Dhruv steals her secret biryani recipe and wins a televised cooking contest with it."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "A food vlogger films her cart, and the video goes viral overnight."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S20#beat1",
+        "S20#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S04",
+      "candidate_title": "Delivery Boy, Dining Empire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (7 beats)",
+      "retrieval_score": 0.0013,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.052,
+        "ordered_event_overlap": 0.2294,
+        "lexical_cosine": 0.0929,
+        "rare_detail_overlap": 0.1053,
+        "event_set_overlap": 0.1478,
+        "plain_tfidf_cosine": 0.0765
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.205,
+          "pitch_beat_index": 2,
+          "pitch_text": "The partner's chain of stores starts losing money.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Vikram, owner of a restaurant chain, delivers food on a scooter for a week to see how his customers live."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "HIDDEN_IDENTITY"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "chain",
+        "customer"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Baker Mira is betrayed by her business partner and fiance, who sells her shop behind her back and leaves her with nothing."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "He falls for Pooja, a waitress at a small family cafe that is failing."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Pooja finds the paperwork and suspects Vikram has been spying on her."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S04#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_CHAIN_TRAP",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

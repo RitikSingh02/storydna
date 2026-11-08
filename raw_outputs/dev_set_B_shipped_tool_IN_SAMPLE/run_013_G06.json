@@ -1,0 +1,380 @@
+{
+  "run_id": "20261108T073750Z_d5a4d15f",
+  "run_label": "dev_set_B_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:50+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "G06",
+  "source_title": "G06 [PARTIAL]",
+  "input_sha256": "d5a4d15f5e8d79fd592f705a90a775351a58c98ef34f638b6fc3c17d2429a536",
+  "input_text": "Funeral director Bhaskar relives the same funeral day after a storm hits the crematorium. Each loop he finds a new problem: a missing urn, a flooded hall, an absent priest. He slowly realises that one mourner is sabotaging every loop. He catches the saboteur, the dead man's business partner, with a fake will. The loop ends only when Bhaskar lets the service go ahead imperfectly.",
+  "input_beats": 5,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S27",
+      "candidate_title": "The Same Wedding Day",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.4769,
+        "ordered_event_overlap": 0.6837,
+        "lexical_cosine": 0.4614,
+        "rare_detail_overlap": 0.35,
+        "event_set_overlap": 0.5194,
+        "plain_tfidf_cosine": 0.4544
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REBIRTH_TIME"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.245,
+          "pitch_beat_index": 0,
+          "pitch_text": "Funeral director Bhaskar relives the same funeral day after a storm hits the crematorium.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Wedding planner Tanvi relives the same wedding day every morning after a lightning strike."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.534,
+          "pitch_beat_index": 1,
+          "pitch_text": "Each loop he finds a new problem: a missing urn, a flooded hall, an absent priest.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Each loop she finds a different disaster: a missing ring, a food poisoning, a runaway groom."
+        },
+        {
+          "events": [
+            "THEFT_FRAUD"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.913,
+          "pitch_beat_index": 2,
+          "pitch_text": "He slowly realises that one mourner is sabotaging every loop.",
+          "candidate_beat_index": 2,
+          "candidate_text": "She slowly realises one guest is sabotaging every loop."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.422,
+          "pitch_beat_index": 3,
+          "pitch_text": "He catches the saboteur, the dead man's business partner, with a fake will.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She traps the saboteur, the bride's ex, with a fake gift."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.748,
+          "pitch_beat_index": 4,
+          "pitch_text": "The loop ends only when Bhaskar lets the service go ahead imperfectly.",
+          "candidate_beat_index": 4,
+          "candidate_text": "The loop breaks only when she lets the wedding go ahead with its imperfections."
+        }
+      ],
+      "shared_generic_tropes": [
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "REBIRTH_TIME"
+      ],
+      "shared_rare_details": [
+        "ahead",
+        "let",
+        "loop",
+        "miss",
+        "reliv",
+        "sabotag",
+        "saboteur"
+      ],
+      "differentiating_beats": [],
+      "supporting_excerpt_or_scene_id": [
+        "S27#beat0",
+        "S27#beat1",
+        "S27#beat2",
+        "S27#beat3",
+        "S27#beat4"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S16",
+      "candidate_title": "Villainess Transmigrated",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0,
+        "ordered_event_overlap": 0.369,
+        "lexical_cosine": 0.0166,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2924,
+        "plain_tfidf_cosine": 0.0157
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REBIRTH_TIME"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Funeral director Bhaskar relives the same funeral day after a storm hits the crematorium.",
+          "candidate_beat_index": 3,
+          "candidate_text": "The novel's heroine turns out to be another transmigrator who wants the duke for herself."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "REBIRTH_TIME"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Each loop he finds a new problem: a missing urn, a flooded hall, an absent priest."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "The loop ends only when Bhaskar lets the service go ahead imperfectly."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Modern office worker Mira falls asleep over a web novel and wakes up inside it as the villainess who is executed in chapter thirty."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "In the final trial Mira uses her knowledge of the novel to expose the heroine's fake visions."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S16#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S17",
+      "candidate_title": "The Mafia Boss's Nanny",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.041,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.062,
+        "rare_detail_overlap": 0.0625,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0507
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.246,
+          "pitch_beat_index": 3,
+          "pitch_text": "He catches the saboteur, the dead man's business partner, with a fake will.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Viktor catches her searching his office and demands the truth."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "catch"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Each loop he finds a new problem: a missing urn, a flooded hall, an absent priest."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Funeral director Bhaskar relives the same funeral day after a storm hits the crematorium."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S17#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S01",
+      "candidate_title": "The Chauffeur's Secret",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0275,
+        "ordered_event_overlap": 0.1002,
+        "lexical_cosine": 0.058,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.0787,
+        "plain_tfidf_cosine": 0.0419
+      },
+      "matched_plot_beats": [],
+      "shared_generic_tropes": [
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Each loop he finds a new problem: a missing urn, a flooded hall, an absent priest."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Funeral director Bhaskar relives the same funeral day after a storm hits the crematorium."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S12",
+      "candidate_title": "The Maid Who Was His Wife",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0341,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0472,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0422
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.205,
+          "pitch_beat_index": 2,
+          "pitch_text": "He slowly realises that one mourner is sabotaging every loop.",
+          "candidate_beat_index": 5,
+          "candidate_text": "The husband realises how he was deceived, and Diya is removed."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Each loop he finds a new problem: a missing urn, a flooded hall, an absent priest."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Funeral director Bhaskar relives the same funeral day after a storm hits the crematorium."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "After a car crash, Zoya wakes up with no memory."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She slowly recovers her memory but pretends to still be confused."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S12#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARTIAL",
+    "relevant": [
+      "S27"
+    ],
+    "expected_tiers": [
+      "Medium",
+      "High"
+    ]
+  }
+}

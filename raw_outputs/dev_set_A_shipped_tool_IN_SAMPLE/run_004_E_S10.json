@@ -1,0 +1,426 @@
+{
+  "run_id": "20261108T073749Z_c23e885c",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "E_S10",
+  "source_title": "E_S10 [EXACT]",
+  "input_sha256": "c23e885cde1d107fbfddd4bdba8307e1bbad1b5dcbbe1f5fda08ec6990dbede5",
+  "input_text": "tara a girl raised in a slum learns through a dna test that she was swapped at birth with the daughter of a rich family the rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised simran simran secretly knew the truth for years and hid the test results tara finds the hospital file proving simrans mother paid the nurse to swap the babies at the familys charity gala she reveals the file the rich mother must publicly admit she chose the wrong child",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S10",
+      "candidate_title": "Swapped at Birth",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.5361,
+        "ordered_event_overlap": 1.0,
+        "lexical_cosine": 0.9752,
+        "rare_detail_overlap": 1.0,
+        "event_set_overlap": 1.0,
+        "plain_tfidf_cosine": 0.9793
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "DNA_TEST",
+            "IDENTITY_SWAP"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.907,
+          "pitch_beat_index": 0,
+          "pitch_text": "tara a girl raised in a slum learns through a dna test that she was swapped at birth with the daughter of a rich family the rich family brings her home",
+          "candidate_beat_index": 0,
+          "candidate_text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+        },
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.674,
+          "pitch_beat_index": 1,
+          "pitch_text": "but treats her as an embarrassment and keeps favouring the girl they raised simran simran secretly knew the truth for years",
+          "candidate_beat_index": 1,
+          "candidate_text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL",
+            "IDENTITY_SWAP"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.735,
+          "pitch_beat_index": 2,
+          "pitch_text": "and hid the test results tara finds the hospital file proving simrans mother paid the nurse to swap the babies at the familys charity gala she reveals the file the rich mother",
+          "candidate_beat_index": 3,
+          "candidate_text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.9,
+          "pitch_beat_index": 3,
+          "pitch_text": "must publicly admit she chose the wrong child",
+          "candidate_beat_index": 5,
+          "candidate_text": "The rich mother must publicly admit she chose the wrong child."
+        }
+      ],
+      "shared_generic_tropes": [
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "DNA_TEST",
+        "HUMILIATION",
+        "IDENTITY_SWAP",
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "admit",
+        "baby",
+        "birth",
+        "bring",
+        "charity",
+        "child",
+        "chos",
+        "dna",
+        "embarrassment",
+        "favour",
+        "file",
+        "hid"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Simran secretly knew the truth for years and hid the test results."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S10#beat0",
+        "S10#beat1",
+        "S10#beat3",
+        "S10#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S24",
+      "candidate_title": "The Street Singer's Voice",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0672,
+        "ordered_event_overlap": 0.2306,
+        "lexical_cosine": 0.0789,
+        "rare_detail_overlap": 0.0938,
+        "event_set_overlap": 0.1723,
+        "plain_tfidf_cosine": 0.0521
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "DNA_TEST"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.276,
+          "pitch_beat_index": 0,
+          "pitch_text": "tara a girl raised in a slum learns through a dna test that she was swapped at birth with the daughter of a rich family the rich family brings her home",
+          "candidate_beat_index": 2,
+          "candidate_text": "A DNA test confirms it."
+        }
+      ],
+      "shared_generic_tropes": [
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "DNA_TEST"
+      ],
+      "shared_rare_details": [
+        "baby",
+        "dna",
+        "home"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "but treats her as an embarrassment and keeps favouring the girl they raised simran simran secretly knew the truth for years"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "must publicly admit she chose the wrong child"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Orphan singer Ria performs on busy streets, and a viral video reaches the wealthy Kapoor family."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Ria is welcomed home, but her stepbrother schemes to push her out before the inheritance is divided."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S24#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S21",
+      "candidate_title": "Kidney for a Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0009,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0567,
+        "ordered_event_overlap": 0.3173,
+        "lexical_cosine": 0.0725,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.2576,
+        "plain_tfidf_cosine": 0.0362
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "DNA_TEST"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "tara a girl raised in a slum learns through a dna test that she was swapped at birth with the daughter of a rich family the rich family brings her home",
+          "candidate_beat_index": 2,
+          "candidate_text": "At the hospital they learn that Samaira's blood matches his mother's."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "and hid the test results tara finds the hospital file proving simrans mother paid the nurse to swap the babies at the familys charity gala she reveals the file the rich mother",
+          "candidate_beat_index": 4,
+          "candidate_text": "Karan finds out on the day of the operation and storms into the operating theatre."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "DNA_TEST",
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "admit"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "but treats her as an embarrassment and keeps favouring the girl they raised simran simran secretly knew the truth for years"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Samaira secretly agrees to donate a kidney and swears the doctors to silence."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Karan needs money for his mother's kidney transplant and signs a contract to work as bodyguard to heiress Samaira."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S21#beat2",
+        "S21#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S19",
+      "candidate_title": "The Mother-in-Law Test",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0225,
+        "ordered_event_overlap": 0.2193,
+        "lexical_cosine": 0.0658,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1681,
+        "plain_tfidf_cosine": 0.0358
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "but treats her as an embarrassment and keeps favouring the girl they raised simran simran secretly knew the truth for years",
+          "candidate_beat_index": 0,
+          "candidate_text": "Daughter-in-law Aarti is treated like a servant by her mother-in-law Savitri, who criticises every dish and every task."
+        }
+      ],
+      "shared_generic_tropes": [
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "tara a girl raised in a slum learns through a dna test that she was swapped at birth with the daughter of a rich family the rich family brings her home"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "must publicly admit she chose the wrong child"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Aarti's sisters-in-law are furious."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Aarti endures it quietly for her husband's sake."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S19#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S11",
+      "candidate_title": "Twins He Never Knew",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.048,
+        "ordered_event_overlap": 0.1307,
+        "lexical_cosine": 0.0528,
+        "rare_detail_overlap": 0.04,
+        "event_set_overlap": 0.1148,
+        "plain_tfidf_cosine": 0.0334
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "DNA_TEST"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "tara a girl raised in a slum learns through a dna test that she was swapped at birth with the daughter of a rich family the rich family brings her home",
+          "candidate_beat_index": 3,
+          "candidate_text": "He demands a paternity test and fights for custody."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "DNA_TEST"
+      ],
+      "shared_rare_details": [
+        "rais"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "must publicly admit she chose the wrong child"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Armaan confronts his mother, and the boys ask their parents to come to the school play together."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S11#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "EXACT",
+    "relevant": [
+      "S10"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

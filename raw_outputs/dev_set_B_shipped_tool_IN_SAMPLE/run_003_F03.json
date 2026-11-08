@@ -1,0 +1,453 @@
+{
+  "run_id": "20261108T073750Z_fe4c8e7a",
+  "run_label": "dev_set_B_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:50+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "F03",
+  "source_title": "F03 [PARAPHRASE]",
+  "input_sha256": "fe4c8e7ac64871cb41d608efbbed5cf0f68a06ba68344c922eec6238091c686b",
+  "input_text": "Desperate to pay for her ill brother's treatment, Mara pledges herself in a blood pact to serve a vampire heir, Lucian, for twelve months. Inside his fortress she overhears that the court intends to murder him before he is crowned. Mara becomes his friend and he begins to rely on her. She works out that a poison is reaching him via the royal wine, sent by his own chamberlain. At the crowning feast she swaps the cups. The chamberlain drinks his own poison, and Lucian proposes to burn the pact.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S15",
+      "candidate_title": "Blood Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.302,
+        "ordered_event_overlap": 0.5309,
+        "lexical_cosine": 0.3403,
+        "rare_detail_overlap": 0.4737,
+        "event_set_overlap": 0.8123,
+        "plain_tfidf_cosine": 0.3254
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.556,
+          "pitch_beat_index": 0,
+          "pitch_text": "Desperate to pay for her ill brother's treatment, Mara pledges herself in a blood pact to serve a vampire heir, Lucian, for twelve months.",
+          "candidate_beat_index": 0,
+          "candidate_text": "To save her sick brother, Lena signs a blood contract to serve vampire prince Dorian for one year."
+        },
+        {
+          "events": [
+            "SUPERNATURAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Desperate to pay for her ill brother's treatment, Mara pledges herself in a blood pact to serve a vampire heir, Lucian, for twelve months.",
+          "candidate_beat_index": 1,
+          "candidate_text": "In his castle she learns that the court plans to kill the prince before the coronation."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.288,
+          "pitch_beat_index": 1,
+          "pitch_text": "Inside his fortress she overhears that the court intends to murder him before he is crowned.",
+          "candidate_beat_index": 1,
+          "candidate_text": "In his castle she learns that the court plans to kill the prince before the coronation."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.542,
+          "pitch_beat_index": 3,
+          "pitch_text": "She works out that a poison is reaching him via the royal wine, sent by his own chamberlain.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She discovers that the poison is being delivered through the royal wine by the prince's own steward."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.425,
+          "pitch_beat_index": 5,
+          "pitch_text": "The chamberlain drinks his own poison, and Lucian proposes to burn the pact.",
+          "candidate_beat_index": 5,
+          "candidate_text": "The steward drinks the poison, and Dorian offers to tear up the contract."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "INHERITANCE",
+        "ROMANTIC_TURN"
+      ],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL",
+        "SUPERNATURAL"
+      ],
+      "shared_rare_details": [
+        "blood",
+        "brother",
+        "court",
+        "drink",
+        "poison",
+        "royal",
+        "serv",
+        "vampir",
+        "wine"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At the crowning feast she swaps the cups."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Mara becomes his friend and he begins to rely on her."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "She switches the goblets at the coronation banquet."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S15#beat0",
+        "S15#beat1",
+        "S15#beat1",
+        "S15#beat3",
+        "S15#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S08",
+      "candidate_title": "Reborn Before the Fire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0011,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.09,
+        "ordered_event_overlap": 0.2002,
+        "lexical_cosine": 0.0765,
+        "rare_detail_overlap": 0.1176,
+        "event_set_overlap": 0.1866,
+        "plain_tfidf_cosine": 0.0246
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.288,
+          "pitch_beat_index": 2,
+          "pitch_text": "Mara becomes his friend and he begins to rely on her.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.252,
+          "pitch_beat_index": 5,
+          "pitch_text": "The chamberlain drinks his own poison, and Lucian proposes to burn the pact.",
+          "candidate_beat_index": 4,
+          "candidate_text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "fire",
+        "friend"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Inside his fortress she overhears that the court intends to murder him before he is crowned."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "She works out that a poison is reaching him via the royal wine, sent by his own chamberlain."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She avoids the engagement and takes the fire's date to move her family out of the house."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wakes up three years in the past on the day of her engagement."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S08#beat0",
+        "S08#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S17",
+      "candidate_title": "The Mafia Boss's Nanny",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0327,
+        "ordered_event_overlap": 0.408,
+        "lexical_cosine": 0.0399,
+        "rare_detail_overlap": 0.0625,
+        "event_set_overlap": 0.1149,
+        "plain_tfidf_cosine": 0.033
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.196,
+          "pitch_beat_index": 0,
+          "pitch_text": "Desperate to pay for her ill brother's treatment, Mara pledges herself in a blood pact to serve a vampire heir, Lucian, for twelve months.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She is secretly looking for the man who killed her brother."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "brother"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At the crowning feast she swaps the cups."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Mara becomes his friend and he begins to rely on her."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Viktor catches her searching his office and demands the truth."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Nina takes a job as nanny to the five-year-old daughter of mafia boss Viktor Rossi."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S17#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S21",
+      "candidate_title": "Kidney for a Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0331,
+        "ordered_event_overlap": 0.1886,
+        "lexical_cosine": 0.0508,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.1416,
+        "plain_tfidf_cosine": 0.0183
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL",
+            "INHERITANCE"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Desperate to pay for her ill brother's treatment, Mara pledges herself in a blood pact to serve a vampire heir, Lucian, for twelve months.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Karan needs money for his mother's kidney transplant and signs a contract to work as bodyguard to heiress Samaira."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.199,
+          "pitch_beat_index": 0,
+          "pitch_text": "Desperate to pay for her ill brother's treatment, Mara pledges herself in a blood pact to serve a vampire heir, Lucian, for twelve months.",
+          "candidate_beat_index": 2,
+          "candidate_text": "At the hospital they learn that Samaira's blood matches his mother's."
+        }
+      ],
+      "shared_generic_tropes": [
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "blood"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Inside his fortress she overhears that the court intends to murder him before he is crowned."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "The chamberlain drinks his own poison, and Lucian proposes to burn the pact."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Samaira secretly agrees to donate a kidney and swears the doctors to silence."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Karan finds out on the day of the operation and storms into the operating theatre."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S21#beat0",
+        "S21#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S30",
+      "candidate_title": "The Last Will Game",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0247,
+        "ordered_event_overlap": 0.2751,
+        "lexical_cosine": 0.0373,
+        "rare_detail_overlap": 0.0588,
+        "event_set_overlap": 0.2502,
+        "plain_tfidf_cosine": 0.0206
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Desperate to pay for her ill brother's treatment, Mara pledges herself in a blood pact to serve a vampire heir, Lucian, for twelve months.",
+          "candidate_beat_index": 0,
+          "candidate_text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+        }
+      ],
+      "shared_generic_tropes": [
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "month"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Inside his fortress she overhears that the court intends to murder him before he is crowned."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "The chamberlain drinks his own poison, and Lucian proposes to burn the pact."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "A hidden clause in the will says the heir must be the one who stayed."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S30#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S15"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

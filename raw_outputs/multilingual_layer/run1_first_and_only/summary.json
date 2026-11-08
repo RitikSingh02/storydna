@@ -1,0 +1,32 @@
+{
+  "off": {
+    "positives": 16,
+    "pos_rank1": 11,
+    "pos_rank1_and_High": 8,
+    "pos_top1_Low": 8,
+    "negatives": 6,
+    "neg_any_High": 0,
+    "neg_top1_Medium_or_High": 0,
+    "invalid_reports": 0,
+    "by_set_positives_rank1_and_High": {
+      "multilingual": "4/8",
+      "multilingual_hard": "0/4",
+      "multilingual_roman_pure": "4/4"
+    }
+  },
+  "auto": {
+    "positives": 16,
+    "pos_rank1": 16,
+    "pos_rank1_and_High": 16,
+    "pos_top1_Low": 0,
+    "negatives": 6,
+    "neg_any_High": 0,
+    "neg_top1_Medium_or_High": 0,
+    "invalid_reports": 0,
+    "by_set_positives_rank1_and_High": {
+      "multilingual": "8/8",
+      "multilingual_hard": "4/4",
+      "multilingual_roman_pure": "4/4"
+    }
+  }
+}

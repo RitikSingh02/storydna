@@ -1,0 +1,394 @@
+{
+  "run_id": "20261108T073749Z_a624b269",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "U01",
+  "source_title": "U01 [UNRELATED]",
+  "input_sha256": "a624b269bb27386ee6f2dee42f037658945a3d2d80f95e23daca27f61693ec01",
+  "input_text": "Engineer Lia wakes up alone on a space station after a meteor strike cuts all contact with Earth. She repairs the oxygen recycler, then finds that the station's computer has been editing the logs. She builds a radio from spare parts and calls a passing freighter. The freighter's crew arrives to rescue her before the air runs out.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S27",
+      "candidate_title": "The Same Wedding Day",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0502,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.1004,
+        "ordered_event_overlap": 0.4592,
+        "lexical_cosine": 0.1197,
+        "rare_detail_overlap": 0.05,
+        "event_set_overlap": 0.298,
+        "plain_tfidf_cosine": 0.1012
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "FIRE_ACCIDENT"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Engineer Lia wakes up alone on a space station after a meteor strike cuts all contact with Earth.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Wedding planner Tanvi relives the same wedding day every morning after a lightning strike."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.603,
+          "pitch_beat_index": 0,
+          "pitch_text": "Engineer Lia wakes up alone on a space station after a meteor strike cuts all contact with Earth.",
+          "candidate_beat_index": 5,
+          "candidate_text": "She wakes up on the day after."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "FIRE_ACCIDENT"
+      ],
+      "shared_rare_details": [
+        "strik"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She builds a radio from spare parts and calls a passing freighter."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She repairs the oxygen recycler, then finds that the station's computer has been editing the logs."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Each loop she finds a different disaster: a missing ring, a food poisoning, a runaway groom."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "The loop breaks only when she lets the wedding go ahead with its imperfections."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S27#beat0",
+        "S27#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S12",
+      "candidate_title": "The Maid Who Was His Wife",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0008,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0841,
+        "ordered_event_overlap": 0.2709,
+        "lexical_cosine": 0.055,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2352,
+        "plain_tfidf_cosine": 0.0445
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "FIRE_ACCIDENT"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.241,
+          "pitch_beat_index": 0,
+          "pitch_text": "Engineer Lia wakes up alone on a space station after a meteor strike cuts all contact with Earth.",
+          "candidate_beat_index": 0,
+          "candidate_text": "After a car crash, Zoya wakes up with no memory."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.264,
+          "pitch_beat_index": 1,
+          "pitch_text": "She repairs the oxygen recycler, then finds that the station's computer has been editing the logs.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Zoya finds a hidden diary under a loose floorboard that tells her real story."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "FIRE_ACCIDENT"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She builds a radio from spare parts and calls a passing freighter."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "The freighter's crew arrives to rescue her before the air runs out."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She slowly recovers her memory but pretends to still be confused."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Her husband's mistress Diya convinces her that she is only the household maid and makes her scrub floors."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S12#beat0",
+        "S12#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S08",
+      "candidate_title": "Reborn Before the Fire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0493,
+        "ordered_event_overlap": 0.2456,
+        "lexical_cosine": 0.0366,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2553,
+        "plain_tfidf_cosine": 0.0284
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.296,
+          "pitch_beat_index": 0,
+          "pitch_text": "Engineer Lia wakes up alone on a space station after a meteor strike cuts all contact with Earth.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wakes up three years in the past on the day of her engagement."
+        },
+        {
+          "events": [
+            "FIRE_ACCIDENT"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Engineer Lia wakes up alone on a space station after a meteor strike cuts all contact with Earth.",
+          "candidate_beat_index": 4,
+          "candidate_text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "FIRE_ACCIDENT"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She builds a radio from spare parts and calls a passing freighter."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She repairs the oxygen recycler, then finds that the station's computer has been editing the logs."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She avoids the engagement and takes the fire's date to move her family out of the house."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S08#beat1",
+        "S08#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S06",
+      "candidate_title": "Ashes at the Altar",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0658,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0504,
+        "rare_detail_overlap": 0.05,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0449
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.395,
+          "pitch_beat_index": 3,
+          "pitch_text": "The freighter's crew arrives to rescue her before the air runs out.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "run"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Engineer Lia wakes up alone on a space station after a meteor strike cuts all contact with Earth."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She builds a radio from spare parts and calls a passing freighter."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "In front of the shocked guests she proposes to Rohan's powerful uncle Mr. Malhotra, who accepts."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S06#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S19",
+      "candidate_title": "The Mother-in-Law Test",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0598,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0523,
+        "rare_detail_overlap": 0.0588,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.359,
+          "pitch_beat_index": 3,
+          "pitch_text": "The freighter's crew arrives to rescue her before the air runs out.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A family lawyer reveals that Savitri has been running a secret test to find out who is worthy to inherit the family temple trust."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "run"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Engineer Lia wakes up alone on a space station after a meteor strike cuts all contact with Earth."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She builds a radio from spare parts and calls a passing freighter."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Daughter-in-law Aarti is treated like a servant by her mother-in-law Savitri, who criticises every dish and every task."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "At the reading of the will, Savitri names Aarti the trustee because she alone never complained or cheated."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S19#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "UNRELATED",
+    "relevant": [],
+    "expected_tiers": [
+      "Low"
+    ]
+  }
+}

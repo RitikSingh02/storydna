@@ -1,0 +1,391 @@
+{
+  "run_id": "20261108T073000Z_8e72713e",
+  "run_label": "round3_fresh_heldout_like",
+  "created_utc": "2026-11-08T07:30:00+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 3,
+      "min_distinct_matched": 2,
+      "min_ordered": 0.5,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_lex": 0.2,
+      "min_rare": 0.15,
+      "min_ordered": 0.5,
+      "min_distinct_for_ordered": 3,
+      "min_detail_with_ordered": 0.1
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "G02",
+  "source_title": "G02 [TROPE_CHAIN_TRAP]",
+  "input_sha256": "8e72713ee6f2a081cb9cd9dcaac592fec82538f81c267365a6b1f0d91e45b5bf",
+  "input_text": "Orphan Pia is told she is the long-lost granddaughter of a rich family and is moved into their mansion. The family treats her as an outsider and mocks her accent. She walks out and becomes a chef. Years later the family eats at her restaurant and apologises.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.297,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.5768,
+        "lexical_cosine": 0.0514,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.5084,
+        "plain_tfidf_cosine": 0.1029
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "The family treats her as an outsider and mocks her accent.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Rahul, now a struggling shopkeeper, mocks him before learning who he is."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "Years later the family eats at her restaurant and apologises.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Rahul begs for a place in it."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Orphan Pia is told she is the long-lost granddaughter of a rich family and is moved into their mansion."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat2",
+        "S22#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S10",
+      "candidate_title": "Swapped at Birth",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.2297,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.3748,
+        "lexical_cosine": 0.1691,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.29,
+        "plain_tfidf_cosine": 0.1492
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "The family treats her as an outsider and mocks her accent.",
+          "candidate_beat_index": 1,
+          "candidate_text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "Years later the family eats at her restaurant and apologises.",
+          "candidate_beat_index": 5,
+          "candidate_text": "The rich mother must publicly admit she chose the wrong child."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Orphan Pia is told she is the long-lost granddaughter of a rich family and is moved into their mansion."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S10#beat1",
+        "S10#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1787,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.3068,
+        "lexical_cosine": 0.0929,
+        "rare_detail_overlap": 0.05,
+        "event_set_overlap": 0.1812,
+        "plain_tfidf_cosine": 0.0478
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "The family treats her as an outsider and mocks her accent.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "accent"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Orphan Pia is told she is the long-lost granddaughter of a rich family and is moved into their mansion."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Years later the family eats at her restaurant and apologises."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wins the national maths olympiad."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S01",
+      "candidate_title": "The Chauffeur's Secret",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1397,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2459,
+        "lexical_cosine": 0.0642,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.221,
+        "plain_tfidf_cosine": 0.0516
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "The family treats her as an outsider and mocks her accent.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "Years later the family eats at her restaurant and apologises.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Orphan Pia is told she is the long-lost granddaughter of a rich family and is moved into their mansion."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S01#beat1",
+        "S01#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S19",
+      "candidate_title": "The Mother-in-Law Test",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1228,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2127,
+        "lexical_cosine": 0.0733,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1574,
+        "plain_tfidf_cosine": 0.0305
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "The family treats her as an outsider and mocks her accent.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Daughter-in-law Aarti is treated like a servant by her mother-in-law Savitri, who criticises every dish and every task."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Orphan Pia is told she is the long-lost granddaughter of a rich family and is moved into their mansion."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Years later the family eats at her restaurant and apologises."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "At the reading of the will, Savitri names Aarti the trustee because she alone never complained or cheated."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Aarti's sisters-in-law are furious."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S19#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_CHAIN_TRAP",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

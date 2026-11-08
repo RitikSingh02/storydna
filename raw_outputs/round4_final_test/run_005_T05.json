@@ -1,0 +1,510 @@
+{
+  "run_id": "20261108T073303Z_5966df4a",
+  "run_label": "round4_final_test",
+  "created_utc": "2026-11-08T07:33:03+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "T05",
+  "source_title": "T05 [PARAPHRASE]",
+  "input_sha256": "5966df4a9bbbb5b3150263080ec7305d5e8f59e986b4ad193536c0aee16de670",
+  "input_text": "A village girl on a free place at an elite school is laughed at for her patched uniform and rural accent. She wins the national mathematics championship. The trophies are handed out by Mr. Verma, the father of the classmate who tormented her most. She notices that a formula in his firm's patent is the work of her dead father. She locates her father's old diary and takes it to an attorney. Mr. Verma has to give her a share of the patent.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.6117,
+        "ordered_event_overlap": 0.5916,
+        "lexical_cosine": 0.5429,
+        "rare_detail_overlap": 0.381,
+        "event_set_overlap": 0.4201,
+        "plain_tfidf_cosine": 0.3855
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.421,
+          "pitch_beat_index": 0,
+          "pitch_text": "A village girl on a free place at an elite school is laughed at for her patched uniform and rural accent.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.663,
+          "pitch_beat_index": 1,
+          "pitch_text": "She wins the national mathematics championship.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wins the national maths olympiad."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.181,
+          "pitch_beat_index": 2,
+          "pitch_text": "The trophies are handed out by Mr. Verma, the father of the classmate who tormented her most.",
+          "candidate_beat_index": 2,
+          "candidate_text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.742,
+          "pitch_beat_index": 3,
+          "pitch_text": "She notices that a formula in his firm's patent is the work of her dead father.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Rani recognises a formula on his company's patent as her late father's work."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.937,
+          "pitch_beat_index": 4,
+          "pitch_text": "She locates her father's old diary and takes it to an attorney.",
+          "candidate_beat_index": 4,
+          "candidate_text": "She finds her father's notebook and takes it to a lawyer."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.726,
+          "pitch_beat_index": 5,
+          "pitch_text": "Mr. Verma has to give her a share of the patent.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Mr. Sethi is forced to share ownership of the patent with Rani."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONTEST_WIN",
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "accent",
+        "classmat",
+        "national",
+        "patent",
+        "recip",
+        "shar",
+        "uniform",
+        "villag"
+      ],
+      "differentiating_beats": [],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat0",
+        "S29#beat1",
+        "S29#beat2",
+        "S29#beat3",
+        "S29#beat4",
+        "S29#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S01",
+      "candidate_title": "The Chauffeur's Secret",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0014,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0967,
+        "ordered_event_overlap": 0.116,
+        "lexical_cosine": 0.0932,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.0907,
+        "plain_tfidf_cosine": 0.0968
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "A village girl on a free place at an elite school is laughed at for her patched uniform and rural accent.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.19,
+          "pitch_beat_index": 2,
+          "pitch_text": "The trophies are handed out by Mr. Verma, the father of the classmate who tormented her most.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.198,
+          "pitch_beat_index": 3,
+          "pitch_text": "She notices that a formula in his firm's patent is the work of her dead father.",
+          "candidate_beat_index": 3,
+          "candidate_text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.191,
+          "pitch_beat_index": 4,
+          "pitch_text": "She locates her father's old diary and takes it to an attorney.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She wins the national mathematics championship."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "Mr. Verma has to give her a share of the patent."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Meera stands by him and quietly pays his fake debts from her own savings."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S01#beat1",
+        "S01#beat1",
+        "S01#beat3",
+        "S01#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S05",
+      "candidate_title": "The Intern Who Owns the Floor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0011,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0646,
+        "ordered_event_overlap": 0.3642,
+        "lexical_cosine": 0.0842,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2488,
+        "plain_tfidf_cosine": 0.0363
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "A village girl on a free place at an elite school is laughed at for her patched uniform and rural accent.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.189,
+          "pitch_beat_index": 3,
+          "pitch_text": "She notices that a formula in his firm's patent is the work of her dead father.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 4,
+          "pitch_text": "She locates her father's old diary and takes it to an attorney.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Naina keeps a dated sketchbook as proof while she watches him pitch her designs."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.198,
+          "pitch_beat_index": 4,
+          "pitch_text": "She locates her father's old diary and takes it to an attorney.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Naina shows the sketchbook on the big screen and announces that she is the owner's daughter."
+        }
+      ],
+      "shared_generic_tropes": [
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She wins the national mathematics championship."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The trophies are handed out by Mr. Verma, the father of the classmate who tormented her most."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Sunil is escorted out and the company changes its credit policy."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "At the product launch Sunil unveils her collection as his own."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S05#beat1",
+        "S05#beat0",
+        "S05#beat2",
+        "S05#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0011,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0466,
+        "ordered_event_overlap": 0.2527,
+        "lexical_cosine": 0.0782,
+        "rare_detail_overlap": 0.1364,
+        "event_set_overlap": 0.169,
+        "plain_tfidf_cosine": 0.0688
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "A village girl on a free place at an elite school is laughed at for her patched uniform and rural accent.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Rahul, now a struggling shopkeeper, mocks him before learning who he is."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.279,
+          "pitch_beat_index": 0,
+          "pitch_text": "A village girl on a free place at an elite school is laughed at for her patched uniform and rural accent.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Rahul begs for a place in it."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "classmat",
+        "plac",
+        "school"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She wins the national mathematics championship."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "She notices that a formula in his firm's patent is the work of her dead father."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat2",
+        "S22#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S09",
+      "candidate_title": "The Framed Surgeon",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0685,
+        "ordered_event_overlap": 0.12,
+        "lexical_cosine": 0.0584,
+        "rare_detail_overlap": 0.0833,
+        "event_set_overlap": 0.0831,
+        "plain_tfidf_cosine": 0.0402
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.19,
+          "pitch_beat_index": 0,
+          "pitch_text": "A village girl on a free place at an elite school is laughed at for her patched uniform and rural accent.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Meghna takes a job as a night nurse in a rural clinic under another name."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.221,
+          "pitch_beat_index": 2,
+          "pitch_text": "The trophies are handed out by Mr. Verma, the father of the classmate who tormented her most.",
+          "candidate_beat_index": 3,
+          "candidate_text": "A dying clinic patient hands her an old hospital laptop that holds the operating-room recording."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 4,
+          "pitch_text": "She locates her father's old diary and takes it to an attorney.",
+          "candidate_beat_index": 4,
+          "candidate_text": "She sends the recording to the medical council during a live conference."
+        }
+      ],
+      "shared_generic_tropes": [
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "hand",
+        "rural"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She wins the national mathematics championship."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "She notices that a formula in his firm's patent is the work of her dead father."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "The real culprit is her rival Dr. Bhatt, who swapped the medication label."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S09#beat2",
+        "S09#beat3",
+        "S09#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S29"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "run_id": "20261108T073303Z_21602968",
+  "run_label": "round4_final_test",
+  "created_utc": "2026-11-08T07:33:03+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "T08",
+  "source_title": "T08 [TROPE_ONLY]",
+  "input_sha256": "21602968c94b13f203b507fc7bb67059fde9cedffb9a90f4681644e89e80d904",
+  "input_text": "Fresh graduate Tara joins an advertising firm as an intern. Her boss steals her campaign idea and gets promoted for it. Tara quits and goes freelance, and her next campaign wins an industry award. Her old boss applies for a job at her agency.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S20",
+      "candidate_title": "The Stolen Recipe",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0195,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0984,
+        "ordered_event_overlap": 0.2914,
+        "lexical_cosine": 0.1229,
+        "rare_detail_overlap": 0.08,
+        "event_set_overlap": 0.2624,
+        "plain_tfidf_cosine": 0.0865
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "THEFT_FRAUD"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.273,
+          "pitch_beat_index": 1,
+          "pitch_text": "Her boss steals her campaign idea and gets promoted for it.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Chef Mallika's sous-chef Dhruv steals her secret biryani recipe and wins a televised cooking contest with it."
+        },
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.317,
+          "pitch_beat_index": 2,
+          "pitch_text": "Tara quits and goes freelance, and her next campaign wins an industry award.",
+          "candidate_beat_index": 5,
+          "candidate_text": "She wins and opens her own restaurant."
+        }
+      ],
+      "shared_generic_tropes": [
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [
+        "goe",
+        "steal"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Fresh graduate Tara joins an advertising firm as an intern."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Her old boss applies for a job at her agency."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "A food vlogger films her cart, and the video goes viral overnight."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Mallika is fired from the restaurant and starts selling biryani from a street cart."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S20#beat0",
+        "S20#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S05",
+      "candidate_title": "The Intern Who Owns the Floor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0028,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0919,
+        "ordered_event_overlap": 0.1904,
+        "lexical_cosine": 0.1229,
+        "rare_detail_overlap": 0.0833,
+        "event_set_overlap": 0.1176,
+        "plain_tfidf_cosine": 0.06
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.551,
+          "pitch_beat_index": 0,
+          "pitch_text": "Fresh graduate Tara joins an advertising firm as an intern.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+        },
+        {
+          "events": [
+            "THEFT_FRAUD"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Her boss steals her campaign idea and gets promoted for it.",
+          "candidate_beat_index": 3,
+          "candidate_text": "At the product launch Sunil unveils her collection as his own."
+        }
+      ],
+      "shared_generic_tropes": [
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "intern",
+        "join"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Tara quits and goes freelance, and her next campaign wins an industry award."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Her old boss applies for a job at her agency."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Naina keeps a dated sketchbook as proof while she watches him pitch her designs."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S05#beat0",
+        "S05#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S17",
+      "candidate_title": "The Mafia Boss's Nanny",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0006,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0845,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.1242,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0931
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.235,
+          "pitch_beat_index": 1,
+          "pitch_text": "Her boss steals her campaign idea and gets promoted for it.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Nina takes a job as nanny to the five-year-old daughter of mafia boss Viktor Rossi."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.272,
+          "pitch_beat_index": 3,
+          "pitch_text": "Her old boss applies for a job at her agency.",
+          "candidate_beat_index": 2,
+          "candidate_text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Tara quits and goes freelance, and her next campaign wins an industry award."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Fresh graduate Tara joins an advertising firm as an intern."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Viktor catches her searching his office and demands the truth."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S17#beat0",
+        "S17#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S30",
+      "candidate_title": "The Last Will Game",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0003,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0216,
+        "ordered_event_overlap": 0.2888,
+        "lexical_cosine": 0.021,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.5281,
+        "plain_tfidf_cosine": 0.0188
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.13,
+          "pitch_beat_index": 0,
+          "pitch_text": "Fresh graduate Tara joins an advertising firm as an intern.",
+          "candidate_beat_index": 0,
+          "candidate_text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+        },
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "Tara quits and goes freelance, and her next campaign wins an industry award.",
+          "candidate_beat_index": 0,
+          "candidate_text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+        }
+      ],
+      "shared_generic_tropes": [
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Her boss steals her campaign idea and gets promoted for it."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Her old boss applies for a job at her agency."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Isha inherits everything, and she gives the cousins a salary."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S30#beat0",
+        "S30#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.043,
+        "ordered_event_overlap": 0.3709,
+        "lexical_cosine": 0.0489,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2277,
+        "plain_tfidf_cosine": 0.0207
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.258,
+          "pitch_beat_index": 2,
+          "pitch_text": "Tara quits and goes freelance, and her next campaign wins an industry award.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wins the national maths olympiad."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Fresh graduate Tara joins an advertising firm as an intern."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Her boss steals her campaign idea and gets promoted for it."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_ONLY",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

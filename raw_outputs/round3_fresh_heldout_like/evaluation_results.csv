@@ -1,0 +1,15 @@
+qid,category,relevant,expected,top1_id,top1_title,top1_tier,top1_score,top1_plain,rank_of_relevant,plain_rank_of_relevant,any_high,tier_ok,valid,latency_ms,matched_beats_top1,ordered,lex,rare
+F01,PARAPHRASE,S02,High,S22,The Reunion Investor,Low,0.1806,0.0287,2,1,False,False,True,3.2,1,0.337,0.0377,0.0455
+F02,PARAPHRASE,S07,High,S07,"Divorce Papers, Diamond Return",Medium,0.2614,0.2046,1,1,False,False,True,2.8,3,0.3458,0.245,0.1579
+F03,PARAPHRASE,S15,High,S15,Blood Contract,High,0.4902,0.3254,1,1,True,True,True,3.1,5,0.5309,0.3396,0.4737
+F04,PARAPHRASE,S16,High,S16,Villainess Transmigrated,Medium,0.2517,0.2505,1,1,False,False,True,2.6,1,0.2454,0.2889,0.24
+F05,PARAPHRASE,S21,High,S21,Kidney for a Contract,High,0.4575,0.2769,1,1,True,True,True,2.8,5,0.5712,0.3901,0.4545
+G01,TROPE_ONLY,,Low;Medium,S28,Last Round,Low,0.237,0.0182,,,False,True,True,2.1,2,0.447,0.021,0.0
+G02,TROPE_CHAIN_TRAP,,Low;Medium,S22,The Reunion Investor,Low,0.297,0.1029,,,False,True,True,2.1,2,0.5768,0.0514,0.0
+G03,TROPE_ONLY,,Low;Medium,S18,Undercover Bride,Low,0.276,0.0877,,,False,True,True,2.0,2,0.4644,0.1275,0.0476
+G04,TROPE_ONLY,,Low;Medium,S25,Twin in the Wedding Dress,High,0.3148,0.0763,,,True,False,True,2.2,3,0.5219,0.111,0.1333
+G05,TROPE_ONLY,,Low;Medium,S17,The Mafia Boss's Nanny,Low,0.1966,0.0108,,,False,True,True,1.9,1,0.373,0.0137,0.0
+G08,UNRELATED,,Low,S28,Last Round,High,0.3492,0.0745,,,True,False,True,2.0,3,0.609,0.1162,0.15
+G09,UNRELATED,,Low,S02,Night Shift Owner,Low,0.0392,0.0389,,,False,True,True,1.9,0,0.0,0.1003,0.0455
+G06,PARTIAL,S27,Medium;High,S27,The Same Wedding Day,Medium,0.5338,0.4544,1,1,False,True,True,2.5,2,0.6837,0.4614,0.35
+G07,PARTIAL,S04,Medium;High,S04,"Delivery Boy, Dining Empire",Medium,0.5136,0.2816,1,1,False,True,True,2.8,3,0.6831,0.3807,0.3684

@@ -1,0 +1,450 @@
+{
+  "run_id": "20261108T072829Z_6ef01222",
+  "run_label": "round1_apriori",
+  "created_utc": "2026-11-08T07:28:29+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 5,
+      "min_distinct_matched": 3,
+      "min_ordered": 0.45,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_ordered": 0.3,
+      "min_lex": 0.15,
+      "min_rare": 0.08
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "H07",
+  "source_title": "H07 [TROPE_ONLY]",
+  "input_sha256": "6ef01222124b3f5f942e88f4438eff10023157eb1c2bd6857232f6bb0de13a28",
+  "input_text": "Famous detective Mohan loses his memory after a fall in his study. Using only his own handwritten case notebook he has to work out who killed his mentor. The trail leads through three old clients and an auction house. He finally realises that the mentor wrote the note that framed a junior policeman, and takes the evidence to the commissioner.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S12",
+      "candidate_title": "The Maid Who Was His Wife",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.3203,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.5867,
+        "lexical_cosine": 0.1334,
+        "rare_detail_overlap": 0.0556,
+        "event_set_overlap": 0.3453,
+        "plain_tfidf_cosine": 0.089
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "AMNESIA"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Famous detective Mohan loses his memory after a fall in his study.",
+          "candidate_beat_index": 0,
+          "candidate_text": "After a car crash, Zoya wakes up with no memory."
+        },
+        {
+          "events": [
+            "AMNESIA"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "Using only his own handwritten case notebook he has to work out who killed his mentor.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She slowly recovers her memory but pretends to still be confused."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "He finally realises that the mentor wrote the note that framed a junior policeman, and takes the evidence to the commissioner.",
+          "candidate_beat_index": 4,
+          "candidate_text": "At the husband's charity gala she walks in as the lady of the house and plays the mistress's recorded lies."
+        }
+      ],
+      "shared_generic_tropes": [
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [
+        "AMNESIA"
+      ],
+      "shared_rare_details": [
+        "memory"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The trail leads through three old clients and an auction house."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Her husband's mistress Diya convinces her that she is only the household maid and makes her scrub floors."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "The husband realises how he was deceived, and Diya is removed."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S12#beat0",
+        "S12#beat3",
+        "S12#beat4"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S02",
+      "candidate_title": "Night Shift Owner",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.2027,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.3573,
+        "lexical_cosine": 0.0624,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.3198,
+        "plain_tfidf_cosine": 0.0097
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "FRAMED"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "He finally realises that the mentor wrote the note that framed a junior policeman, and takes the evidence to the commissioner.",
+          "candidate_beat_index": 3,
+          "candidate_text": "The finance chief learns about the leak and frames Tanya for the theft."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "He finally realises that the mentor wrote the note that framed a junior policeman, and takes the evidence to the commissioner.",
+          "candidate_beat_index": 5,
+          "candidate_text": "At an emergency board meeting he reveals he is the owner, plays the recording and clears Tanya."
+        }
+      ],
+      "shared_generic_tropes": [
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [
+        "FRAMED"
+      ],
+      "shared_rare_details": [
+        "fram"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Using only his own handwritten case notebook he has to work out who killed his mentor."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Famous detective Mohan loses his memory after a fall in his study."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Billionaire Kabir Rao takes a job as the night janitor in his own tech company because money is disappearing from its accounts."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S02#beat3",
+        "S02#beat5"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S09",
+      "candidate_title": "The Framed Surgeon",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1721,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2788,
+        "lexical_cosine": 0.0507,
+        "rare_detail_overlap": 0.0417,
+        "event_set_overlap": 0.3703,
+        "plain_tfidf_cosine": 0.0564
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "FRAMED"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "He finally realises that the mentor wrote the note that framed a junior policeman, and takes the evidence to the commissioner.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "He finally realises that the mentor wrote the note that framed a junior policeman, and takes the evidence to the commissioner.",
+          "candidate_beat_index": 4,
+          "candidate_text": "She sends the recording to the medical council during a live conference."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [
+        "FRAMED"
+      ],
+      "shared_rare_details": [
+        "lose"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Using only his own handwritten case notebook he has to work out who killed his mentor."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Famous detective Mohan loses his memory after a fall in his study."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "A dying clinic patient hands her an old hospital laptop that holds the operating-room recording."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Meghna takes a job as a night nurse in a rural clinic under another name."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S09#beat0",
+        "S09#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S18",
+      "candidate_title": "Undercover Bride",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.163,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2486,
+        "lexical_cosine": 0.1137,
+        "rare_detail_overlap": 0.0476,
+        "event_set_overlap": 0.1992,
+        "plain_tfidf_cosine": 0.1013
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "Famous detective Mohan loses his memory after a fall in his study.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Detective Rhea goes undercover and marries crime boss Armand Cole to collect evidence for her department."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 1,
+          "pitch_text": "Using only his own handwritten case notebook he has to work out who killed his mentor.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Her handler orders her to arrest Armand on their anniversary."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "commissioner"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "He finally realises that the mentor wrote the note that framed a junior policeman, and takes the evidence to the commissioner."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The trail leads through three old clients and an auction house."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Living in his mansion she begins to see that he protects his workers and fights a corrupt commissioner."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "She exposes the handler on a live broadcast and has to choose between her badge and Armand."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S18#beat0",
+        "S18#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S26",
+      "candidate_title": "Kidnapped on the Mandap",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1255,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2605,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2132,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "Famous detective Mohan loses his memory after a fall in his study.",
+          "candidate_beat_index": 1,
+          "candidate_text": "The groom Veer refuses to pay the ransom, which turns her family against him."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 1,
+          "pitch_text": "Using only his own handwritten case notebook he has to work out who killed his mentor.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Anjali escapes and discovers the kidnapper was hired by her stepmother."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "He finally realises that the mentor wrote the note that framed a junior policeman, and takes the evidence to the commissioner.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She records the stepmother's call to the kidnapper and brings it to the police."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The trail leads through three old clients and an auction house."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "The stepmother is arrested at the reception."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Bride Anjali is abducted from her own wedding by masked men."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S26#beat1",
+        "S26#beat2",
+        "S26#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_ONLY",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "run_id": "20261108T072829Z_6ffedf7b",
+  "run_label": "round1_apriori",
+  "created_utc": "2026-11-08T07:28:29+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 5,
+      "min_distinct_matched": 3,
+      "min_ordered": 0.45,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_ordered": 0.3,
+      "min_lex": 0.15,
+      "min_rare": 0.08
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "H10",
+  "source_title": "H10 [TROPE_ONLY]",
+  "input_sha256": "6ffedf7b2fa0a615df80fccebed59c910ad089f8e14ad5e520f7f35e98e1a1c0",
+  "input_text": "Nurse Beena works in a public hospital that is going to be closed by the state. She convinces the staff to run night clinics on the pavement and organises a crowdfunding page for new equipment. The local newspaper covers the campaign and the minister visits. The hospital stays open and gets a new wing.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S09",
+      "candidate_title": "The Framed Surgeon",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.2258,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.341,
+        "lexical_cosine": 0.1668,
+        "rare_detail_overlap": 0.125,
+        "event_set_overlap": 0.1435,
+        "plain_tfidf_cosine": 0.0858
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Nurse Beena works in a public hospital that is going to be closed by the state.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Meghna takes a job as a night nurse in a rural clinic under another name."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "The hospital stays open and gets a new wing.",
+          "candidate_beat_index": 3,
+          "candidate_text": "A dying clinic patient hands her an old hospital laptop that holds the operating-room recording."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "clinic",
+        "night",
+        "nurs"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She convinces the staff to run night clinics on the pavement and organises a crowdfunding page for new equipment."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The local newspaper covers the campaign and the minister visits."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "She sends the recording to the medical council during a live conference."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S09#beat2",
+        "S09#beat3"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S30",
+      "candidate_title": "The Last Will Game",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1673,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.2385,
+        "lexical_cosine": 0.0755,
+        "rare_detail_overlap": 0.1176,
+        "event_set_overlap": 0.2574,
+        "plain_tfidf_cosine": 0.0346
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Nurse Beena works in a public hospital that is going to be closed by the state.",
+          "candidate_beat_index": 0,
+          "candidate_text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "stay",
+        "visit"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She convinces the staff to run night clinics on the pavement and organises a crowdfunding page for new equipment."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The local newspaper covers the campaign and the minister visits."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Isha inherits everything, and she gives the cousins a salary."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S30#beat0"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S21",
+      "candidate_title": "Kidney for a Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1393,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2758,
+        "lexical_cosine": 0.0616,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1052,
+        "plain_tfidf_cosine": 0.0347
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Nurse Beena works in a public hospital that is going to be closed by the state.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Samaira secretly agrees to donate a kidney and swears the doctors to silence."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "The hospital stays open and gets a new wing.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Karan finds out on the day of the operation and storms into the operating theatre."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She convinces the staff to run night clinics on the pavement and organises a crowdfunding page for new equipment."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The local newspaper covers the campaign and the minister visits."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Karan needs money for his mother's kidney transplant and signs a contract to work as bodyguard to heiress Samaira."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "His mother survives, and Samaira finally admits she needs a bodyguard for her heart."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S21#beat3",
+        "S21#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S10",
+      "candidate_title": "Swapped at Birth",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.123,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.1874,
+        "lexical_cosine": 0.0814,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.145,
+        "plain_tfidf_cosine": 0.0566
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Nurse Beena works in a public hospital that is going to be closed by the state.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "nurs"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She convinces the staff to run night clinics on the pavement and organises a crowdfunding page for new equipment."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The local newspaper covers the campaign and the minister visits."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S10#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S14",
+      "candidate_title": "Rejected by the Alpha",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0812,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.1345,
+        "lexical_cosine": 0.0216,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2095,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Nurse Beena works in a public hospital that is going to be closed by the state.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A dying old wolf tells her she is the last descendant of the Moon Goddess, and her power is waking."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She convinces the staff to run night clinics on the pavement and organises a crowdfunding page for new equipment."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "The local newspaper covers the campaign and the minister visits."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "At the full moon ceremony, Alpha Kael publicly rejects his fated mate Luna, calling her weak because she cannot shift."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Luna returns, shifts into a white wolf and defeats the rogues."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S14#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_ONLY",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

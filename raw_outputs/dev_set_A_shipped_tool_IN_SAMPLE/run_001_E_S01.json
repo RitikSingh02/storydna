@@ -1,0 +1,464 @@
+{
+  "run_id": "20261108T073749Z_e53dc1db",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "E_S01",
+  "source_title": "E_S01 [EXACT]",
+  "input_sha256": "e53dc1db3459f7983310c9b88e53bfd0410df0d7b83783726633ffed4e8a77d0",
+  "input_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+  "input_beats": 8,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S01",
+      "candidate_title": "The Chauffeur's Secret",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.5292,
+        "ordered_event_overlap": 0.8771,
+        "lexical_cosine": 0.9181,
+        "rare_detail_overlap": 0.9,
+        "event_set_overlap": 0.8992,
+        "plain_tfidf_cosine": 0.9431
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "LOYALTY_TEST"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.635,
+          "pitch_beat_index": 1,
+          "pitch_text": "as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him",
+          "candidate_beat_index": 0,
+          "candidate_text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+        },
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.803,
+          "pitch_beat_index": 2,
+          "pitch_text": "as a penniless servant and her father insults him in front of guests meera stands by him",
+          "candidate_beat_index": 1,
+          "candidate_text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests."
+        },
+        {
+          "events": [
+            "LOYALTY_TEST"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "as a penniless servant and her father insults him in front of guests meera stands by him",
+          "candidate_beat_index": 2,
+          "candidate_text": "Meera stands by him and quietly pays his fake debts from her own savings."
+        },
+        {
+          "events": [
+            "SECRET_HELP"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.602,
+          "pitch_beat_index": 3,
+          "pitch_text": "and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse",
+          "candidate_beat_index": 2,
+          "candidate_text": "Meera stands by him and quietly pays his fake debts from her own savings."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.652,
+          "pitch_beat_index": 4,
+          "pitch_text": "and the bank sends a mystery investor arjun walks in",
+          "candidate_beat_index": 3,
+          "candidate_text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.782,
+          "pitch_beat_index": 5,
+          "pitch_text": "as the investor reveals his real identity in front of everyone",
+          "candidate_beat_index": 4,
+          "candidate_text": "Arjun walks in as the investor, reveals his real identity in front of everyone and saves the firm."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "INHERITANCE",
+        "PUBLIC_REVEAL",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "HUMILIATION",
+        "LOYALTY_TEST",
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [
+        "bank",
+        "collaps",
+        "decid",
+        "driver",
+        "engagement",
+        "fianc",
+        "forgiveness",
+        "identity",
+        "insult",
+        "investor",
+        "lied",
+        "love"
+      ],
+      "differentiating_beats": [],
+      "supporting_excerpt_or_scene_id": [
+        "S01#beat0",
+        "S01#beat1",
+        "S01#beat2",
+        "S01#beat2",
+        "S01#beat3",
+        "S01#beat4"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0031,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0531,
+        "ordered_event_overlap": 0.3227,
+        "lexical_cosine": 0.0614,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.4834,
+        "plain_tfidf_cosine": 0.0458
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        },
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "as a penniless servant and her father insults him in front of guests meera stands by him",
+          "candidate_beat_index": 2,
+          "candidate_text": "Rahul, now a struggling shopkeeper, mocks him before learning who he is."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "HUMILIATION",
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [
+        "investor"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 7,
+          "text": "while meera decides whether she can trust a man who lied to her"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "and the bank sends a mystery investor arjun walks in"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Ishaan offers Rahul's whole street a place in a new mall development."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat0",
+        "S22#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S05",
+      "candidate_title": "The Intern Who Owns the Floor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0327,
+        "ordered_event_overlap": 0.2542,
+        "lexical_cosine": 0.0583,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.3243,
+        "plain_tfidf_cosine": 0.0166
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "INHERITANCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.261,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job",
+          "candidate_beat_index": 0,
+          "candidate_text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+        },
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+        }
+      ],
+      "shared_generic_tropes": [
+        "INHERITANCE",
+        "PUBLIC_REVEAL",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "as a penniless servant and her father insults him in front of guests meera stands by him"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Naina keeps a dated sketchbook as proof while she watches him pitch her designs."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Sunil is escorted out and the company changes its credit policy."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S05#beat0",
+        "S05#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.067,
+        "ordered_event_overlap": 0.1064,
+        "lexical_cosine": 0.0787,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.0858,
+        "plain_tfidf_cosine": 0.0316
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him",
+          "candidate_beat_index": 0,
+          "candidate_text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.185,
+          "pitch_beat_index": 3,
+          "pitch_text": "and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse",
+          "candidate_beat_index": 3,
+          "candidate_text": "Rani recognises a formula on his company's patent as her late father's work."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 7,
+          "text": "while meera decides whether she can trust a man who lied to her"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "and the bank sends a mystery investor arjun walks in"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wins the national maths olympiad."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Mr. Sethi is forced to share ownership of the patent with Rani."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat0",
+        "S29#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S02",
+      "candidate_title": "Night Shift Owner",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0615,
+        "ordered_event_overlap": 0.0833,
+        "lexical_cosine": 0.0629,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1387,
+        "plain_tfidf_cosine": 0.026
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.363,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job",
+          "candidate_beat_index": 0,
+          "candidate_text": "Billionaire Kabir Rao takes a job as the night janitor in his own tech company because money is disappearing from its accounts."
+        }
+      ],
+      "shared_generic_tropes": [
+        "PUBLIC_REVEAL",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him"
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "as a penniless servant and her father insults him in front of guests meera stands by him"
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "The finance chief learns about the leak and frames Tanya for the theft."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "At an emergency board meeting he reveals he is the owner, plays the recording and clears Tanya."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S02#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "EXACT",
+    "relevant": [
+      "S01"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

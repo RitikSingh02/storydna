@@ -1,0 +1,621 @@
+{
+ "run_id": "20261108T080119Z_6af63036",
+ "run_label": "run1_first_and_only/auto",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "M11",
+ "source_title": "M11",
+ "input_sha256": "6af63036820c061b7f3e7b08820330e64ed14a2e059458e719647af5d0858701",
+ "input_text": "Ek chhote se gaon mein baarish nahi hone se fasal sookh jaati hai. Kisan Ramesh sab gaonwalon ko milakar purana kuan phir se khodta hai. Paani nikalne par sab khushi se naachte hain. Sarkari afsar aakar kuan ki tareef karta hai aur gaon ko naya pump deta hai.",
+ "working_text_en": "Small village baarish not hone fasal sookh.\nKisan Ramesh gaonwalon milakar old kuan khodta.\nPaani nikalne khushi naachte.\nSarkari gives afsar aakar kuan tareef village new pump.",
+ "language": {
+  "detected": "hi-Latn",
+  "name": "Hindi in Roman letters (Hinglish)",
+  "script": "latin",
+  "confidence": 0.396,
+  "evidence": "40% Hindi function words vs 0% English",
+  "method": "glossary",
+  "reliable": true,
+  "recognised_share": 0.304,
+  "unrecognised_sample": [
+   "aakar",
+   "afsar",
+   "baarish",
+   "fasal",
+   "gaonwalon",
+   "hone",
+   "khodta",
+   "khushi",
+   "kuan",
+   "milakar",
+   "naachte",
+   "nikalne"
+  ]
+ },
+ "input_beats": 4,
+ "input_warnings": [
+  "Hindi text was converted to English with a small offline glossary (approximate; a model gives better results: set STORYDNA_PROVIDER/MODEL/KEY and tick 'translate with model')."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S29",
+   "candidate_title": "The Scholarship Girl",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0002,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0436,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.1039,
+    "rare_detail_overlap": 0.0476,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0776
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.262,
+     "pitch_beat_index": 0,
+     "pitch_text": "Small village baarish not hone fasal sookh.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent.",
+     "pitch_text_original": "Ek chhote se gaon mein baarish nahi hone se fasal sookh jaati hai."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "villag"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Sarkari gives afsar aakar kuan tareef village new pump."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Kisan Ramesh gaonwalon milakar old kuan khodta."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "She wins the national maths olympiad."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S29#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S30",
+   "candidate_title": "The Last Will Game",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0538,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0481,
+    "rare_detail_overlap": 0.0588,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0663
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.323,
+     "pitch_beat_index": 3,
+     "pitch_text": "Sarkari gives afsar aakar kuan tareef village new pump.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Isha inherits everything, and she gives the cousins a salary.",
+     "pitch_text_original": "Sarkari afsar aakar kuan ki tareef karta hai aur gaon ko naya pump deta hai."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "give"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Small village baarish not hone fasal sookh."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Kisan Ramesh gaonwalon milakar old kuan khodta."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S30#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S22",
+   "candidate_title": "The Reunion Investor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0427,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0518,
+    "rare_detail_overlap": 0.0455,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0679
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.256,
+     "pitch_beat_index": 3,
+     "pitch_text": "Sarkari gives afsar aakar kuan tareef village new pump.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Ishaan gives him a job as security guard and walks away without a word.",
+     "pitch_text_original": "Sarkari afsar aakar kuan ki tareef karta hai aur gaon ko naya pump deta hai."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "give"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Small village baarish not hone fasal sookh."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Kisan Ramesh gaonwalon milakar old kuan khodta."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S22#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S04",
+   "candidate_title": "Delivery Boy, Dining Empire",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (7 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0407,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0468,
+    "rare_detail_overlap": 0.0526,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0361
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.285,
+     "pitch_beat_index": 0,
+     "pitch_text": "Small village baarish not hone fasal sookh.",
+     "candidate_beat_index": 1,
+     "candidate_text": "He falls for Pooja, a waitress at a small family cafe that is failing.",
+     "pitch_text_original": "Ek chhote se gaon mein baarish nahi hone se fasal sookh jaati hai."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "small"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Sarkari gives afsar aakar kuan tareef village new pump."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Kisan Ramesh gaonwalon milakar old kuan khodta."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Vikram, owner of a restaurant chain, delivers food on a scooter for a week to see how his customers live."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Vikram secretly buys the tycoon's debt, forcing the tycoon to withdraw."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S04#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S11",
+   "candidate_title": "Twins He Never Knew",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0484,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0466,
+    "rare_detail_overlap": 0.04,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0356
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.29,
+     "pitch_beat_index": 0,
+     "pitch_text": "Small village baarish not hone fasal sookh.",
+     "candidate_beat_index": 1,
+     "candidate_text": "She raises twin boys alone in a small town.",
+     "pitch_text_original": "Ek chhote se gaon mein baarish nahi hone se fasal sookh jaati hai."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "small"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Sarkari gives afsar aakar kuan tareef village new pump."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Kisan Ramesh gaonwalon milakar old kuan khodta."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "He demands a paternity test and fights for custody."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S11#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S05",
+   "candidate_title": "The Intern Who Owns the Floor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Sarkari gives afsar aakar kuan tareef village new pump."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Small village baarish not hone fasal sookh."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S02",
+   "candidate_title": "Night Shift Owner",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Sarkari gives afsar aakar kuan tareef village new pump."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Small village baarish not hone fasal sookh."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The finance chief learns about the leak and frames Tanya for the theft."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Sarkari gives afsar aakar kuan tareef village new pump."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Small village baarish not hone fasal sookh."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S08",
+   "candidate_title": "Reborn Before the Fire",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Sarkari gives afsar aakar kuan tareef village new pump."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Small village baarish not hone fasal sookh."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S09",
+   "candidate_title": "The Framed Surgeon",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0253
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Sarkari gives afsar aakar kuan tareef village new pump."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Small village baarish not hone fasal sookh."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "A dying clinic patient hands her an old hospital laptop that holds the operating-room recording."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

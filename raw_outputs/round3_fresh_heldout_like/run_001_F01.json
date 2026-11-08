@@ -1,0 +1,372 @@
+{
+  "run_id": "20261108T073000Z_128e852a",
+  "run_label": "round3_fresh_heldout_like",
+  "created_utc": "2026-11-08T07:30:00+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 3,
+      "min_distinct_matched": 2,
+      "min_ordered": 0.5,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_lex": 0.2,
+      "min_rare": 0.15,
+      "min_ordered": 0.5,
+      "min_distinct_for_ordered": 3,
+      "min_detail_with_ordered": 0.1
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "F01",
+  "source_title": "F01 [PARAPHRASE]",
+  "input_sha256": "128e852a912f20323897bff3c97d3561790f33bbfd0ec9fcf9ab0d2d0b045822",
+  "input_text": "Funds keep vanishing from the books of a software group, so its founder Dhruv, a billionaire, quietly becomes the cleaner on the late shift. Lonely bookkeeper Smita starts chatting with him over cold coffee and begins to rely on him. While emptying bins after hours he reads the files and uncovers the head of accounts routing money to a dummy firm. The head of accounts senses the leak and pins the missing money on Smita. Dhruv secretly captures the head of accounts admitting everything on his phone. In an urgent session of directors he announces he owns the place, plays the clip and gets Smita cleared.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1806,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.337,
+        "lexical_cosine": 0.0377,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.2542,
+        "plain_tfidf_cosine": 0.0287
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "Dhruv secretly captures the head of accounts admitting everything on his phone.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Rahul begs for a place in it."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY"
+      ],
+      "shared_rare_details": [
+        "plac"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "While emptying bins after hours he reads the files and uncovers the head of accounts routing money to a dummy firm."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "In an urgent session of directors he announces he owns the place, plays the clip and gets Smita cleared."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S02",
+      "candidate_title": "Night Shift Owner",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1532,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.2987,
+        "rare_detail_overlap": 0.3182,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.2058
+      },
+      "matched_plot_beats": [],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "account",
+        "clear",
+        "file",
+        "hour",
+        "leak",
+        "lone",
+        "phon"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "While emptying bins after hours he reads the files and uncovers the head of accounts routing money to a dummy firm."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "In an urgent session of directors he announces he owns the place, plays the clip and gets Smita cleared."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "The finance chief learns about the leak and frames Tanya for the theft."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S10",
+      "candidate_title": "Swapped at Birth",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1318,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2068,
+        "lexical_cosine": 0.0548,
+        "rare_detail_overlap": 0.0909,
+        "event_set_overlap": 0.145,
+        "plain_tfidf_cosine": 0.0075
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "Dhruv secretly captures the head of accounts admitting everything on his phone.",
+          "candidate_beat_index": 5,
+          "candidate_text": "The rich mother must publicly admit she chose the wrong child."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY"
+      ],
+      "shared_rare_details": [
+        "admit",
+        "file"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "While emptying bins after hours he reads the files and uncovers the head of accounts routing money to a dummy firm."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "In an urgent session of directors he announces he owns the place, plays the clip and gets Smita cleared."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S10#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S21",
+      "candidate_title": "Kidney for a Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1105,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.1481,
+        "lexical_cosine": 0.0752,
+        "rare_detail_overlap": 0.0909,
+        "event_set_overlap": 0.1052,
+        "plain_tfidf_cosine": 0.0301
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "Dhruv secretly captures the head of accounts admitting everything on his phone.",
+          "candidate_beat_index": 5,
+          "candidate_text": "His mother survives, and Samaira finally admits she needs a bodyguard for her heart."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY"
+      ],
+      "shared_rare_details": [
+        "admit",
+        "cold"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "While emptying bins after hours he reads the files and uncovers the head of accounts routing money to a dummy firm."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "In an urgent session of directors he announces he owns the place, plays the clip and gets Smita cleared."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Samaira secretly agrees to donate a kidney and swears the doctors to silence."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Karan finds out on the day of the operation and storms into the operating theatre."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S21#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S14",
+      "candidate_title": "Rejected by the Alpha",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1002,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.1442,
+        "lexical_cosine": 0.0442,
+        "rare_detail_overlap": 0.0417,
+        "event_set_overlap": 0.2095,
+        "plain_tfidf_cosine": 0.0202
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "Dhruv secretly captures the head of accounts admitting everything on his phone.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Kael begs her to accept him again and she decides to say no."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY"
+      ],
+      "shared_rare_details": [
+        "shift"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "While emptying bins after hours he reads the files and uncovers the head of accounts routing money to a dummy firm."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "In an urgent session of directors he announces he owns the place, plays the clip and gets Smita cleared."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "At the full moon ceremony, Alpha Kael publicly rejects his fated mate Luna, calling her weak because she cannot shift."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Luna returns, shifts into a white wolf and defeats the rogues."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S14#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S02"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

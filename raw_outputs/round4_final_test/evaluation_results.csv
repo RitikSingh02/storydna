@@ -1,0 +1,17 @@
+qid,category,relevant,expected,top1_id,top1_title,top1_tier,top1_score,top1_plain,rank_of_relevant,plain_rank_of_relevant,any_high,tier_ok,valid,latency_ms,matched_beats_top1,ordered,lex,rare
+T01,PARAPHRASE,S09,High,S09,The Framed Surgeon,High,1.0,0.2976,1,1,True,True,True,5.1,5,0.6613,0.3162,0.375
+T02,PARAPHRASE,S13,High,S13,The Widow's Ledger,High,0.9878,0.1949,1,1,True,True,True,4.1,4,0.3519,0.2212,0.2
+T03,PARAPHRASE,S26,High,S26,Kidnapped on the Mandap,High,1.0,0.3428,1,1,True,True,True,4.6,10,0.62,0.4347,0.5385
+T04,PARAPHRASE,S17,High,S17,The Mafia Boss's Nanny,High,1.0,0.274,1,1,True,True,True,4.2,4,0.5672,0.3534,0.375
+T05,PARAPHRASE,S29,High,S29,The Scholarship Girl,High,1.0,0.3855,1,1,True,True,True,4.5,6,0.5916,0.5429,0.381
+T06,PARTIAL,S10,Medium;High,S10,Swapped at Birth,High,1.0,0.3346,1,1,True,True,True,3.9,3,0.6062,0.3878,0.2727
+T07,PARTIAL,S08,Medium;High,S08,Reborn Before the Fire,High,0.9997,0.1733,1,1,True,True,True,4.5,5,0.848,0.2157,0.2941
+T08,TROPE_ONLY,,Low;Medium,S20,The Stolen Recipe,Low,0.0195,0.0865,,,False,True,True,3.5,2,0.2914,0.1229,0.08
+T09,TROPE_CHAIN_TRAP,,Low;Medium,S29,The Scholarship Girl,Low,0.0193,0.1302,,,False,True,True,3.6,2,0.2692,0.1246,0.1429
+T10,TROPE_ONLY,,Low;Medium,S15,Blood Contract,Medium,0.3316,0.1524,,,False,True,True,3.6,3,0.2284,0.1916,0.1053
+T11,TROPE_ONLY,,Low;Medium,S12,The Maid Who Was His Wife,Low,0.1681,0.0863,,,False,True,True,3.7,2,0.7434,0.0957,0.0556
+T12,TROPE_ONLY,,Low;Medium,S03,The Noodle Stall Husband,Low,0.0009,0.1127,,,False,True,True,3.6,2,0.0,0.1231,0.0476
+T13,TROPE_CHAIN_TRAP,,Low;Medium,S29,The Scholarship Girl,Medium,0.3113,0.1385,,,False,True,True,3.7,3,0.4955,0.1417,0.0952
+T14,TROPE_ONLY,,Low;Medium,S29,The Scholarship Girl,Low,0.021,0.1118,,,False,True,True,3.3,2,0.4248,0.1082,0.0952
+T15,UNRELATED,,Low,S13,The Widow's Ledger,Low,0.0298,0.161,,,False,True,True,3.8,2,0.0,0.1666,0.05
+T16,UNRELATED,,Low,S06,Ashes at the Altar,Low,0.0004,0.0575,,,False,True,True,3.5,2,0.0,0.1085,0.15

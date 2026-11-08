@@ -1,0 +1,559 @@
+{
+  "run_id": "20261108T073303Z_7ea0dffd",
+  "run_label": "round4_final_test",
+  "created_utc": "2026-11-08T07:33:03+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "T03",
+  "source_title": "T03 [PARAPHRASE]",
+  "input_sha256": "7ea0dffd411b724937b0d2bd7ba4aae58672f394f467d3d370463eb7c984cc66",
+  "input_text": "Masked men snatch Divya from her own wedding hall. Her fiance Kabir declines to hand over the ransom money, which makes her relatives hate him. Divya gets away and learns her stepmother paid the abductors. She records the stepmother's phone call to the gang and gives it to the police. At the wedding reception the stepmother is taken into custody. Kabir explains he refused because he had already located the gang.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S26",
+      "candidate_title": "Kidnapped on the Mandap",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.5117,
+        "ordered_event_overlap": 0.62,
+        "lexical_cosine": 0.4347,
+        "rare_detail_overlap": 0.5385,
+        "event_set_overlap": 0.5503,
+        "plain_tfidf_cosine": 0.3428
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.767,
+          "pitch_beat_index": 0,
+          "pitch_text": "Masked men snatch Divya from her own wedding hall.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Bride Anjali is abducted from her own wedding by masked men."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.268,
+          "pitch_beat_index": 1,
+          "pitch_text": "Her fiance Kabir declines to hand over the ransom money, which makes her relatives hate him.",
+          "candidate_beat_index": 1,
+          "candidate_text": "The groom Veer refuses to pay the ransom, which turns her family against him."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE",
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Her fiance Kabir declines to hand over the ransom money, which makes her relatives hate him.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Anjali escapes and discovers the kidnapper was hired by her stepmother."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.293,
+          "pitch_beat_index": 2,
+          "pitch_text": "Divya gets away and learns her stepmother paid the abductors.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Anjali escapes and discovers the kidnapper was hired by her stepmother."
+        },
+        {
+          "events": [
+            "FAMILY_PRESSURE",
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "Divya gets away and learns her stepmother paid the abductors.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She records the stepmother's call to the kidnapper and brings it to the police."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.561,
+          "pitch_beat_index": 3,
+          "pitch_text": "She records the stepmother's phone call to the gang and gives it to the police.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She records the stepmother's call to the kidnapper and brings it to the police."
+        },
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "She records the stepmother's phone call to the gang and gives it to the police.",
+          "candidate_beat_index": 4,
+          "candidate_text": "The stepmother is arrested at the reception."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "She records the stepmother's phone call to the gang and gives it to the police.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Veer reveals that he refused to pay because he had already tracked the kidnappers."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.66,
+          "pitch_beat_index": 4,
+          "pitch_text": "At the wedding reception the stepmother is taken into custody.",
+          "candidate_beat_index": 4,
+          "candidate_text": "The stepmother is arrested at the reception."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.521,
+          "pitch_beat_index": 5,
+          "pitch_text": "Kabir explains he refused because he had already located the gang.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Veer reveals that he refused to pay because he had already tracked the kidnappers."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [
+        "FAMILY_PRESSURE"
+      ],
+      "shared_rare_details": [
+        "mask",
+        "men",
+        "polic",
+        "ransom",
+        "reception",
+        "refus",
+        "stepmother"
+      ],
+      "differentiating_beats": [],
+      "supporting_excerpt_or_scene_id": [
+        "S26#beat0",
+        "S26#beat1",
+        "S26#beat2",
+        "S26#beat2",
+        "S26#beat3",
+        "S26#beat3",
+        "S26#beat4",
+        "S26#beat5",
+        "S26#beat4",
+        "S26#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S02",
+      "candidate_title": "Night Shift Owner",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0776,
+        "ordered_event_overlap": 0.0991,
+        "lexical_cosine": 0.0704,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.0892,
+        "plain_tfidf_cosine": 0.1136
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.136,
+          "pitch_beat_index": 1,
+          "pitch_text": "Her fiance Kabir declines to hand over the ransom money, which makes her relatives hate him.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Billionaire Kabir Rao takes a job as the night janitor in his own tech company because money is disappearing from its accounts."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.329,
+          "pitch_beat_index": 3,
+          "pitch_text": "She records the stepmother's phone call to the gang and gives it to the police.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Kabir records the finance chief's confession on a hidden phone."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "She records the stepmother's phone call to the gang and gives it to the police.",
+          "candidate_beat_index": 5,
+          "candidate_text": "At an emergency board meeting he reveals he is the owner, plays the recording and clears Tanya."
+        }
+      ],
+      "shared_generic_tropes": [
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "phon"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At the wedding reception the stepmother is taken into custody."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Divya gets away and learns her stepmother paid the abductors."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "The finance chief learns about the leak and frames Tanya for the theft."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S02#beat0",
+        "S02#beat4",
+        "S02#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S25",
+      "candidate_title": "Twin in the Wedding Dress",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0533,
+        "ordered_event_overlap": 0.1901,
+        "lexical_cosine": 0.044,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2631,
+        "plain_tfidf_cosine": 0.0325
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.167,
+          "pitch_beat_index": 0,
+          "pitch_text": "Masked men snatch Divya from her own wedding hall.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Twin sister Hina is begged to take her runaway sister Heer's place at a wedding to billionaire Zayn."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Her fiance Kabir declines to hand over the ransom money, which makes her relatives hate him.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Hina finds out that Heer ran away to escape a debt to a gangster."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.152,
+          "pitch_beat_index": 2,
+          "pitch_text": "Divya gets away and learns her stepmother paid the abductors.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Hina finds out that Heer ran away to escape a debt to a gangster."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "Divya gets away and learns her stepmother paid the abductors.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Zayn pays the gangster, then asks to marry Hina for real."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [
+        "SECRET_CHILD"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At the wedding reception the stepmother is taken into custody."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "She records the stepmother's phone call to the gang and gives it to the police."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wears the dress and keeps up the act in the groom's mansion."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "He confronts her in the garden and she confesses everything."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S25#beat0",
+        "S25#beat2",
+        "S25#beat2",
+        "S25#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S27",
+      "candidate_title": "The Same Wedding Day",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0468,
+        "ordered_event_overlap": 0.1171,
+        "lexical_cosine": 0.0571,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1031,
+        "plain_tfidf_cosine": 0.048
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.151,
+          "pitch_beat_index": 0,
+          "pitch_text": "Masked men snatch Divya from her own wedding hall.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Wedding planner Tanvi relives the same wedding day every morning after a lightning strike."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Her fiance Kabir declines to hand over the ransom money, which makes her relatives hate him.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Each loop she finds a different disaster: a missing ring, a food poisoning, a runaway groom."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.13,
+          "pitch_beat_index": 4,
+          "pitch_text": "At the wedding reception the stepmother is taken into custody.",
+          "candidate_beat_index": 4,
+          "candidate_text": "The loop breaks only when she lets the wedding go ahead with its imperfections."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "She records the stepmother's phone call to the gang and gives it to the police."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Divya gets away and learns her stepmother paid the abductors."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She traps the saboteur, the bride's ex, with a fake gift."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "She slowly realises one guest is sabotaging every loop."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S27#beat0",
+        "S27#beat1",
+        "S27#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S08",
+      "candidate_title": "Reborn Before the Fire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0321,
+        "ordered_event_overlap": 0.2506,
+        "lexical_cosine": 0.0371,
+        "rare_detail_overlap": 0.0588,
+        "event_set_overlap": 0.1975,
+        "plain_tfidf_cosine": 0.0322
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Her fiance Kabir declines to hand over the ransom money, which makes her relatives hate him.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "She records the stepmother's phone call to the gang and gives it to the police.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Remembering everything, she quietly changes her will and records the couple plotting."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.193,
+          "pitch_beat_index": 3,
+          "pitch_text": "She records the stepmother's phone call to the gang and gives it to the police.",
+          "candidate_beat_index": 4,
+          "candidate_text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "polic"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At the wedding reception the stepmother is taken into custody."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Divya gets away and learns her stepmother paid the abductors."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She avoids the engagement and takes the fire's date to move her family out of the house."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wakes up three years in the past on the day of her engagement."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S08#beat0",
+        "S08#beat2",
+        "S08#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S26"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

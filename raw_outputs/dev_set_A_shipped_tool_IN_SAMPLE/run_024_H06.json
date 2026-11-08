@@ -1,0 +1,394 @@
+{
+  "run_id": "20261108T073749Z_686ad31f",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "H06",
+  "source_title": "H06 [TROPE_ONLY]",
+  "input_sha256": "686ad31f66964c606fc4e34d67fa91c24505879bd4596ffbc28e9836c8f0eb98",
+  "input_text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty. He decides not to chase money but to spend time with his father, who died when Kunal was twenty. They repair an old scooter together and fish at the lake. When the day of his father's heart attack comes, Kunal calls the ambulance in time.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S14",
+      "candidate_title": "Rejected by the Alpha",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.005,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0773,
+        "ordered_event_overlap": 0.1298,
+        "lexical_cosine": 0.1237,
+        "rare_detail_overlap": 0.125,
+        "event_set_overlap": 0.1584,
+        "plain_tfidf_cosine": 0.0943
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.199,
+          "pitch_beat_index": 0,
+          "pitch_text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A dying old wolf tells her she is the last descendant of the Moon Goddess, and her power is waking."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.265,
+          "pitch_beat_index": 1,
+          "pitch_text": "He decides not to chase money but to spend time with his father, who died when Kunal was twenty.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Kael begs her to accept him again and she decides to say no."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "attack",
+        "call",
+        "decid"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When the day of his father's heart attack comes, Kunal calls the ambulance in time."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "They repair an old scooter together and fish at the lake."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "At the full moon ceremony, Alpha Kael publicly rejects his fated mate Luna, calling her weak because she cannot shift."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Luna returns, shifts into a white wolf and defeats the rogues."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S14#beat2",
+        "S14#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S30",
+      "candidate_title": "The Last Will Game",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0013,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.075,
+        "ordered_event_overlap": 0.2241,
+        "lexical_cosine": 0.0612,
+        "rare_detail_overlap": 0.0588,
+        "event_set_overlap": 0.1844,
+        "plain_tfidf_cosine": 0.0789
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.208,
+          "pitch_beat_index": 0,
+          "pitch_text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty.",
+          "candidate_beat_index": 0,
+          "candidate_text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.242,
+          "pitch_beat_index": 1,
+          "pitch_text": "He decides not to chase money but to spend time with his father, who died when Kunal was twenty.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Two rich grandchildren spend the month fighting each other and bribing the lawyer."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "spend"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When the day of his father's heart attack comes, Kunal calls the ambulance in time."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "They repair an old scooter together and fish at the lake."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Isha inherits everything, and she gives the cousins a salary."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S30#beat0",
+        "S30#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S01",
+      "candidate_title": "The Chauffeur's Secret",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0008,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0608,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.1334,
+        "rare_detail_overlap": 0.05,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.1144
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.365,
+          "pitch_beat_index": 1,
+          "pitch_text": "He decides not to chase money but to spend time with his father, who died when Kunal was twenty.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "decid"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When the day of his father's heart attack comes, Kunal calls the ambulance in time."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S01#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S21",
+      "candidate_title": "Kidney for a Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0581,
+        "ordered_event_overlap": 0.133,
+        "lexical_cosine": 0.0624,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.0906,
+        "plain_tfidf_cosine": 0.0599
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Karan finds out on the day of the operation and storms into the operating theatre."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.209,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the day of his father's heart attack comes, Kunal calls the ambulance in time.",
+          "candidate_beat_index": 5,
+          "candidate_text": "His mother survives, and Samaira finally admits she needs a bodyguard for her heart."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "heart"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "They repair an old scooter together and fish at the lake."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Samaira secretly agrees to donate a kidney and swears the doctors to silence."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "At the hospital they learn that Samaira's blood matches his mother's."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S21#beat4",
+        "S21#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0597,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0933,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0692
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.192,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the day of his father's heart attack comes, Kunal calls the ambulance in time.",
+          "candidate_beat_index": 4,
+          "candidate_text": "She finds her father's notebook and takes it to a lawyer."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "They repair an old scooter together and fish at the lake."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_ONLY",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

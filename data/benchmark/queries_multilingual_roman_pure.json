@@ -1,0 +1,54 @@
+{
+ "_comment": "Roman-script transliterations of the Devanagari pitches M05-M08 (pure Hindi vocabulary, few English loanwords). Written and frozen before the language layer; run once.",
+ "exact_ids": [],
+ "queries": [
+  {
+   "qid": "R05",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S09"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hinglish_pure",
+   "text": "Ek mareez ki operation ke dauran maut ho jaati hai aur ilzaam doctor Meghna par aata hai, uska license radd ho jaata hai. Asli gunehgaar uski pratidwandi doctor Bhatia hai, jisne dawa ka label badal diya tha. Meghna naam badalkar ek gaon ke clinic mein raat ki nurse ban jaati hai. Wahan ek marta hua mareez use purana laptop deta hai jisme operation theatre ki recording hai. Meghna live conference ke dauran wo recording medical council ko bhej deti hai. Doctor Bhatia giraftaar ho jaati hai."
+  },
+  {
+   "qid": "R06",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S12"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hinglish_pure",
+   "text": "Car durghatna ke baad Zoya ki yaaddasht chali jaati hai. Pati ki premika Diya use yakeen dilati hai ki wo sirf ghar ki naukrani hai aur usse farsh saaf karwati hai. Zoya ko farsh ke neeche chhupi ek diary milti hai jisme uski asli kahani likhi hai. Dheere-dheere uski yaaddasht laut aati hai lekin wo anjaan bani rehti hai. Pati ki charity party mein wo ghar ki malkin banke aati hai aur Diya ke jhooth ki recording sabko suna deti hai. Pati ko sach pata chal jaata hai aur Diya ko nikaal diya jaata hai."
+  },
+  {
+   "qid": "R07",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S10"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hinglish_pure",
+   "text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha. Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai. Simran saalon se sach jaanti thi aur usne test ki report chhupa li thi. Tara ko aspatal ki file milti hai jisme likha hai ki Simran ki maa ne nurse ko paise dekar bachche badalwaye the. Parivaar ke charity gala mein Tara wo file sabke saamne khol deti hai. Ameer maa ko sabke saamne maanna padta hai ki usne galat bachchi chuni."
+  },
+  {
+   "qid": "R08",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S06"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hinglish_pure",
+   "text": "Ananya ko mandap par chhod diya jaata hai kyunki uska dulha Rohan uski chhoti behen Kavya ke saath bhaag jaata hai. Sab mehmaanon ke saamne wo Rohan ke taqatwar chacha Mr. Malhotra se shaadi ka prastav rakhti hai aur wo haan keh dete hain. Ab Rohan aur Kavya ko use chachi kehna padta hai. Ananya saboot jutati hai ki dono ne uski maa ke trust fund se paise churaaye the. Salgirah ki party mein wo dining room ki screen par saboot chala deti hai. Rohan aur Kavya ko ghar se nikaal diya jaata hai."
+  }
+ ]
+}

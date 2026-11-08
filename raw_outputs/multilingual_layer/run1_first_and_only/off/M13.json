@@ -1,0 +1,434 @@
+{
+ "run_id": "20261108T080119Z_bdb1c463",
+ "run_label": "run1_first_and_only/off",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "M13",
+ "source_title": "M13",
+ "input_sha256": "bdb1c463f4b75d0bd0ee9a70bef96b6a245923f86ad39abb99987677099f7ed4",
+ "input_text": "एक वैज्ञानिक चाँद पर पहला पौधा उगाने की कोशिश करता है। पहले दो प्रयोग असफल हो जाते हैं। वह मिट्टी की जाँच दोबारा करता है। तीसरी बार वह मिट्टी बदलता है और बीज अंकुरित हो जाता है। पूरी दुनिया उस छोटे से पौधे की तस्वीर देखती है।",
+ "working_text_en": null,
+ "language": {
+  "detected": "hi",
+  "name": "Hindi (Devanagari; Marathi/Nepali look the same)",
+  "script": "devanagari",
+  "confidence": 1.0,
+  "evidence": "106 of 106 letters are devanagari",
+  "method": "none",
+  "reliable": true,
+  "recognised_share": null,
+  "unrecognised_sample": []
+ },
+ "input_beats": 2,
+ "input_warnings": [
+  "Very short pitch (2 beats): too little plot to compare reliably.",
+  "Text is mostly non-English/non-Latin. The event lexicon is English-only, so matching falls back to weak lexical overlap. Treat results as unreliable."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S02",
+   "candidate_title": "Night Shift Owner",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The finance chief learns about the leak and frames Tanya for the theft."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S03",
+   "candidate_title": "The Noodle Stall Husband",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Her mother-in-law and aunts humiliate Dev at every family dinner and tell Riya to divorce him."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Riya realises the paper marriage has become real, and her mother-in-law has to apologise to a noodle cook."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S04",
+   "candidate_title": "Delivery Boy, Dining Empire",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (7 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Vikram, owner of a restaurant chain, delivers food on a scooter for a week to see how his customers live."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Vikram secretly buys the tycoon's debt, forcing the tycoon to withdraw."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S05",
+   "candidate_title": "The Intern Who Owns the Floor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S06",
+   "candidate_title": "Ashes at the Altar",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S07",
+   "candidate_title": "Divorce Papers, Diamond Return",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Sana builds a rival brand under a new name and starts winning his clients."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S08",
+   "candidate_title": "Reborn Before the Fire",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S09",
+   "candidate_title": "The Framed Surgeon",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "A dying clinic patient hands her an old hospital laptop that holds the operating-room recording."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S10",
+   "candidate_title": "Swapped at Birth",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

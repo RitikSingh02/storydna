@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+out/
+.env
+.streamlit/secrets.toml
+.DS_Store
+# Kuku's confidential input pack must NEVER be committed:
+kuku_input_pack/
+*.confidential

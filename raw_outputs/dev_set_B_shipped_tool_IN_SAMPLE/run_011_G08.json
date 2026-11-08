@@ -1,0 +1,392 @@
+{
+  "run_id": "20261108T073750Z_cbc40249",
+  "run_label": "dev_set_B_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:50+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "G08",
+  "source_title": "G08 [UNRELATED]",
+  "input_sha256": "cbc402493bab85a9a656aa1cecf5bebea0bec6392f8d25815b30a8d471a32327",
+  "input_text": "Two rival chess prodigies in a small town prepare for the national junior championship. They are forced to share a train compartment and slowly become friends. In the final round they agree to a draw and share the trophy.",
+  "input_beats": 3,
+  "input_warnings": [
+    "Very short pitch (3 beats): too little plot to compare reliably."
+  ],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.5705,
+      "review_priority": "Medium",
+      "components": {
+        "beat_alignment": 0.1223,
+        "ordered_event_overlap": 0.4634,
+        "lexical_cosine": 0.155,
+        "rare_detail_overlap": 0.1429,
+        "event_set_overlap": 0.3702,
+        "plain_tfidf_cosine": 0.1514
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.298,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two rival chess prodigies in a small town prepare for the national junior championship.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wins the national maths olympiad."
+        },
+        {
+          "events": [
+            "COMEUPPANCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.436,
+          "pitch_beat_index": 1,
+          "pitch_text": "They are forced to share a train compartment and slowly become friends.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Mr. Sethi is forced to share ownership of the patent with Rani."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE"
+      ],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [
+        "forc",
+        "national",
+        "shar"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "In the final round they agree to a draw and share the trophy."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat1",
+        "S29#beat5"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S28",
+      "candidate_title": "Last Round",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.168,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.1053,
+        "ordered_event_overlap": 0.609,
+        "lexical_cosine": 0.1143,
+        "rare_detail_overlap": 0.1429,
+        "event_set_overlap": 0.4077,
+        "plain_tfidf_cosine": 0.0745
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two rival chess prodigies in a small town prepare for the national junior championship.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Gudiya fights in the state final, takes a heavy hit in round three and gets up."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.236,
+          "pitch_beat_index": 1,
+          "pitch_text": "They are forced to share a train compartment and slowly become friends.",
+          "candidate_beat_index": 1,
+          "candidate_text": "He starts training Gudiya, an orphan girl from his neighbourhood."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [
+        "final",
+        "round",
+        "train"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Disgraced former boxing champion Ravi is banned after a match-fixing scandal."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Ravi proves in public that the match-fixing was ordered by that same owner."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S28#beat4",
+        "S28#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S04",
+      "candidate_title": "Delivery Boy, Dining Empire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (7 beats)",
+      "retrieval_score": 0.0004,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0582,
+        "ordered_event_overlap": 0.1643,
+        "lexical_cosine": 0.0716,
+        "rare_detail_overlap": 0.1053,
+        "event_set_overlap": 0.1297,
+        "plain_tfidf_cosine": 0.0436
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.215,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two rival chess prodigies in a small town prepare for the national junior championship.",
+          "candidate_beat_index": 1,
+          "candidate_text": "He falls for Pooja, a waitress at a small family cafe that is failing."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.193,
+          "pitch_beat_index": 1,
+          "pitch_text": "They are forced to share a train compartment and slowly become friends.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Vikram secretly buys the tycoon's debt, forcing the tycoon to withdraw."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "forc",
+        "small"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "In the final round they agree to a draw and share the trophy."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Vikram, owner of a restaurant chain, delivers food on a scooter for a week to see how his customers live."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Pooja finds the paperwork and suspects Vikram has been spying on her."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S04#beat1",
+        "S04#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S11",
+      "candidate_title": "Twins He Never Knew",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0003,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0729,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0855,
+        "rare_detail_overlap": 0.08,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0816
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.437,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two rival chess prodigies in a small town prepare for the national junior championship.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She raises twin boys alone in a small town."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "small",
+        "town"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "In the final round they agree to a draw and share the trophy."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "They are forced to share a train compartment and slowly become friends."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "He demands a paternity test and fights for custody."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S11#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0332,
+        "ordered_event_overlap": 0.1859,
+        "lexical_cosine": 0.0292,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.1409,
+        "plain_tfidf_cosine": 0.0261
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.199,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two rival chess prodigies in a small town prepare for the national junior championship.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "town"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "In the final round they agree to a draw and share the trophy."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "They are forced to share a train compartment and slowly become friends."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Ishaan gives him a job as security guard and walks away without a word."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "UNRELATED",
+    "relevant": [],
+    "expected_tiers": [
+      "Low"
+    ]
+  }
+}

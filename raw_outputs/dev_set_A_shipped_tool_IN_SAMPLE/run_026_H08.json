@@ -1,0 +1,413 @@
+{
+  "run_id": "20261108T073749Z_c444bea1",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "H08",
+  "source_title": "H08 [TROPE_ONLY]",
+  "input_sha256": "c444bea166fd99d34fe44ad516c4d4bb1ea5e2247ff3f039fef47ede065bb648",
+  "input_text": "At the Moonridge academy for young werewolves, pup Zara is the smallest student and is picked last for every team. She enters the annual wolf tournament as a joke and loses the first round badly. A retired coach trains her to use speed instead of strength. In the final she beats the school champion and the academy raises its cup for her.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S28",
+      "candidate_title": "Last Round",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0519,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0888,
+        "ordered_event_overlap": 0.384,
+        "lexical_cosine": 0.1381,
+        "rare_detail_overlap": 0.1905,
+        "event_set_overlap": 0.2016,
+        "plain_tfidf_cosine": 0.1018
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "She enters the annual wolf tournament as a joke and loses the first round badly.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Gudiya fights in the state final, takes a heavy hit in round three and gets up."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.352,
+          "pitch_beat_index": 2,
+          "pitch_text": "A retired coach trains her to use speed instead of strength.",
+          "candidate_beat_index": 1,
+          "candidate_text": "He starts training Gudiya, an orphan girl from his neighbourhood."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [
+        "champion",
+        "final",
+        "round",
+        "train"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "At the Moonridge academy for young werewolves, pup Zara is the smallest student and is picked last for every team."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Disgraced former boxing champion Ravi is banned after a match-fixing scandal."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "A rival gym owner tries to buy Gudiya's contract and threatens Ravi."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S28#beat4",
+        "S28#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S14",
+      "candidate_title": "Rejected by the Alpha",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0147,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0896,
+        "ordered_event_overlap": 0.3764,
+        "lexical_cosine": 0.1301,
+        "rare_detail_overlap": 0.0417,
+        "event_set_overlap": 0.2961,
+        "plain_tfidf_cosine": 0.0609
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.309,
+          "pitch_beat_index": 0,
+          "pitch_text": "At the Moonridge academy for young werewolves, pup Zara is the smallest student and is picked last for every team.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A dying old wolf tells her she is the last descendant of the Moon Goddess, and her power is waking."
+        },
+        {
+          "events": [
+            "SUPERNATURAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "At the Moonridge academy for young werewolves, pup Zara is the smallest student and is picked last for every team.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Rogue wolves attack Kael's pack and he cannot stop them."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "SUPERNATURAL"
+      ],
+      "shared_rare_details": [
+        "wolf"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "In the final she beats the school champion and the academy raises its cup for her."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A retired coach trains her to use speed instead of strength."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "At the full moon ceremony, Alpha Kael publicly rejects his fated mate Luna, calling her weak because she cannot shift."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Luna is banished from the pack and wanders into the mountains."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S14#beat2",
+        "S14#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S16",
+      "candidate_title": "Villainess Transmigrated",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0414,
+        "ordered_event_overlap": 0.204,
+        "lexical_cosine": 0.0572,
+        "rare_detail_overlap": 0.0769,
+        "event_set_overlap": 0.1966,
+        "plain_tfidf_cosine": 0.0277
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.248,
+          "pitch_beat_index": 2,
+          "pitch_text": "A retired coach trains her to use speed instead of strength.",
+          "candidate_beat_index": 4,
+          "candidate_text": "In the final trial Mira uses her knowledge of the novel to expose the heroine's fake visions."
+        },
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "In the final she beats the school champion and the academy raises its cup for her.",
+          "candidate_beat_index": 4,
+          "candidate_text": "In the final trial Mira uses her knowledge of the novel to expose the heroine's fake visions."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [
+        "final",
+        "use"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She enters the annual wolf tournament as a joke and loses the first round badly."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "At the Moonridge academy for young werewolves, pup Zara is the smallest student and is picked last for every team."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Modern office worker Mira falls asleep over a web novel and wakes up inside it as the villainess who is executed in chapter thirty."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "The novel's heroine turns out to be another transmigrator who wants the duke for herself."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S16#beat4",
+        "S16#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0414,
+        "ordered_event_overlap": 0.232,
+        "lexical_cosine": 0.037,
+        "rare_detail_overlap": 0.0476,
+        "event_set_overlap": 0.1936,
+        "plain_tfidf_cosine": 0.0373
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.248,
+          "pitch_beat_index": 0,
+          "pitch_text": "At the Moonridge academy for young werewolves, pup Zara is the smallest student and is picked last for every team.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "She enters the annual wolf tournament as a joke and loses the first round badly.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wins the national maths olympiad."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [
+        "student"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "In the final she beats the school champion and the academy raises its cup for her."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A retired coach trains her to use speed instead of strength."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Mr. Sethi is forced to share ownership of the patent with Rani."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat0",
+        "S29#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S11",
+      "candidate_title": "Twins He Never Knew",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0352,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0758,
+        "rare_detail_overlap": 0.08,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0854
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.211,
+          "pitch_beat_index": 3,
+          "pitch_text": "In the final she beats the school champion and the academy raises its cup for her.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She raises twin boys alone in a small town."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "rais",
+        "school"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She enters the annual wolf tournament as a joke and loses the first round badly."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "At the Moonridge academy for young werewolves, pup Zara is the smallest student and is picked last for every team."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "He demands a paternity test and fights for custody."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S11#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_ONLY",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

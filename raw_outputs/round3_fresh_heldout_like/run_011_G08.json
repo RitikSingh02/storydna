@@ -1,0 +1,419 @@
+{
+  "run_id": "20261108T073000Z_cbc40249",
+  "run_label": "round3_fresh_heldout_like",
+  "created_utc": "2026-11-08T07:30:00+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 3,
+      "min_distinct_matched": 2,
+      "min_ordered": 0.5,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_lex": 0.2,
+      "min_rare": 0.15,
+      "min_ordered": 0.5,
+      "min_distinct_for_ordered": 3,
+      "min_detail_with_ordered": 0.1
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "G08",
+  "source_title": "G08 [UNRELATED]",
+  "input_sha256": "cbc402493bab85a9a656aa1cecf5bebea0bec6392f8d25815b30a8d471a32327",
+  "input_text": "Two rival chess prodigies in a small town prepare for the national junior championship. They are forced to share a train compartment and slowly become friends. In the final round they agree to a draw and share the trophy.",
+  "input_beats": 3,
+  "input_warnings": [
+    "Very short pitch (3 beats): too little plot to compare reliably."
+  ],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S28",
+      "candidate_title": "Last Round",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.3492,
+      "review_priority": "High",
+      "components": {
+        "ordered_event_overlap": 0.609,
+        "lexical_cosine": 0.1162,
+        "rare_detail_overlap": 0.15,
+        "event_set_overlap": 0.4077,
+        "plain_tfidf_cosine": 0.0745
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two rival chess prodigies in a small town prepare for the national junior championship.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A rival gym owner tries to buy Gudiya's contract and threatens Ravi."
+        },
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two rival chess prodigies in a small town prepare for the national junior championship.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Gudiya fights in the state final, takes a heavy hit in round three and gets up."
+        },
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 2,
+          "pitch_text": "In the final round they agree to a draw and share the trophy.",
+          "candidate_beat_index": 5,
+          "candidate_text": "She wins on points as Ravi cries in her corner."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [
+        "final",
+        "round",
+        "train"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "They are forced to share a train compartment and slowly become friends."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Disgraced former boxing champion Ravi is banned after a match-fixing scandal."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Ravi proves in public that the match-fixing was ordered by that same owner."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S28#beat2",
+        "S28#beat4",
+        "S28#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.2997,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.4634,
+        "lexical_cosine": 0.1577,
+        "rare_detail_overlap": 0.15,
+        "event_set_overlap": 0.3702,
+        "plain_tfidf_cosine": 0.1514
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two rival chess prodigies in a small town prepare for the national junior championship.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wins the national maths olympiad."
+        },
+        {
+          "events": [
+            "COMEUPPANCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 1,
+          "pitch_text": "They are forced to share a train compartment and slowly become friends.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Mr. Sethi is forced to share ownership of the patent with Rani."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE"
+      ],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [
+        "forc",
+        "national",
+        "shar"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "In the final round they agree to a draw and share the trophy."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat1",
+        "S29#beat5"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S13",
+      "candidate_title": "The Widow's Ledger",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (5 beats)",
+      "retrieval_score": 0.1345,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.279,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2293,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two rival chess prodigies in a small town prepare for the national junior championship.",
+          "candidate_beat_index": 3,
+          "candidate_text": "In the hotel lobby she serves him with papers showing that she now owns every debt he ran from."
+        },
+        {
+          "events": [
+            "COMEUPPANCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 1,
+          "pitch_text": "They are forced to share a train compartment and slowly become friends.",
+          "candidate_beat_index": 4,
+          "candidate_text": "He signs over his hidden accounts to avoid prison."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "COMEUPPANCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "In the final round they agree to a draw and share the trophy."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She works at a tailoring shop and secretly buys up his creditors' notes one by one."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "She tracks him to a luxury hotel in another city living under a new name."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S13#beat3",
+        "S13#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S20",
+      "candidate_title": "The Stolen Recipe",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1343,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.3034,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1294,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Two rival chess prodigies in a small town prepare for the national junior championship.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Mallika challenges Dhruv to a live cook-off in front of a studio audience."
+        },
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 2,
+          "pitch_text": "In the final round they agree to a draw and share the trophy.",
+          "candidate_beat_index": 5,
+          "candidate_text": "She wins and opens her own restaurant."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "They are forced to share a train compartment and slowly become friends."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Chef Mallika's sous-chef Dhruv steals her secret biryani recipe and wins a televised cooking contest with it."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "A food vlogger films her cart, and the video goes viral overnight."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S20#beat4",
+        "S20#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S16",
+      "candidate_title": "Villainess Transmigrated",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.133,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2439,
+        "lexical_cosine": 0.0239,
+        "rare_detail_overlap": 0.04,
+        "event_set_overlap": 0.2025,
+        "plain_tfidf_cosine": 0.0239
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONTEST_WIN"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 2,
+          "pitch_text": "In the final round they agree to a draw and share the trophy.",
+          "candidate_beat_index": 4,
+          "candidate_text": "In the final trial Mira uses her knowledge of the novel to expose the heroine's fake visions."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONTEST_WIN"
+      ],
+      "shared_rare_details": [
+        "final"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Two rival chess prodigies in a small town prepare for the national junior championship."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "They are forced to share a train compartment and slowly become friends."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Modern office worker Mira falls asleep over a web novel and wakes up inside it as the villainess who is executed in chapter thirty."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "The novel's heroine turns out to be another transmigrator who wants the duke for herself."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S16#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "UNRELATED",
+    "relevant": [],
+    "expected_tiers": [
+      "Low"
+    ]
+  }
+}

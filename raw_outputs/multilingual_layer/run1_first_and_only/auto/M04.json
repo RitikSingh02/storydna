@@ -1,0 +1,806 @@
+{
+ "run_id": "20261108T080119Z_85ad2c44",
+ "run_label": "run1_first_and_only/auto",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "M04",
+ "source_title": "M04",
+ "input_sha256": "85ad2c442d8596fe60451f7144203a0520b4eea9481addedafb20c788e36af6b",
+ "input_text": "Leena ko uske pati Nikhil aur best friend Ishita ghar mein aag lagakar maar dete hain kyunki unhe uski jaaydaad chahiye. Wo teen saal pehle apni engagement ke din jaag jaati hai. Sab kuch yaad hone ki wajah se wo chupke se apni will badal deti hai aur dono ki saazish record kar leti hai. Aag lagne wali tareekh par wo apne parivaar ko ghar se bahar nikaal leti hai. Jab aag dobara lagti hai to khaali ghar jalta hai aur police Nikhil tak pahunch jaati hai. Ishita apni jaan bachane ke liye kabool kar leti hai.",
+ "working_text_en": "Leena sets fire kills husband Nikhil best friend Ishita house inheritance chahiye.\nThree wakes up years earlier engagement days.\nWajah remembers changes records secretly will saazish.\nFire moves out lagne tareekh family house.\nFire traces dobara lagti khaali house jalta police Nikhil.\nIshita saves confesses jaan.",
+ "language": {
+  "detected": "hi-Latn",
+  "name": "Hindi in Roman letters (Hinglish)",
+  "script": "latin",
+  "confidence": 0.433,
+  "evidence": "43% Hindi function words vs 2% English",
+  "method": "glossary",
+  "reliable": true,
+  "recognised_share": 0.649,
+  "unrecognised_sample": [
+   "best",
+   "chahiye",
+   "dobara",
+   "friend",
+   "jaan",
+   "jalta",
+   "khaali",
+   "lagne",
+   "lagti",
+   "saazish",
+   "tareekh",
+   "wajah"
+  ]
+ },
+ "input_beats": 6,
+ "input_warnings": [
+  "Hindi text was converted to English with a small offline glossary (approximate; a model gives better results: set STORYDNA_PROVIDER/MODEL/KEY and tick 'translate with model')."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S08",
+   "candidate_title": "Reborn Before the Fire",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 1.0,
+   "review_priority": "High",
+   "components": {
+    "beat_alignment": 0.665,
+    "ordered_event_overlap": 0.8655,
+    "lexical_cosine": 0.5787,
+    "rare_detail_overlap": 0.5294,
+    "event_set_overlap": 1.0,
+    "plain_tfidf_cosine": 0.5476
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "FIRE_ACCIDENT",
+      "INHERITANCE"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.932,
+     "pitch_beat_index": 0,
+     "pitch_text": "Leena sets fire kills husband Nikhil best friend Ishita house inheritance chahiye.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance.",
+     "pitch_text_original": "Leena ko uske pati Nikhil aur best friend Ishita ghar mein aag lagakar maar dete hain kyunki unhe uski jaaydaad chahiye."
+    },
+    {
+     "events": [
+      "REBIRTH_TIME"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.76,
+     "pitch_beat_index": 1,
+     "pitch_text": "Three wakes up years earlier engagement days.",
+     "candidate_beat_index": 1,
+     "candidate_text": "She wakes up three years in the past on the day of her engagement.",
+     "pitch_text_original": "Wo teen saal pehle apni engagement ke din jaag jaati hai."
+    },
+    {
+     "events": [
+      "EVIDENCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.66,
+     "pitch_beat_index": 2,
+     "pitch_text": "Wajah remembers changes records secretly will saazish.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Remembering everything, she quietly changes her will and records the couple plotting.",
+     "pitch_text_original": "Sab kuch yaad hone ki wajah se wo chupke se apni will badal deti hai aur dono ki saazish record kar leti hai."
+    },
+    {
+     "events": [
+      "FIRE_ACCIDENT"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.33,
+     "pitch_beat_index": 3,
+     "pitch_text": "Fire moves out lagne tareekh family house.",
+     "candidate_beat_index": 3,
+     "candidate_text": "She avoids the engagement and takes the fire's date to move her family out of the house.",
+     "pitch_text_original": "Aag lagne wali tareekh par wo apne parivaar ko ghar se bahar nikaal leti hai."
+    },
+    {
+     "events": [
+      "FIRE_ACCIDENT",
+      "CRIME_VIOLENCE"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.754,
+     "pitch_beat_index": 4,
+     "pitch_text": "Fire traces dobara lagti khaali house jalta police Nikhil.",
+     "candidate_beat_index": 4,
+     "candidate_text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil.",
+     "pitch_text_original": "Jab aag dobara lagti hai to khaali ghar jalta hai aur police Nikhil tak pahunch jaati hai."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.554,
+     "pitch_beat_index": 5,
+     "pitch_text": "Ishita saves confesses jaan.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Ishita confesses to save herself, and Leena finally lives the life she was denied.",
+     "pitch_text_original": "Ishita apni jaan bachane ke liye kabool kar leti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "CRIME_VIOLENCE",
+    "EVIDENCE",
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [
+    "FIRE_ACCIDENT",
+    "REBIRTH_TIME"
+   ],
+   "shared_rare_details": [
+    "best",
+    "chang",
+    "engagement",
+    "friend",
+    "inheritanc",
+    "polic",
+    "remember",
+    "set",
+    "trac"
+   ],
+   "differentiating_beats": [],
+   "supporting_excerpt_or_scene_id": [
+    "S08#beat0",
+    "S08#beat1",
+    "S08#beat2",
+    "S08#beat3",
+    "S08#beat4",
+    "S08#beat5"
+   ],
+   "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S27",
+   "candidate_title": "The Same Wedding Day",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0117,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.1077,
+    "ordered_event_overlap": 0.555,
+    "lexical_cosine": 0.017,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.6056,
+    "plain_tfidf_cosine": 0.0125
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "REBIRTH_TIME"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 1,
+     "pitch_text": "Three wakes up years earlier engagement days.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Wedding planner Tanvi relives the same wedding day every morning after a lightning strike.",
+     "pitch_text_original": "Wo teen saal pehle apni engagement ke din jaag jaati hai."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.646,
+     "pitch_beat_index": 1,
+     "pitch_text": "Three wakes up years earlier engagement days.",
+     "candidate_beat_index": 5,
+     "candidate_text": "She wakes up on the day after.",
+     "pitch_text_original": "Wo teen saal pehle apni engagement ke din jaag jaati hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "CRIME_VIOLENCE"
+   ],
+   "shared_distinctive_events": [
+    "FIRE_ACCIDENT",
+    "REBIRTH_TIME"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Leena sets fire kills husband Nikhil best friend Ishita house inheritance chahiye."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out lagne tareekh family house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "The loop breaks only when she lets the wedding go ahead with its imperfections."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "She traps the saboteur, the bride's ex, with a fake gift."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S27#beat0",
+    "S27#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S06",
+   "candidate_title": "Ashes at the Altar",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0016,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.1246,
+    "ordered_event_overlap": 0.1664,
+    "lexical_cosine": 0.0744,
+    "rare_detail_overlap": 0.05,
+    "event_set_overlap": 0.13,
+    "plain_tfidf_cosine": 0.0461
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.747,
+     "pitch_beat_index": 3,
+     "pitch_text": "Fire moves out lagne tareekh family house.",
+     "candidate_beat_index": 2,
+     "candidate_text": "She moves into the Malhotra house, where Rohan and Kavya must now call her aunt.",
+     "pitch_text_original": "Aag lagne wali tareekh par wo apne parivaar ko ghar se bahar nikaal leti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE",
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "move"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Fire traces dobara lagti khaali house jalta police Nikhil."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Three wakes up years earlier engagement days."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S06#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S12",
+   "candidate_title": "The Maid Who Was His Wife",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0014,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0694,
+    "ordered_event_overlap": 0.2418,
+    "lexical_cosine": 0.0958,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.2362,
+    "plain_tfidf_cosine": 0.0576
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "FIRE_ACCIDENT"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 0,
+     "pitch_text": "Leena sets fire kills husband Nikhil best friend Ishita house inheritance chahiye.",
+     "candidate_beat_index": 0,
+     "candidate_text": "After a car crash, Zoya wakes up with no memory.",
+     "pitch_text_original": "Leena ko uske pati Nikhil aur best friend Ishita ghar mein aag lagakar maar dete hain kyunki unhe uski jaaydaad chahiye."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.258,
+     "pitch_beat_index": 1,
+     "pitch_text": "Three wakes up years earlier engagement days.",
+     "candidate_beat_index": 0,
+     "candidate_text": "After a car crash, Zoya wakes up with no memory.",
+     "pitch_text_original": "Wo teen saal pehle apni engagement ke din jaag jaati hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE"
+   ],
+   "shared_distinctive_events": [
+    "FIRE_ACCIDENT"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Fire traces dobara lagti khaali house jalta police Nikhil."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Ishita saves confesses jaan."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "She slowly recovers her memory but pretends to still be confused."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Her husband's mistress Diya convinces her that she is only the household maid and makes her scrub floors."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S12#beat0",
+    "S12#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S17",
+   "candidate_title": "The Mafia Boss's Nanny",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0003,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0752,
+    "ordered_event_overlap": 0.2348,
+    "lexical_cosine": 0.0665,
+    "rare_detail_overlap": 0.0625,
+    "event_set_overlap": 0.114,
+    "plain_tfidf_cosine": 0.0171
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.31,
+     "pitch_beat_index": 5,
+     "pitch_text": "Ishita saves confesses jaan.",
+     "candidate_beat_index": 4,
+     "candidate_text": "She confesses, and Viktor reveals he has also been hunting Marco.",
+     "pitch_text_original": "Ishita apni jaan bachane ke liye kabool kar leti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "CRIME_VIOLENCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "set"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out lagne tareekh family house."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Wajah remembers changes records secretly will saazish."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Viktor catches her searching his office and demands the truth."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Nina takes a job as nanny to the five-year-old daughter of mafia boss Viktor Rossi."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S17#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S26",
+   "candidate_title": "Kidnapped on the Mandap",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0003,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0426,
+    "ordered_event_overlap": 0.2549,
+    "lexical_cosine": 0.0508,
+    "rare_detail_overlap": 0.0769,
+    "event_set_overlap": 0.2184,
+    "plain_tfidf_cosine": 0.0404
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.256,
+     "pitch_beat_index": 4,
+     "pitch_text": "Fire traces dobara lagti khaali house jalta police Nikhil.",
+     "candidate_beat_index": 3,
+     "candidate_text": "She records the stepmother's call to the kidnapper and brings it to the police.",
+     "pitch_text_original": "Jab aag dobara lagti hai to khaali ghar jalta hai aur police Nikhil tak pahunch jaati hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "CRIME_VIOLENCE",
+    "EVIDENCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "polic"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out lagne tareekh family house."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Three wakes up years earlier engagement days."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "The stepmother is arrested at the reception."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Bride Anjali is abducted from her own wedding by masked men."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S26#beat3"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0002,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0927,
+    "ordered_event_overlap": 0.072,
+    "lexical_cosine": 0.0457,
+    "rare_detail_overlap": 0.05,
+    "event_set_overlap": 0.0615,
+    "plain_tfidf_cosine": 0.0384
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.252,
+     "pitch_beat_index": 1,
+     "pitch_text": "Three wakes up years earlier engagement days.",
+     "candidate_beat_index": 3,
+     "candidate_text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor.",
+     "pitch_text_original": "Wo teen saal pehle apni engagement ke din jaag jaati hai."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.304,
+     "pitch_beat_index": 5,
+     "pitch_text": "Ishita saves confesses jaan.",
+     "candidate_beat_index": 4,
+     "candidate_text": "Arjun walks in as the investor, reveals his real identity in front of everyone and saves the firm.",
+     "pitch_text_original": "Ishita apni jaan bachane ke liye kabool kar leti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "engagement"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Fire traces dobara lagti khaali house jalta police Nikhil."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out lagne tareekh family house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Meera stands by him and quietly pays his fake debts from her own savings."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S01#beat3",
+    "S01#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S16",
+   "candidate_title": "Villainess Transmigrated",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0002,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0237,
+    "ordered_event_overlap": 0.3195,
+    "lexical_cosine": 0.0289,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.3213,
+    "plain_tfidf_cosine": 0.0298
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "REBIRTH_TIME"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 1,
+     "pitch_text": "Three wakes up years earlier engagement days.",
+     "candidate_beat_index": 3,
+     "candidate_text": "The novel's heroine turns out to be another transmigrator who wants the duke for herself.",
+     "pitch_text_original": "Wo teen saal pehle apni engagement ke din jaag jaati hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "CRIME_VIOLENCE"
+   ],
+   "shared_distinctive_events": [
+    "REBIRTH_TIME"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Fire traces dobara lagti khaali house jalta police Nikhil."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out lagne tareekh family house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "In the final trial Mira uses her knowledge of the novel to expose the heroine's fake visions."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "The duke chooses Mira and the story breaks away from its script."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S16#beat3"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S24",
+   "candidate_title": "The Street Singer's Voice",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0487,
+    "ordered_event_overlap": 0.1715,
+    "lexical_cosine": 0.0429,
+    "rare_detail_overlap": 0.0312,
+    "event_set_overlap": 0.1416,
+    "plain_tfidf_cosine": 0.0303
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [
+    "EVIDENCE",
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "inheritanc"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Fire traces dobara lagti khaali house jalta police Nikhil."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out lagne tareekh family house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Orphan singer Ria performs on busy streets, and a viral video reaches the wealthy Kapoor family."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Mrs. Kapoor sees a birthmark and believes Ria is her long-lost daughter."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S05",
+   "candidate_title": "The Intern Who Owns the Floor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.04,
+    "ordered_event_overlap": 0.2049,
+    "lexical_cosine": 0.0217,
+    "rare_detail_overlap": 0.0417,
+    "event_set_overlap": 0.1663,
+    "plain_tfidf_cosine": 0.0156
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.24,
+     "pitch_beat_index": 2,
+     "pitch_text": "Wajah remembers changes records secretly will saazish.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Sunil is escorted out and the company changes its credit policy.",
+     "pitch_text_original": "Sab kuch yaad hone ki wajah se wo chupke se apni will badal deti hai aur dono ki saazish record kar leti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE",
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "chang"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Fire traces dobara lagti khaali house jalta police Nikhil."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Fire moves out lagne tareekh family house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "At the product launch Sunil unveils her collection as his own."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S05#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

@@ -1,0 +1,7 @@
+### SYSTEM
+You turn a long story text into 6 to 12 short plot beats, in story order. Each beat is one sentence of at most 25 words describing an EVENT (what happens), not a theme. Use only information in the text. Never add events. Reply with a single JSON object and nothing else.
+
+Schema: {"beats": ["<beat 1>", "<beat 2>", "..."]}
+
+### USER
+{text}

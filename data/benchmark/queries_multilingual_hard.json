@@ -1,0 +1,54 @@
+{
+ "_comment": "HARD multilingual set: new character names (none in the catalogue), pure-Hindi vocabulary, few English loanwords. Written and frozen before the language layer existed; run once.",
+ "exact_ids": [],
+ "queries": [
+  {
+   "qid": "H01",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S01"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hinglish_hard",
+   "text": "Karan ek bade karobari ka beta hai. Wo apni mangetar Sneha ka imtihaan lene ke liye uska driver ban jaata hai, yeh jaanne ke liye ki Sneha use pyaar karti hai ya uski daulat se. Sneha ke ghar wale use naukar kehkar neecha dikhate hain aur uske pita mehmaanon ke saamne uski beizzati karte hain. Sneha uska saath nahi chhodti aur chupke se apni bachat se uska jhootha karz chukati hai. Mangni ki party wale din Sneha ke pita ki company doobne wali hoti hai aur bank ek anjaan niveshak bhejta hai. Karan niveshak banke andar aata hai, sabke saamne apni asli pehchaan batata hai aur company bacha leta hai. Sneha ke pita us se maafi maangte hain."
+  },
+  {
+   "qid": "H02",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S08"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hinglish_hard",
+   "text": "Meera ko uska pati Aarav aur sahelli Kavita jaaydaad ke laalach mein ghar mein aag lagakar maar dete hain. Wo teen saal peeche, apni mangni ke din, aankh kholti hai. Sab kuch yaad hone ki wajah se wo chupchaap apna vasiyatnama badal deti hai aur dono ki saazish ki recording kar leti hai. Aag wale din se pehle wo poore parivaar ko ghar se door bhej deti hai. Is baar aag khaali ghar ko jalati hai aur police Aarav ko pakad leti hai. Kavita khud ko bachane ke liye sab kuch maan leti hai."
+  },
+  {
+   "qid": "H03",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S01"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hindi_hard",
+   "text": "करण एक बड़े कारोबारी का बेटा है। वह अपनी मंगेतर स्नेहा को परखने के लिए उसका ड्राइवर बन जाता है कि स्नेहा उसे प्यार करती है या उसकी दौलत से। स्नेहा के घरवाले उसे नौकर कहकर नीचा दिखाते हैं और उसके पिता मेहमानों के सामने उसकी बेइज़्ज़ती करते हैं। स्नेहा उसका साथ नहीं छोड़ती और चुपके से अपनी बचत से उसका झूठा कर्ज़ चुकाती है। सगाई की पार्टी के दिन स्नेहा के पिता की कंपनी डूबने वाली होती है और बैंक एक अनजान निवेशक भेजता है। करण निवेशक बनकर अंदर आता है, सबके सामने अपनी असली पहचान बताता है और कंपनी बचा लेता है। स्नेहा के पिता उससे माफ़ी माँगते हैं।"
+  },
+  {
+   "qid": "H04",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S07"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hindi_hard",
+   "text": "पति ने अपनी सेक्रेटरी के साथ रिश्ते के चलते निशा को तलाक देकर खाली हाथ घर से निकाल दिया। निशा ही वह अनजान ज्वेलरी डिज़ाइनर है जिसके कलेक्शन से पति की कंपनी मशहूर हुई थी। वह नए नाम से अपना ब्रांड खड़ा करती है और पति के ग्राहक छीनने लगती है। पति की कंपनी दिवालिया होने की कगार पर पहुँच जाती है और उसे पता चलता है कि नया ब्रांड किसका है। वह निशा के स्टूडियो में आकर दोबारा शादी की भीख माँगता है। निशा सिर्फ़ एक कागज़ पर दस्तख़त करती है: उसकी डूबती कंपनी को खरीदने के।"
+  }
+ ]
+}

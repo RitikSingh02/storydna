@@ -1,0 +1,477 @@
+{
+  "run_id": "20261108T072829Z_ea4a5b5c",
+  "run_label": "round1_apriori",
+  "created_utc": "2026-11-08T07:28:29+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 5,
+      "min_distinct_matched": 3,
+      "min_ordered": 0.45,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_ordered": 0.3,
+      "min_lex": 0.15,
+      "min_rare": 0.08
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "PT04",
+  "source_title": "PT04 [PARTIAL]",
+  "input_sha256": "ea4a5b5c13ac2f60a0f042c9f0b716bcd2bf6f6938ac338f793f26593f52afb5",
+  "input_text": "Daughter-in-law Bhavna is scolded and ordered about by her father-in-law Gopal, who finds fault with everything she does. She takes it quietly for her husband's sake. The family lawyer reveals that Gopal has been secretly testing who deserves to run the family trust. When the will is read, Gopal names Bhavna as trustee because she never complained or cheated. Her brothers-in-law protest. Gopal pats her head.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S19",
+      "candidate_title": "The Mother-in-Law Test",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.6758,
+      "review_priority": "High",
+      "components": {
+        "ordered_event_overlap": 0.8033,
+        "lexical_cosine": 0.6212,
+        "rare_detail_overlap": 0.4118,
+        "event_set_overlap": 0.8575,
+        "plain_tfidf_cosine": 0.4699
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Daughter-in-law Bhavna is scolded and ordered about by her father-in-law Gopal, who finds fault with everything she does.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Daughter-in-law Aarti is treated like a servant by her mother-in-law Savitri, who criticises every dish and every task."
+        },
+        {
+          "events": [
+            "INHERITANCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "The family lawyer reveals that Gopal has been secretly testing who deserves to run the family trust.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A family lawyer reveals that Savitri has been running a secret test to find out who is worthy to inherit the family temple trust."
+        },
+        {
+          "events": [
+            "INHERITANCE",
+            "BETRAYAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the will is read, Gopal names Bhavna as trustee because she never complained or cheated.",
+          "candidate_beat_index": 3,
+          "candidate_text": "At the reading of the will, Savitri names Aarti the trustee because she alone never complained or cheated."
+        },
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "Her brothers-in-law protest.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Aarti's sisters-in-law are furious."
+        }
+      ],
+      "shared_generic_tropes": [
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [
+        "BETRAYAL",
+        "FAMILY_PRESSURE",
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "cheat",
+        "complain",
+        "law",
+        "name",
+        "run",
+        "sake",
+        "truste"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "Gopal pats her head."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She takes it quietly for her husband's sake."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Aarti endures it quietly for her husband's sake."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Savitri finally hugs her."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S19#beat0",
+        "S19#beat2",
+        "S19#beat3",
+        "S19#beat4"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S06",
+      "candidate_title": "Ashes at the Altar",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1918,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.3252,
+        "lexical_cosine": 0.0472,
+        "rare_detail_overlap": 0.05,
+        "event_set_overlap": 0.376,
+        "plain_tfidf_cosine": 0.0221
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BETRAYAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the will is read, Gopal names Bhavna as trustee because she never complained or cheated.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+        },
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "Her brothers-in-law protest.",
+          "candidate_beat_index": 2,
+          "candidate_text": "She moves into the Malhotra house, where Rohan and Kavya must now call her aunt."
+        }
+      ],
+      "shared_generic_tropes": [
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [
+        "BETRAYAL",
+        "FAMILY_PRESSURE"
+      ],
+      "shared_rare_details": [
+        "run"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Daughter-in-law Bhavna is scolded and ordered about by her father-in-law Gopal, who finds fault with everything she does."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "Gopal pats her head."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "In front of the shocked guests she proposes to Rohan's powerful uncle Mr. Malhotra, who accepts."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S06#beat0",
+        "S06#beat2"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S03",
+      "candidate_title": "The Noodle Stall Husband",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.174,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2966,
+        "lexical_cosine": 0.0969,
+        "rare_detail_overlap": 0.0476,
+        "event_set_overlap": 0.1674,
+        "plain_tfidf_cosine": 0.1001
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Daughter-in-law Bhavna is scolded and ordered about by her father-in-law Gopal, who finds fault with everything she does.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her mother-in-law and aunts humiliate Dev at every family dinner and tell Riya to divorce him."
+        },
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Daughter-in-law Bhavna is scolded and ordered about by her father-in-law Gopal, who finds fault with everything she does.",
+          "candidate_beat_index": 4,
+          "candidate_text": "At a family dinner he tears up the eviction notice and announces that he is the landlord."
+        },
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "Her brothers-in-law protest.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Riya realises the paper marriage has become real, and her mother-in-law has to apologise to a noodle cook."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "FAMILY_PRESSURE",
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "law"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When the will is read, Gopal names Bhavna as trustee because she never complained or cheated."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "Gopal pats her head."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Riya agrees to a paper marriage with Dev, a noodle stall cook, so that her dying grandfather can see her settled."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "When the landlord threatens to evict the whole family, it turns out Dev secretly owns the building."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S03#beat1",
+        "S03#beat4",
+        "S03#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S26",
+      "candidate_title": "Kidnapped on the Mandap",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.141,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2897,
+        "lexical_cosine": 0.0253,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1754,
+        "plain_tfidf_cosine": 0.023
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Daughter-in-law Bhavna is scolded and ordered about by her father-in-law Gopal, who finds fault with everything she does.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She records the stepmother's call to the kidnapper and brings it to the police."
+        },
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "Her brothers-in-law protest.",
+          "candidate_beat_index": 4,
+          "candidate_text": "The stepmother is arrested at the reception."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "FAMILY_PRESSURE"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When the will is read, Gopal names Bhavna as trustee because she never complained or cheated."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "Gopal pats her head."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Anjali escapes and discovers the kidnapper was hired by her stepmother."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Bride Anjali is abducted from her own wedding by masked men."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S26#beat3",
+        "S26#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S30",
+      "candidate_title": "The Last Will Game",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1305,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2559,
+        "lexical_cosine": 0.0575,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1091,
+        "plain_tfidf_cosine": 0.027
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "INHERITANCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "The family lawyer reveals that Gopal has been secretly testing who deserves to run the family trust.",
+          "candidate_beat_index": 4,
+          "candidate_text": "The tycoon dies and the lawyer reads the clause."
+        },
+        {
+          "events": [
+            "INHERITANCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the will is read, Gopal names Bhavna as trustee because she never complained or cheated.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Isha inherits everything, and she gives the cousins a salary."
+        }
+      ],
+      "shared_generic_tropes": [
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Daughter-in-law Bhavna is scolded and ordered about by her father-in-law Gopal, who finds fault with everything she does."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "Her brothers-in-law protest."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S30#beat4",
+        "S30#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARTIAL",
+    "relevant": [
+      "S19"
+    ],
+    "expected_tiers": [
+      "Medium",
+      "High"
+    ]
+  }
+}

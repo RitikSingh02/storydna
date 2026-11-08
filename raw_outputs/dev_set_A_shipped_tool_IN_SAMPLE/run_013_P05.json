@@ -1,0 +1,474 @@
+{
+  "run_id": "20261108T073749Z_5991d0b0",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "P05",
+  "source_title": "P05 [PARAPHRASE]",
+  "input_sha256": "5991d0b0251c404fb6b12c2bf34dda1170eb29943f205c408b12c4e5298bdb8c",
+  "input_text": "A girl from a shanty, Pooja, learns from a genetic test that nurses switched her with the baby of a wealthy household soon after the two were born. The wealthy household takes her in yet regards her as a disgrace and keeps doting on the daughter they had raised, Aisha. Aisha had known the secret for years and concealed the lab report. Pooja locates the maternity ward records showing Aisha's mother bribed a nurse to switch the infants. At the family's fundraising dinner, she exposes the records. The wealthy matriarch has to admit before everyone that she picked the wrong daughter.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S10",
+      "candidate_title": "Swapped at Birth",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.3634,
+        "ordered_event_overlap": 0.8474,
+        "lexical_cosine": 0.3857,
+        "rare_detail_overlap": 0.3636,
+        "event_set_overlap": 0.7451,
+        "plain_tfidf_cosine": 0.1929
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "DNA_TEST",
+            "IDENTITY_SWAP"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.548,
+          "pitch_beat_index": 0,
+          "pitch_text": "A girl from a shanty, Pooja, learns from a genetic test that nurses switched her with the baby of a wealthy household soon after the two were born.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+        },
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.234,
+          "pitch_beat_index": 1,
+          "pitch_text": "The wealthy household takes her in yet regards her as a disgrace and keeps doting on the daughter they had raised, Aisha.",
+          "candidate_beat_index": 1,
+          "candidate_text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.256,
+          "pitch_beat_index": 2,
+          "pitch_text": "Aisha had known the secret for years and concealed the lab report.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Simran secretly knew the truth for years and hid the test results."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL",
+            "IDENTITY_SWAP"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.401,
+          "pitch_beat_index": 3,
+          "pitch_text": "Pooja locates the maternity ward records showing Aisha's mother bribed a nurse to switch the infants.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.317,
+          "pitch_beat_index": 4,
+          "pitch_text": "At the family's fundraising dinner, she exposes the records.",
+          "candidate_beat_index": 4,
+          "candidate_text": "At the family's charity gala she reveals the file."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.426,
+          "pitch_beat_index": 5,
+          "pitch_text": "The wealthy matriarch has to admit before everyone that she picked the wrong daughter.",
+          "candidate_beat_index": 5,
+          "candidate_text": "The rich mother must publicly admit she chose the wrong child."
+        }
+      ],
+      "shared_generic_tropes": [
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "DNA_TEST",
+        "HUMILIATION",
+        "IDENTITY_SWAP",
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "admit",
+        "baby",
+        "dna",
+        "nurs",
+        "rais",
+        "slum",
+        "swap",
+        "wrong"
+      ],
+      "differentiating_beats": [],
+      "supporting_excerpt_or_scene_id": [
+        "S10#beat0",
+        "S10#beat1",
+        "S10#beat2",
+        "S10#beat3",
+        "S10#beat4",
+        "S10#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S24",
+      "candidate_title": "The Street Singer's Voice",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0105,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0496,
+        "ordered_event_overlap": 0.2746,
+        "lexical_cosine": 0.1322,
+        "rare_detail_overlap": 0.0938,
+        "event_set_overlap": 0.2843,
+        "plain_tfidf_cosine": 0.1022
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "DNA_TEST"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.298,
+          "pitch_beat_index": 0,
+          "pitch_text": "A girl from a shanty, Pooja, learns from a genetic test that nurses switched her with the baby of a wealthy household soon after the two were born.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A DNA test confirms it."
+        }
+      ],
+      "shared_generic_tropes": [
+        "EVIDENCE",
+        "PUBLIC_REVEAL",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "DNA_TEST"
+      ],
+      "shared_rare_details": [
+        "baby",
+        "dna",
+        "wealthy"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "The wealthy household takes her in yet regards her as a disgrace and keeps doting on the daughter they had raised, Aisha."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "The wealthy matriarch has to admit before everyone that she picked the wrong daughter."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Orphan singer Ria performs on busy streets, and a viral video reaches the wealthy Kapoor family."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Ria is welcomed home, but her stepbrother schemes to push her out before the inheritance is divided."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S24#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S11",
+      "candidate_title": "Twins He Never Knew",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0021,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0897,
+        "ordered_event_overlap": 0.1833,
+        "lexical_cosine": 0.0784,
+        "rare_detail_overlap": 0.08,
+        "event_set_overlap": 0.164,
+        "plain_tfidf_cosine": 0.0772
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "DNA_TEST"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "A girl from a shanty, Pooja, learns from a genetic test that nurses switched her with the baby of a wealthy household soon after the two were born.",
+          "candidate_beat_index": 3,
+          "candidate_text": "He demands a paternity test and fights for custody."
+        },
+        {
+          "events": [
+            "THEFT_FRAUD"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.37,
+          "pitch_beat_index": 3,
+          "pitch_text": "Pooja locates the maternity ward records showing Aisha's mother bribed a nurse to switch the infants.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Isha reveals that his mother bribed her to leave."
+        }
+      ],
+      "shared_generic_tropes": [
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "DNA_TEST"
+      ],
+      "shared_rare_details": [
+        "brib",
+        "rais"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "The wealthy matriarch has to admit before everyone that she picked the wrong daughter."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Aisha had known the secret for years and concealed the lab report."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Armaan confronts his mother, and the boys ask their parents to come to the school play together."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S11#beat3",
+        "S11#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S03",
+      "candidate_title": "The Noodle Stall Husband",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0013,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0907,
+        "ordered_event_overlap": 0.1951,
+        "lexical_cosine": 0.0615,
+        "rare_detail_overlap": 0.0476,
+        "event_set_overlap": 0.2298,
+        "plain_tfidf_cosine": 0.0551
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "The wealthy household takes her in yet regards her as a disgrace and keeps doting on the daughter they had raised, Aisha.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her mother-in-law and aunts humiliate Dev at every family dinner and tell Riya to divorce him."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.229,
+          "pitch_beat_index": 2,
+          "pitch_text": "Aisha had known the secret for years and concealed the lab report.",
+          "candidate_beat_index": 3,
+          "candidate_text": "When the landlord threatens to evict the whole family, it turns out Dev secretly owns the building."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "HUMILIATION",
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "dinner"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "A girl from a shanty, Pooja, learns from a genetic test that nurses switched her with the baby of a wealthy household soon after the two were born."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Pooja locates the maternity ward records showing Aisha's mother bribed a nurse to switch the infants."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Riya agrees to a paper marriage with Dev, a noodle stall cook, so that her dying grandfather can see her settled."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Dev quietly pays the family's overdue rent."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S03#beat1",
+        "S03#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S09",
+      "candidate_title": "The Framed Surgeon",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0754,
+        "ordered_event_overlap": 0.2347,
+        "lexical_cosine": 0.0959,
+        "rare_detail_overlap": 0.0833,
+        "event_set_overlap": 0.1844,
+        "plain_tfidf_cosine": 0.0231
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.193,
+          "pitch_beat_index": 3,
+          "pitch_text": "Pooja locates the maternity ward records showing Aisha's mother bribed a nurse to switch the infants.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Meghna takes a job as a night nurse in a rural clinic under another name."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "Pooja locates the maternity ward records showing Aisha's mother bribed a nurse to switch the infants.",
+          "candidate_beat_index": 3,
+          "candidate_text": "A dying clinic patient hands her an old hospital laptop that holds the operating-room recording."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE",
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "nurs",
+        "swap"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "The wealthy household takes her in yet regards her as a disgrace and keeps doting on the daughter they had raised, Aisha."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Aisha had known the secret for years and concealed the lab report."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S09#beat2",
+        "S09#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S10"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

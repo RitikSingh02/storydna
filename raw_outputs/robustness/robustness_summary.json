@@ -1,0 +1,214 @@
+[
+  {
+    "case": "r01_empty",
+    "kind": "pitch",
+    "input_chars": 0,
+    "outcome": "readable_error",
+    "message": "The pitch is empty. Paste at least a few sentences describing the story's events."
+  },
+  {
+    "case": "r02_whitespace_only",
+    "kind": "pitch",
+    "input_chars": 8,
+    "outcome": "readable_error",
+    "message": "The pitch is empty. Paste at least a few sentences describing the story's events."
+  },
+  {
+    "case": "r03_single_sentence",
+    "kind": "pitch",
+    "input_chars": 31,
+    "outcome": "report",
+    "warnings": [
+      "Very short pitch (1 beats): too little plot to compare reliably."
+    ],
+    "validation_ok": true,
+    "top1": "S23",
+    "top1_title": "Fake Girlfriend, Real Problem",
+    "top1_tier": "Low",
+    "top1_score": 0.001,
+    "tiers": [
+      "Low",
+      "Low",
+      "Low",
+      "Low",
+      "Low"
+    ]
+  },
+  {
+    "case": "r04_huge_input_300k_chars",
+    "kind": "pitch",
+    "input_chars": 320000,
+    "outcome": "readable_error",
+    "message": "The pitch is 320000 characters long (limit 200000). Summarise it to a synopsis or outline first."
+  },
+  {
+    "case": "r05_hindi_devanagari",
+    "kind": "pitch",
+    "input_chars": 110,
+    "outcome": "report",
+    "warnings": [
+      "Very short pitch (1 beats): too little plot to compare reliably.",
+      "Text is mostly non-English/non-Latin. The event lexicon is English-only, so matching falls back to weak lexical overlap. Treat results as unreliable."
+    ],
+    "validation_ok": true,
+    "top1": "S01",
+    "top1_title": "The Chauffeur's Secret",
+    "top1_tier": "Low",
+    "top1_score": 0.0,
+    "tiers": [
+      "Low",
+      "Low",
+      "Low",
+      "Low",
+      "Low"
+    ]
+  },
+  {
+    "case": "r06_hinglish_roman",
+    "kind": "pitch",
+    "input_chars": 163,
+    "outcome": "report",
+    "warnings": [
+      "The text does not look like English (very few English function words; e.g. Hindi written in Roman letters). The lexicon and vocabulary are English-only, so a Low result here is NOT evidence of originality."
+    ],
+    "validation_ok": true,
+    "top1": "S01",
+    "top1_title": "The Chauffeur's Secret",
+    "top1_tier": "Low",
+    "top1_score": 0.0001,
+    "tiers": [
+      "Low",
+      "Low",
+      "Low",
+      "Low",
+      "Low"
+    ]
+  },
+  {
+    "case": "r07_control_chars_and_emoji",
+    "kind": "pitch",
+    "input_chars": 103,
+    "outcome": "report",
+    "warnings": [],
+    "validation_ok": true,
+    "top1": "S01",
+    "top1_title": "The Chauffeur's Secret",
+    "top1_tier": "Low",
+    "top1_score": 0.1276,
+    "tiers": [
+      "Low",
+      "Low",
+      "Low",
+      "Low",
+      "Low"
+    ]
+  },
+  {
+    "case": "r08_no_punctuation_lowercase",
+    "kind": "pitch",
+    "input_chars": 226,
+    "outcome": "report",
+    "warnings": [
+      "Very short pitch (2 beats): too little plot to compare reliably."
+    ],
+    "validation_ok": true,
+    "top1": "S01",
+    "top1_title": "The Chauffeur's Secret",
+    "top1_tier": "High",
+    "top1_score": 1.0,
+    "tiers": [
+      "High",
+      "Low",
+      "Low",
+      "Low",
+      "Low"
+    ]
+  },
+  {
+    "case": "r09_bullet_outline",
+    "kind": "pitch",
+    "input_chars": 140,
+    "outcome": "report",
+    "warnings": [],
+    "validation_ok": true,
+    "top1": "S01",
+    "top1_title": "The Chauffeur's Secret",
+    "top1_tier": "High",
+    "top1_score": 1.0,
+    "tiers": [
+      "High",
+      "Low",
+      "Low",
+      "Low",
+      "Low"
+    ]
+  },
+  {
+    "case": "r10_unseen_pitch_1_hotel_heiress",
+    "kind": "pitch",
+    "input_chars": 641,
+    "outcome": "report",
+    "warnings": [],
+    "validation_ok": true,
+    "top1": "S05",
+    "top1_title": "The Intern Who Owns the Floor",
+    "top1_tier": "High",
+    "top1_score": 0.9989,
+    "tiers": [
+      "High",
+      "Medium",
+      "Low",
+      "Low",
+      "Low"
+    ]
+  },
+  {
+    "case": "r11_unseen_pitch_2_original_oil_dumping",
+    "kind": "pitch",
+    "input_chars": 383,
+    "outcome": "report",
+    "warnings": [],
+    "validation_ok": true,
+    "top1": "S20",
+    "top1_title": "The Stolen Recipe",
+    "top1_tier": "Low",
+    "top1_score": 0.0289,
+    "tiers": [
+      "Low",
+      "Low",
+      "Low",
+      "Low",
+      "Low"
+    ]
+  },
+  {
+    "case": "c01_broken_csv_header",
+    "kind": "catalogue",
+    "outcome": "readable_error",
+    "message": "CSV header must contain: story_id, title, synopsis. Found: ['story_id', 'name']."
+  },
+  {
+    "case": "c02_broken_json",
+    "kind": "catalogue",
+    "outcome": "readable_error",
+    "message": "Could not parse the JSON catalogue (line 1, column 46): Expecting value"
+  },
+  {
+    "case": "c03_duplicate_ids",
+    "kind": "catalogue",
+    "outcome": "readable_error",
+    "message": "Duplicate story_id 'A' in catalogue (row 2)."
+  },
+  {
+    "case": "c04_missing_synopsis",
+    "kind": "catalogue",
+    "outcome": "readable_error",
+    "message": "Catalogue row 1 is missing required field(s): synopsis."
+  },
+  {
+    "case": "c05_empty_list",
+    "kind": "catalogue",
+    "outcome": "readable_error",
+    "message": "The catalogue is empty. It needs at least one story card."
+  }
+]

@@ -1,0 +1,706 @@
+{
+ "run_id": "20261108T080119Z_2027eac5",
+ "run_label": "run1_first_and_only/off",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "M03",
+ "source_title": "M03",
+ "input_sha256": "2027eac5562c43cee14d01b4ac6df54ca28d647d4ba60cb4af92b935d158b0d1",
+ "input_text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai. Sana hi wo anonymous jewellery designer hai jiske collections ne Aditya ki company ko mashhoor kiya. Sana naye naam se apna rival brand banati hai aur Aditya ke clients jeetne lagti hai. Aditya ki company diwaliya hone lagti hai. Phir wo Sana ke studio aakar gidgidata hai ki dobara shaadi kar le. Sana sirf ek kaagaz par sign karti hai: Aditya ki doobti company ko apne naam karne ka.",
+ "working_text_en": null,
+ "language": {
+  "detected": "hi-Latn",
+  "name": "Hindi in Roman letters (Hinglish)",
+  "script": "latin",
+  "confidence": 0.402,
+  "evidence": "40% Hindi function words vs 1% English",
+  "method": "none",
+  "reliable": true,
+  "recognised_share": null,
+  "unrecognised_sample": []
+ },
+ "input_beats": 6,
+ "input_warnings": [
+  "The text does not look like English (very few English function words; e.g. Hindi written in Roman letters). The lexicon and vocabulary are English-only, so a Low result here is NOT evidence of originality."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S07",
+   "candidate_title": "Divorce Papers, Diamond Return",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 1.0,
+   "review_priority": "High",
+   "components": {
+    "beat_alignment": 0.6075,
+    "ordered_event_overlap": 0.3504,
+    "lexical_cosine": 0.5573,
+    "rare_detail_overlap": 0.4737,
+    "event_set_overlap": 0.2762,
+    "plain_tfidf_cosine": 0.5353
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "BETRAYAL"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.594,
+     "pitch_beat_index": 0,
+     "pitch_text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.875,
+     "pitch_beat_index": 1,
+     "pitch_text": "Sana hi wo anonymous jewellery designer hai jiske collections ne Aditya ki company ko mashhoor kiya.",
+     "candidate_beat_index": 1,
+     "candidate_text": "She secretly is the anonymous jewellery designer whose collections made his company famous."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.755,
+     "pitch_beat_index": 2,
+     "pitch_text": "Sana naye naam se apna rival brand banati hai aur Aditya ke clients jeetne lagti hai.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Sana builds a rival brand under a new name and starts winning his clients."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.335,
+     "pitch_beat_index": 3,
+     "pitch_text": "Aditya ki company diwaliya hone lagti hai.",
+     "candidate_beat_index": 3,
+     "candidate_text": "Aditya's company slides toward bankruptcy, and he discovers who is behind the new brand."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.527,
+     "pitch_beat_index": 4,
+     "pitch_text": "Phir wo Sana ke studio aakar gidgidata hai ki dobara shaadi kar le.",
+     "candidate_beat_index": 4,
+     "candidate_text": "He shows up at her studio begging to remarry."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.558,
+     "pitch_beat_index": 5,
+     "pitch_text": "Sana sirf ek kaagaz par sign karti hai: Aditya ki doobti company ko apne naam karne ka.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Sana signs one paper only: the sale of his failing company to her."
+    }
+   ],
+   "shared_generic_tropes": [
+    "BUSINESS_PRESSURE"
+   ],
+   "shared_distinctive_events": [
+    "BETRAYAL"
+   ],
+   "shared_rare_details": [
+    "affair",
+    "anonymous",
+    "assistant",
+    "brand",
+    "client",
+    "collection",
+    "designer",
+    "jewellery",
+    "studio"
+   ],
+   "differentiating_beats": [],
+   "supporting_excerpt_or_scene_id": [
+    "S07#beat0",
+    "S07#beat1",
+    "S07#beat2",
+    "S07#beat3",
+    "S07#beat4",
+    "S07#beat5"
+   ],
+   "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S05",
+   "candidate_title": "The Intern Who Owns the Floor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0869,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0718,
+    "rare_detail_overlap": 0.0417,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0392
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.198,
+     "pitch_beat_index": 1,
+     "pitch_text": "Sana hi wo anonymous jewellery designer hai jiske collections ne Aditya ki company ko mashhoor kiya.",
+     "candidate_beat_index": 3,
+     "candidate_text": "At the product launch Sunil unveils her collection as his own."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.323,
+     "pitch_beat_index": 3,
+     "pitch_text": "Aditya ki company diwaliya hone lagti hai.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Sunil is escorted out and the company changes its credit policy."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "collection"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sana naye naam se apna rival brand banati hai aur Aditya ke clients jeetne lagti hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S05#beat3",
+    "S05#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0764,
+    "ordered_event_overlap": 0.1002,
+    "lexical_cosine": 0.0563,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0787,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.246,
+     "pitch_beat_index": 3,
+     "pitch_text": "Aditya ki company diwaliya hone lagti hai.",
+     "candidate_beat_index": 3,
+     "candidate_text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.212,
+     "pitch_beat_index": 5,
+     "pitch_text": "Sana sirf ek kaagaz par sign karti hai: Aditya ki doobti company ko apne naam karne ka.",
+     "candidate_beat_index": 4,
+     "candidate_text": "Arjun walks in as the investor, reveals his real identity in front of everyone and saves the firm."
+    }
+   ],
+   "shared_generic_tropes": [
+    "BUSINESS_PRESSURE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Phir wo Sana ke studio aakar gidgidata hai ki dobara shaadi kar le."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S01#beat3",
+    "S01#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S02",
+   "candidate_title": "Night Shift Owner",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0685,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.044,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0367
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.254,
+     "pitch_beat_index": 3,
+     "pitch_text": "Aditya ki company diwaliya hone lagti hai.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Billionaire Kabir Rao takes a job as the night janitor in his own tech company because money is disappearing from its accounts."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sana naye naam se apna rival brand banati hai aur Aditya ke clients jeetne lagti hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The finance chief learns about the leak and frames Tanya for the theft."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "At an emergency board meeting he reveals he is the owner, plays the recording and clears Tanya."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S02#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S29",
+   "candidate_title": "The Scholarship Girl",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0489,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0304,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0241
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.294,
+     "pitch_beat_index": 3,
+     "pitch_text": "Aditya ki company diwaliya hone lagti hai.",
+     "candidate_beat_index": 3,
+     "candidate_text": "Rani recognises a formula on his company's patent as her late father's work."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sana naye naam se apna rival brand banati hai aur Aditya ke clients jeetne lagti hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S29#beat3"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S30",
+   "candidate_title": "The Last Will Game",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0508,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.03,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.305,
+     "pitch_beat_index": 3,
+     "pitch_text": "Aditya ki company diwaliya hone lagti hai.",
+     "candidate_beat_index": 0,
+     "candidate_text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sana naye naam se apna rival brand banati hai aur Aditya ke clients jeetne lagti hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Isha inherits everything, and she gives the cousins a salary."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S30#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S20",
+   "candidate_title": "The Stolen Recipe",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0735,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.024,
+    "rare_detail_overlap": 0.04,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0152
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.441,
+     "pitch_beat_index": 4,
+     "pitch_text": "Phir wo Sana ke studio aakar gidgidata hai ki dobara shaadi kar le.",
+     "candidate_beat_index": 4,
+     "candidate_text": "Mallika challenges Dhruv to a live cook-off in front of a studio audience."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "studio"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Sana naye naam se apna rival brand banati hai aur Aditya ke clients jeetne lagti hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Chef Mallika's sous-chef Dhruv steals her secret biryani recipe and wins a televised cooking contest with it."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "A food vlogger films her cart, and the video goes viral overnight."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S20#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S13",
+   "candidate_title": "The Widow's Ledger",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (5 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0498,
+    "ordered_event_overlap": 0.1704,
+    "lexical_cosine": 0.0188,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.1145,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.299,
+     "pitch_beat_index": 5,
+     "pitch_text": "Sana sirf ek kaagaz par sign karti hai: Aditya ki doobti company ko apne naam karne ka.",
+     "candidate_beat_index": 4,
+     "candidate_text": "He signs over his hidden accounts to avoid prison."
+    }
+   ],
+   "shared_generic_tropes": [
+    "BUSINESS_PRESSURE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Phir wo Sana ke studio aakar gidgidata hai ki dobara shaadi kar le."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "She works at a tailoring shop and secretly buys up his creditors' notes one by one."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Widow Lakshmi discovers that her husband faked his death to escape his debts and left her with the loan sharks."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S13#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S09",
+   "candidate_title": "The Framed Surgeon",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.027,
+    "ordered_event_overlap": 0.1378,
+    "lexical_cosine": 0.0184,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.098,
+    "plain_tfidf_cosine": 0.0111
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [
+    "BUSINESS_PRESSURE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Sana sirf ek kaagaz par sign karti hai: Aditya ki doobti company ko apne naam karne ka."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "A dying clinic patient hands her an old hospital laptop that holds the operating-room recording."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S28",
+   "candidate_title": "Last Round",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0276,
+    "ordered_event_overlap": 0.1836,
+    "lexical_cosine": 0.0183,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.1435,
+    "plain_tfidf_cosine": 0.0112
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [
+    "BUSINESS_PRESSURE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Sana sirf ek kaagaz par sign karti hai: Aditya ki doobti company ko apne naam karne ka."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Disgraced former boxing champion Ravi is banned after a match-fixing scandal."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "Gudiya fights in the state final, takes a heavy hit in round three and gets up."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

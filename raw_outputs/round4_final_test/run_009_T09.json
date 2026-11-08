@@ -1,0 +1,438 @@
+{
+  "run_id": "20261108T073303Z_956be129",
+  "run_label": "round4_final_test",
+  "created_utc": "2026-11-08T07:33:03+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "T09",
+  "source_title": "T09 [TROPE_CHAIN_TRAP]",
+  "input_sha256": "956be1297fdf613df341ba3801bbe29867ac34571e4a17f9726d0d2bfccf4e54",
+  "input_text": "Rich college student Yash pretends to be a scholarship kid for one semester to make real friends. His roommate bullies him for his cheap clothes. Yash tutors the bully for exams and they become friends. At graduation Yash invites everyone to his family's farmhouse, and the roommate laughs and says he knew all along.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0193,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0704,
+        "ordered_event_overlap": 0.2692,
+        "lexical_cosine": 0.1246,
+        "rare_detail_overlap": 0.1429,
+        "event_set_overlap": 0.1842,
+        "plain_tfidf_cosine": 0.1302
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.422,
+          "pitch_beat_index": 0,
+          "pitch_text": "Rich college student Yash pretends to be a scholarship kid for one semester to make real friends.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "His roommate bullies him for his cheap clothes.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "cheap",
+        "scholarship",
+        "student"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "At graduation Yash invites everyone to his family's farmhouse, and the roommate laughs and says he knew all along."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Yash tutors the bully for exams and they become friends."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wins the national maths olympiad."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat0",
+        "S29#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S23",
+      "candidate_title": "Fake Girlfriend, Real Problem",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0086,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0737,
+        "ordered_event_overlap": 0.1994,
+        "lexical_cosine": 0.1303,
+        "rare_detail_overlap": 0.1111,
+        "event_set_overlap": 0.23,
+        "plain_tfidf_cosine": 0.0887
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.158,
+          "pitch_beat_index": 0,
+          "pitch_text": "Rich college student Yash pretends to be a scholarship kid for one semester to make real friends.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Employee Pari is hired by her boss Neil to pretend to be his girlfriend at his sister's wedding."
+        },
+        {
+          "events": [
+            "HIDDEN_IDENTITY"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Rich college student Yash pretends to be a scholarship kid for one semester to make real friends.",
+          "candidate_beat_index": 4,
+          "candidate_text": "On a rooftop, Neil confesses that he stopped pretending long ago."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.285,
+          "pitch_beat_index": 3,
+          "pitch_text": "At graduation Yash invites everyone to his family's farmhouse, and the roommate laughs and says he knew all along.",
+          "candidate_beat_index": 1,
+          "candidate_text": "His grandmother grows fond of Pari and invites her to every family event."
+        }
+      ],
+      "shared_generic_tropes": [
+        "HIDDEN_IDENTITY"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "invit",
+        "pretend"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Yash tutors the bully for exams and they become friends."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "His roommate bullies him for his cheap clothes."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "The contract is extended for another month."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Pari tears up the contract and kisses him."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S23#beat0",
+        "S23#beat4",
+        "S23#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S10",
+      "candidate_title": "Swapped at Birth",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0007,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0461,
+        "ordered_event_overlap": 0.1727,
+        "lexical_cosine": 0.0875,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.1281,
+        "plain_tfidf_cosine": 0.0967
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "His roommate bullies him for his cheap clothes.",
+          "candidate_beat_index": 1,
+          "candidate_text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.276,
+          "pitch_beat_index": 3,
+          "pitch_text": "At graduation Yash invites everyone to his family's farmhouse, and the roommate laughs and says he knew all along.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Simran secretly knew the truth for years and hid the test results."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "knew"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Rich college student Yash pretends to be a scholarship kid for one semester to make real friends."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Yash tutors the bully for exams and they become friends."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S10#beat1",
+        "S10#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0005,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0525,
+        "ordered_event_overlap": 0.5098,
+        "lexical_cosine": 0.0611,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.2064,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.315,
+          "pitch_beat_index": 1,
+          "pitch_text": "His roommate bullies him for his cheap clothes.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        },
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "Yash tutors the bully for exams and they become friends.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Rahul, now a struggling shopkeeper, mocks him before learning who he is."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "bully"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "At graduation Yash invites everyone to his family's farmhouse, and the roommate laughs and says he knew all along."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Rich college student Yash pretends to be a scholarship kid for one semester to make real friends."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Ishaan gives him a job as security guard and walks away without a word."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat0",
+        "S22#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S30",
+      "candidate_title": "The Last Will Game",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0606,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0489,
+        "rare_detail_overlap": 0.0588,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0627
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.128,
+          "pitch_beat_index": 0,
+          "pitch_text": "Rich college student Yash pretends to be a scholarship kid for one semester to make real friends.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Two rich grandchildren spend the month fighting each other and bribing the lawyer."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.236,
+          "pitch_beat_index": 3,
+          "pitch_text": "At graduation Yash invites everyone to his family's farmhouse, and the roommate laughs and says he knew all along.",
+          "candidate_beat_index": 3,
+          "candidate_text": "A hidden clause in the will says the heir must be the one who stayed."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "say"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Yash tutors the bully for exams and they become friends."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "His roommate bullies him for his cheap clothes."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S30#beat1",
+        "S30#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_CHAIN_TRAP",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

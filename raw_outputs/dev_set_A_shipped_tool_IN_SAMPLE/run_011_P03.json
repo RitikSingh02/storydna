@@ -1,0 +1,443 @@
+{
+  "run_id": "20261108T073749Z_33bd7a65",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "P03",
+  "source_title": "P03 [PARAPHRASE]",
+  "input_sha256": "33bd7a65603a425bbbf5c24f75570757528d289ba638734c49830de426dea89d",
+  "input_text": "On their wedding day, Diya's fiance Aman disappears with her little sister Pihu, leaving her standing at the mandap. Facing the stunned crowd, Diya asks Aman's wealthy uncle Mr. Khanna to marry her instead, and he agrees. At the Khanna mansion, Aman and Pihu are forced to address her as their aunt. Diya collects documents showing the pair drained her dead mother's savings account. During the family's yearly celebration she runs the documents on the big screen in the hall. The two are evicted, and Diya finds out the real reason the uncle accepted.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S06",
+      "candidate_title": "Ashes at the Altar",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.9998,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.1936,
+        "ordered_event_overlap": 0.8065,
+        "lexical_cosine": 0.2282,
+        "rare_detail_overlap": 0.25,
+        "event_set_overlap": 0.8049,
+        "plain_tfidf_cosine": 0.1678
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BETRAYAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "On their wedding day, Diya's fiance Aman disappears with her little sister Pihu, leaving her standing at the mandap.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.208,
+          "pitch_beat_index": 1,
+          "pitch_text": "Facing the stunned crowd, Diya asks Aman's wealthy uncle Mr. Khanna to marry her instead, and he agrees.",
+          "candidate_beat_index": 1,
+          "candidate_text": "In front of the shocked guests she proposes to Rohan's powerful uncle Mr. Malhotra, who accepts."
+        },
+        {
+          "events": [
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.344,
+          "pitch_beat_index": 2,
+          "pitch_text": "At the Khanna mansion, Aman and Pihu are forced to address her as their aunt.",
+          "candidate_beat_index": 2,
+          "candidate_text": "She moves into the Malhotra house, where Rohan and Kavya must now call her aunt."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL",
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.257,
+          "pitch_beat_index": 4,
+          "pitch_text": "During the family's yearly celebration she runs the documents on the big screen in the hall.",
+          "candidate_beat_index": 4,
+          "candidate_text": "At the family anniversary she plays the evidence on the dining room screen."
+        },
+        {
+          "events": [
+            "COMEUPPANCE",
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.353,
+          "pitch_beat_index": 5,
+          "pitch_text": "The two are evicted, and Diya finds out the real reason the uncle accepted.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE",
+        "EVIDENCE",
+        "PUBLIC_REVEAL",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "BETRAYAL",
+        "FAMILY_PRESSURE",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "accept",
+        "aunt",
+        "run",
+        "screen",
+        "uncl"
+      ],
+      "differentiating_beats": [],
+      "supporting_excerpt_or_scene_id": [
+        "S06#beat0",
+        "S06#beat1",
+        "S06#beat2",
+        "S06#beat4",
+        "S06#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S03",
+      "candidate_title": "The Noodle Stall Husband",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0136,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.1185,
+        "ordered_event_overlap": 0.2557,
+        "lexical_cosine": 0.1216,
+        "rare_detail_overlap": 0.1429,
+        "event_set_overlap": 0.2018,
+        "plain_tfidf_cosine": 0.0486
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "On their wedding day, Diya's fiance Aman disappears with her little sister Pihu, leaving her standing at the mandap.",
+          "candidate_beat_index": 3,
+          "candidate_text": "When the landlord threatens to evict the whole family, it turns out Dev secretly owns the building."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.266,
+          "pitch_beat_index": 1,
+          "pitch_text": "Facing the stunned crowd, Diya asks Aman's wealthy uncle Mr. Khanna to marry her instead, and he agrees.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Riya agrees to a paper marriage with Dev, a noodle stall cook, so that her dying grandfather can see her settled."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE"
+      ],
+      "shared_distinctive_events": [
+        "FAMILY_PRESSURE",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "agre",
+        "aunt",
+        "evict"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "During the family's yearly celebration she runs the documents on the big screen in the hall."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Diya collects documents showing the pair drained her dead mother's savings account."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Riya realises the paper marriage has become real, and her mother-in-law has to apologise to a noodle cook."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Dev quietly pays the family's overdue rent."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S03#beat3",
+        "S03#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S05",
+      "candidate_title": "The Intern Who Owns the Floor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.008,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0715,
+        "ordered_event_overlap": 0.407,
+        "lexical_cosine": 0.0893,
+        "rare_detail_overlap": 0.0833,
+        "event_set_overlap": 0.3244,
+        "plain_tfidf_cosine": 0.0638
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "PUBLIC_REVEAL"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.429,
+          "pitch_beat_index": 4,
+          "pitch_text": "During the family's yearly celebration she runs the documents on the big screen in the hall.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Naina shows the sketchbook on the big screen and announces that she is the owner's daughter."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE",
+        "EVIDENCE",
+        "PUBLIC_REVEAL",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "big",
+        "screen"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "On their wedding day, Diya's fiance Aman disappears with her little sister Pihu, leaving her standing at the mandap."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Facing the stunned crowd, Diya asks Aman's wealthy uncle Mr. Khanna to marry her instead, and he agrees."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S05#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S25",
+      "candidate_title": "Twin in the Wedding Dress",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0025,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.107,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.1231,
+        "rare_detail_overlap": 0.0667,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.1133
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.247,
+          "pitch_beat_index": 0,
+          "pitch_text": "On their wedding day, Diya's fiance Aman disappears with her little sister Pihu, leaving her standing at the mandap.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Twin sister Hina is begged to take her runaway sister Heer's place at a wedding to billionaire Zayn."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.396,
+          "pitch_beat_index": 1,
+          "pitch_text": "Facing the stunned crowd, Diya asks Aman's wealthy uncle Mr. Khanna to marry her instead, and he agrees.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Zayn pays the gangster, then asks to marry Hina for real."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "ask"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "During the family's yearly celebration she runs the documents on the big screen in the hall."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Diya collects documents showing the pair drained her dead mother's savings account."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wears the dress and keeps up the act in the groom's mansion."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "He confronts her in the garden and she confesses everything."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S25#beat0",
+        "S25#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S01",
+      "candidate_title": "The Chauffeur's Secret",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0015,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0891,
+        "ordered_event_overlap": 0.0728,
+        "lexical_cosine": 0.0989,
+        "rare_detail_overlap": 0.2,
+        "event_set_overlap": 0.1114,
+        "plain_tfidf_cosine": 0.0436
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.25,
+          "pitch_beat_index": 3,
+          "pitch_text": "Diya collects documents showing the pair drained her dead mother's savings account.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Meera stands by him and quietly pays his fake debts from her own savings."
+        }
+      ],
+      "shared_generic_tropes": [
+        "PUBLIC_REVEAL",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "fianc",
+        "party",
+        "sav",
+        "stand"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Facing the stunned crowd, Diya asks Aman's wealthy uncle Mr. Khanna to marry her instead, and he agrees."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "The two are evicted, and Diya finds out the real reason the uncle accepted."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Arjun walks in as the investor, reveals his real identity in front of everyone and saves the firm."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S01#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S06"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

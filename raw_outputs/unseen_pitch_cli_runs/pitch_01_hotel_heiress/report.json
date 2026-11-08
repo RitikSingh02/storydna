@@ -1,0 +1,434 @@
+{
+  "run_id": "20261108T073751Z_564fa6e2",
+  "run_label": "",
+  "created_utc": "2026-11-08T07:37:51+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "unseen_pitch_01",
+  "source_title": "unseen_pitch_01",
+  "input_sha256": "564fa6e25a9582ea54708b7737f071cd5429c8603bf59fd9e23d0fdc3dfca8c4",
+  "input_text": "Heiress Rhea hides her family name and starts working as a night receptionist at her father's luxury hotel to find out who is leaking guest data. The duty manager, Colin, humiliates her in front of the staff and calls her a useless temp. Rhea quietly installs a hidden recorder in the manager's office and finds that Colin sells guest lists to a rival hotel chain. Colin learns she is investigating him and frames her for the theft of a guest's jewellery. At the hotel's anniversary gala Rhea plays the recording on the ballroom screen and announces that she is the owner's daughter. Colin is escorted out by police and the staff apologise.\n",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S05",
+      "candidate_title": "The Intern Who Owns the Floor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.9989,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.254,
+        "ordered_event_overlap": 0.5144,
+        "lexical_cosine": 0.2287,
+        "rare_detail_overlap": 0.2083,
+        "event_set_overlap": 0.3999,
+        "plain_tfidf_cosine": 0.201
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.6,
+          "pitch_beat_index": 1,
+          "pitch_text": "The duty manager, Colin, humiliates her in front of the staff and calls her a useless temp.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.471,
+          "pitch_beat_index": 4,
+          "pitch_text": "At the hotel's anniversary gala Rhea plays the recording on the ballroom screen and announces that she is the owner's daughter.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Naina shows the sketchbook on the big screen and announces that she is the owner's daughter."
+        },
+        {
+          "events": [
+            "COMEUPPANCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.291,
+          "pitch_beat_index": 5,
+          "pitch_text": "Colin is escorted out by police and the staff apologise.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Sunil is escorted out and the company changes its credit policy."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE",
+        "EVIDENCE",
+        "INHERITANCE",
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "call",
+        "escort",
+        "manager",
+        "screen",
+        "useless"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Colin learns she is investigating him and frames her for the theft of a guest's jewellery."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "At the product launch Sunil unveils her collection as his own."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S05#beat1",
+        "S05#beat4",
+        "S05#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S02",
+      "candidate_title": "Night Shift Owner",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.4401,
+      "review_priority": "Medium",
+      "components": {
+        "beat_alignment": 0.1321,
+        "ordered_event_overlap": 0.4384,
+        "lexical_cosine": 0.1668,
+        "rare_detail_overlap": 0.1818,
+        "event_set_overlap": 0.3226,
+        "plain_tfidf_cosine": 0.108
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "FRAMED"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.517,
+          "pitch_beat_index": 3,
+          "pitch_text": "Colin learns she is investigating him and frames her for the theft of a guest's jewellery.",
+          "candidate_beat_index": 3,
+          "candidate_text": "The finance chief learns about the leak and frames Tanya for the theft."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL",
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.276,
+          "pitch_beat_index": 4,
+          "pitch_text": "At the hotel's anniversary gala Rhea plays the recording on the ballroom screen and announces that she is the owner's daughter.",
+          "candidate_beat_index": 5,
+          "candidate_text": "At an emergency board meeting he reveals he is the owner, plays the recording and clears Tanya."
+        }
+      ],
+      "shared_generic_tropes": [
+        "EVIDENCE",
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "FRAMED"
+      ],
+      "shared_rare_details": [
+        "fram",
+        "leak",
+        "night",
+        "theft"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "The duty manager, Colin, humiliates her in front of the staff and calls her a useless temp."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Rhea quietly installs a hidden recorder in the manager's office and finds that Colin sells guest lists to a rival hotel chain."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Billionaire Kabir Rao takes a job as the night janitor in his own tech company because money is disappearing from its accounts."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S02#beat3",
+        "S02#beat5"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S13",
+      "candidate_title": "The Widow's Ledger",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (5 beats)",
+      "retrieval_score": 0.0099,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0861,
+        "ordered_event_overlap": 0.1908,
+        "lexical_cosine": 0.136,
+        "rare_detail_overlap": 0.1,
+        "event_set_overlap": 0.1256,
+        "plain_tfidf_cosine": 0.112
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.358,
+          "pitch_beat_index": 0,
+          "pitch_text": "Heiress Rhea hides her family name and starts working as a night receptionist at her father's luxury hotel to find out who is leaking guest data.",
+          "candidate_beat_index": 2,
+          "candidate_text": "She tracks him to a luxury hotel in another city living under a new name."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "COMEUPPANCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "hotel",
+        "luxury"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "The duty manager, Colin, humiliates her in front of the staff and calls her a useless temp."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Colin learns she is investigating him and frames her for the theft of a guest's jewellery."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She works at a tailoring shop and secretly buys up his creditors' notes one by one."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Widow Lakshmi discovers that her husband faked his death to escape his debts and left her with the loan sharks."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S13#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S06",
+      "candidate_title": "Ashes at the Altar",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0037,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0894,
+        "ordered_event_overlap": 0.318,
+        "lexical_cosine": 0.0875,
+        "rare_detail_overlap": 0.1,
+        "event_set_overlap": 0.2232,
+        "plain_tfidf_cosine": 0.0467
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "PUBLIC_REVEAL",
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.396,
+          "pitch_beat_index": 4,
+          "pitch_text": "At the hotel's anniversary gala Rhea plays the recording on the ballroom screen and announces that she is the owner's daughter.",
+          "candidate_beat_index": 4,
+          "candidate_text": "At the family anniversary she plays the evidence on the dining room screen."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE",
+        "EVIDENCE",
+        "INHERITANCE",
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "anniversary",
+        "screen"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "The duty manager, Colin, humiliates her in front of the staff and calls her a useless temp."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Rhea quietly installs a hidden recorder in the manager's office and finds that Colin sells guest lists to a rival hotel chain."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "She moves into the Malhotra house, where Rohan and Kavya must now call her aunt."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S06#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S03",
+      "candidate_title": "The Noodle Stall Husband",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0015,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.076,
+        "ordered_event_overlap": 0.2781,
+        "lexical_cosine": 0.0682,
+        "rare_detail_overlap": 0.0952,
+        "event_set_overlap": 0.2269,
+        "plain_tfidf_cosine": 0.0429
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.215,
+          "pitch_beat_index": 1,
+          "pitch_text": "The duty manager, Colin, humiliates her in front of the staff and calls her a useless temp.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her mother-in-law and aunts humiliate Dev at every family dinner and tell Riya to divorce him."
+        },
+        {
+          "events": [
+            "COMEUPPANCE",
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.241,
+          "pitch_beat_index": 5,
+          "pitch_text": "Colin is escorted out by police and the staff apologise.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Riya realises the paper marriage has become real, and her mother-in-law has to apologise to a noodle cook."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "COMEUPPANCE"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "apologiz",
+        "humiliat"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Heiress Rhea hides her family name and starts working as a night receptionist at her father's luxury hotel to find out who is leaking guest data."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Colin learns she is investigating him and frames her for the theft of a guest's jewellery."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Riya agrees to a paper marriage with Dev, a noodle stall cook, so that her dying grandfather can see her settled."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "At a family dinner he tears up the eviction notice and announces that he is the landlord."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S03#beat1",
+        "S03#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  }
+}

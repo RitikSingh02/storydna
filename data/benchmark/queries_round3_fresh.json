@@ -1,0 +1,36 @@
+{
+  "_comment": "Fresh set written AFTER round-2 tuning, with deliberately different vocabulary and harder traps. Same author as the catalogue, so NOT an independent test. Run once per tool version; not used for tuning.",
+  "exact_ids": [],
+  "queries": [
+    {"qid": "F01", "category": "PARAPHRASE", "relevant": ["S02"], "expected": ["High"],
+     "text": "Funds keep vanishing from the books of a software group, so its founder Dhruv, a billionaire, quietly becomes the cleaner on the late shift. Lonely bookkeeper Smita starts chatting with him over cold coffee and begins to rely on him. While emptying bins after hours he reads the files and uncovers the head of accounts routing money to a dummy firm. The head of accounts senses the leak and pins the missing money on Smita. Dhruv secretly captures the head of accounts admitting everything on his phone. In an urgent session of directors he announces he owns the place, plays the clip and gets Smita cleared."},
+    {"qid": "F02", "category": "PARAPHRASE", "relevant": ["S07"], "expected": ["High"],
+     "text": "Husband Rohit divorces Anita because he is sleeping with his secretary, and she leaves with only a suitcase. Unknown to him, Anita is the unnamed jewellery creator behind the hits that made his brand a household name. She starts a competing label under an alias and steals his best customers one by one. Rohit's brand sinks toward insolvency, and he works out who is behind the rival label. He turns up at her workshop pleading to get back together. The only document Anita signs is the purchase of his collapsing company."},
+    {"qid": "F03", "category": "PARAPHRASE", "relevant": ["S15"], "expected": ["High"],
+     "text": "Desperate to pay for her ill brother's treatment, Mara pledges herself in a blood pact to serve a vampire heir, Lucian, for twelve months. Inside his fortress she overhears that the court intends to murder him before he is crowned. Mara becomes his friend and he begins to rely on her. She works out that a poison is reaching him via the royal wine, sent by his own chamberlain. At the crowning feast she swaps the cups. The chamberlain drinks his own poison, and Lucian proposes to burn the pact."},
+    {"qid": "F04", "category": "PARAPHRASE", "relevant": ["S16"], "expected": ["High"],
+     "text": "Marketing executive Neha dozes off while reading an online novel and opens her eyes as the wicked noblewoman who gets beheaded in chapter thirty. Because she remembers the entire storyline, she sidesteps each snare. She makes friends with the icy marquis who is supposed to kill her. The book's leading lady proves to be a fellow soul from the modern world who wants the marquis too. At the last hearing Neha uses what she knows of the book to unmask the lead's phoney prophecies. The marquis picks Neha and the tale veers off the page."},
+    {"qid": "F05", "category": "PARAPHRASE", "relevant": ["S21"], "expected": ["High"],
+     "text": "To fund a transplant for his mother, Aman agrees to work as personal guard to the rich Mehak. She is cold to him and sets him dangerous tests of faithfulness. At the clinic it emerges that Mehak is a tissue match for his mother. Mehak agrees in secret to give a kidney and makes the surgeons promise to keep quiet. Aman learns on the morning of the surgery and bursts into the operating room. His mother pulls through, and Mehak admits at last that she needs a guard for her heart."},
+
+    {"qid": "G01", "category": "TROPE_ONLY", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "Bride Sunita is left alone at the altar when her groom flees with a stranger. Furious, she moves to the capital and becomes a tough divorce lawyer. Ten years later the groom hires her without recognising her. She wins his divorce case against the stranger and sends him the bill."},
+    {"qid": "G02", "category": "TROPE_CHAIN_TRAP", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "Orphan Pia is told she is the long-lost granddaughter of a rich family and is moved into their mansion. The family treats her as an outsider and mocks her accent. She walks out and becomes a chef. Years later the family eats at her restaurant and apologises."},
+    {"qid": "G03", "category": "TROPE_ONLY", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "A rookie cop is sent undercover as a bartender in a mafia nightclub. She learns that the boss's mother runs the real business. She arrests the mother, and the boss thanks her for ending the war."},
+    {"qid": "G04", "category": "TROPE_ONLY", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "Single father Raj finds a letter showing that the mother of his twin daughters was blackmailed into leaving by his rich uncle. Raj confronts the uncle at a family wedding. The uncle is arrested, and the mother returns to the twins."},
+    {"qid": "G05", "category": "TROPE_ONLY", "relevant": [], "expected": ["Low", "Medium"],
+     "text": "Widow Gita finds her late husband's hidden bank accounts and learns that he led a double life with another family. She does not confront them. She uses the money to fund a school for girls in her village."},
+    {"qid": "G08", "category": "UNRELATED", "relevant": [], "expected": ["Low"],
+     "text": "Two rival chess prodigies in a small town prepare for the national junior championship. They are forced to share a train compartment and slowly become friends. In the final round they agree to a draw and share the trophy."},
+    {"qid": "G09", "category": "UNRELATED", "relevant": [], "expected": ["Low"],
+     "text": "A lone sailor crossing the Indian Ocean finds a message in a bottle. He follows its map to a deserted lighthouse. Inside he finds the keeper's logbook, repairs the lamp and signals a passing ship for rescue."},
+
+    {"qid": "G06", "category": "PARTIAL", "relevant": ["S27"], "expected": ["Medium", "High"],
+     "text": "Funeral director Bhaskar relives the same funeral day after a storm hits the crematorium. Each loop he finds a new problem: a missing urn, a flooded hall, an absent priest. He slowly realises that one mourner is sabotaging every loop. He catches the saboteur, the dead man's business partner, with a fake will. The loop ends only when Bhaskar lets the service go ahead imperfectly."},
+    {"qid": "G07", "category": "PARTIAL", "relevant": ["S04"], "expected": ["Medium", "High"],
+     "text": "Bookshop-chain heir Armaan rides a bicycle as a courier for a week to see how his readers live. He falls for Sia, who runs a failing second-hand bookstore. A property developer wants her land and tries to force her to close. Armaan secretly buys the developer's loan so he must back off. Sia finds the papers and suspects Armaan of spying on her. After a fierce quarrel he confesses who he is and she leaves. He reopens the bookstore in her name."}
+  ]
+}

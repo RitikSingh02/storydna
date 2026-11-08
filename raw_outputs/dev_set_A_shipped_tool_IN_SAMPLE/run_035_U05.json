@@ -1,0 +1,367 @@
+{
+  "run_id": "20261108T073749Z_d195445c",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "U05",
+  "source_title": "U05 [UNRELATED]",
+  "input_sha256": "d195445c60cfeb55ef0ca322f67a1b029595e7816c11d56d6ffad9e63d0b878c",
+  "input_text": "Shy teenager Omkar builds a water filter from clay pots for the school science fair. His friends laugh and the judges ignore his table until a power cut stops every other exhibit. Only his filter keeps working. The state education board funds him to install them in twenty villages.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S02",
+      "candidate_title": "Night Shift Owner",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0741,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0812,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0773
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.228,
+          "pitch_beat_index": 2,
+          "pitch_text": "Only his filter keeps working.",
+          "candidate_beat_index": 1,
+          "candidate_text": "He befriends Tanya, a lonely accountant who works late and slowly trusts him."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.216,
+          "pitch_beat_index": 3,
+          "pitch_text": "The state education board funds him to install them in twenty villages.",
+          "candidate_beat_index": 5,
+          "candidate_text": "At an emergency board meeting he reveals he is the owner, plays the recording and clears Tanya."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "board"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Shy teenager Omkar builds a water filter from clay pots for the school science fair."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "His friends laugh and the judges ignore his table until a power cut stops every other exhibit."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "The finance chief learns about the leak and frames Tanya for the theft."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S02#beat1",
+        "S02#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S14",
+      "candidate_title": "Rejected by the Alpha",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0436,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0755,
+        "rare_detail_overlap": 0.0833,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0415
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.261,
+          "pitch_beat_index": 1,
+          "pitch_text": "His friends laugh and the judges ignore his table until a power cut stops every other exhibit.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A dying old wolf tells her she is the last descendant of the Moon Goddess, and her power is waking."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "power",
+        "stop"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Shy teenager Omkar builds a water filter from clay pots for the school science fair."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "The state education board funds him to install them in twenty villages."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "At the full moon ceremony, Alpha Kael publicly rejects his fated mate Luna, calling her weak because she cannot shift."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Luna returns, shifts into a white wolf and defeats the rogues."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S14#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0001,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0682,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0659,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0347
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.281,
+          "pitch_beat_index": 0,
+          "pitch_text": "Shy teenager Omkar builds a water filter from clay pots for the school science fair.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "school"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "His friends laugh and the judges ignore his table until a power cut stops every other exhibit."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Only his filter keeps working."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Ishaan gives him a job as security guard and walks away without a word."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Ishaan offers Rahul's whole street a place in a new mall development."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0377,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0668,
+        "rare_detail_overlap": 0.0476,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.226,
+          "pitch_beat_index": 2,
+          "pitch_text": "Only his filter keeps working.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Rani recognises a formula on his company's patent as her late father's work."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "villag"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Shy teenager Omkar builds a water filter from clay pots for the school science fair."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "His friends laugh and the judges ignore his table until a power cut stops every other exhibit."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S11",
+      "candidate_title": "Twins He Never Knew",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0418,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0547,
+        "rare_detail_overlap": 0.04,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0565
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.251,
+          "pitch_beat_index": 0,
+          "pitch_text": "Shy teenager Omkar builds a water filter from clay pots for the school science fair.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Armaan confronts his mother, and the boys ask their parents to come to the school play together."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "school"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "His friends laugh and the judges ignore his table until a power cut stops every other exhibit."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "The state education board funds him to install them in twenty villages."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "He demands a paternity test and fights for custody."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S11#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "UNRELATED",
+    "relevant": [],
+    "expected_tiers": [
+      "Low"
+    ]
+  }
+}

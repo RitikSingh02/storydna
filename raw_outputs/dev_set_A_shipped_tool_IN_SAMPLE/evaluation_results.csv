@@ -1,0 +1,41 @@
+qid,category,relevant,expected,top1_id,top1_title,top1_tier,top1_score,top1_plain,rank_of_relevant,plain_rank_of_relevant,any_high,tier_ok,valid,latency_ms,matched_beats_top1,ordered,lex,rare
+E_S01,EXACT,S01,High,S01,The Chauffeur's Secret,High,1.0,0.9431,1,1,True,True,True,9.4,6,0.8771,0.9181,0.9
+E_S06,EXACT,S06,High,S06,Ashes at the Altar,High,1.0,0.978,1,1,True,True,True,7.4,6,0.9643,0.965,1.0
+E_S08,EXACT,S08,High,S08,Reborn Before the Fire,High,1.0,0.9939,1,1,True,True,True,5.9,6,0.8655,0.944,1.0
+E_S10,EXACT,S10,High,S10,Swapped at Birth,High,1.0,0.9793,1,1,True,True,True,6.7,4,1.0,0.9752,1.0
+E_S12,EXACT,S12,High,S12,The Maid Who Was His Wife,High,1.0,0.9564,1,1,True,True,True,6.7,6,1.0,0.947,1.0
+E_S14,EXACT,S14,High,S14,Rejected by the Alpha,High,1.0,0.9879,1,1,True,True,True,5.2,6,1.0,0.9407,1.0
+E_S20,EXACT,S20,High,S20,The Stolen Recipe,High,1.0,0.9272,1,1,True,True,True,4.5,6,0.8784,0.9184,0.96
+E_S25,EXACT,S25,High,S25,Twin in the Wedding Dress,High,1.0,0.9686,1,1,True,True,True,4.5,6,1.0,0.9402,1.0
+P01,PARAPHRASE,S01,High,S01,The Chauffeur's Secret,High,0.9997,0.0941,1,1,True,True,True,5.9,6,0.7792,0.2908,0.15
+P02,PARAPHRASE,S03,High,S03,The Noodle Stall Husband,High,1.0,0.2429,1,1,True,True,True,5.6,6,0.7641,0.3737,0.4286
+P03,PARAPHRASE,S06,High,S06,Ashes at the Altar,High,0.9998,0.1678,1,1,True,True,True,5.1,5,0.8065,0.2282,0.25
+P04,PARAPHRASE,S08,High,S08,Reborn Before the Fire,High,1.0,0.1504,1,1,True,True,True,6.6,5,0.6644,0.3287,0.2941
+P05,PARAPHRASE,S10,High,S10,Swapped at Birth,High,1.0,0.1929,1,1,True,True,True,5.3,6,0.8474,0.3857,0.3636
+P06,PARAPHRASE,S12,High,S12,The Maid Who Was His Wife,High,1.0,0.2913,1,1,True,True,True,4.7,6,0.7689,0.4881,0.3333
+P07,PARAPHRASE,S14,High,S14,Rejected by the Alpha,High,1.0,0.4376,1,1,True,True,True,4.8,6,0.9596,0.5839,0.4167
+P08,PARAPHRASE,S20,High,S20,The Stolen Recipe,High,1.0,0.2554,1,1,True,True,True,4.8,5,0.9641,0.4784,0.36
+P09,PARAPHRASE,S25,High,S25,Twin in the Wedding Dress,High,1.0,0.1467,1,1,True,True,True,5.0,5,0.7533,0.3464,0.2
+P10,PARAPHRASE,S30,High,S30,The Last Will Game,High,1.0,0.4397,1,1,True,True,True,4.6,6,0.7566,0.5563,0.4706
+H01,TROPE_ONLY,,Low;Medium,S22,The Reunion Investor,Low,0.0052,0.0262,,,False,True,True,4.0,2,0.4775,0.0678,0.0909
+H02,TROPE_CHAIN_TRAP,,Low;Medium,S22,The Reunion Investor,Low,0.0223,0.1023,,,False,True,True,4.2,2,0.4121,0.115,0.1364
+H03,TROPE_ONLY,,Low;Medium,S23,"Fake Girlfriend, Real Problem",Low,0.0069,0.0777,,,False,True,True,4.4,2,0.5621,0.0689,0.0556
+H04,TROPE_ONLY,,Low;Medium,S07,"Divorce Papers, Diamond Return",Low,0.0064,0.0615,,,False,True,True,3.7,2,0.5288,0.0634,0.0526
+H05,TROPE_CHAIN_TRAP,,Low;Medium,S07,"Divorce Papers, Diamond Return",Low,0.1244,0.1106,,,False,True,True,4.2,2,0.5976,0.1035,0.0
+H06,TROPE_ONLY,,Low;Medium,S14,Rejected by the Alpha,Low,0.005,0.0943,,,False,True,True,3.5,2,0.1298,0.1237,0.125
+H07,TROPE_ONLY,,Low;Medium,S12,The Maid Who Was His Wife,Low,0.1472,0.089,,,False,True,True,3.8,2,0.5867,0.1157,0.0556
+H08,TROPE_ONLY,,Low;Medium,S28,Last Round,Low,0.0519,0.1018,,,False,True,True,3.7,2,0.384,0.1381,0.1905
+H09,TROPE_ONLY,,Low;Medium,S07,"Divorce Papers, Diamond Return",Low,0.0014,0.0683,,,False,True,True,3.9,1,0.3096,0.0742,0.1053
+H10,TROPE_ONLY,,Low;Medium,S09,The Framed Surgeon,Low,0.0333,0.0858,,,False,True,True,3.6,2,0.341,0.1668,0.125
+H11,TROPE_ONLY,,Low;Medium,S27,The Same Wedding Day,Low,0.0183,0.2075,,,False,True,True,4.4,2,0.0,0.1522,0.1
+H12,TROPE_ONLY,,Low;Medium,S11,Twins He Never Knew,Low,0.0003,0.0506,,,False,True,True,4.3,1,0.0,0.0923,0.04
+U01,UNRELATED,,Low,S27,The Same Wedding Day,Low,0.0502,0.1012,,,False,True,True,3.5,2,0.4592,0.1197,0.05
+U02,UNRELATED,,Low,S28,Last Round,Low,0.0071,0.0848,,,False,True,True,3.4,2,0.3075,0.086,0.0952
+U03,UNRELATED,,Low,S06,Ashes at the Altar,Low,0.0125,0.1234,,,False,True,True,3.6,2,0.0,0.1524,0.1
+U04,UNRELATED,,Low,S27,The Same Wedding Day,Low,0.0673,0.1563,,,False,True,True,3.4,2,0.4592,0.1105,0.05
+U05,UNRELATED,,Low,S02,Night Shift Owner,Low,0.0002,0.0773,,,False,True,True,3.2,2,0.0,0.0812,0.0455
+PT01,PARTIAL,S09,Medium;High,S09,The Framed Surgeon,High,0.9999,0.197,1,1,True,True,True,4.5,5,0.6764,0.206,0.1667
+PT02,PARTIAL,S14,Medium;High,S14,Rejected by the Alpha,High,1.0,0.3501,1,1,True,True,True,4.2,5,0.6744,0.381,0.2917
+PT03,PARTIAL,S05,Medium;High,S05,The Intern Who Owns the Floor,High,0.9767,0.1802,1,1,True,True,True,4.8,3,0.7236,0.2057,0.0417
+PT04,PARTIAL,S19,Medium;High,S19,The Mother-in-Law Test,High,1.0,0.4699,1,1,True,True,True,5.4,5,0.8033,0.6396,0.4118
+PT05,PARTIAL,S22,Medium;High,S22,The Reunion Investor,High,1.0,0.4233,1,1,True,True,True,5.0,5,0.7232,0.4982,0.4545

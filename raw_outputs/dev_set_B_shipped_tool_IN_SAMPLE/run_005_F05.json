@@ -1,0 +1,474 @@
+{
+  "run_id": "20261108T073750Z_918ddedb",
+  "run_label": "dev_set_B_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:50+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "F05",
+  "source_title": "F05 [PARAPHRASE]",
+  "input_sha256": "918ddedbd7ef2cf6eda9f1956548519deadcb39556f909ab2d17c4dfd73c7ca5",
+  "input_text": "To fund a transplant for his mother, Aman agrees to work as personal guard to the rich Mehak. She is cold to him and sets him dangerous tests of faithfulness. At the clinic it emerges that Mehak is a tissue match for his mother. Mehak agrees in secret to give a kidney and makes the surgeons promise to keep quiet. Aman learns on the morning of the surgery and bursts into the operating room. His mother pulls through, and Mehak admits at last that she needs a guard for her heart.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S21",
+      "candidate_title": "Kidney for a Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 1.0,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.4598,
+        "ordered_event_overlap": 0.5712,
+        "lexical_cosine": 0.3904,
+        "rare_detail_overlap": 0.4545,
+        "event_set_overlap": 0.2104,
+        "plain_tfidf_cosine": 0.2769
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.32,
+          "pitch_beat_index": 0,
+          "pitch_text": "To fund a transplant for his mother, Aman agrees to work as personal guard to the rich Mehak.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Karan needs money for his mother's kidney transplant and signs a contract to work as bodyguard to heiress Samaira."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.593,
+          "pitch_beat_index": 1,
+          "pitch_text": "She is cold to him and sets him dangerous tests of faithfulness.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Samaira treats him coldly and tests his loyalty with dangerous tasks."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.45,
+          "pitch_beat_index": 2,
+          "pitch_text": "At the clinic it emerges that Mehak is a tissue match for his mother.",
+          "candidate_beat_index": 2,
+          "candidate_text": "At the hospital they learn that Samaira's blood matches his mother's."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.519,
+          "pitch_beat_index": 3,
+          "pitch_text": "Mehak agrees in secret to give a kidney and makes the surgeons promise to keep quiet.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Samaira secretly agrees to donate a kidney and swears the doctors to silence."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.195,
+          "pitch_beat_index": 4,
+          "pitch_text": "Aman learns on the morning of the surgery and bursts into the operating room.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Karan finds out on the day of the operation and storms into the operating theatre."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.682,
+          "pitch_beat_index": 5,
+          "pitch_text": "His mother pulls through, and Mehak admits at last that she needs a guard for her heart.",
+          "candidate_beat_index": 5,
+          "candidate_text": "His mother survives, and Samaira finally admits she needs a bodyguard for her heart."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "admit",
+        "agre",
+        "cold",
+        "dangerous",
+        "heart",
+        "kidney",
+        "match",
+        "need",
+        "operat",
+        "transplant"
+      ],
+      "differentiating_beats": [],
+      "supporting_excerpt_or_scene_id": [
+        "S21#beat0",
+        "S21#beat1",
+        "S21#beat2",
+        "S21#beat3",
+        "S21#beat4",
+        "S21#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S09",
+      "candidate_title": "The Framed Surgeon",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0418,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0996,
+        "ordered_event_overlap": 0.4073,
+        "lexical_cosine": 0.1322,
+        "rare_detail_overlap": 0.1667,
+        "event_set_overlap": 0.1255,
+        "plain_tfidf_cosine": 0.1079
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "To fund a transplant for his mother, Aman agrees to work as personal guard to the rich Mehak.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.323,
+          "pitch_beat_index": 2,
+          "pitch_text": "At the clinic it emerges that Mehak is a tissue match for his mother.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Meghna takes a job as a night nurse in a rural clinic under another name."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "clinic",
+        "operat",
+        "room",
+        "surgery"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "His mother pulls through, and Mehak admits at last that she needs a guard for her heart."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She is cold to him and sets him dangerous tests of faithfulness."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "She sends the recording to the medical council during a live conference."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "The real culprit is her rival Dr. Bhatt, who swapped the medication label."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S09#beat0",
+        "S09#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S10",
+      "candidate_title": "Swapped at Birth",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.002,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0406,
+        "ordered_event_overlap": 0.2926,
+        "lexical_cosine": 0.107,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.29,
+        "plain_tfidf_cosine": 0.0616
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "To fund a transplant for his mother, Aman agrees to work as personal guard to the rich Mehak.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.244,
+          "pitch_beat_index": 5,
+          "pitch_text": "His mother pulls through, and Mehak admits at last that she needs a guard for her heart.",
+          "candidate_beat_index": 5,
+          "candidate_text": "The rich mother must publicly admit she chose the wrong child."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "admit"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "Aman learns on the morning of the surgery and bursts into the operating room."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Mehak agrees in secret to give a kidney and makes the surgeons promise to keep quiet."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S10#beat3",
+        "S10#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0006,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0562,
+        "ordered_event_overlap": 0.2013,
+        "lexical_cosine": 0.0753,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.2027,
+        "plain_tfidf_cosine": 0.0534
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 5,
+          "pitch_text": "His mother pulls through, and Mehak admits at last that she needs a guard for her heart.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Rahul begs for a place in it."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.212,
+          "pitch_beat_index": 5,
+          "pitch_text": "His mother pulls through, and Mehak admits at last that she needs a guard for her heart.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Ishaan gives him a job as security guard and walks away without a word."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY"
+      ],
+      "shared_rare_details": [
+        "guard"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "Mehak agrees in secret to give a kidney and makes the surgeons promise to keep quiet."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "At the clinic it emerges that Mehak is a tissue match for his mother."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat4",
+        "S22#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S03",
+      "candidate_title": "The Noodle Stall Husband",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0004,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0539,
+        "ordered_event_overlap": 0.1857,
+        "lexical_cosine": 0.0758,
+        "rare_detail_overlap": 0.0476,
+        "event_set_overlap": 0.1838,
+        "plain_tfidf_cosine": 0.0489
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.133,
+          "pitch_beat_index": 0,
+          "pitch_text": "To fund a transplant for his mother, Aman agrees to work as personal guard to the rich Mehak.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Riya agrees to a paper marriage with Dev, a noodle stall cook, so that her dying grandfather can see her settled."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.191,
+          "pitch_beat_index": 3,
+          "pitch_text": "Mehak agrees in secret to give a kidney and makes the surgeons promise to keep quiet.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Dev quietly pays the family's overdue rent."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "agre"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "Aman learns on the morning of the surgery and bursts into the operating room."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "At the clinic it emerges that Mehak is a tissue match for his mother."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Her mother-in-law and aunts humiliate Dev at every family dinner and tell Riya to divorce him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "At a family dinner he tears up the eviction notice and announces that he is the landlord."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S03#beat0",
+        "S03#beat2"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S21"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "run_id": "20261108T072829Z_46ad4519",
+  "run_label": "round1_apriori",
+  "created_utc": "2026-11-08T07:28:29+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 5,
+      "min_distinct_matched": 3,
+      "min_ordered": 0.45,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_ordered": 0.3,
+      "min_lex": 0.15,
+      "min_rare": 0.08
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "PT05",
+  "source_title": "PT05 [PARTIAL]",
+  "input_sha256": "46ad45193cbdbf3a33374b8a72834769063c60079034b7766e7e6164b0a9d484",
+  "input_text": "Dev was bullied at school by Kunal and left town in shame. Years later he returns for the reunion as a famous venture investor. Kunal, now a failing shop owner, sneers at him before he realises who Dev is. Dev offers Kunal's whole street a place in his new mall. Kunal begs for a stall. Dev forgives him and makes him manager of the mall.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.5891,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.7232,
+        "lexical_cosine": 0.4982,
+        "rare_detail_overlap": 0.4545,
+        "event_set_overlap": 0.5943,
+        "plain_tfidf_cosine": 0.4233
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Dev was bullied at school by Kunal and left town in shame.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE",
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 2,
+          "pitch_text": "Kunal, now a failing shop owner, sneers at him before he realises who Dev is.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Rahul, now a struggling shopkeeper, mocks him before learning who he is."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "Kunal begs for a stall.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Rahul begs for a place in it."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "bully",
+        "investor",
+        "mall",
+        "offer",
+        "plac",
+        "return",
+        "reunion",
+        "school",
+        "sham",
+        "town"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "Dev forgives him and makes him manager of the mall."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Years later he returns for the reunion as a famous venture investor."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Ishaan gives him a job as security guard and walks away without a word."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat0",
+        "S22#beat2",
+        "S22#beat4"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S01",
+      "candidate_title": "The Chauffeur's Secret",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.2105,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.3679,
+        "lexical_cosine": 0.0428,
+        "rare_detail_overlap": 0.05,
+        "event_set_overlap": 0.4052,
+        "plain_tfidf_cosine": 0.0329
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Dev was bullied at school by Kunal and left town in shame.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "Kunal, now a failing shop owner, sneers at him before he realises who Dev is.",
+          "candidate_beat_index": 3,
+          "candidate_text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY",
+            "THEFT_FRAUD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 5,
+          "pitch_text": "Dev forgives him and makes him manager of the mall.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "investor"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Years later he returns for the reunion as a famous venture investor."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "Kunal begs for a stall."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Meera stands by him and quietly pays his fake debts from her own savings."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S01#beat1",
+        "S01#beat3",
+        "S01#beat5"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S05",
+      "candidate_title": "The Intern Who Owns the Floor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1623,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2965,
+        "lexical_cosine": 0.0387,
+        "rare_detail_overlap": 0.0417,
+        "event_set_overlap": 0.2381,
+        "plain_tfidf_cosine": 0.0274
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Dev was bullied at school by Kunal and left town in shame.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+        },
+        {
+          "events": [
+            "THEFT_FRAUD"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 5,
+          "pitch_text": "Dev forgives him and makes him manager of the mall.",
+          "candidate_beat_index": 3,
+          "candidate_text": "At the product launch Sunil unveils her collection as his own."
+        }
+      ],
+      "shared_generic_tropes": [
+        "THEFT_FRAUD"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "manager"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Kunal, now a failing shop owner, sneers at him before he realises who Dev is."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Years later he returns for the reunion as a famous venture investor."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Naina keeps a dated sketchbook as proof while she watches him pitch her designs."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S05#beat1",
+        "S05#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S03",
+      "candidate_title": "The Noodle Stall Husband",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1457,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2552,
+        "lexical_cosine": 0.0329,
+        "rare_detail_overlap": 0.0476,
+        "event_set_overlap": 0.2419,
+        "plain_tfidf_cosine": 0.1182
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Dev was bullied at school by Kunal and left town in shame.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her mother-in-law and aunts humiliate Dev at every family dinner and tell Riya to divorce him."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "Kunal, now a failing shop owner, sneers at him before he realises who Dev is.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Dev quietly pays the family's overdue rent."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 5,
+          "pitch_text": "Dev forgives him and makes him manager of the mall.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Riya realises the paper marriage has become real, and her mother-in-law has to apologise to a noodle cook."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "cart"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Years later he returns for the reunion as a famous venture investor."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "Kunal begs for a stall."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Riya agrees to a paper marriage with Dev, a noodle stall cook, so that her dying grandfather can see her settled."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "At a family dinner he tears up the eviction notice and announces that he is the landlord."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S03#beat1",
+        "S03#beat2",
+        "S03#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S07",
+      "candidate_title": "Divorce Papers, Diamond Return",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1446,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.2179,
+        "lexical_cosine": 0.0627,
+        "rare_detail_overlap": 0.1053,
+        "event_set_overlap": 0.176,
+        "plain_tfidf_cosine": 0.0545
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "Kunal, now a failing shop owner, sneers at him before he realises who Dev is.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Aditya's company slides toward bankruptcy, and he discovers who is behind the new brand."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 4,
+          "pitch_text": "Kunal begs for a stall.",
+          "candidate_beat_index": 4,
+          "candidate_text": "He shows up at her studio begging to remarry."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY"
+      ],
+      "shared_rare_details": [
+        "fail",
+        "famous"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Dev was bullied at school by Kunal and left town in shame."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "Dev forgives him and makes him manager of the mall."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Sana builds a rival brand under a new name and starts winning his clients."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S07#beat3",
+        "S07#beat4"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARTIAL",
+    "relevant": [
+      "S22"
+    ],
+    "expected_tiers": [
+      "Medium",
+      "High"
+    ]
+  }
+}

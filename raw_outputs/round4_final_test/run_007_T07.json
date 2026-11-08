@@ -1,0 +1,558 @@
+{
+  "run_id": "20261108T073303Z_7a5df50a",
+  "run_label": "round4_final_test",
+  "created_utc": "2026-11-08T07:33:03+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "T07",
+  "source_title": "T07 [PARTIAL]",
+  "input_sha256": "7a5df50ad8740aa1100328c246536e195de7aa08175b83364ad9c68f226c3175",
+  "input_text": "Kiran is killed in a staged car crash by her brother-in-law Veer, who wants the family business. She wakes up two years earlier at her father's birthday. She secretly records Veer's phone calls, sells her shares to a trusted friend and warns her father to avoid the highway on the crash date. When the crash is attempted, an empty car goes off the road and the police trace it to Veer. Veer's accomplice talks and Kiran takes over the company.",
+  "input_beats": 5,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S08",
+      "candidate_title": "Reborn Before the Fire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.9997,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.1963,
+        "ordered_event_overlap": 0.848,
+        "lexical_cosine": 0.2157,
+        "rare_detail_overlap": 0.2941,
+        "event_set_overlap": 0.6865,
+        "plain_tfidf_cosine": 0.1733
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE",
+            "FIRE_ACCIDENT"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.233,
+          "pitch_beat_index": 0,
+          "pitch_text": "Kiran is killed in a staged car crash by her brother-in-law Veer, who wants the family business.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+        },
+        {
+          "events": [
+            "REBIRTH_TIME"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.248,
+          "pitch_beat_index": 1,
+          "pitch_text": "She wakes up two years earlier at her father's birthday.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wakes up three years in the past on the day of her engagement."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "She secretly records Veer's phone calls, sells her shares to a trusted friend and warns her father to avoid the highway on the crash date.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Remembering everything, she quietly changes her will and records the couple plotting."
+        },
+        {
+          "events": [
+            "FIRE_ACCIDENT"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.286,
+          "pitch_beat_index": 2,
+          "pitch_text": "She secretly records Veer's phone calls, sells her shares to a trusted friend and warns her father to avoid the highway on the crash date.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She avoids the engagement and takes the fire's date to move her family out of the house."
+        },
+        {
+          "events": [
+            "FIRE_ACCIDENT",
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.411,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the crash is attempted, an empty car goes off the road and the police trace it to Veer.",
+          "candidate_beat_index": 4,
+          "candidate_text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [
+        "FIRE_ACCIDENT",
+        "REBIRTH_TIME"
+      ],
+      "shared_rare_details": [
+        "date",
+        "friend",
+        "polic",
+        "trac",
+        "want"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "Veer's accomplice talks and Kiran takes over the company."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Ishita confesses to save herself, and Leena finally lives the life she was denied."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S08#beat0",
+        "S08#beat1",
+        "S08#beat2",
+        "S08#beat3",
+        "S08#beat4"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S12",
+      "candidate_title": "The Maid Who Was His Wife",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0195,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0823,
+        "ordered_event_overlap": 0.2366,
+        "lexical_cosine": 0.1415,
+        "rare_detail_overlap": 0.1111,
+        "event_set_overlap": 0.2265,
+        "plain_tfidf_cosine": 0.1025
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "FIRE_ACCIDENT"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Kiran is killed in a staged car crash by her brother-in-law Veer, who wants the family business.",
+          "candidate_beat_index": 0,
+          "candidate_text": "After a car crash, Zoya wakes up with no memory."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "She secretly records Veer's phone calls, sells her shares to a trusted friend and warns her father to avoid the highway on the crash date.",
+          "candidate_beat_index": 4,
+          "candidate_text": "At the husband's charity gala she walks in as the lady of the house and plays the mistress's recorded lies."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.494,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the crash is attempted, an empty car goes off the road and the police trace it to Veer.",
+          "candidate_beat_index": 0,
+          "candidate_text": "After a car crash, Zoya wakes up with no memory."
+        }
+      ],
+      "shared_generic_tropes": [
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [
+        "FIRE_ACCIDENT"
+      ],
+      "shared_rare_details": [
+        "car",
+        "crash"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She wakes up two years earlier at her father's birthday."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "Veer's accomplice talks and Kiran takes over the company."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She slowly recovers her memory but pretends to still be confused."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Her husband's mistress Diya convinces her that she is only the household maid and makes her scrub floors."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S12#beat0",
+        "S12#beat4",
+        "S12#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S26",
+      "candidate_title": "Kidnapped on the Mandap",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0064,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0306,
+        "ordered_event_overlap": 0.3752,
+        "lexical_cosine": 0.0424,
+        "rare_detail_overlap": 0.0769,
+        "event_set_overlap": 0.4347,
+        "plain_tfidf_cosine": 0.1247
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE",
+            "FAMILY_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Kiran is killed in a staged car crash by her brother-in-law Veer, who wants the family business.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Anjali escapes and discovers the kidnapper was hired by her stepmother."
+        },
+        {
+          "events": [
+            "EVIDENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "She secretly records Veer's phone calls, sells her shares to a trusted friend and warns her father to avoid the highway on the crash date.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She records the stepmother's call to the kidnapper and brings it to the police."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.184,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the crash is attempted, an empty car goes off the road and the police trace it to Veer.",
+          "candidate_beat_index": 3,
+          "candidate_text": "She records the stepmother's call to the kidnapper and brings it to the police."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the crash is attempted, an empty car goes off the road and the police trace it to Veer.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Veer reveals that he refused to pay because he had already tracked the kidnappers."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE",
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [
+        "FAMILY_PRESSURE"
+      ],
+      "shared_rare_details": [
+        "polic"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She wakes up two years earlier at her father's birthday."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "Veer's accomplice talks and Kiran takes over the company."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "The stepmother is arrested at the reception."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Bride Anjali is abducted from her own wedding by masked men."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S26#beat2",
+        "S26#beat3",
+        "S26#beat3",
+        "S26#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S17",
+      "candidate_title": "The Mafia Boss's Nanny",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0047,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.1076,
+        "ordered_event_overlap": 0.2286,
+        "lexical_cosine": 0.0941,
+        "rare_detail_overlap": 0.125,
+        "event_set_overlap": 0.1083,
+        "plain_tfidf_cosine": 0.0744
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.324,
+          "pitch_beat_index": 0,
+          "pitch_text": "Kiran is killed in a staged car crash by her brother-in-law Veer, who wants the family business.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She is secretly looking for the man who killed her brother."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Kiran is killed in a staged car crash by her brother-in-law Veer, who wants the family business.",
+          "candidate_beat_index": 2,
+          "candidate_text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.322,
+          "pitch_beat_index": 1,
+          "pitch_text": "She wakes up two years earlier at her father's birthday.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the crash is attempted, an empty car goes off the road and the police trace it to Veer.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "birthday",
+        "brother"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She secretly records Veer's phone calls, sells her shares to a trusted friend and warns her father to avoid the highway on the crash date."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "Veer's accomplice talks and Kiran takes over the company."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Viktor catches her searching his office and demands the truth."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Nina takes a job as nanny to the five-year-old daughter of mafia boss Viktor Rossi."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S17#beat1",
+        "S17#beat2",
+        "S17#beat5",
+        "S17#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S27",
+      "candidate_title": "The Same Wedding Day",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0045,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0842,
+        "ordered_event_overlap": 0.5395,
+        "lexical_cosine": 0.0141,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.5699,
+        "plain_tfidf_cosine": 0.0117
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REBIRTH_TIME"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "She wakes up two years earlier at her father's birthday.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Wedding planner Tanvi relives the same wedding day every morning after a lightning strike."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.505,
+          "pitch_beat_index": 1,
+          "pitch_text": "She wakes up two years earlier at her father's birthday.",
+          "candidate_beat_index": 5,
+          "candidate_text": "She wakes up on the day after."
+        },
+        {
+          "events": [
+            "FIRE_ACCIDENT"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the crash is attempted, an empty car goes off the road and the police trace it to Veer.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Wedding planner Tanvi relives the same wedding day every morning after a lightning strike."
+        },
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 3,
+          "pitch_text": "When the crash is attempted, an empty car goes off the road and the police trace it to Veer.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Each loop she finds a different disaster: a missing ring, a food poisoning, a runaway groom."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [
+        "FIRE_ACCIDENT",
+        "REBIRTH_TIME"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She secretly records Veer's phone calls, sells her shares to a trusted friend and warns her father to avoid the highway on the crash date."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Kiran is killed in a staged car crash by her brother-in-law Veer, who wants the family business."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "The loop breaks only when she lets the wedding go ahead with its imperfections."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She traps the saboteur, the bride's ex, with a fake gift."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S27#beat0",
+        "S27#beat5",
+        "S27#beat0",
+        "S27#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARTIAL",
+    "relevant": [
+      "S08"
+    ],
+    "expected_tiers": [
+      "Medium",
+      "High"
+    ]
+  }
+}

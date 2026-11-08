@@ -1,0 +1,372 @@
+{
+  "run_id": "20261108T072829Z_686ad31f",
+  "run_label": "round1_apriori",
+  "created_utc": "2026-11-08T07:28:29+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 5,
+      "min_distinct_matched": 3,
+      "min_ordered": 0.45,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_ordered": 0.3,
+      "min_lex": 0.15,
+      "min_rare": 0.08
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "H06",
+  "source_title": "H06 [TROPE_ONLY]",
+  "input_sha256": "686ad31f66964c606fc4e34d67fa91c24505879bd4596ffbc28e9836c8f0eb98",
+  "input_text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty. He decides not to chase money but to spend time with his father, who died when Kunal was twenty. They repair an old scooter together and fish at the lake. When the day of his father's heart attack comes, Kunal calls the ambulance in time.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S27",
+      "candidate_title": "The Same Wedding Day",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.2008,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.4329,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2763,
+        "plain_tfidf_cosine": 0.0268
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REBIRTH_TIME"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Wedding planner Tanvi relives the same wedding day every morning after a lightning strike."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "REBIRTH_TIME"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When the day of his father's heart attack comes, Kunal calls the ambulance in time."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "He decides not to chase money but to spend time with his father, who died when Kunal was twenty."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Each loop she finds a different disaster: a missing ring, a food poisoning, a runaway groom."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "The loop breaks only when she lets the wedding go ahead with its imperfections."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S27#beat0"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S16",
+      "candidate_title": "Villainess Transmigrated",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1731,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.3618,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2835,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REBIRTH_TIME"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty.",
+          "candidate_beat_index": 3,
+          "candidate_text": "The novel's heroine turns out to be another transmigrator who wants the duke for herself."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "REBIRTH_TIME"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When the day of his father's heart attack comes, Kunal calls the ambulance in time."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "He decides not to chase money but to spend time with his father, who died when Kunal was twenty."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Modern office worker Mira falls asleep over a web novel and wakes up inside it as the villainess who is executed in chapter thirty."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "In the final trial Mira uses her knowledge of the novel to expose the heroine's fake visions."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S16#beat3"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S30",
+      "candidate_title": "The Last Will Game",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1382,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2241,
+        "lexical_cosine": 0.0612,
+        "rare_detail_overlap": 0.0588,
+        "event_set_overlap": 0.1844,
+        "plain_tfidf_cosine": 0.0789
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty.",
+          "candidate_beat_index": 0,
+          "candidate_text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "spend"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When the day of his father's heart attack comes, Kunal calls the ambulance in time."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "He decides not to chase money but to spend time with his father, who died when Kunal was twenty."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Isha inherits everything, and she gives the cousins a salary."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S30#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S14",
+      "candidate_title": "Rejected by the Alpha",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1299,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.1298,
+        "lexical_cosine": 0.1237,
+        "rare_detail_overlap": 0.125,
+        "event_set_overlap": 0.1584,
+        "plain_tfidf_cosine": 0.0943
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty.",
+          "candidate_beat_index": 2,
+          "candidate_text": "A dying old wolf tells her she is the last descendant of the Moon Goddess, and her power is waking."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [
+        "attack",
+        "call",
+        "decid"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When the day of his father's heart attack comes, Kunal calls the ambulance in time."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "He decides not to chase money but to spend time with his father, who died when Kunal was twenty."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "At the full moon ceremony, Alpha Kael publicly rejects his fated mate Luna, calling her weak because she cannot shift."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Luna returns, shifts into a white wolf and defeats the rogues."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S14#beat2"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S08",
+      "candidate_title": "Reborn Before the Fire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1247,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2509,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2429,
+        "plain_tfidf_cosine": 0.0148
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REBIRTH_TIME"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Fifteen-year-old Kunal is reborn into his younger body after dying at forty.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She wakes up three years in the past on the day of her engagement."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "REBIRTH_TIME"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When the day of his father's heart attack comes, Kunal calls the ambulance in time."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "He decides not to chase money but to spend time with his father, who died when Kunal was twenty."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S08#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_ONLY",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

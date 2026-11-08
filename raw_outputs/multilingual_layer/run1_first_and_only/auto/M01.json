@@ -1,0 +1,788 @@
+{
+ "run_id": "20261108T080119Z_69da7fc4",
+ "run_label": "run1_first_and_only/auto",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "M01",
+ "source_title": "M01",
+ "input_sha256": "69da7fc40b029b92b30ea4cbd60e5fdd406072896e03fbaf1b43185739e1d20e",
+ "input_text": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai. Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai. Naina apni sketchbook mein tareekh ke saath saboot rakhti hai. Product launch par Sunil uski collection ko apna bata kar dikhata hai. Naina badi screen par sketchbook dikhati hai aur sabko batati hai ki woh malik ki beti hai. Sunil ko bahar nikaal diya jaata hai.",
+ "working_text_en": "Heiress becomes Naina father design company without salary intern mother maiden name.\nManager takes credit asks humiliates Sunil sketches publicly useless.\nNaina sketchbook tareekh saath evidence rakhti.\nProduct reveals launch Sunil collection bata.\nNaina reveals reveals big screen sketchbook sabko owner daughter.\nSunil is escorted out.",
+ "language": {
+  "detected": "hi-Latn",
+  "name": "Hindi in Roman letters (Hinglish)",
+  "script": "latin",
+  "confidence": 0.427,
+  "evidence": "43% Hindi function words vs 0% English",
+  "method": "glossary",
+  "reliable": true,
+  "recognised_share": 0.8,
+  "unrecognised_sample": [
+   "bata",
+   "design",
+   "rakhti",
+   "saath",
+   "sabko",
+   "salary",
+   "tareekh"
+  ]
+ },
+ "input_beats": 6,
+ "input_warnings": [
+  "Hindi text was converted to English with a small offline glossary (approximate; a model gives better results: set STORYDNA_PROVIDER/MODEL/KEY and tick 'translate with model')."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S05",
+   "candidate_title": "The Intern Who Owns the Floor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 1.0,
+   "review_priority": "High",
+   "components": {
+    "beat_alignment": 0.6426,
+    "ordered_event_overlap": 0.8503,
+    "lexical_cosine": 0.6015,
+    "rare_detail_overlap": 0.5417,
+    "event_set_overlap": 0.8446,
+    "plain_tfidf_cosine": 0.6646
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "INHERITANCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.723,
+     "pitch_beat_index": 0,
+     "pitch_text": "Heiress becomes Naina father design company without salary intern mother maiden name.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name.",
+     "pitch_text_original": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai."
+    },
+    {
+     "events": [
+      "THEFT_FRAUD",
+      "HUMILIATION"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.794,
+     "pitch_beat_index": 1,
+     "pitch_text": "Manager takes credit asks humiliates Sunil sketches publicly useless.",
+     "candidate_beat_index": 1,
+     "candidate_text": "Her manager Sunil takes credit for her sketches and publicly calls her useless.",
+     "pitch_text_original": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    },
+    {
+     "events": [
+      "EVIDENCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.233,
+     "pitch_beat_index": 2,
+     "pitch_text": "Naina sketchbook tareekh saath evidence rakhti.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Naina keeps a dated sketchbook as proof while she watches him pitch her designs.",
+     "pitch_text_original": "Naina apni sketchbook mein tareekh ke saath saboot rakhti hai."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.803,
+     "pitch_beat_index": 3,
+     "pitch_text": "Product reveals launch Sunil collection bata.",
+     "candidate_beat_index": 3,
+     "candidate_text": "At the product launch Sunil unveils her collection as his own.",
+     "pitch_text_original": "Product launch par Sunil uski collection ko apna bata kar dikhata hai."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.816,
+     "pitch_beat_index": 4,
+     "pitch_text": "Naina reveals reveals big screen sketchbook sabko owner daughter.",
+     "candidate_beat_index": 4,
+     "candidate_text": "Naina shows the sketchbook on the big screen and announces that she is the owner's daughter.",
+     "pitch_text_original": "Naina badi screen par sketchbook dikhati hai aur sabko batati hai ki woh malik ki beti hai."
+    },
+    {
+     "events": [
+      "COMEUPPANCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.486,
+     "pitch_beat_index": 5,
+     "pitch_text": "Sunil is escorted out.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Sunil is escorted out and the company changes its credit policy.",
+     "pitch_text_original": "Sunil ko bahar nikaal diya jaata hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "COMEUPPANCE",
+    "EVIDENCE",
+    "INHERITANCE",
+    "PUBLIC_REVEAL",
+    "THEFT_FRAUD"
+   ],
+   "shared_distinctive_events": [
+    "HUMILIATION"
+   ],
+   "shared_rare_details": [
+    "big",
+    "collection",
+    "credit",
+    "design",
+    "escort",
+    "intern",
+    "launch",
+    "maiden",
+    "manager",
+    "product",
+    "screen",
+    "sketch"
+   ],
+   "differentiating_beats": [],
+   "supporting_excerpt_or_scene_id": [
+    "S05#beat0",
+    "S05#beat1",
+    "S05#beat2",
+    "S05#beat3",
+    "S05#beat4",
+    "S05#beat5"
+   ],
+   "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S29",
+   "candidate_title": "The Scholarship Girl",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0019,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0918,
+    "ordered_event_overlap": 0.3722,
+    "lexical_cosine": 0.0763,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.2286,
+    "plain_tfidf_cosine": 0.0373
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.199,
+     "pitch_beat_index": 0,
+     "pitch_text": "Heiress becomes Naina father design company without salary intern mother maiden name.",
+     "candidate_beat_index": 3,
+     "candidate_text": "Rani recognises a formula on his company's patent as her late father's work.",
+     "pitch_text_original": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai."
+    },
+    {
+     "events": [
+      "HUMILIATION"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 1,
+     "pitch_text": "Manager takes credit asks humiliates Sunil sketches publicly useless.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent.",
+     "pitch_text_original": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "COMEUPPANCE"
+   ],
+   "shared_distinctive_events": [
+    "HUMILIATION"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Product reveals launch Sunil collection bata."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Naina reveals reveals big screen sketchbook sabko owner daughter."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "She wins the national maths olympiad."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S29#beat3",
+    "S29#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S06",
+   "candidate_title": "Ashes at the Altar",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0008,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0433,
+    "ordered_event_overlap": 0.3091,
+    "lexical_cosine": 0.0423,
+    "rare_detail_overlap": 0.05,
+    "event_set_overlap": 0.4144,
+    "plain_tfidf_cosine": 0.0265
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "EVIDENCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.26,
+     "pitch_beat_index": 2,
+     "pitch_text": "Naina sketchbook tareekh saath evidence rakhti.",
+     "candidate_beat_index": 4,
+     "candidate_text": "At the family anniversary she plays the evidence on the dining room screen.",
+     "pitch_text_original": "Naina apni sketchbook mein tareekh ke saath saboot rakhti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "COMEUPPANCE",
+    "EVIDENCE",
+    "INHERITANCE",
+    "PUBLIC_REVEAL",
+    "THEFT_FRAUD"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "screen"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Manager takes credit asks humiliates Sunil sketches publicly useless."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Product reveals launch Sunil collection bata."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "In front of the shocked guests she proposes to Rohan's powerful uncle Mr. Malhotra, who accepts."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S06#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S24",
+   "candidate_title": "The Street Singer's Voice",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0007,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0588,
+    "ordered_event_overlap": 0.4345,
+    "lexical_cosine": 0.0332,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.343,
+    "plain_tfidf_cosine": 0.0237
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "EVIDENCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.353,
+     "pitch_beat_index": 2,
+     "pitch_text": "Naina sketchbook tareekh saath evidence rakhti.",
+     "candidate_beat_index": 4,
+     "candidate_text": "He forges evidence that she is a fraud.",
+     "pitch_text_original": "Naina apni sketchbook mein tareekh ke saath saboot rakhti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE",
+    "INHERITANCE",
+    "PUBLIC_REVEAL",
+    "THEFT_FRAUD"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Naina reveals reveals big screen sketchbook sabko owner daughter."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Sunil is escorted out."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Orphan singer Ria performs on busy streets, and a viral video reaches the wealthy Kapoor family."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Mrs. Kapoor sees a birthmark and believes Ria is her long-lost daughter."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S24#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S02",
+   "candidate_title": "Night Shift Owner",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0006,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0337,
+    "ordered_event_overlap": 0.4416,
+    "lexical_cosine": 0.0493,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.3119,
+    "plain_tfidf_cosine": 0.0393
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.202,
+     "pitch_beat_index": 4,
+     "pitch_text": "Naina reveals reveals big screen sketchbook sabko owner daughter.",
+     "candidate_beat_index": 5,
+     "candidate_text": "At an emergency board meeting he reveals he is the owner, plays the recording and clears Tanya.",
+     "pitch_text_original": "Naina badi screen par sketchbook dikhati hai aur sabko batati hai ki woh malik ki beti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE",
+    "PUBLIC_REVEAL",
+    "THEFT_FRAUD"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Heiress becomes Naina father design company without salary intern mother maiden name."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Sunil is escorted out."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The finance chief learns about the leak and frames Tanya for the theft."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Billionaire Kabir Rao takes a job as the night janitor in his own tech company because money is disappearing from its accounts."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S02#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0005,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0278,
+    "ordered_event_overlap": 0.2702,
+    "lexical_cosine": 0.0829,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.3243,
+    "plain_tfidf_cosine": 0.0374
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "HUMILIATION"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 1,
+     "pitch_text": "Manager takes credit asks humiliates Sunil sketches publicly useless.",
+     "candidate_beat_index": 1,
+     "candidate_text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests.",
+     "pitch_text_original": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE",
+    "PUBLIC_REVEAL",
+    "THEFT_FRAUD"
+   ],
+   "shared_distinctive_events": [
+    "HUMILIATION"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Naina reveals reveals big screen sketchbook sabko owner daughter."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Naina sketchbook tareekh saath evidence rakhti."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Meera stands by him and quietly pays his fake debts from her own savings."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S01#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S30",
+   "candidate_title": "The Last Will Game",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0002,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0369,
+    "ordered_event_overlap": 0.2939,
+    "lexical_cosine": 0.0456,
+    "rare_detail_overlap": 0.0588,
+    "event_set_overlap": 0.2323,
+    "plain_tfidf_cosine": 0.017
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.221,
+     "pitch_beat_index": 0,
+     "pitch_text": "Heiress becomes Naina father design company without salary intern mother maiden name.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Isha inherits everything, and she gives the cousins a salary.",
+     "pitch_text_original": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE",
+    "THEFT_FRAUD"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "salary"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Product reveals launch Sunil collection bata."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Naina reveals reveals big screen sketchbook sabko owner daughter."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "A hidden clause in the will says the heir must be the one who stayed."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S30#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S17",
+   "candidate_title": "The Mafia Boss's Nanny",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0474,
+    "ordered_event_overlap": 0.1486,
+    "lexical_cosine": 0.0501,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.1089,
+    "plain_tfidf_cosine": 0.0328
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [
+    "COMEUPPANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Manager takes credit asks humiliates Sunil sketches publicly useless."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Heiress becomes Naina father design company without salary intern mother maiden name."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Viktor catches her searching his office and demands the truth."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S10",
+   "candidate_title": "Swapped at Birth",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0215,
+    "ordered_event_overlap": 0.2587,
+    "lexical_cosine": 0.0492,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.1747,
+    "plain_tfidf_cosine": 0.0377
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "HUMILIATION"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 1,
+     "pitch_text": "Manager takes credit asks humiliates Sunil sketches publicly useless.",
+     "candidate_beat_index": 1,
+     "candidate_text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran.",
+     "pitch_text_original": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "PUBLIC_REVEAL"
+   ],
+   "shared_distinctive_events": [
+    "HUMILIATION"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Heiress becomes Naina father design company without salary intern mother maiden name."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Naina reveals reveals big screen sketchbook sabko owner daughter."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S10#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S19",
+   "candidate_title": "The Mother-in-Law Test",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.2853,
+    "lexical_cosine": 0.0408,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.3367,
+    "plain_tfidf_cosine": 0.0274
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "HUMILIATION"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 1,
+     "pitch_text": "Manager takes credit asks humiliates Sunil sketches publicly useless.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Daughter-in-law Aarti is treated like a servant by her mother-in-law Savitri, who criticises every dish and every task.",
+     "pitch_text_original": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE",
+    "PUBLIC_REVEAL"
+   ],
+   "shared_distinctive_events": [
+    "HUMILIATION"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Heiress becomes Naina father design company without salary intern mother maiden name."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Naina reveals reveals big screen sketchbook sabko owner daughter."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "Aarti's sisters-in-law are furious."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "A family lawyer reveals that Savitri has been running a secret test to find out who is worthy to inherit the family temple trust."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S19#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

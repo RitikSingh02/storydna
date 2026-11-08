@@ -1,0 +1,743 @@
+{
+ "run_id": "20261108T080119Z_b0a2fa23",
+ "run_label": "run1_first_and_only/auto",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "M10",
+ "source_title": "M10",
+ "input_sha256": "b0a2fa23888d9ffe35d0376d00ce9c5f8c6a354c0790cfdd745cf3a8e466c75a",
+ "input_text": "अमीर वारिस मीरा गरीब बनकर एक छोटे से कैफ़े में काम करने लगती है ताकि जान सके कि कौन उसे सच में चाहता है। कैफ़े का मालिक उस पर चिल्लाता है और ग्राहक उसका मज़ाक उड़ाते हैं। एक लड़का चुपचाप उसकी मदद करता रहता है। कैफ़े के बंद होने के दिन वह सबके सामने बताती है कि वह इस पूरी इमारत की मालकिन है और कैफ़े को बचा लेती है।",
+ "working_text_en": "Rich works heir Meeraa poor Banakar small cafe Taaki Jaan Sake Kaun truth Chaahataa.\nCafe shouts at mocks owner Graahak Udaate.\nBoy helps lives secretly.\nCafe reveals saves Band Hone days publicly Is Pooree building owner cafe.",
+ "language": {
+  "detected": "hi",
+  "name": "Hindi (Devanagari; Marathi/Nepali look the same)",
+  "script": "devanagari",
+  "confidence": 1.0,
+  "evidence": "152 of 152 letters are devanagari",
+  "method": "glossary",
+  "reliable": true,
+  "recognised_share": 0.639,
+  "unrecognised_sample": [
+   "इस",
+   "उड़ाते",
+   "कौन",
+   "ग्राहक",
+   "चाहता",
+   "जान",
+   "ताकि",
+   "पूरी",
+   "बंद",
+   "बनकर",
+   "मीरा",
+   "सके"
+  ]
+ },
+ "input_beats": 4,
+ "input_warnings": [
+  "Hindi text was converted to English with a small offline glossary (approximate; a model gives better results: set STORYDNA_PROVIDER/MODEL/KEY and tick 'translate with model')."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0021,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0939,
+    "ordered_event_overlap": 0.2278,
+    "lexical_cosine": 0.0834,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.2026,
+    "plain_tfidf_cosine": 0.0706
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "HUMILIATION"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.269,
+     "pitch_beat_index": 1,
+     "pitch_text": "Cafe shouts at mocks owner Graahak Udaate.",
+     "candidate_beat_index": 1,
+     "candidate_text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests.",
+     "pitch_text_original": "कैफ़े का मालिक उस पर चिल्लाता है और ग्राहक उसका मज़ाक उड़ाते हैं।"
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.295,
+     "pitch_beat_index": 3,
+     "pitch_text": "Cafe reveals saves Band Hone days publicly Is Pooree building owner cafe.",
+     "candidate_beat_index": 4,
+     "candidate_text": "Arjun walks in as the investor, reveals his real identity in front of everyone and saves the firm.",
+     "pitch_text_original": "कैफ़े के बंद होने के दिन वह सबके सामने बताती है कि वह इस पूरी इमारत की मालकिन है और कैफ़े को बचा लेती है।"
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [
+    "HUMILIATION"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Boy helps lives secretly."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S01#beat1",
+    "S01#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S10",
+   "candidate_title": "Swapped at Birth",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0016,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0574,
+    "ordered_event_overlap": 0.1904,
+    "lexical_cosine": 0.1212,
+    "rare_detail_overlap": 0.0455,
+    "event_set_overlap": 0.1294,
+    "plain_tfidf_cosine": 0.0861
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.203,
+     "pitch_beat_index": 0,
+     "pitch_text": "Rich works heir Meeraa poor Banakar small cafe Taaki Jaan Sake Kaun truth Chaahataa.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Simran secretly knew the truth for years and hid the test results.",
+     "pitch_text_original": "अमीर वारिस मीरा गरीब बनकर एक छोटे से कैफ़े में काम करने लगती है ताकि जान सके कि कौन उसे सच में चाहता है।"
+    },
+    {
+     "events": [
+      "HUMILIATION"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 1,
+     "pitch_text": "Cafe shouts at mocks owner Graahak Udaate.",
+     "candidate_beat_index": 1,
+     "candidate_text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran.",
+     "pitch_text_original": "कैफ़े का मालिक उस पर चिल्लाता है और ग्राहक उसका मज़ाक उड़ाते हैं।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [
+    "HUMILIATION"
+   ],
+   "shared_rare_details": [
+    "truth"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Boy helps lives secretly."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S10#beat2",
+    "S10#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S05",
+   "candidate_title": "The Intern Who Owns the Floor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0012,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0392,
+    "ordered_event_overlap": 0.4297,
+    "lexical_cosine": 0.0803,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.3125,
+    "plain_tfidf_cosine": 0.041
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "HUMILIATION"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 1,
+     "pitch_text": "Cafe shouts at mocks owner Graahak Udaate.",
+     "candidate_beat_index": 1,
+     "candidate_text": "Her manager Sunil takes credit for her sketches and publicly calls her useless.",
+     "pitch_text_original": "कैफ़े का मालिक उस पर चिल्लाता है और ग्राहक उसका मज़ाक उड़ाते हैं।"
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.235,
+     "pitch_beat_index": 1,
+     "pitch_text": "Cafe shouts at mocks owner Graahak Udaate.",
+     "candidate_beat_index": 4,
+     "candidate_text": "Naina shows the sketchbook on the big screen and announces that she is the owner's daughter.",
+     "pitch_text_original": "कैफ़े का मालिक उस पर चिल्लाता है और ग्राहक उसका मज़ाक उड़ाते हैं।"
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [
+    "HUMILIATION"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Boy helps lives secretly."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Cafe reveals saves Band Hone days publicly Is Pooree building owner cafe."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Naina keeps a dated sketchbook as proof while she watches him pitch her designs."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Sunil is escorted out and the company changes its credit policy."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S05#beat1",
+    "S05#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S04",
+   "candidate_title": "Delivery Boy, Dining Empire",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (7 beats)",
+   "retrieval_score": 0.0008,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0296,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.1009,
+    "rare_detail_overlap": 0.0526,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.1858
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.207,
+     "pitch_beat_index": 0,
+     "pitch_text": "Rich works heir Meeraa poor Banakar small cafe Taaki Jaan Sake Kaun truth Chaahataa.",
+     "candidate_beat_index": 1,
+     "candidate_text": "He falls for Pooja, a waitress at a small family cafe that is failing.",
+     "pitch_text_original": "अमीर वारिस मीरा गरीब बनकर एक छोटे से कैफ़े में काम करने लगती है ताकि जान सके कि कौन उसे सच में चाहता है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "small"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Cafe shouts at mocks owner Graahak Udaate."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Boy helps lives secretly."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Vikram, owner of a restaurant chain, delivers food on a scooter for a week to see how his customers live."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Vikram secretly buys the tycoon's debt, forcing the tycoon to withdraw."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S04#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S11",
+   "candidate_title": "Twins He Never Knew",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0003,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0847,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.1135,
+    "rare_detail_overlap": 0.08,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0305
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.365,
+     "pitch_beat_index": 2,
+     "pitch_text": "Boy helps lives secretly.",
+     "candidate_beat_index": 1,
+     "candidate_text": "She raises twin boys alone in a small town.",
+     "pitch_text_original": "एक लड़का चुपचाप उसकी मदद करता रहता है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "boy",
+    "small"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Cafe shouts at mocks owner Graahak Udaate."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Rich works heir Meeraa poor Banakar small cafe Taaki Jaan Sake Kaun truth Chaahataa."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "He demands a paternity test and fights for custody."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S11#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S29",
+   "candidate_title": "The Scholarship Girl",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0002,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0349,
+    "ordered_event_overlap": 0.3149,
+    "lexical_cosine": 0.0781,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.1868,
+    "plain_tfidf_cosine": 0.0174
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "HUMILIATION"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.21,
+     "pitch_beat_index": 1,
+     "pitch_text": "Cafe shouts at mocks owner Graahak Udaate.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent.",
+     "pitch_text_original": "कैफ़े का मालिक उस पर चिल्लाता है और ग्राहक उसका मज़ाक उड़ाते हैं।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [
+    "HUMILIATION"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Rich works heir Meeraa poor Banakar small cafe Taaki Jaan Sake Kaun truth Chaahataa."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Boy helps lives secretly."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "She wins the national maths olympiad."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S29#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S22",
+   "candidate_title": "The Reunion Investor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0002,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0565,
+    "ordered_event_overlap": 0.2955,
+    "lexical_cosine": 0.029,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.2097,
+    "plain_tfidf_cosine": 0.0212
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "HUMILIATION"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.339,
+     "pitch_beat_index": 1,
+     "pitch_text": "Cafe shouts at mocks owner Graahak Udaate.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Rahul, now a struggling shopkeeper, mocks him before learning who he is.",
+     "pitch_text_original": "कैफ़े का मालिक उस पर चिल्लाता है और ग्राहक उसका मज़ाक उड़ाते हैं।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [
+    "HUMILIATION"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Rich works heir Meeraa poor Banakar small cafe Taaki Jaan Sake Kaun truth Chaahataa."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Boy helps lives secretly."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S22#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S28",
+   "candidate_title": "Last Round",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0922,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0892,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0418
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.239,
+     "pitch_beat_index": 1,
+     "pitch_text": "Cafe shouts at mocks owner Graahak Udaate.",
+     "candidate_beat_index": 2,
+     "candidate_text": "A rival gym owner tries to buy Gudiya's contract and threatens Ravi.",
+     "pitch_text_original": "कैफ़े का मालिक उस पर चिल्लाता है और ग्राहक उसका मज़ाक उड़ाते हैं।"
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.314,
+     "pitch_beat_index": 3,
+     "pitch_text": "Cafe reveals saves Band Hone days publicly Is Pooree building owner cafe.",
+     "candidate_beat_index": 3,
+     "candidate_text": "Ravi proves in public that the match-fixing was ordered by that same owner.",
+     "pitch_text_original": "कैफ़े के बंद होने के दिन वह सबके सामने बताती है कि वह इस पूरी इमारत की मालकिन है और कैफ़े को बचा लेती है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Rich works heir Meeraa poor Banakar small cafe Taaki Jaan Sake Kaun truth Chaahataa."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Boy helps lives secretly."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Disgraced former boxing champion Ravi is banned after a match-fixing scandal."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "Gudiya fights in the state final, takes a heavy hit in round three and gets up."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S28#beat2",
+    "S28#beat3"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S02",
+   "candidate_title": "Night Shift Owner",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0615,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0679,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0508
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.231,
+     "pitch_beat_index": 3,
+     "pitch_text": "Cafe reveals saves Band Hone days publicly Is Pooree building owner cafe.",
+     "candidate_beat_index": 5,
+     "candidate_text": "At an emergency board meeting he reveals he is the owner, plays the recording and clears Tanya.",
+     "pitch_text_original": "कैफ़े के बंद होने के दिन वह सबके सामने बताती है कि वह इस पूरी इमारत की मालकिन है और कैफ़े को बचा लेती है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Cafe shouts at mocks owner Graahak Udaate."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Boy helps lives secretly."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The finance chief learns about the leak and frames Tanya for the theft."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S02#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S17",
+   "candidate_title": "The Mafia Boss's Nanny",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0625,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0656,
+    "rare_detail_overlap": 0.0625,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0418
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.206,
+     "pitch_beat_index": 0,
+     "pitch_text": "Rich works heir Meeraa poor Banakar small cafe Taaki Jaan Sake Kaun truth Chaahataa.",
+     "candidate_beat_index": 3,
+     "candidate_text": "Viktor catches her searching his office and demands the truth.",
+     "pitch_text_original": "अमीर वारिस मीरा गरीब बनकर एक छोटे से कैफ़े में काम करने लगती है ताकि जान सके कि कौन उसे सच में चाहता है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "truth"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Cafe shouts at mocks owner Graahak Udaate."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Boy helps lives secretly."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S17#beat3"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

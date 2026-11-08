@@ -1,0 +1,668 @@
+{
+ "run_id": "20261108T080119Z_69da7fc4",
+ "run_label": "run1_first_and_only/off",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "M01",
+ "source_title": "M01",
+ "input_sha256": "69da7fc40b029b92b30ea4cbd60e5fdd406072896e03fbaf1b43185739e1d20e",
+ "input_text": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai. Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai. Naina apni sketchbook mein tareekh ke saath saboot rakhti hai. Product launch par Sunil uski collection ko apna bata kar dikhata hai. Naina badi screen par sketchbook dikhati hai aur sabko batati hai ki woh malik ki beti hai. Sunil ko bahar nikaal diya jaata hai.",
+ "working_text_en": null,
+ "language": {
+  "detected": "hi-Latn",
+  "name": "Hindi in Roman letters (Hinglish)",
+  "script": "latin",
+  "confidence": 0.427,
+  "evidence": "43% Hindi function words vs 0% English",
+  "method": "none",
+  "reliable": true,
+  "recognised_share": null,
+  "unrecognised_sample": []
+ },
+ "input_beats": 6,
+ "input_warnings": [
+  "The text does not look like English (very few English function words; e.g. Hindi written in Roman letters). The lexicon and vocabulary are English-only, so a Low result here is NOT evidence of originality."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S05",
+   "candidate_title": "The Intern Who Owns the Floor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 1.0,
+   "review_priority": "High",
+   "components": {
+    "beat_alignment": 0.4838,
+    "ordered_event_overlap": 0.2212,
+    "lexical_cosine": 0.4419,
+    "rare_detail_overlap": 0.4167,
+    "event_set_overlap": 0.142,
+    "plain_tfidf_cosine": 0.5467
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "INHERITANCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.535,
+     "pitch_beat_index": 0,
+     "pitch_text": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.627,
+     "pitch_beat_index": 1,
+     "pitch_text": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai.",
+     "candidate_beat_index": 1,
+     "candidate_text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.329,
+     "pitch_beat_index": 2,
+     "pitch_text": "Naina apni sketchbook mein tareekh ke saath saboot rakhti hai.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Naina keeps a dated sketchbook as proof while she watches him pitch her designs."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.858,
+     "pitch_beat_index": 3,
+     "pitch_text": "Product launch par Sunil uski collection ko apna bata kar dikhata hai.",
+     "candidate_beat_index": 3,
+     "candidate_text": "At the product launch Sunil unveils her collection as his own."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.553,
+     "pitch_beat_index": 4,
+     "pitch_text": "Naina badi screen par sketchbook dikhati hai aur sabko batati hai ki woh malik ki beti hai.",
+     "candidate_beat_index": 4,
+     "candidate_text": "Naina shows the sketchbook on the big screen and announces that she is the owner's daughter."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "collection",
+    "credit",
+    "design",
+    "intern",
+    "launch",
+    "maiden",
+    "manager",
+    "product",
+    "screen",
+    "sketch"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Sunil ko bahar nikaal diya jaata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Sunil is escorted out and the company changes its credit policy."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S05#beat0",
+    "S05#beat1",
+    "S05#beat2",
+    "S05#beat3",
+    "S05#beat4"
+   ],
+   "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S30",
+   "candidate_title": "The Last Will Game",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0002,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0342,
+    "ordered_event_overlap": 0.2309,
+    "lexical_cosine": 0.0584,
+    "rare_detail_overlap": 0.0588,
+    "event_set_overlap": 0.2145,
+    "plain_tfidf_cosine": 0.0216
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "INHERITANCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.205,
+     "pitch_beat_index": 0,
+     "pitch_text": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Isha inherits everything, and she gives the cousins a salary."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "salary"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Naina badi screen par sketchbook dikhati hai aur sabko batati hai ki woh malik ki beti hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "A dying tycoon announces a contest among his three grandchildren to inherit his empire."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "The poorest grandchild, Isha, simply visits the old man every evening and reads to him."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S30#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S07",
+   "candidate_title": "Divorce Papers, Diamond Return",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0337,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0528,
+    "rare_detail_overlap": 0.0526,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0251
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.202,
+     "pitch_beat_index": 3,
+     "pitch_text": "Product launch par Sunil uski collection ko apna bata kar dikhata hai.",
+     "candidate_beat_index": 1,
+     "candidate_text": "She secretly is the anonymous jewellery designer whose collections made his company famous."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "collection"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Sana builds a rival brand under a new name and starts winning his clients."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S07#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S29",
+   "candidate_title": "The Scholarship Girl",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.083,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0461,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0116
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.498,
+     "pitch_beat_index": 2,
+     "pitch_text": "Naina apni sketchbook mein tareekh ke saath saboot rakhti hai.",
+     "candidate_beat_index": 4,
+     "candidate_text": "She finds her father's notebook and takes it to a lawyer."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S29#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S16",
+   "candidate_title": "Villainess Transmigrated",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0292,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0429,
+    "rare_detail_overlap": 0.0385,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "use"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Naina badi screen par sketchbook dikhati hai aur sabko batati hai ki woh malik ki beti hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Modern office worker Mira falls asleep over a web novel and wakes up inside it as the villainess who is executed in chapter thirty."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The novel's heroine turns out to be another transmigrator who wants the duke for herself."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0229,
+    "ordered_event_overlap": 0.1104,
+    "lexical_cosine": 0.039,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0921,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Naina badi screen par sketchbook dikhati hai aur sabko batati hai ki woh malik ki beti hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Meera stands by him and quietly pays his fake debts from her own savings."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S12",
+   "candidate_title": "The Maid Who Was His Wife",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0629,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0325,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0347
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.377,
+     "pitch_beat_index": 2,
+     "pitch_text": "Naina apni sketchbook mein tareekh ke saath saboot rakhti hai.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Zoya finds a hidden diary under a loose floorboard that tells her real story."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "After a car crash, Zoya wakes up with no memory."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "She slowly recovers her memory but pretends to still be confused."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S12#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S28",
+   "candidate_title": "Last Round",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0241,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0289,
+    "rare_detail_overlap": 0.0476,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "ban"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Naina badi screen par sketchbook dikhati hai aur sabko batati hai ki woh malik ki beti hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "Gudiya fights in the state final, takes a heavy hit in round three and gets up."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "She wins on points as Ravi cries in her corner."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S06",
+   "candidate_title": "Ashes at the Altar",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0495,
+    "ordered_event_overlap": 0.1496,
+    "lexical_cosine": 0.0237,
+    "rare_detail_overlap": 0.05,
+    "event_set_overlap": 0.0975,
+    "plain_tfidf_cosine": 0.0147
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.297,
+     "pitch_beat_index": 4,
+     "pitch_text": "Naina badi screen par sketchbook dikhati hai aur sabko batati hai ki woh malik ki beti hai.",
+     "candidate_beat_index": 4,
+     "candidate_text": "At the family anniversary she plays the evidence on the dining room screen."
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "screen"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Product launch par Sunil uski collection ko apna bata kar dikhata hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S06#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S02",
+   "candidate_title": "Night Shift Owner",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0188,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0177
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The finance chief learns about the leak and frames Tanya for the theft."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

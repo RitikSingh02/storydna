@@ -1,0 +1,378 @@
+{
+  "run_id": "20261108T073749Z_4f8ae548",
+  "run_label": "dev_set_A_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:49+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "H02",
+  "source_title": "H02 [TROPE_CHAIN_TRAP]",
+  "input_sha256": "4f8ae54807a79a2c0fc3780c0029c9cc5c2894fedd7ab9d1b9dc71e35208d40c",
+  "input_text": "CEO Vedant disguises himself as a struggling tutor to teach the daughter of a rival family. The relatives insult his clothes and refuse to let him eat at their table. Vedant keeps teaching the shy girl until she passes her board exams. At the school fair he reveals that he owns the town's only school and announces that tuition will be free for every child.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0223,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0559,
+        "ordered_event_overlap": 0.4121,
+        "lexical_cosine": 0.115,
+        "rare_detail_overlap": 0.1364,
+        "event_set_overlap": 0.3023,
+        "plain_tfidf_cosine": 0.1023
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "The relatives insult his clothes and refuse to let him eat at their table.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Rahul, now a struggling shopkeeper, mocks him before learning who he is."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.336,
+          "pitch_beat_index": 3,
+          "pitch_text": "At the school fair he reveals that he owns the town's only school and announces that tuition will be free for every child.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "school",
+        "struggl",
+        "town"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Vedant keeps teaching the shy girl until she passes her board exams."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Ishaan gives him a job as security guard and walks away without a word."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat2",
+        "S22#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S10",
+      "candidate_title": "Swapped at Birth",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0126,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.1164,
+        "ordered_event_overlap": 0.1583,
+        "lexical_cosine": 0.1267,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.1014,
+        "plain_tfidf_cosine": 0.1245
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "The relatives insult his clothes and refuse to let him eat at their table.",
+          "candidate_beat_index": 1,
+          "candidate_text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.321,
+          "pitch_beat_index": 2,
+          "pitch_text": "Vedant keeps teaching the shy girl until she passes her board exams.",
+          "candidate_beat_index": 1,
+          "candidate_text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "child"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Simran secretly knew the truth for years and hid the test results."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S10#beat1",
+        "S10#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S11",
+      "candidate_title": "Twins He Never Knew",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0013,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0528,
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.1308,
+        "rare_detail_overlap": 0.08,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.14
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.184,
+          "pitch_beat_index": 3,
+          "pitch_text": "At the school fair he reveals that he owns the town's only school and announces that tuition will be free for every child.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She raises twin boys alone in a small town."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "school",
+        "town"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "The relatives insult his clothes and refuse to let him eat at their table."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Vedant keeps teaching the shy girl until she passes her board exams."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "He demands a paternity test and fights for custody."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S11#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S03",
+      "candidate_title": "The Noodle Stall Husband",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0007,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0265,
+        "ordered_event_overlap": 0.2165,
+        "lexical_cosine": 0.0642,
+        "rare_detail_overlap": 0.0476,
+        "event_set_overlap": 0.3643,
+        "plain_tfidf_cosine": 0.0615
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "FAMILY_PRESSURE",
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "The relatives insult his clothes and refuse to let him eat at their table.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her mother-in-law and aunts humiliate Dev at every family dinner and tell Riya to divorce him."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "HIDDEN_IDENTITY"
+      ],
+      "shared_distinctive_events": [
+        "FAMILY_PRESSURE",
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [
+        "own"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "Vedant keeps teaching the shy girl until she passes her board exams."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "CEO Vedant disguises himself as a struggling tutor to teach the daughter of a rival family."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Riya realises the paper marriage has become real, and her mother-in-law has to apologise to a noodle cook."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Riya agrees to a paper marriage with Dev, a noodle stall cook, so that her dying grandfather can see her settled."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S03#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S05",
+      "candidate_title": "The Intern Who Owns the Floor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0007,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0534,
+        "ordered_event_overlap": 0.3585,
+        "lexical_cosine": 0.0584,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2414,
+        "plain_tfidf_cosine": 0.0563
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "The relatives insult his clothes and refuse to let him eat at their table.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+        }
+      ],
+      "shared_generic_tropes": [
+        "HIDDEN_IDENTITY"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Sunil is escorted out and the company changes its credit policy."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "At the product launch Sunil unveils her collection as his own."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S05#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_CHAIN_TRAP",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

@@ -1,0 +1,165 @@
+{
+ "_comment": "MULTILINGUAL TEST SET (Hinglish in Roman script + Hindi in Devanagari). Written BEFORE the glossary and the language layer existed; the layer's scorer files were hash-frozen; run once. Same author (an AI assistant) as the catalogue and the glossary - NOT independent, and the glossary author had seen these texts. Pre-registered success criteria: top-1 correct for every positive, zero High flags on negatives, and report the 'before' (no language layer) result alongside.",
+ "exact_ids": [],
+ "queries": [
+  {
+   "qid": "M01",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S05"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hinglish",
+   "text": "Heiress Naina apne papa ki design company mein bina salary ke intern ban jaati hai aur apni mummy ka maiden naam use karti hai. Manager Sunil uske sketches ka credit khud le leta hai aur sabke saamne use nikamma kehkar beizzat karta hai. Naina apni sketchbook mein tareekh ke saath saboot rakhti hai. Product launch par Sunil uski collection ko apna bata kar dikhata hai. Naina badi screen par sketchbook dikhati hai aur sabko batati hai ki woh malik ki beti hai. Sunil ko bahar nikaal diya jaata hai."
+  },
+  {
+   "qid": "M02",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S03"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hinglish",
+   "text": "Riya apne bimaar nana ki khushi ke liye Dev se contract marriage karti hai, jo noodle ka thela lagata hai. Saas aur chachiyaan har family dinner par Dev ka mazaak udaati hain aur Riya se kehti hain ki talaak le le. Dev chupchaap family ka pichhla kiraya bhar deta hai. Jab makan malik ghar khali karwane ki dhamki deta hai, tab pata chalta hai ki asli malik Dev hi hai. Dinner par Dev eviction notice phaad kar sabke saamne bata deta hai ki building uski hai. Riya ko ehsaas hota hai ki ye shaadi ab sach ho chuki hai aur saas ko maafi maangni padti hai."
+  },
+  {
+   "qid": "M03",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S07"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hinglish",
+   "text": "Aditya apni patni Sana ko talaak de deta hai kyunki uska assistant ke saath affair chal raha hai, aur Sana ko ghar se khaali haath nikaal deta hai. Sana hi wo anonymous jewellery designer hai jiske collections ne Aditya ki company ko mashhoor kiya. Sana naye naam se apna rival brand banati hai aur Aditya ke clients jeetne lagti hai. Aditya ki company diwaliya hone lagti hai. Phir wo Sana ke studio aakar gidgidata hai ki dobara shaadi kar le. Sana sirf ek kaagaz par sign karti hai: Aditya ki doobti company ko apne naam karne ka."
+  },
+  {
+   "qid": "M04",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S08"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hinglish",
+   "text": "Leena ko uske pati Nikhil aur best friend Ishita ghar mein aag lagakar maar dete hain kyunki unhe uski jaaydaad chahiye. Wo teen saal pehle apni engagement ke din jaag jaati hai. Sab kuch yaad hone ki wajah se wo chupke se apni will badal deti hai aur dono ki saazish record kar leti hai. Aag lagne wali tareekh par wo apne parivaar ko ghar se bahar nikaal leti hai. Jab aag dobara lagti hai to khaali ghar jalta hai aur police Nikhil tak pahunch jaati hai. Ishita apni jaan bachane ke liye kabool kar leti hai."
+  },
+  {
+   "qid": "M05",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S09"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hindi",
+   "text": "एक मरीज़ की ऑपरेशन के दौरान मौत हो जाती है और इल्ज़ाम डॉक्टर मेघना पर आता है, उसका लाइसेंस रद्द हो जाता है। असली गुनहगार उसकी प्रतिद्वंदी डॉक्टर भाटिया है, जिसने दवा का लेबल बदल दिया था। मेघना नाम बदलकर एक गाँव के क्लिनिक में रात की नर्स बन जाती है। वहाँ एक मरता हुआ मरीज़ उसे पुराना लैपटॉप देता है जिसमें ऑपरेशन थिएटर की रिकॉर्डिंग है। मेघना लाइव कॉन्फ़्रेंस के दौरान वह रिकॉर्डिंग मेडिकल काउंसिल को भेज देती है। डॉक्टर भाटिया गिरफ़्तार हो जाती है।"
+  },
+  {
+   "qid": "M06",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S12"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hindi",
+   "text": "कार दुर्घटना के बाद ज़ोया की याददाश्त चली जाती है। पति की प्रेमिका दिया उसे यकीन दिलाती है कि वह सिर्फ़ घर की नौकरानी है और उससे फ़र्श साफ़ करवाती है। ज़ोया को फ़र्श के नीचे छिपी एक डायरी मिलती है जिसमें उसकी असली कहानी लिखी है। धीरे-धीरे उसकी याददाश्त लौट आती है लेकिन वह अनजान बनी रहती है। पति की चैरिटी पार्टी में वह घर की मालकिन बनकर आती है और दिया के झूठ की रिकॉर्डिंग सबको सुना देती है। पति को सच पता चल जाता है और दिया को निकाल दिया जाता है।"
+  },
+  {
+   "qid": "M07",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S10"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hindi",
+   "text": "झुग्गी में पली तारा को डीएनए टेस्ट से पता चलता है कि अस्पताल में उसे एक अमीर परिवार की बेटी से बदल दिया गया था। अमीर परिवार उसे घर तो ले आता है लेकिन उसे शर्मिंदगी समझता है और अपनी पाली हुई बेटी सिमरन को ही चाहता है। सिमरन सालों से सच जानती थी और उसने टेस्ट की रिपोर्ट छिपा ली थी। तारा को अस्पताल की फ़ाइल मिलती है जिसमें लिखा है कि सिमरन की माँ ने नर्स को पैसे देकर बच्चे बदलवाए थे। परिवार के चैरिटी गाला में तारा वह फ़ाइल सबके सामने खोल देती है। अमीर माँ को सबके सामने मानना पड़ता है कि उसने गलत बच्ची चुनी।"
+  },
+  {
+   "qid": "M08",
+   "category": "PARAPHRASE",
+   "relevant": [
+    "S06"
+   ],
+   "expected": [
+    "High"
+   ],
+   "language": "hindi",
+   "text": "अनन्या को मंडप पर छोड़ दिया जाता है क्योंकि उसका दूल्हा रोहन उसकी छोटी बहन काव्या के साथ भाग जाता है। सब मेहमानों के सामने वह रोहन के ताकतवर चाचा मिस्टर मल्होत्रा से शादी का प्रस्ताव रखती है और वे हाँ कह देते हैं। अब रोहन और काव्या को उसे चाची कहना पड़ता है। अनन्या सबूत जुटाती है कि दोनों ने उसकी माँ के ट्रस्ट फंड से पैसे चुराए थे। सालगिरह की पार्टी में वह डाइनिंग रूम की स्क्रीन पर सबूत चला देती है। रोहन और काव्या को घर से निकाल दिया जाता है।"
+  },
+  {
+   "qid": "M09",
+   "category": "TROPE_ONLY",
+   "relevant": [],
+   "expected": [
+    "Low",
+    "Medium"
+   ],
+   "language": "hinglish",
+   "text": "Billionaire Vedant gareeb tutor ban kar ek rival parivaar ki ladki ko padhane jaata hai. Rishtedaar uske kapdon ka mazaak udaate hain aur use apne saath khana khane se mana kar dete hain. Vedant sharmili ladki ko tab tak padhata hai jab tak wo board exam pass nahi kar leti. School ke mele mein wo batata hai ki shehar ka akela school uska hai aur har bachche ki fees maaf kar deta hai."
+  },
+  {
+   "qid": "M10",
+   "category": "TROPE_ONLY",
+   "relevant": [],
+   "expected": [
+    "Low",
+    "Medium"
+   ],
+   "language": "hindi",
+   "text": "अमीर वारिस मीरा गरीब बनकर एक छोटे से कैफ़े में काम करने लगती है ताकि जान सके कि कौन उसे सच में चाहता है। कैफ़े का मालिक उस पर चिल्लाता है और ग्राहक उसका मज़ाक उड़ाते हैं। एक लड़का चुपचाप उसकी मदद करता रहता है। कैफ़े के बंद होने के दिन वह सबके सामने बताती है कि वह इस पूरी इमारत की मालकिन है और कैफ़े को बचा लेती है।"
+  },
+  {
+   "qid": "M11",
+   "category": "UNRELATED",
+   "relevant": [],
+   "expected": [
+    "Low"
+   ],
+   "language": "hinglish",
+   "text": "Ek chhote se gaon mein baarish nahi hone se fasal sookh jaati hai. Kisan Ramesh sab gaonwalon ko milakar purana kuan phir se khodta hai. Paani nikalne par sab khushi se naachte hain. Sarkari afsar aakar kuan ki tareef karta hai aur gaon ko naya pump deta hai."
+  },
+  {
+   "qid": "M12",
+   "category": "UNRELATED",
+   "relevant": [],
+   "expected": [
+    "Low"
+   ],
+   "language": "hindi",
+   "text": "एक छोटे शहर की लड़की रीमा क्रिकेट कोच बनना चाहती है लेकिन उसके पिता नहीं मानते। वह लड़कों की टीम को चुपके से सिखाना शुरू करती है। टीम पहला मैच जीत जाती है। पिता मैदान पर आकर उसे गले लगा लेते हैं।"
+  },
+  {
+   "qid": "M13",
+   "category": "UNRELATED",
+   "relevant": [],
+   "expected": [
+    "Low"
+   ],
+   "language": "hindi",
+   "text": "एक वैज्ञानिक चाँद पर पहला पौधा उगाने की कोशिश करता है। पहले दो प्रयोग असफल हो जाते हैं। वह मिट्टी की जाँच दोबारा करता है। तीसरी बार वह मिट्टी बदलता है और बीज अंकुरित हो जाता है। पूरी दुनिया उस छोटे से पौधे की तस्वीर देखती है।"
+  },
+  {
+   "qid": "M14",
+   "category": "TROPE_ONLY",
+   "relevant": [],
+   "expected": [
+    "Low",
+    "Medium"
+   ],
+   "language": "hinglish",
+   "text": "Priya ki shaadi ke din uska dulha ghabra kar bhaag jaata hai. Priya ke papa bahut pareshaan ho jaate hain. Priya ka purana dost Sameer sabke saamne usse shaadi karne ko kehta hai. Priya soch mein padh jaati hai lekin haan kehti hai. Do saal baad dono apna chhota sa cafe kholte hain."
+  }
+ ]
+}

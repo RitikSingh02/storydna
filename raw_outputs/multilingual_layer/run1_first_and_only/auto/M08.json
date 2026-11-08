@@ -1,0 +1,822 @@
+{
+ "run_id": "20261108T080119Z_71280279",
+ "run_label": "run1_first_and_only/auto",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "M08",
+ "source_title": "M08",
+ "input_sha256": "71280279e59701468541659c723be7b9c0584f6ed271c76eba209d87db588a85",
+ "input_text": "अनन्या को मंडप पर छोड़ दिया जाता है क्योंकि उसका दूल्हा रोहन उसकी छोटी बहन काव्या के साथ भाग जाता है। सब मेहमानों के सामने वह रोहन के ताकतवर चाचा मिस्टर मल्होत्रा से शादी का प्रस्ताव रखती है और वे हाँ कह देते हैं। अब रोहन और काव्या को उसे चाची कहना पड़ता है। अनन्या सबूत जुटाती है कि दोनों ने उसकी माँ के ट्रस्ट फंड से पैसे चुराए थे। सालगिरह की पार्टी में वह डाइनिंग रूम की स्क्रीन पर सबूत चला देती है। रोहन और काव्या को घर से निकाल दिया जाता है।",
+ "working_text_en": "Ananyaa left at the altar runs away with Diyaa groom Rohan younger sister Kaavyaa.\nIn front of guests proposes gives Rohan powerful uncle Mistar Malhotraa wedding Rakhatee Ve Haan Kah.\nRohan asks Kaavyaa aunt Padataa.\nAnanyaa steals evidence Jutaatee mother trust fund money.\nAnniversary plays the recording party Daaining Room screen evidence.\nRohan thrown out Kaavyaa house.",
+ "language": {
+  "detected": "hi",
+  "name": "Hindi (Devanagari; Marathi/Nepali look the same)",
+  "script": "devanagari",
+  "confidence": 1.0,
+  "evidence": "210 of 210 letters are devanagari",
+  "method": "glossary",
+  "reliable": false,
+  "recognised_share": 0.545,
+  "unrecognised_sample": [
+   "अनन्या",
+   "कह",
+   "काव्या",
+   "जुटाती",
+   "डाइनिंग",
+   "दिया",
+   "पड़ता",
+   "मल्होत्रा",
+   "मिस्टर",
+   "रखती",
+   "रूम",
+   "रोहन"
+  ]
+ },
+ "input_beats": 6,
+ "input_warnings": [
+  "Hindi text was converted to English with a small offline glossary (approximate; a model gives better results: set STORYDNA_PROVIDER/MODEL/KEY and tick 'translate with model').",
+  "More than 40% of the Devanagari words are not in the glossary (e.g. अनन्या, कह, काव्या, जुटाती, डाइनिंग). Treat a Low result as unreliable."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S06",
+   "candidate_title": "Ashes at the Altar",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 1.0,
+   "review_priority": "High",
+   "components": {
+    "beat_alignment": 0.5677,
+    "ordered_event_overlap": 0.8847,
+    "lexical_cosine": 0.5694,
+    "rare_detail_overlap": 0.5,
+    "event_set_overlap": 0.9107,
+    "plain_tfidf_cosine": 0.5449
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "REJECTION_EXPULSION",
+      "BETRAYAL"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 1.0,
+     "pitch_beat_index": 0,
+     "pitch_text": "Ananyaa left at the altar runs away with Diyaa groom Rohan younger sister Kaavyaa.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya.",
+     "pitch_text_original": "अनन्या को मंडप पर छोड़ दिया जाता है क्योंकि उसका दूल्हा रोहन उसकी छोटी बहन काव्या के साथ भाग जाता है।"
+    },
+    {
+     "events": [
+      "ROMANTIC_TURN"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.699,
+     "pitch_beat_index": 1,
+     "pitch_text": "In front of guests proposes gives Rohan powerful uncle Mistar Malhotraa wedding Rakhatee Ve Haan Kah.",
+     "candidate_beat_index": 1,
+     "candidate_text": "In front of the shocked guests she proposes to Rohan's powerful uncle Mr. Malhotra, who accepts.",
+     "pitch_text_original": "सब मेहमानों के सामने वह रोहन के ताकतवर चाचा मिस्टर मल्होत्रा से शादी का प्रस्ताव रखती है और वे हाँ कह देते हैं।"
+    },
+    {
+     "events": [
+      "FAMILY_PRESSURE"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.41,
+     "pitch_beat_index": 2,
+     "pitch_text": "Rohan asks Kaavyaa aunt Padataa.",
+     "candidate_beat_index": 2,
+     "candidate_text": "She moves into the Malhotra house, where Rohan and Kavya must now call her aunt.",
+     "pitch_text_original": "अब रोहन और काव्या को उसे चाची कहना पड़ता है।"
+    },
+    {
+     "events": [
+      "THEFT_FRAUD",
+      "INHERITANCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.355,
+     "pitch_beat_index": 3,
+     "pitch_text": "Ananyaa steals evidence Jutaatee mother trust fund money.",
+     "candidate_beat_index": 3,
+     "candidate_text": "Ananya gathers proof that Kavya and Rohan stole from her late mother's trust fund.",
+     "pitch_text_original": "अनन्या सबूत जुटाती है कि दोनों ने उसकी माँ के ट्रस्ट फंड से पैसे चुराए थे।"
+    },
+    {
+     "events": [
+      "PUBLIC_REVEAL",
+      "EVIDENCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.628,
+     "pitch_beat_index": 4,
+     "pitch_text": "Anniversary plays the recording party Daaining Room screen evidence.",
+     "candidate_beat_index": 4,
+     "candidate_text": "At the family anniversary she plays the evidence on the dining room screen.",
+     "pitch_text_original": "सालगिरह की पार्टी में वह डाइनिंग रूम की स्क्रीन पर सबूत चला देती है।"
+    },
+    {
+     "events": [
+      "REJECTION_EXPULSION"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.315,
+     "pitch_beat_index": 5,
+     "pitch_text": "Rohan thrown out Kaavyaa house.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes.",
+     "pitch_text_original": "रोहन और काव्या को घर से निकाल दिया जाता है।"
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE",
+    "INHERITANCE",
+    "PUBLIC_REVEAL",
+    "ROMANTIC_TURN",
+    "THEFT_FRAUD"
+   ],
+   "shared_distinctive_events": [
+    "BETRAYAL",
+    "FAMILY_PRESSURE",
+    "REJECTION_EXPULSION"
+   ],
+   "shared_rare_details": [
+    "altar",
+    "anniversary",
+    "aunt",
+    "powerful",
+    "propos",
+    "run",
+    "screen",
+    "thrown",
+    "uncl",
+    "younger"
+   ],
+   "differentiating_beats": [],
+   "supporting_excerpt_or_scene_id": [
+    "S06#beat0",
+    "S06#beat1",
+    "S06#beat2",
+    "S06#beat3",
+    "S06#beat4",
+    "S06#beat5"
+   ],
+   "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S02",
+   "candidate_title": "Night Shift Owner",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0037,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0579,
+    "ordered_event_overlap": 0.5179,
+    "lexical_cosine": 0.0835,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.3341,
+    "plain_tfidf_cosine": 0.0476
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "PUBLIC_REVEAL",
+      "EVIDENCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.218,
+     "pitch_beat_index": 4,
+     "pitch_text": "Anniversary plays the recording party Daaining Room screen evidence.",
+     "candidate_beat_index": 5,
+     "candidate_text": "At an emergency board meeting he reveals he is the owner, plays the recording and clears Tanya.",
+     "pitch_text_original": "सालगिरह की पार्टी में वह डाइनिंग रूम की स्क्रीन पर सबूत चला देती है।"
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE",
+    "PUBLIC_REVEAL",
+    "ROMANTIC_TURN",
+    "THEFT_FRAUD"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananyaa left at the altar runs away with Diyaa groom Rohan younger sister Kaavyaa."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Rohan asks Kaavyaa aunt Padataa."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The finance chief learns about the leak and frames Tanya for the theft."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S02#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S07",
+   "candidate_title": "Divorce Papers, Diamond Return",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0819,
+    "ordered_event_overlap": 0.3188,
+    "lexical_cosine": 0.0567,
+    "rare_detail_overlap": 0.0526,
+    "event_set_overlap": 0.2526,
+    "plain_tfidf_cosine": 0.0238
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "REJECTION_EXPULSION",
+      "BETRAYAL"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 0,
+     "pitch_text": "Ananyaa left at the altar runs away with Diyaa groom Rohan younger sister Kaavyaa.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing.",
+     "pitch_text_original": "अनन्या को मंडप पर छोड़ दिया जाता है क्योंकि उसका दूल्हा रोहन उसकी छोटी बहन काव्या के साथ भाग जाता है।"
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.491,
+     "pitch_beat_index": 5,
+     "pitch_text": "Rohan thrown out Kaavyaa house.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing.",
+     "pitch_text_original": "रोहन और काव्या को घर से निकाल दिया जाता है।"
+    }
+   ],
+   "shared_generic_tropes": [
+    "PUBLIC_REVEAL"
+   ],
+   "shared_distinctive_events": [
+    "BETRAYAL",
+    "REJECTION_EXPULSION"
+   ],
+   "shared_rare_details": [
+    "thrown"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Rohan asks Kaavyaa aunt Padataa."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "In front of guests proposes gives Rohan powerful uncle Mistar Malhotraa wedding Rakhatee Ve Haan Kah."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Sana builds a rival brand under a new name and starts winning his clients."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "She secretly is the anonymous jewellery designer whose collections made his company famous."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S07#beat0",
+    "S07#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S19",
+   "candidate_title": "The Mother-in-Law Test",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0274,
+    "ordered_event_overlap": 0.3322,
+    "lexical_cosine": 0.0538,
+    "rare_detail_overlap": 0.0588,
+    "event_set_overlap": 0.4956,
+    "plain_tfidf_cosine": 0.0159
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "FAMILY_PRESSURE"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 2,
+     "pitch_text": "Rohan asks Kaavyaa aunt Padataa.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Daughter-in-law Aarti is treated like a servant by her mother-in-law Savitri, who criticises every dish and every task.",
+     "pitch_text_original": "अब रोहन और काव्या को उसे चाची कहना पड़ता है।"
+    }
+   ],
+   "shared_generic_tropes": [
+    "INHERITANCE",
+    "PUBLIC_REVEAL"
+   ],
+   "shared_distinctive_events": [
+    "BETRAYAL",
+    "FAMILY_PRESSURE"
+   ],
+   "shared_rare_details": [
+    "run"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "In front of guests proposes gives Rohan powerful uncle Mistar Malhotraa wedding Rakhatee Ve Haan Kah."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Rohan thrown out Kaavyaa house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Aarti endures it quietly for her husband's sake."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Savitri finally hugs her."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S19#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S24",
+   "candidate_title": "The Street Singer's Voice",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0004,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0346,
+    "ordered_event_overlap": 0.3711,
+    "lexical_cosine": 0.0324,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.4041,
+    "plain_tfidf_cosine": 0.0244
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "FAMILY_PRESSURE"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 2,
+     "pitch_text": "Rohan asks Kaavyaa aunt Padataa.",
+     "candidate_beat_index": 3,
+     "candidate_text": "Ria is welcomed home, but her stepbrother schemes to push her out before the inheritance is divided.",
+     "pitch_text_original": "अब रोहन और काव्या को उसे चाची कहना पड़ता है।"
+    },
+    {
+     "events": [
+      "THEFT_FRAUD",
+      "EVIDENCE"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.207,
+     "pitch_beat_index": 3,
+     "pitch_text": "Ananyaa steals evidence Jutaatee mother trust fund money.",
+     "candidate_beat_index": 4,
+     "candidate_text": "He forges evidence that she is a fraud.",
+     "pitch_text_original": "अनन्या सबूत जुटाती है कि दोनों ने उसकी माँ के ट्रस्ट फंड से पैसे चुराए थे।"
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE",
+    "INHERITANCE",
+    "PUBLIC_REVEAL",
+    "THEFT_FRAUD"
+   ],
+   "shared_distinctive_events": [
+    "FAMILY_PRESSURE"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananyaa left at the altar runs away with Diyaa groom Rohan younger sister Kaavyaa."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "In front of guests proposes gives Rohan powerful uncle Mistar Malhotraa wedding Rakhatee Ve Haan Kah."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Orphan singer Ria performs on busy streets, and a viral video reaches the wealthy Kapoor family."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Mrs. Kapoor sees a birthmark and believes Ria is her long-lost daughter."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S24#beat3",
+    "S24#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S25",
+   "candidate_title": "Twin in the Wedding Dress",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0003,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0588,
+    "ordered_event_overlap": 0.0958,
+    "lexical_cosine": 0.0842,
+    "rare_detail_overlap": 0.0667,
+    "event_set_overlap": 0.0596,
+    "plain_tfidf_cosine": 0.0646
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.353,
+     "pitch_beat_index": 2,
+     "pitch_text": "Rohan asks Kaavyaa aunt Padataa.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Zayn pays the gangster, then asks to marry Hina for real.",
+     "pitch_text_original": "अब रोहन और काव्या को उसे चाची कहना पड़ता है।"
+    }
+   ],
+   "shared_generic_tropes": [
+    "ROMANTIC_TURN"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "ask"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananyaa left at the altar runs away with Diyaa groom Rohan younger sister Kaavyaa."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Rohan thrown out Kaavyaa house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "She wears the dress and keeps up the act in the groom's mansion."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Twin sister Hina is begged to take her runaway sister Heer's place at a wedding to billionaire Zayn."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S25#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S18",
+   "candidate_title": "Undercover Bride",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0003,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0569,
+    "ordered_event_overlap": 0.2204,
+    "lexical_cosine": 0.0432,
+    "rare_detail_overlap": 0.0455,
+    "event_set_overlap": 0.2476,
+    "plain_tfidf_cosine": 0.0325
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.22,
+     "pitch_beat_index": 4,
+     "pitch_text": "Anniversary plays the recording party Daaining Room screen evidence.",
+     "candidate_beat_index": 3,
+     "candidate_text": "Her handler orders her to arrest Armand on their anniversary.",
+     "pitch_text_original": "सालगिरह की पार्टी में वह डाइनिंग रूम की स्क्रीन पर सबूत चला देती है।"
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE",
+    "PUBLIC_REVEAL",
+    "ROMANTIC_TURN"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "anniversary"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananyaa left at the altar runs away with Diyaa groom Rohan younger sister Kaavyaa."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Rohan asks Kaavyaa aunt Padataa."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Living in his mansion she begins to see that he protects his workers and fights a corrupt commissioner."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "Rhea discovers the handler is the commissioner's informant who has been selling every secret."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S18#beat3"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0002,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0464,
+    "ordered_event_overlap": 0.14,
+    "lexical_cosine": 0.0533,
+    "rare_detail_overlap": 0.05,
+    "event_set_overlap": 0.1687,
+    "plain_tfidf_cosine": 0.0432
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [
+    "INHERITANCE",
+    "PUBLIC_REVEAL",
+    "THEFT_FRAUD"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "party"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananyaa left at the altar runs away with Diyaa groom Rohan younger sister Kaavyaa."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Rohan asks Kaavyaa aunt Padataa."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Meera stands by him and quietly pays his fake debts from her own savings."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S05",
+   "candidate_title": "The Intern Who Owns the Floor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0002,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0299,
+    "ordered_event_overlap": 0.2904,
+    "lexical_cosine": 0.0246,
+    "rare_detail_overlap": 0.0417,
+    "event_set_overlap": 0.3053,
+    "plain_tfidf_cosine": 0.0188
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "PUBLIC_REVEAL"
+     ],
+     "generic_trope_only": true,
+     "beat_similarity": 0.18,
+     "pitch_beat_index": 4,
+     "pitch_text": "Anniversary plays the recording party Daaining Room screen evidence.",
+     "candidate_beat_index": 4,
+     "candidate_text": "Naina shows the sketchbook on the big screen and announces that she is the owner's daughter.",
+     "pitch_text_original": "सालगिरह की पार्टी में वह डाइनिंग रूम की स्क्रीन पर सबूत चला देती है।"
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE",
+    "INHERITANCE",
+    "PUBLIC_REVEAL",
+    "THEFT_FRAUD"
+   ],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "screen"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Ananyaa left at the altar runs away with Diyaa groom Rohan younger sister Kaavyaa."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 2,
+     "text": "Rohan asks Kaavyaa aunt Padataa."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Sunil is escorted out and the company changes its credit policy."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S05#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S26",
+   "candidate_title": "Kidnapped on the Mandap",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0412,
+    "ordered_event_overlap": 0.2009,
+    "lexical_cosine": 0.0409,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.2113,
+    "plain_tfidf_cosine": 0.0219
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "FAMILY_PRESSURE"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 2,
+     "pitch_text": "Rohan asks Kaavyaa aunt Padataa.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Anjali escapes and discovers the kidnapper was hired by her stepmother.",
+     "pitch_text_original": "अब रोहन और काव्या को उसे चाची कहना पड़ता है।"
+    }
+   ],
+   "shared_generic_tropes": [
+    "EVIDENCE"
+   ],
+   "shared_distinctive_events": [
+    "FAMILY_PRESSURE"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "In front of guests proposes gives Rohan powerful uncle Mistar Malhotraa wedding Rakhatee Ve Haan Kah."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Rohan thrown out Kaavyaa house."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "The stepmother is arrested at the reception."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Bride Anjali is abducted from her own wedding by masked men."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S26#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

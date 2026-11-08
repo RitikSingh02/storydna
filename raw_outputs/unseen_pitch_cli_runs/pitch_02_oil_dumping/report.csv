@@ -1,0 +1,6 @@
+query_id,rank,candidate_id,candidate_title,review_priority,retrieval_score,ordered_event_overlap,lexical_cosine,rare_detail_overlap,n_matched_beats,shared_distinctive_events,shared_generic_tropes,reviewer_decision,failure_notes
+unseen_pitch_02_original,1,S20,The Stolen Recipe,Low,0.0289,0.4399,0.1111,0.12,2,REJECTION_EXPULSION;VIRAL_FAME,THEFT_FRAUD,,
+unseen_pitch_02_original,2,S18,Undercover Bride,Low,0.0023,0.1639,0.1025,0.1364,2,,EVIDENCE,,
+unseen_pitch_02_original,3,S05,The Intern Who Owns the Floor,Low,0.0011,0.2884,0.0993,0.0,0,,EVIDENCE;THEFT_FRAUD,,
+unseen_pitch_02_original,4,S28,Last Round,Low,0.0008,0.1805,0.084,0.0952,2,REJECTION_EXPULSION,,,
+unseen_pitch_02_original,5,S29,The Scholarship Girl,Low,0.0007,0.0,0.1272,0.0476,0,,,,

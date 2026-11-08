@@ -1,0 +1,428 @@
+{
+  "run_id": "20261108T073750Z_9fbae22a",
+  "run_label": "dev_set_B_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:50+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "G04",
+  "source_title": "G04 [TROPE_ONLY]",
+  "input_sha256": "9fbae22af9a726c5b871afbb0902022a77eb620648a717fc140d74de778ccf58",
+  "input_text": "Single father Raj finds a letter showing that the mother of his twin daughters was blackmailed into leaving by his rich uncle. Raj confronts the uncle at a family wedding. The uncle is arrested, and the mother returns to the twins.",
+  "input_beats": 3,
+  "input_warnings": [
+    "Very short pitch (3 beats): too little plot to compare reliably."
+  ],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S11",
+      "candidate_title": "Twins He Never Knew",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.3302,
+      "review_priority": "Medium",
+      "components": {
+        "beat_alignment": 0.0908,
+        "ordered_event_overlap": 0.4762,
+        "lexical_cosine": 0.1967,
+        "rare_detail_overlap": 0.12,
+        "event_set_overlap": 0.3486,
+        "plain_tfidf_cosine": 0.1143
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SECRET_CHILD"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Single father Raj finds a letter showing that the mother of his twin daughters was blackmailed into leaving by his rich uncle.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.351,
+          "pitch_beat_index": 0,
+          "pitch_text": "Single father Raj finds a letter showing that the mother of his twin daughters was blackmailed into leaving by his rich uncle.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Isha reveals that his mother bribed her to leave."
+        },
+        {
+          "events": [
+            "CONFRONTATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Raj confronts the uncle at a family wedding.",
+          "candidate_beat_index": 3,
+          "candidate_text": "He demands a paternity test and fights for custody."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.194,
+          "pitch_beat_index": 1,
+          "pitch_text": "Raj confronts the uncle at a family wedding.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Armaan confronts his mother, and the boys ask their parents to come to the school play together."
+        },
+        {
+          "events": [
+            "SECRET_CHILD"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 2,
+          "pitch_text": "The uncle is arrested, and the mother returns to the twins.",
+          "candidate_beat_index": 3,
+          "candidate_text": "He demands a paternity test and fights for custody."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "CONFRONTATION",
+        "SECRET_CHILD"
+      ],
+      "shared_rare_details": [
+        "confront",
+        "leav",
+        "twin"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She raises twin boys alone in a small town."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Pregnant Isha leaves the city after CEO Armaan's mother pays her to disappear."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S11#beat2",
+        "S11#beat4",
+        "S11#beat3",
+        "S11#beat5",
+        "S11#beat3"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S25",
+      "candidate_title": "Twin in the Wedding Dress",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0866,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.08,
+        "ordered_event_overlap": 0.5219,
+        "lexical_cosine": 0.1113,
+        "rare_detail_overlap": 0.1333,
+        "event_set_overlap": 0.4606,
+        "plain_tfidf_cosine": 0.0763
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SECRET_CHILD"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.154,
+          "pitch_beat_index": 0,
+          "pitch_text": "Single father Raj finds a letter showing that the mother of his twin daughters was blackmailed into leaving by his rich uncle.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Twin sister Hina is begged to take her runaway sister Heer's place at a wedding to billionaire Zayn."
+        },
+        {
+          "events": [
+            "CONFRONTATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.326,
+          "pitch_beat_index": 1,
+          "pitch_text": "Raj confronts the uncle at a family wedding.",
+          "candidate_beat_index": 4,
+          "candidate_text": "He confronts her in the garden and she confesses everything."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [
+        "CONFRONTATION",
+        "SECRET_CHILD"
+      ],
+      "shared_rare_details": [
+        "confront",
+        "twin"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wears the dress and keeps up the act in the groom's mansion."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Zayn becomes suspicious when Hina behaves unlike the girl he met."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S25#beat0",
+        "S25#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S06",
+      "candidate_title": "Ashes at the Altar",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0056,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0848,
+        "ordered_event_overlap": 0.0942,
+        "lexical_cosine": 0.1536,
+        "rare_detail_overlap": 0.05,
+        "event_set_overlap": 0.0629,
+        "plain_tfidf_cosine": 0.1227
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.262,
+          "pitch_beat_index": 1,
+          "pitch_text": "Raj confronts the uncle at a family wedding.",
+          "candidate_beat_index": 1,
+          "candidate_text": "In front of the shocked guests she proposes to Rohan's powerful uncle Mr. Malhotra, who accepts."
+        },
+        {
+          "events": [
+            "COMEUPPANCE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.246,
+          "pitch_beat_index": 2,
+          "pitch_text": "The uncle is arrested, and the mother returns to the twins.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "uncl"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Single father Raj finds a letter showing that the mother of his twin daughters was blackmailed into leaving by his rich uncle."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "At the family anniversary she plays the evidence on the dining room screen."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S06#beat1",
+        "S06#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S17",
+      "candidate_title": "The Mafia Boss's Nanny",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0048,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0244,
+        "ordered_event_overlap": 0.5025,
+        "lexical_cosine": 0.0635,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.6468,
+        "plain_tfidf_cosine": 0.0301
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CONFRONTATION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 1,
+          "pitch_text": "Raj confronts the uncle at a family wedding.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Viktor catches her searching his office and demands the truth."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE",
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [
+        "CONFRONTATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Single father Raj finds a letter showing that the mother of his twin daughters was blackmailed into leaving by his rich uncle."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Nina takes a job as nanny to the five-year-old daughter of mafia boss Viktor Rossi."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S17#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.003,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0416,
+        "ordered_event_overlap": 0.442,
+        "lexical_cosine": 0.0812,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.35,
+        "plain_tfidf_cosine": 0.0722
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SECRET_CHILD"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Single father Raj finds a letter showing that the mother of his twin daughters was blackmailed into leaving by his rich uncle.",
+          "candidate_beat_index": 2,
+          "candidate_text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.249,
+          "pitch_beat_index": 0,
+          "pitch_text": "Single father Raj finds a letter showing that the mother of his twin daughters was blackmailed into leaving by his rich uncle.",
+          "candidate_beat_index": 4,
+          "candidate_text": "She finds her father's notebook and takes it to a lawyer."
+        }
+      ],
+      "shared_generic_tropes": [
+        "COMEUPPANCE"
+      ],
+      "shared_distinctive_events": [
+        "SECRET_CHILD"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Raj confronts the uncle at a family wedding."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wins the national maths olympiad."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat2",
+        "S29#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_ONLY",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

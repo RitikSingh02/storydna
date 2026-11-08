@@ -1,0 +1,411 @@
+{
+  "run_id": "20261108T072829Z_f8376ac4",
+  "run_label": "round1_apriori",
+  "created_utc": "2026-11-08T07:28:29+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 5,
+      "min_distinct_matched": 3,
+      "min_ordered": 0.45,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_ordered": 0.3,
+      "min_lex": 0.15,
+      "min_rare": 0.08
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "H09",
+  "source_title": "H09 [TROPE_ONLY]",
+  "input_sha256": "f8376ac43f3f5a6d335cb7633184b2af993fd7bc9333f99f7308301dd3c96f6e",
+  "input_text": "Neha discovers she is pregnant after a single night with a stranger at a conference and decides to keep the baby. She builds a small bakery that survives on a loan. A famous food critic reviews her bakery and gives it five stars without knowing he is the baby's father. When her daughter is born he arrives for another review and sees the baby's eyes.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S07",
+      "candidate_title": "Divorce Papers, Diamond Return",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1936,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.3096,
+        "lexical_cosine": 0.0763,
+        "rare_detail_overlap": 0.1053,
+        "event_set_overlap": 0.2577,
+        "plain_tfidf_cosine": 0.0683
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "COMEBACK_BUILD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 1,
+          "pitch_text": "She builds a small bakery that survives on a loan.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Sana builds a rival brand under a new name and starts winning his clients."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 1,
+          "pitch_text": "She builds a small bakery that survives on a loan.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Sana signs one paper only: the sale of his failing company to her."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "COMEBACK_BUILD"
+      ],
+      "shared_rare_details": [
+        "build",
+        "famous"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A famous food critic reviews her bakery and gives it five stars without knowing he is the baby's father."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Neha discovers she is pregnant after a single night with a stranger at a conference and decides to keep the baby."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She secretly is the anonymous jewellery designer whose collections made his company famous."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S07#beat2",
+        "S07#beat5"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S25",
+      "candidate_title": "Twin in the Wedding Dress",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1728,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.35,
+        "lexical_cosine": 0.0196,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2692,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SECRET_CHILD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Neha discovers she is pregnant after a single night with a stranger at a conference and decides to keep the baby.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Twin sister Hina is begged to take her runaway sister Heer's place at a wedding to billionaire Zayn."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 1,
+          "pitch_text": "She builds a small bakery that survives on a loan.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Hina finds out that Heer ran away to escape a debt to a gangster."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "SECRET_CHILD"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A famous food critic reviews her bakery and gives it five stars without knowing he is the baby's father."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When her daughter is born he arrives for another review and sees the baby's eyes."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wears the dress and keeps up the act in the groom's mansion."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "He confronts her in the garden and she confesses everything."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S25#beat0",
+        "S25#beat2"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S11",
+      "candidate_title": "Twins He Never Knew",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.171,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.345,
+        "lexical_cosine": 0.0247,
+        "rare_detail_overlap": 0.0417,
+        "event_set_overlap": 0.1724,
+        "plain_tfidf_cosine": 0.0466
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SECRET_CHILD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Neha discovers she is pregnant after a single night with a stranger at a conference and decides to keep the baby.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+        },
+        {
+          "events": [
+            "SECRET_CHILD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 2,
+          "pitch_text": "A famous food critic reviews her bakery and gives it five stars without knowing he is the baby's father.",
+          "candidate_beat_index": 3,
+          "candidate_text": "He demands a paternity test and fights for custody."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "SECRET_CHILD"
+      ],
+      "shared_rare_details": [
+        "small"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When her daughter is born he arrives for another review and sees the baby's eyes."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "She builds a small bakery that survives on a loan."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Armaan confronts his mother, and the boys ask their parents to come to the school play together."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She raises twin boys alone in a small town."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S11#beat2",
+        "S11#beat3"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S29",
+      "candidate_title": "The Scholarship Girl",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1557,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.3014,
+        "lexical_cosine": 0.0453,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2157,
+        "plain_tfidf_cosine": 0.037
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SECRET_CHILD"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "Neha discovers she is pregnant after a single night with a stranger at a conference and decides to keep the baby.",
+          "candidate_beat_index": 2,
+          "candidate_text": "The prize ceremony is hosted by Mr. Sethi, the father of her biggest tormentor."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "SECRET_CHILD"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A famous food critic reviews her bakery and gives it five stars without knowing he is the baby's father."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "When her daughter is born he arrives for another review and sees the baby's eyes."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Scholarship student Rani is mocked by rich classmates for her cheap uniform and village accent."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She wins the national maths olympiad."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S29#beat2"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1108,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.157,
+        "lexical_cosine": 0.0609,
+        "rare_detail_overlap": 0.0909,
+        "event_set_overlap": 0.115,
+        "plain_tfidf_cosine": 0.0215
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 1,
+          "pitch_text": "She builds a small bakery that survives on a loan.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Rahul, now a struggling shopkeeper, mocks him before learning who he is."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "give",
+        "star"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "A famous food critic reviews her bakery and gives it five stars without knowing he is the baby's father."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Neha discovers she is pregnant after a single night with a stranger at a conference and decides to keep the baby."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat2"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "TROPE_ONLY",
+    "relevant": [],
+    "expected_tiers": [
+      "Low",
+      "Medium"
+    ]
+  }
+}

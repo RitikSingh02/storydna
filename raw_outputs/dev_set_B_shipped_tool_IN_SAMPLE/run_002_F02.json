@@ -1,0 +1,404 @@
+{
+  "run_id": "20261108T073750Z_f542b56b",
+  "run_label": "dev_set_B_shipped_tool_IN_SAMPLE",
+  "created_utc": "2026-11-08T07:37:50+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "scoring": "calibrated logistic combination (calibration.json)",
+    "tiers": {
+      "high": 0.8,
+      "medium": 0.3
+    },
+    "calibration_fit_on": [
+      "queries.json",
+      "queries_round3_fresh.json"
+    ],
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "F02",
+  "source_title": "F02 [PARAPHRASE]",
+  "input_sha256": "f542b56b82515dee389082792016ccacf8a713e9d483486f84972e257bc819ed",
+  "input_text": "Husband Rohit divorces Anita because he is sleeping with his secretary, and she leaves with only a suitcase. Unknown to him, Anita is the unnamed jewellery creator behind the hits that made his brand a household name. She starts a competing label under an alias and steals his best customers one by one. Rohit's brand sinks toward insolvency, and he works out who is behind the rival label. He turns up at her workshop pleading to get back together. The only document Anita signs is the purchase of his collapsing company.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S07",
+      "candidate_title": "Divorce Papers, Diamond Return",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.986,
+      "review_priority": "High",
+      "components": {
+        "beat_alignment": 0.2308,
+        "ordered_event_overlap": 0.3458,
+        "lexical_cosine": 0.245,
+        "rare_detail_overlap": 0.1579,
+        "event_set_overlap": 0.1801,
+        "plain_tfidf_cosine": 0.2046
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.359,
+          "pitch_beat_index": 0,
+          "pitch_text": "Husband Rohit divorces Anita because he is sleeping with his secretary, and she leaves with only a suitcase.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.213,
+          "pitch_beat_index": 1,
+          "pitch_text": "Unknown to him, Anita is the unnamed jewellery creator behind the hits that made his brand a household name.",
+          "candidate_beat_index": 1,
+          "candidate_text": "She secretly is the anonymous jewellery designer whose collections made his company famous."
+        },
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.417,
+          "pitch_beat_index": 3,
+          "pitch_text": "Rohit's brand sinks toward insolvency, and he works out who is behind the rival label.",
+          "candidate_beat_index": 2,
+          "candidate_text": "Sana builds a rival brand under a new name and starts winning his clients."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.396,
+          "pitch_beat_index": 5,
+          "pitch_text": "The only document Anita signs is the purchase of his collapsing company.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Sana signs one paper only: the sale of his failing company to her."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "brand",
+        "divorc",
+        "jewellery"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She starts a competing label under an alias and steals his best customers one by one."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "He turns up at her workshop pleading to get back together."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "He shows up at her studio begging to remarry."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S07#beat0",
+        "S07#beat1",
+        "S07#beat2",
+        "S07#beat5"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S09",
+      "candidate_title": "The Framed Surgeon",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0032,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0674,
+        "ordered_event_overlap": 0.3711,
+        "lexical_cosine": 0.0675,
+        "rare_detail_overlap": 0.0417,
+        "event_set_overlap": 0.3329,
+        "plain_tfidf_cosine": 0.0599
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Husband Rohit divorces Anita because he is sleeping with his secretary, and she leaves with only a suitcase.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "beat_similarity": 0.404,
+          "pitch_beat_index": 3,
+          "pitch_text": "Rohit's brand sinks toward insolvency, and he works out who is behind the rival label.",
+          "candidate_beat_index": 1,
+          "candidate_text": "The real culprit is her rival Dr. Bhatt, who swapped the medication label."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "label"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Unknown to him, Anita is the unnamed jewellery creator behind the hits that made his brand a household name."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She starts a competing label under an alias and steals his best customers one by one."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "A dying clinic patient hands her an old hospital laptop that holds the operating-room recording."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Meghna takes a job as a night nurse in a rural clinic under another name."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S09#beat0",
+        "S09#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S28",
+      "candidate_title": "Last Round",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0008,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0471,
+        "ordered_event_overlap": 0.3342,
+        "lexical_cosine": 0.0635,
+        "rare_detail_overlap": 0.0476,
+        "event_set_overlap": 0.3125,
+        "plain_tfidf_cosine": 0.0305
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "beat_similarity": 0.0,
+          "pitch_beat_index": 0,
+          "pitch_text": "Husband Rohit divorces Anita because he is sleeping with his secretary, and she leaves with only a suitcase.",
+          "candidate_beat_index": 0,
+          "candidate_text": "Disgraced former boxing champion Ravi is banned after a match-fixing scandal."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [
+        "hit"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Unknown to him, Anita is the unnamed jewellery creator behind the hits that made his brand a household name."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 5,
+          "text": "The only document Anita signs is the purchase of his collapsing company."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Gudiya fights in the state final, takes a heavy hit in round three and gets up."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "She wins on points as Ravi cries in her corner."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S28#beat0"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S04",
+      "candidate_title": "Delivery Boy, Dining Empire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (7 beats)",
+      "retrieval_score": 0.0005,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0451,
+        "ordered_event_overlap": 0.3214,
+        "lexical_cosine": 0.0455,
+        "rare_detail_overlap": 0.0526,
+        "event_set_overlap": 0.2544,
+        "plain_tfidf_cosine": 0.0425
+      },
+      "matched_plot_beats": [],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "EVIDENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "customer"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Unknown to him, Anita is the unnamed jewellery creator behind the hits that made his brand a household name."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Husband Rohit divorces Anita because he is sleeping with his secretary, and she leaves with only a suitcase."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "He falls for Pooja, a waitress at a small family cafe that is failing."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Pooja finds the paperwork and suspects Vikram has been spying on her."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S13",
+      "candidate_title": "The Widow's Ledger",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (5 beats)",
+      "retrieval_score": 0.0004,
+      "review_priority": "Low",
+      "components": {
+        "beat_alignment": 0.0793,
+        "ordered_event_overlap": 0.2856,
+        "lexical_cosine": 0.0499,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.0999,
+        "plain_tfidf_cosine": 0.0566
+      },
+      "matched_plot_beats": [
+        {
+          "events": [],
+          "generic_trope_only": false,
+          "beat_similarity": 0.212,
+          "pitch_beat_index": 5,
+          "pitch_text": "The only document Anita signs is the purchase of his collapsing company.",
+          "candidate_beat_index": 4,
+          "candidate_text": "He signs over his hidden accounts to avoid prison."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 1,
+          "text": "Unknown to him, Anita is the unnamed jewellery creator behind the hits that made his brand a household name."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "She starts a competing label under an alias and steals his best customers one by one."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "She tracks him to a luxury hotel in another city living under a new name."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S13#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S07"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

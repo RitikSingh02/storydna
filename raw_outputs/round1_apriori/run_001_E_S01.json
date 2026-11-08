@@ -1,0 +1,463 @@
+{
+  "run_id": "20261108T072829Z_e53dc1db",
+  "run_label": "round1_apriori",
+  "created_utc": "2026-11-08T07:28:29+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 5,
+      "min_distinct_matched": 3,
+      "min_ordered": 0.45,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_ordered": 0.3,
+      "min_lex": 0.15,
+      "min_rare": 0.08
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "E_S01",
+  "source_title": "E_S01 [EXACT]",
+  "input_sha256": "e53dc1db3459f7983310c9b88e53bfd0410df0d7b83783726633ffed4e8a77d0",
+  "input_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+  "input_beats": 1,
+  "input_warnings": [
+    "Very short pitch (1 beats): too little plot to compare reliably."
+  ],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S01",
+      "candidate_title": "The Chauffeur's Secret",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.8144,
+      "review_priority": "High",
+      "components": {
+        "ordered_event_overlap": 0.6719,
+        "lexical_cosine": 0.9531,
+        "rare_detail_overlap": 0.9,
+        "event_set_overlap": 0.7974,
+        "plain_tfidf_cosine": 0.9431
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "INHERITANCE",
+            "HIDDEN_IDENTITY",
+            "LOYALTY_TEST"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 0,
+          "candidate_text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+        },
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 1,
+          "candidate_text": "Meera's family mocks him as a penniless servant and her father insults him in front of guests."
+        },
+        {
+          "events": [
+            "SECRET_HELP"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 2,
+          "candidate_text": "Meera stands by him and quietly pays his fake debts from her own savings."
+        },
+        {
+          "events": [
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 3,
+          "candidate_text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 4,
+          "candidate_text": "Arjun walks in as the investor, reveals his real identity in front of everyone and saves the firm."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "HIDDEN_IDENTITY",
+        "INHERITANCE",
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION",
+        "LOYALTY_TEST",
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [
+        "bank",
+        "collaps",
+        "decid",
+        "driver",
+        "engagement",
+        "fianc",
+        "forgiveness",
+        "identity",
+        "insult",
+        "investor",
+        "lied",
+        "love"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S01#beat0",
+        "S01#beat1",
+        "S01#beat2",
+        "S01#beat3",
+        "S01#beat4"
+      ],
+      "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S05",
+      "candidate_title": "The Intern Who Owns the Floor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.2528,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.5041,
+        "lexical_cosine": 0.0484,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.3664,
+        "plain_tfidf_cosine": 0.0166
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "INHERITANCE",
+            "HIDDEN_IDENTITY"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 0,
+          "candidate_text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+        },
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 1,
+          "candidate_text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+        },
+        {
+          "events": [
+            "PUBLIC_REVEAL"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 4,
+          "candidate_text": "Naina shows the sketchbook on the big screen and announces that she is the owner's daughter."
+        }
+      ],
+      "shared_generic_tropes": [
+        "HIDDEN_IDENTITY",
+        "INHERITANCE",
+        "PUBLIC_REVEAL"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Naina keeps a dated sketchbook as proof while she watches him pitch her designs."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Sunil is escorted out and the company changes its credit policy."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S05#beat0",
+        "S05#beat1",
+        "S05#beat4"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S04",
+      "candidate_title": "Delivery Boy, Dining Empire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (7 beats)",
+      "retrieval_score": 0.2096,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.4272,
+        "lexical_cosine": 0.0214,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.3229,
+        "plain_tfidf_cosine": 0.01
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HIDDEN_IDENTITY"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 0,
+          "candidate_text": "Vikram, owner of a restaurant chain, delivers food on a scooter for a week to see how his customers live."
+        },
+        {
+          "events": [
+            "SECRET_HELP",
+            "BUSINESS_PRESSURE"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 3,
+          "candidate_text": "Vikram secretly buys the tycoon's debt, forcing the tycoon to withdraw."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE",
+        "HIDDEN_IDENTITY"
+      ],
+      "shared_distinctive_events": [
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "He falls for Pooja, a waitress at a small family cafe that is failing."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Pooja finds the paperwork and suspects Vikram has been spying on her."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S04#beat0",
+        "S04#beat3"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S22",
+      "candidate_title": "The Reunion Investor",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.2008,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.3458,
+        "lexical_cosine": 0.0591,
+        "rare_detail_overlap": 0.0455,
+        "event_set_overlap": 0.3571,
+        "plain_tfidf_cosine": 0.0458
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "HUMILIATION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 2,
+          "candidate_text": "Rahul, now a struggling shopkeeper, mocks him before learning who he is."
+        },
+        {
+          "events": [
+            "SECRET_HELP"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 5,
+          "candidate_text": "Ishaan gives him a job as security guard and walks away without a word."
+        }
+      ],
+      "shared_generic_tropes": [
+        "BUSINESS_PRESSURE"
+      ],
+      "shared_distinctive_events": [
+        "HUMILIATION",
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [
+        "investor"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Ten years later he returns for the class reunion as the star investor of a billion-dollar fund."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Ishaan was bullied at school by classmate Rahul and left the town in shame."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S22#beat2",
+        "S22#beat5"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S21",
+      "candidate_title": "Kidney for a Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1868,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.3761,
+        "lexical_cosine": 0.0261,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.285,
+        "plain_tfidf_cosine": 0.0128
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "INHERITANCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 0,
+          "candidate_text": "Karan needs money for his mother's kidney transplant and signs a contract to work as bodyguard to heiress Samaira."
+        },
+        {
+          "events": [
+            "LOYALTY_TEST"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 1,
+          "candidate_text": "Samaira treats him coldly and tests his loyalty with dangerous tasks."
+        },
+        {
+          "events": [
+            "SECRET_HELP"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "arjun heir to a glasstower empire takes a job as a chauffeur to test whether his fiancee meera loves him or his money meeras family mocks him as a penniless servant and her father insults him in front of guests meera stands by him and quietly pays his fake debts from her own savings on the day of the engagement party her fathers firm is about to collapse and the bank sends a mystery investor arjun walks in as the investor reveals his real identity in front of everyone and saves the firm meeras father begs forgiveness while meera decides whether she can trust a man who lied to her",
+          "candidate_beat_index": 3,
+          "candidate_text": "Samaira secretly agrees to donate a kidney and swears the doctors to silence."
+        }
+      ],
+      "shared_generic_tropes": [
+        "INHERITANCE"
+      ],
+      "shared_distinctive_events": [
+        "LOYALTY_TEST",
+        "SECRET_HELP"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Karan finds out on the day of the operation and storms into the operating theatre."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "His mother survives, and Samaira finally admits she needs a bodyguard for her heart."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S21#beat0",
+        "S21#beat1",
+        "S21#beat3"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "EXACT",
+    "relevant": [
+      "S01"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

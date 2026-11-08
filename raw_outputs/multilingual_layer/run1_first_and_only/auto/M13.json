@@ -1,0 +1,672 @@
+{
+ "run_id": "20261108T080119Z_bdb1c463",
+ "run_label": "run1_first_and_only/auto",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "M13",
+ "source_title": "M13",
+ "input_sha256": "bdb1c463f4b75d0bd0ee9a70bef96b6a245923f86ad39abb99987677099f7ed4",
+ "input_text": "एक वैज्ञानिक चाँद पर पहला पौधा उगाने की कोशिश करता है। पहले दो प्रयोग असफल हो जाते हैं। वह मिट्टी की जाँच दोबारा करता है। तीसरी बार वह मिट्टी बदलता है और बीज अंकुरित हो जाता है। पूरी दुनिया उस छोटे से पौधे की तस्वीर देखती है।",
+ "working_text_en": "Vaijnaanik Chaand Pahalaa Paudhaa Ugaane Koshish.\nPahale two Prayog Asaphal.\nMittee test Dobaaraa.\nTeesaree changes Baar Mittee Beej Ankurit.\nPooree Duniyaa small Paudhe Tasveer Dekhatee.",
+ "language": {
+  "detected": "hi",
+  "name": "Hindi (Devanagari; Marathi/Nepali look the same)",
+  "script": "devanagari",
+  "confidence": 1.0,
+  "evidence": "106 of 106 letters are devanagari",
+  "method": "glossary",
+  "reliable": false,
+  "recognised_share": 0.16,
+  "unrecognised_sample": [
+   "अंकुरित",
+   "असफल",
+   "उगाने",
+   "कोशिश",
+   "चाँद",
+   "तस्वीर",
+   "तीसरी",
+   "दुनिया",
+   "देखती",
+   "दोबारा",
+   "पहला",
+   "पहले"
+  ]
+ },
+ "input_beats": 5,
+ "input_warnings": [
+  "Hindi text was converted to English with a small offline glossary (approximate; a model gives better results: set STORYDNA_PROVIDER/MODEL/KEY and tick 'translate with model').",
+  "More than 40% of the Devanagari words are not in the glossary (e.g. अंकुरित, असफल, उगाने, कोशिश, चाँद). Treat a Low result as unreliable."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S11",
+   "candidate_title": "Twins He Never Knew",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0005,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0727,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.1075,
+    "rare_detail_overlap": 0.04,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0956
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.436,
+     "pitch_beat_index": 4,
+     "pitch_text": "Pooree Duniyaa small Paudhe Tasveer Dekhatee.",
+     "candidate_beat_index": 1,
+     "candidate_text": "She raises twin boys alone in a small town.",
+     "pitch_text_original": "पूरी दुनिया उस छोटे से पौधे की तस्वीर देखती है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "small"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Teesaree changes Baar Mittee Beej Ankurit."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Pahale two Prayog Asaphal."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "He demands a paternity test and fights for custody."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S11#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S08",
+   "candidate_title": "Reborn Before the Fire",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0688,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0742,
+    "rare_detail_overlap": 0.0588,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0606
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.413,
+     "pitch_beat_index": 3,
+     "pitch_text": "Teesaree changes Baar Mittee Beej Ankurit.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Remembering everything, she quietly changes her will and records the couple plotting.",
+     "pitch_text_original": "तीसरी बार वह मिट्टी बदलता है और बीज अंकुरित हो जाता है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "chang"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Pooree Duniyaa small Paudhe Tasveer Dekhatee."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Pahale two Prayog Asaphal."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S08#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S04",
+   "candidate_title": "Delivery Boy, Dining Empire",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (7 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0611,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0693,
+    "rare_detail_overlap": 0.0526,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0595
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.428,
+     "pitch_beat_index": 4,
+     "pitch_text": "Pooree Duniyaa small Paudhe Tasveer Dekhatee.",
+     "candidate_beat_index": 1,
+     "candidate_text": "He falls for Pooja, a waitress at a small family cafe that is failing.",
+     "pitch_text_original": "पूरी दुनिया उस छोटे से पौधे की तस्वीर देखती है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "small"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Teesaree changes Baar Mittee Beej Ankurit."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Pahale two Prayog Asaphal."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Vikram, owner of a restaurant chain, delivers food on a scooter for a week to see how his customers live."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Vikram secretly buys the tycoon's debt, forcing the tycoon to withdraw."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S04#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S05",
+   "candidate_title": "The Intern Who Owns the Floor",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0722,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.067,
+    "rare_detail_overlap": 0.0417,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0578
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.433,
+     "pitch_beat_index": 3,
+     "pitch_text": "Teesaree changes Baar Mittee Beej Ankurit.",
+     "candidate_beat_index": 5,
+     "candidate_text": "Sunil is escorted out and the company changes its credit policy.",
+     "pitch_text_original": "तीसरी बार वह मिट्टी बदलता है और बीज अंकुरित हो जाता है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "chang"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Pooree Duniyaa small Paudhe Tasveer Dekhatee."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Pahale two Prayog Asaphal."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "Her manager Sunil takes credit for her sketches and publicly calls her useless."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Heiress Naina joins her father's design company as an unpaid intern using her mother's maiden name."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S05#beat5"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S10",
+   "candidate_title": "Swapped at Birth",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0521,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0581,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0576
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.312,
+     "pitch_beat_index": 2,
+     "pitch_text": "Mittee test Dobaaraa.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Simran secretly knew the truth for years and hid the test results.",
+     "pitch_text_original": "वह मिट्टी की जाँच दोबारा करता है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Pooree Duniyaa small Paudhe Tasveer Dekhatee."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Teesaree changes Baar Mittee Beej Ankurit."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S10#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S19",
+   "candidate_title": "The Mother-in-Law Test",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0446,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0423,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0381
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.267,
+     "pitch_beat_index": 2,
+     "pitch_text": "Mittee test Dobaaraa.",
+     "candidate_beat_index": 2,
+     "candidate_text": "A family lawyer reveals that Savitri has been running a secret test to find out who is worthy to inherit the family temple trust.",
+     "pitch_text_original": "वह मिट्टी की जाँच दोबारा करता है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Pooree Duniyaa small Paudhe Tasveer Dekhatee."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Teesaree changes Baar Mittee Beej Ankurit."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Daughter-in-law Aarti is treated like a servant by her mother-in-law Savitri, who criticises every dish and every task."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "At the reading of the will, Savitri names Aarti the trustee because she alone never complained or cheated."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S19#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S24",
+   "candidate_title": "The Street Singer's Voice",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0741,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0382,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0366
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.445,
+     "pitch_beat_index": 2,
+     "pitch_text": "Mittee test Dobaaraa.",
+     "candidate_beat_index": 2,
+     "candidate_text": "A DNA test confirms it.",
+     "pitch_text_original": "वह मिट्टी की जाँच दोबारा करता है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Pooree Duniyaa small Paudhe Tasveer Dekhatee."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Teesaree changes Baar Mittee Beej Ankurit."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Orphan singer Ria performs on busy streets, and a viral video reaches the wealthy Kapoor family."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Ria is welcomed home, but her stepbrother schemes to push her out before the inheritance is divided."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S24#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S21",
+   "candidate_title": "Kidney for a Contract",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0512,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0381,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.307,
+     "pitch_beat_index": 2,
+     "pitch_text": "Mittee test Dobaaraa.",
+     "candidate_beat_index": 1,
+     "candidate_text": "Samaira treats him coldly and tests his loyalty with dangerous tasks.",
+     "pitch_text_original": "वह मिट्टी की जाँच दोबारा करता है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Pooree Duniyaa small Paudhe Tasveer Dekhatee."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Teesaree changes Baar Mittee Beej Ankurit."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Samaira secretly agrees to donate a kidney and swears the doctors to silence."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "Karan finds out on the day of the operation and storms into the operating theatre."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S21#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0398,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0355,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0341
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.239,
+     "pitch_beat_index": 2,
+     "pitch_text": "Mittee test Dobaaraa.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money.",
+     "pitch_text_original": "वह मिट्टी की जाँच दोबारा करता है।"
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Pooree Duniyaa small Paudhe Tasveer Dekhatee."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Teesaree changes Baar Mittee Beej Ankurit."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S01#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S07",
+   "candidate_title": "Divorce Papers, Diamond Return",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 4,
+     "text": "Pooree Duniyaa small Paudhe Tasveer Dekhatee."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Teesaree changes Baar Mittee Beej Ankurit."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Sana builds a rival brand under a new name and starts winning his clients."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}

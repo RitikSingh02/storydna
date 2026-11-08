@@ -1,0 +1,326 @@
+{
+  "run_id": "20261108T072829Z_7bec1039",
+  "run_label": "round1_apriori",
+  "created_utc": "2026-11-08T07:28:29+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 5,
+      "min_distinct_matched": 3,
+      "min_ordered": 0.45,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_ordered": 0.3,
+      "min_lex": 0.15,
+      "min_rare": 0.08
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "U03",
+  "source_title": "U03 [UNRELATED]",
+  "input_sha256": "7bec103900bd2cfd955e07e97f04bad20a58a85e63d93037f237a74fda85130e",
+  "input_text": "A family moves into a cheap old house where the lights flicker every night at three. The youngest son talks to a boy nobody else can see. They find a sealed room with a child's drawings of a flood. The family helps the ghost find his lost sister's grave and the house falls quiet.",
+  "input_beats": 4,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S14",
+      "candidate_title": "Rejected by the Alpha",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1341,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2423,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.3716,
+        "plain_tfidf_cosine": 0.019
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SUPERNATURAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "The family helps the ghost find his lost sister's grave and the house falls quiet.",
+          "candidate_beat_index": 4,
+          "candidate_text": "Luna returns, shifts into a white wolf and defeats the rogues."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "SUPERNATURAL"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "They find a sealed room with a child's drawings of a flood."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "A family moves into a cheap old house where the lights flicker every night at three."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "At the full moon ceremony, Alpha Kael publicly rejects his fated mate Luna, calling her weak because she cannot shift."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "A dying old wolf tells her she is the last descendant of the Moon Goddess, and her power is waking."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S14#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S15",
+      "candidate_title": "Blood Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1239,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2414,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2732,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SUPERNATURAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 3,
+          "pitch_text": "The family helps the ghost find his lost sister's grave and the house falls quiet.",
+          "candidate_beat_index": 4,
+          "candidate_text": "She switches the goblets at the coronation banquet."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "SUPERNATURAL"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "They find a sealed room with a child's drawings of a flood."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "A family moves into a cheap old house where the lights flicker every night at three."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "To save her sick brother, Lena signs a blood contract to serve vampire prince Dorian for one year."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "In his castle she learns that the court plans to kill the prince before the coronation."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S15#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S06",
+      "candidate_title": "Ashes at the Altar",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0657,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.1524,
+        "rare_detail_overlap": 0.1,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.1234
+      },
+      "matched_plot_beats": [],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "move",
+        "room"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "The family helps the ghost find his lost sister's grave and the house falls quiet."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "They find a sealed room with a child's drawings of a flood."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Ananya is left at the altar when her groom Rohan runs away with her younger sister Kavya."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 5,
+          "text": "Rohan and Kavya are thrown out, and Ananya learns why the uncle really said yes."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S08",
+      "candidate_title": "Reborn Before the Fire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0382,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.1272,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0882
+      },
+      "matched_plot_beats": [],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "The family helps the ghost find his lost sister's grave and the house falls quiet."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "They find a sealed room with a child's drawings of a flood."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S09",
+      "candidate_title": "The Framed Surgeon",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.0352,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.0,
+        "lexical_cosine": 0.0617,
+        "rare_detail_overlap": 0.0833,
+        "event_set_overlap": 0.0,
+        "plain_tfidf_cosine": 0.0723
+      },
+      "matched_plot_beats": [],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "night",
+        "room"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 3,
+          "text": "The family helps the ghost find his lost sister's grave and the house falls quiet."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 2,
+          "text": "They find a sealed room with a child's drawings of a flood."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "A dying clinic patient hands her an old hospital laptop that holds the operating-room recording."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "UNRELATED",
+    "relevant": [],
+    "expected_tiers": [
+      "Low"
+    ]
+  }
+}

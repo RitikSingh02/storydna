@@ -1,0 +1,405 @@
+{
+  "run_id": "20261108T072829Z_4eac8f73",
+  "run_label": "round1_apriori",
+  "created_utc": "2026-11-08T07:28:29+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 5,
+      "min_distinct_matched": 3,
+      "min_ordered": 0.45,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_ordered": 0.3,
+      "min_lex": 0.15,
+      "min_rare": 0.08
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "E_S14",
+  "source_title": "E_S14 [EXACT]",
+  "input_sha256": "4eac8f738c9a2809ee9a686c720708fbb0808c06d7c6f59ce35190585e31cdc7",
+  "input_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+  "input_beats": 1,
+  "input_warnings": [
+    "Very short pitch (1 beats): too little plot to compare reliably."
+  ],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S14",
+      "candidate_title": "Rejected by the Alpha",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.8064,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.5411,
+        "lexical_cosine": 0.9666,
+        "rare_detail_overlap": 1.0,
+        "event_set_overlap": 1.0,
+        "plain_tfidf_cosine": 0.9879
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SUPERNATURAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+          "candidate_beat_index": 0,
+          "candidate_text": "At the full moon ceremony, Alpha Kael publicly rejects his fated mate Luna, calling her weak because she cannot shift."
+        },
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+          "candidate_beat_index": 1,
+          "candidate_text": "Luna is banished from the pack and wanders into the mountains."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+          "candidate_beat_index": 2,
+          "candidate_text": "A dying old wolf tells her she is the last descendant of the Moon Goddess, and her power is waking."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+          "candidate_beat_index": 5,
+          "candidate_text": "Kael begs her to accept him again and she decides to say no."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "ILLNESS_MEDICAL",
+        "REJECTION_EXPULSION",
+        "SUPERNATURAL"
+      ],
+      "shared_rare_details": [
+        "accept",
+        "attack",
+        "call",
+        "ceremony",
+        "decid",
+        "defeat",
+        "descendant",
+        "exil",
+        "fat",
+        "mate",
+        "mountain",
+        "pack"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "Luna returns, shifts into a white wolf and defeats the rogues."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Rogue wolves attack Kael's pack and he cannot stop them."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S14#beat0",
+        "S14#beat1",
+        "S14#beat2",
+        "S14#beat5"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S10",
+      "candidate_title": "Swapped at Birth",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1422,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2975,
+        "lexical_cosine": 0.0084,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2068,
+        "plain_tfidf_cosine": 0.007
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+          "candidate_beat_index": 3,
+          "candidate_text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+          "candidate_beat_index": 5,
+          "candidate_text": "The rich mother must publicly admit she chose the wrong child."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "ILLNESS_MEDICAL"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S10#beat3",
+        "S10#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S09",
+      "candidate_title": "The Framed Surgeon",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1337,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2758,
+        "lexical_cosine": 0.0097,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2053,
+        "plain_tfidf_cosine": 0.013
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+          "candidate_beat_index": 0,
+          "candidate_text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+        },
+        {
+          "events": [
+            "ILLNESS_MEDICAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+          "candidate_beat_index": 3,
+          "candidate_text": "A dying clinic patient hands her an old hospital laptop that holds the operating-room recording."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Meghna takes a job as a night nurse in a rural clinic under another name."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "She sends the recording to the medical council during a live conference."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S09#beat0",
+        "S09#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S07",
+      "candidate_title": "Divorce Papers, Diamond Return",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1207,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.251,
+        "lexical_cosine": 0.0089,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1761,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "REJECTION_EXPULSION"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+          "candidate_beat_index": 0,
+          "candidate_text": "Sana is divorced by her husband Aditya, who is having an affair with his assistant, and is thrown out of the house with nothing."
+        },
+        {
+          "events": [
+            "BEGGING_APOLOGY"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+          "candidate_beat_index": 4,
+          "candidate_text": "He shows up at her studio begging to remarry."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "BEGGING_APOLOGY",
+        "REJECTION_EXPULSION"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "Sana builds a rival brand under a new name and starts winning his clients."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "She secretly is the anonymous jewellery designer whose collections made his company famous."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S07#beat0",
+        "S07#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S15",
+      "candidate_title": "Blood Contract",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1128,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2005,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.3266,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "SUPERNATURAL"
+          ],
+          "generic_trope_only": false,
+          "pitch_beat_index": 0,
+          "pitch_text": "at the full moon ceremony alpha kael publicly rejects his fated mate luna calling her weak because she cannot shift luna is banished from the pack and wanders into the mountains a dying old wolf tells her she is the last descendant of the moon goddess and her power is waking rogue wolves attack kaels pack and he cannot stop them luna returns shifts into a white wolf and defeats the rogues kael begs her to accept him again and she decides to say no",
+          "candidate_beat_index": 4,
+          "candidate_text": "She switches the goblets at the coronation banquet."
+        }
+      ],
+      "shared_generic_tropes": [],
+      "shared_distinctive_events": [
+        "ILLNESS_MEDICAL",
+        "SUPERNATURAL"
+      ],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "To save her sick brother, Lena signs a blood contract to serve vampire prince Dorian for one year."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "In his castle she learns that the court plans to kill the prince before the coronation."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S15#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "EXACT",
+    "relevant": [
+      "S14"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

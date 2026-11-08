@@ -1,0 +1,379 @@
+{
+  "run_id": "20261108T073000Z_98365302",
+  "run_label": "round3_fresh_heldout_like",
+  "created_utc": "2026-11-08T07:30:00+00:00",
+  "storydna_version": "0.1.0",
+  "catalogue": {
+    "n_cards": 30,
+    "fingerprint": "2be1d3fa185a3bea"
+  },
+  "config": {
+    "weights": {
+      "ordered": 0.4,
+      "lexical": 0.3,
+      "rare_detail": 0.2,
+      "event_set": 0.1
+    },
+    "high": {
+      "min_matched": 3,
+      "min_distinct_matched": 2,
+      "min_ordered": 0.5,
+      "min_rare": 0.12,
+      "min_lex": 0.25
+    },
+    "medium": {
+      "min_lex": 0.2,
+      "min_rare": 0.15,
+      "min_ordered": 0.5,
+      "min_distinct_for_ordered": 3,
+      "min_detail_with_ordered": 0.1
+    },
+    "generic_event_df": 0.25,
+    "rare_token_df": 2
+  },
+  "llm": {
+    "adapter": "none"
+  },
+  "query_id": "F04",
+  "source_title": "F04 [PARAPHRASE]",
+  "input_sha256": "98365302137f85247013d7225625f54117492363d659cc266fa82fdadc849e80",
+  "input_text": "Marketing executive Neha dozes off while reading an online novel and opens her eyes as the wicked noblewoman who gets beheaded in chapter thirty. Because she remembers the entire storyline, she sidesteps each snare. She makes friends with the icy marquis who is supposed to kill her. The book's leading lady proves to be a fellow soul from the modern world who wants the marquis too. At the last hearing Neha uses what she knows of the book to unmask the lead's phoney prophecies. The marquis picks Neha and the tale veers off the page.",
+  "input_beats": 6,
+  "input_warnings": [],
+  "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+  "top_candidates": [
+    {
+      "candidate_id": "S16",
+      "candidate_title": "Villainess Transmigrated",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.2517,
+      "review_priority": "Medium",
+      "components": {
+        "ordered_event_overlap": 0.2454,
+        "lexical_cosine": 0.2889,
+        "rare_detail_overlap": 0.24,
+        "event_set_overlap": 0.1885,
+        "plain_tfidf_cosine": 0.2505
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "She makes friends with the icy marquis who is supposed to kill her.",
+          "candidate_beat_index": 2,
+          "candidate_text": "She befriends the cold duke who in the novel kills her."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "chapter",
+        "know",
+        "novel",
+        "thirty",
+        "use",
+        "want"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Marketing executive Neha dozes off while reading an online novel and opens her eyes as the wicked noblewoman who gets beheaded in chapter thirty."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At the last hearing Neha uses what she knows of the book to unmask the lead's phoney prophecies."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Modern office worker Mira falls asleep over a web novel and wakes up inside it as the villainess who is executed in chapter thirty."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "In the final trial Mira uses her knowledge of the novel to expose the heroine's fake visions."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S16#beat2"
+      ],
+      "recommendation": "Premise or some events overlap; check the differing beats and decide whether the difference is strong enough.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 1
+    },
+    {
+      "candidate_id": "S17",
+      "candidate_title": "The Mafia Boss's Nanny",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1533,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2711,
+        "lexical_cosine": 0.051,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2961,
+        "plain_tfidf_cosine": 0.0229
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "She makes friends with the icy marquis who is supposed to kill her.",
+          "candidate_beat_index": 5,
+          "candidate_text": "Together they set a trap at the daughter's birthday party and Marco is arrested."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Marketing executive Neha dozes off while reading an online novel and opens her eyes as the wicked noblewoman who gets beheaded in chapter thirty."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At the last hearing Neha uses what she knows of the book to unmask the lead's phoney prophecies."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "Viktor catches her searching his office and demands the truth."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 2,
+          "text": "At the boss's villa she finds a photo that proves the killer was Viktor's brother Marco, not Viktor."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S17#beat5"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 2
+    },
+    {
+      "candidate_id": "S27",
+      "candidate_title": "The Same Wedding Day",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1418,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.3088,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.1826,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "She makes friends with the icy marquis who is supposed to kill her.",
+          "candidate_beat_index": 1,
+          "candidate_text": "Each loop she finds a different disaster: a missing ring, a food poisoning, a runaway groom."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Marketing executive Neha dozes off while reading an online novel and opens her eyes as the wicked noblewoman who gets beheaded in chapter thirty."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At the last hearing Neha uses what she knows of the book to unmask the lead's phoney prophecies."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Wedding planner Tanvi relives the same wedding day every morning after a lightning strike."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 4,
+          "text": "The loop breaks only when she lets the wedding go ahead with its imperfections."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S27#beat1"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 3
+    },
+    {
+      "candidate_id": "S18",
+      "candidate_title": "Undercover Bride",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.1358,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.2888,
+        "lexical_cosine": 0.0,
+        "rare_detail_overlap": 0.0,
+        "event_set_overlap": 0.2031,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "She makes friends with the icy marquis who is supposed to kill her.",
+          "candidate_beat_index": 3,
+          "candidate_text": "Her handler orders her to arrest Armand on their anniversary."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Marketing executive Neha dozes off while reading an online novel and opens her eyes as the wicked noblewoman who gets beheaded in chapter thirty."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At the last hearing Neha uses what she knows of the book to unmask the lead's phoney prophecies."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 1,
+          "text": "Living in his mansion she begins to see that he protects his workers and fights a corrupt commissioner."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Detective Rhea goes undercover and marries crime boss Armand Cole to collect evidence for her department."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S18#beat3"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 4
+    },
+    {
+      "candidate_id": "S08",
+      "candidate_title": "Reborn Before the Fire",
+      "source_url": "n/a",
+      "candidate_provenance": "",
+      "candidate_input_granularity": "synopsis-only (6 beats)",
+      "retrieval_score": 0.132,
+      "review_priority": "Low",
+      "components": {
+        "ordered_event_overlap": 0.158,
+        "lexical_cosine": 0.0937,
+        "rare_detail_overlap": 0.125,
+        "event_set_overlap": 0.1565,
+        "plain_tfidf_cosine": 0.0
+      },
+      "matched_plot_beats": [
+        {
+          "events": [
+            "CRIME_VIOLENCE"
+          ],
+          "generic_trope_only": true,
+          "pitch_beat_index": 2,
+          "pitch_text": "She makes friends with the icy marquis who is supposed to kill her.",
+          "candidate_beat_index": 4,
+          "candidate_text": "When the fire is set again, it burns an empty house and the police trace the arson to Nikhil."
+        }
+      ],
+      "shared_generic_tropes": [
+        "CRIME_VIOLENCE"
+      ],
+      "shared_distinctive_events": [],
+      "shared_rare_details": [
+        "friend",
+        "want"
+      ],
+      "differentiating_beats": [
+        {
+          "side": "pitch",
+          "beat_index": 0,
+          "text": "Marketing executive Neha dozes off while reading an online novel and opens her eyes as the wicked noblewoman who gets beheaded in chapter thirty."
+        },
+        {
+          "side": "pitch",
+          "beat_index": 4,
+          "text": "At the last hearing Neha uses what she knows of the book to unmask the lead's phoney prophecies."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 0,
+          "text": "Leena is killed in a house fire set by her husband Nikhil and her best friend Ishita, who want her inheritance."
+        },
+        {
+          "side": "candidate",
+          "beat_index": 3,
+          "text": "She avoids the engagement and takes the fire's date to move her family out of the house."
+        }
+      ],
+      "supporting_excerpt_or_scene_id": [
+        "S08#beat4"
+      ],
+      "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+      "reviewer_decision": null,
+      "failure_notes": "",
+      "rank": 5
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "problems": []
+  },
+  "benchmark_label": {
+    "category": "PARAPHRASE",
+    "relevant": [
+      "S16"
+    ],
+    "expected_tiers": [
+      "High"
+    ]
+  }
+}

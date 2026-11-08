@@ -1,0 +1,752 @@
+{
+ "run_id": "20261108T080119Z_8eef68c8",
+ "run_label": "run1_first_and_only/off",
+ "created_utc": "2026-11-08T08:01:19+00:00",
+ "storydna_version": "0.1.0",
+ "catalogue": {
+  "n_cards": 30,
+  "fingerprint": "2be1d3fa185a3bea"
+ },
+ "config": {
+  "scoring": "calibrated logistic combination (calibration.json)",
+  "tiers": {
+   "high": 0.8,
+   "medium": 0.3
+  },
+  "calibration_fit_on": [
+   "queries.json",
+   "queries_round3_fresh.json"
+  ],
+  "generic_event_df": 0.25,
+  "rare_token_df": 2
+ },
+ "llm": {
+  "adapter": "none"
+ },
+ "query_id": "R07",
+ "source_title": "R07",
+ "input_sha256": "8eef68c8fee6fd5a6c78dd43c83300fcf3671f8ed64e36928245c42f320b3c7c",
+ "input_text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha. Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai. Simran saalon se sach jaanti thi aur usne test ki report chhupa li thi. Tara ko aspatal ki file milti hai jisme likha hai ki Simran ki maa ne nurse ko paise dekar bachche badalwaye the. Parivaar ke charity gala mein Tara wo file sabke saamne khol deti hai. Ameer maa ko sabke saamne maanna padta hai ki usne galat bachchi chuni.",
+ "working_text_en": null,
+ "language": {
+  "detected": "hi-Latn",
+  "name": "Hindi in Roman letters (Hinglish)",
+  "script": "latin",
+  "confidence": 0.4,
+  "evidence": "40% Hindi function words vs 1% English",
+  "method": "none",
+  "reliable": true,
+  "recognised_share": null,
+  "unrecognised_sample": []
+ },
+ "input_beats": 6,
+ "input_warnings": [
+  "The text does not look like English (very few English function words; e.g. Hindi written in Roman letters). The lexicon and vocabulary are English-only, so a Low result here is NOT evidence of originality."
+ ],
+ "caveat": "Review priority is an editorial triage signal, not a probability of copying and not a legal assessment. Ideas and genre tropes are not protectable; only a human reviewer can judge originality.",
+ "top_candidates": [
+  {
+   "candidate_id": "S10",
+   "candidate_title": "Swapped at Birth",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 1.0,
+   "review_priority": "High",
+   "components": {
+    "beat_alignment": 0.333,
+    "ordered_event_overlap": 0.4279,
+    "lexical_cosine": 0.2551,
+    "rare_detail_overlap": 0.1818,
+    "event_set_overlap": 0.3422,
+    "plain_tfidf_cosine": 0.3864
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "DNA_TEST"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.304,
+     "pitch_beat_index": 0,
+     "pitch_text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Tara, a girl raised in a slum, learns through a DNA test that she was swapped at birth with the daughter of a rich family."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.312,
+     "pitch_beat_index": 2,
+     "pitch_text": "Simran saalon se sach jaanti thi aur usne test ki report chhupa li thi.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Simran secretly knew the truth for years and hid the test results."
+    },
+    {
+     "events": [
+      "ILLNESS_MEDICAL"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.507,
+     "pitch_beat_index": 3,
+     "pitch_text": "Tara ko aspatal ki file milti hai jisme likha hai ki Simran ki maa ne nurse ko paise dekar bachche badalwaye the.",
+     "candidate_beat_index": 3,
+     "candidate_text": "Tara finds the hospital file proving Simran's mother paid the nurse to swap the babies."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.875,
+     "pitch_beat_index": 4,
+     "pitch_text": "Parivaar ke charity gala mein Tara wo file sabke saamne khol deti hai.",
+     "candidate_beat_index": 4,
+     "candidate_text": "At the family's charity gala she reveals the file."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [
+    "DNA_TEST",
+    "ILLNESS_MEDICAL"
+   ],
+   "shared_rare_details": [
+    "charity",
+    "dna",
+    "file",
+    "nurs"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Ameer maa ko sabke saamne maanna padta hai ki usne galat bachchi chuni."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 1,
+     "text": "The rich family brings her home but treats her as an embarrassment and keeps favouring the girl they raised, Simran."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "The rich mother must publicly admit she chose the wrong child."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S10#beat0",
+    "S10#beat2",
+    "S10#beat3",
+    "S10#beat4"
+   ],
+   "recommendation": "Compare full outlines before approving. Several distinctive events recur in the same order with shared concrete details. This is an editorial review flag, not a plagiarism finding.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 1
+  },
+  {
+   "candidate_id": "S24",
+   "candidate_title": "The Street Singer's Voice",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0014,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0922,
+    "ordered_event_overlap": 0.2248,
+    "lexical_cosine": 0.0811,
+    "rare_detail_overlap": 0.0312,
+    "event_set_overlap": 0.1591,
+    "plain_tfidf_cosine": 0.0594
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "DNA_TEST"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.553,
+     "pitch_beat_index": 0,
+     "pitch_text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha.",
+     "candidate_beat_index": 2,
+     "candidate_text": "A DNA test confirms it."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [
+    "DNA_TEST"
+   ],
+   "shared_rare_details": [
+    "dna"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Tara ko aspatal ki file milti hai jisme likha hai ki Simran ki maa ne nurse ko paise dekar bachche badalwaye the."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Orphan singer Ria performs on busy streets, and a viral video reaches the wealthy Kapoor family."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Ria is welcomed home, but her stepbrother schemes to push her out before the inheritance is divided."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S24#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 2
+  },
+  {
+   "candidate_id": "S12",
+   "candidate_title": "The Maid Who Was His Wife",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0003,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0614,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0808,
+    "rare_detail_overlap": 0.0556,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.1032
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.368,
+     "pitch_beat_index": 4,
+     "pitch_text": "Parivaar ke charity gala mein Tara wo file sabke saamne khol deti hai.",
+     "candidate_beat_index": 4,
+     "candidate_text": "At the husband's charity gala she walks in as the lady of the house and plays the mistress's recorded lies."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "charity"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "After a car crash, Zoya wakes up with no memory."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "She slowly recovers her memory but pretends to still be confused."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S12#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 3
+  },
+  {
+   "candidate_id": "S09",
+   "candidate_title": "The Framed Surgeon",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0498,
+    "ordered_event_overlap": 0.1654,
+    "lexical_cosine": 0.0287,
+    "rare_detail_overlap": 0.0417,
+    "event_set_overlap": 0.1201,
+    "plain_tfidf_cosine": 0.0193
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.299,
+     "pitch_beat_index": 3,
+     "pitch_text": "Tara ko aspatal ki file milti hai jisme likha hai ki Simran ki maa ne nurse ko paise dekar bachche badalwaye the.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Meghna takes a job as a night nurse in a rural clinic under another name."
+    },
+    {
+     "events": [
+      "ILLNESS_MEDICAL"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 3,
+     "pitch_text": "Tara ko aspatal ki file milti hai jisme likha hai ki Simran ki maa ne nurse ko paise dekar bachche badalwaye the.",
+     "candidate_beat_index": 3,
+     "candidate_text": "A dying clinic patient hands her an old hospital laptop that holds the operating-room recording."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [
+    "ILLNESS_MEDICAL"
+   ],
+   "shared_rare_details": [
+    "nurs"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Dr. Meghna is blamed for the death of a patient during surgery and loses her licence."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 4,
+     "text": "She sends the recording to the medical council during a live conference."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S09#beat2",
+    "S09#beat3"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 4
+  },
+  {
+   "candidate_id": "S11",
+   "candidate_title": "Twins He Never Knew",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0568,
+    "ordered_event_overlap": 0.1876,
+    "lexical_cosine": 0.0261,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.1861,
+    "plain_tfidf_cosine": 0.0208
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "DNA_TEST"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 0,
+     "pitch_text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha.",
+     "candidate_beat_index": 3,
+     "candidate_text": "He demands a paternity test and fights for custody."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.341,
+     "pitch_beat_index": 2,
+     "pitch_text": "Simran saalon se sach jaanti thi aur usne test ki report chhupa li thi.",
+     "candidate_beat_index": 3,
+     "candidate_text": "He demands a paternity test and fights for custody."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [
+    "DNA_TEST"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Tara ko aspatal ki file milti hai jisme likha hai ki Simran ki maa ne nurse ko paise dekar bachche badalwaye the."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 2,
+     "text": "Five years later Armaan meets the twins by accident at a school sports day and notices they look just like him."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Armaan confronts his mother, and the boys ask their parents to come to the school play together."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S11#beat3",
+    "S11#beat3"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 5
+  },
+  {
+   "candidate_id": "S21",
+   "candidate_title": "Kidney for a Contract",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0001,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0512,
+    "ordered_event_overlap": 0.3175,
+    "lexical_cosine": 0.0259,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.2483,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [
+      "DNA_TEST"
+     ],
+     "generic_trope_only": false,
+     "beat_similarity": 0.0,
+     "pitch_beat_index": 0,
+     "pitch_text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha.",
+     "candidate_beat_index": 2,
+     "candidate_text": "At the hospital they learn that Samaira's blood matches his mother's."
+    },
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.307,
+     "pitch_beat_index": 2,
+     "pitch_text": "Simran saalon se sach jaanti thi aur usne test ki report chhupa li thi.",
+     "candidate_beat_index": 1,
+     "candidate_text": "Samaira treats him coldly and tests his loyalty with dangerous tasks."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [
+    "DNA_TEST",
+    "ILLNESS_MEDICAL"
+   ],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 5,
+     "text": "Ameer maa ko sabke saamne maanna padta hai ki usne galat bachchi chuni."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "Samaira secretly agrees to donate a kidney and swears the doctors to silence."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Karan needs money for his mother's kidney transplant and signs a contract to work as bodyguard to heiress Samaira."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S21#beat2",
+    "S21#beat1"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 6
+  },
+  {
+   "candidate_id": "S16",
+   "candidate_title": "Villainess Transmigrated",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0585,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0659,
+    "rare_detail_overlap": 0.0385,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.351,
+     "pitch_beat_index": 1,
+     "pitch_text": "Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai.",
+     "candidate_beat_index": 4,
+     "candidate_text": "In the final trial Mira uses her knowledge of the novel to expose the heroine's fake visions."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "use"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 3,
+     "text": "Tara ko aspatal ki file milti hai jisme likha hai ki Simran ki maa ne nurse ko paise dekar bachche badalwaye the."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Modern office worker Mira falls asleep over a web novel and wakes up inside it as the villainess who is executed in chapter thirty."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The novel's heroine turns out to be another transmigrator who wants the duke for herself."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S16#beat4"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 7
+  },
+  {
+   "candidate_id": "S02",
+   "candidate_title": "Night Shift Owner",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0374,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.042,
+    "rare_detail_overlap": 0.0455,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.224,
+     "pitch_beat_index": 3,
+     "pitch_text": "Tara ko aspatal ki file milti hai jisme likha hai ki Simran ki maa ne nurse ko paise dekar bachche badalwaye the.",
+     "candidate_beat_index": 2,
+     "candidate_text": "Reading files after hours, he finds that the finance chief is siphoning funds into a shell company."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [
+    "file"
+   ],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "The finance chief learns about the leak and frames Tanya for the theft."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Billionaire Kabir Rao takes a job as the night janitor in his own tech company because money is disappearing from its accounts."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S02#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 8
+  },
+  {
+   "candidate_id": "S19",
+   "candidate_title": "The Mother-in-Law Test",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0446,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0288,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0215
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.267,
+     "pitch_beat_index": 2,
+     "pitch_text": "Simran saalon se sach jaanti thi aur usne test ki report chhupa li thi.",
+     "candidate_beat_index": 2,
+     "candidate_text": "A family lawyer reveals that Savitri has been running a secret test to find out who is worthy to inherit the family temple trust."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 0,
+     "text": "Daughter-in-law Aarti is treated like a servant by her mother-in-law Savitri, who criticises every dish and every task."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "At the reading of the will, Savitri names Aarti the trustee because she alone never complained or cheated."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S19#beat2"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 9
+  },
+  {
+   "candidate_id": "S01",
+   "candidate_title": "The Chauffeur's Secret",
+   "source_url": "n/a",
+   "candidate_provenance": "",
+   "candidate_input_granularity": "synopsis-only (6 beats)",
+   "retrieval_score": 0.0,
+   "review_priority": "Low",
+   "components": {
+    "beat_alignment": 0.0398,
+    "ordered_event_overlap": 0.0,
+    "lexical_cosine": 0.0242,
+    "rare_detail_overlap": 0.0,
+    "event_set_overlap": 0.0,
+    "plain_tfidf_cosine": 0.0192
+   },
+   "matched_plot_beats": [
+    {
+     "events": [],
+     "generic_trope_only": false,
+     "beat_similarity": 0.239,
+     "pitch_beat_index": 2,
+     "pitch_text": "Simran saalon se sach jaanti thi aur usne test ki report chhupa li thi.",
+     "candidate_beat_index": 0,
+     "candidate_text": "Arjun, heir to a glass-tower empire, takes a job as a chauffeur to test whether his fiancee Meera loves him or his money."
+    }
+   ],
+   "shared_generic_tropes": [],
+   "shared_distinctive_events": [],
+   "shared_rare_details": [],
+   "differentiating_beats": [
+    {
+     "side": "pitch",
+     "beat_index": 0,
+     "text": "Jhuggi mein pali Tara ko DNA test se pata chalta hai ki aspatal mein use ek ameer parivaar ki beti se badal diya gaya tha."
+    },
+    {
+     "side": "pitch",
+     "beat_index": 1,
+     "text": "Ameer parivaar use ghar toh le aata hai lekin use sharmindagi samajhta hai aur apni pali hui beti Simran ko hi chahta hai."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 5,
+     "text": "Meera's father begs forgiveness while Meera decides whether she can trust a man who lied to her."
+    },
+    {
+     "side": "candidate",
+     "beat_index": 3,
+     "text": "On the day of the engagement party her father's firm is about to collapse, and the bank sends a mystery investor."
+    }
+   ],
+   "supporting_excerpt_or_scene_id": [
+    "S01#beat0"
+   ],
+   "recommendation": "Overlap is mostly genre / vocabulary. No action suggested.",
+   "reviewer_decision": null,
+   "failure_notes": "",
+   "rank": 10
+  }
+ ],
+ "validation": {
+  "ok": true,
+  "problems": []
+ }
+}
