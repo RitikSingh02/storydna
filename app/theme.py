@@ -133,6 +133,57 @@ div[data-testid="stExpander"] summary{font-weight:700;padding:.35rem .4rem;}
 button[data-baseweb="tab"]{font-weight:700;}
 div[data-baseweb="tab-highlight"]{background:var(--accent) !important;}
 div[data-testid="stRadio"] label p{font-size:.88rem;}
+
+/* ---- v3: visual layer (posters, hero stage, feature cards) ---- */
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.hero2{display:grid;grid-template-columns:1.1fr 1fr;gap:2.2rem;align-items:center;padding:.6rem 0 1.4rem;animation:rise .5s ease both;}
+.hero2 h1{font-size:3.05rem;line-height:1.06;font-weight:800;margin:.1rem 0 .9rem;letter-spacing:-.025em;}
+.hero2 p{color:var(--muted);font-size:1.08rem;line-height:1.65;max-width:520px;margin:0 0 1.3rem;}
+.cta{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff !important;font-weight:800;
+     text-decoration:none !important;padding:.7rem 1.3rem;border-radius:12px;box-shadow:0 12px 30px var(--glow);font-size:.92rem;}
+.cta:hover{filter:brightness(1.08);}
+.stage{position:relative;height:420px;}
+.stage .poster{position:absolute;width:158px;}
+.stage .p1{left:-2%;top:30px;transform:rotate(-8deg);}
+.stage .p2{left:32%;top:0;z-index:2;width:160px;}
+.stage .p3{left:63%;top:34px;transform:rotate(8deg);}
+.stage .float{position:absolute;z-index:3;background:rgba(23,17,32,.92);border:1px solid var(--line2);border-radius:14px;padding:.65rem .8rem;
+     backdrop-filter:blur(8px);box-shadow:0 18px 40px rgba(0,0,0,.45);animation:bob 5s ease-in-out infinite;}
+.stage .f1{left:0;bottom:0;width:205px;}
+.stage .f2{right:0;bottom:10px;width:210px;animation-delay:-2.2s;}
+.stage .float small{display:block;font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:800;margin-bottom:.3rem;}
+.stage .float .gauge{margin:.55rem 0 .1rem;}
+.stage .float div.t{font-size:.8rem;line-height:1.4;color:var(--text);}
+.poster{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4;display:flex;flex-direction:column;justify-content:flex-end;padding:.7rem .75rem;
+        box-shadow:0 18px 36px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.14);color:#fff;}
+.poster::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 70% at 20% 0%,rgba(255,255,255,.28),transparent 55%),
+        linear-gradient(180deg,transparent 35%,rgba(8,4,14,.78));}
+.poster .ic{position:absolute;top:.55rem;right:.7rem;font-size:1.9rem;filter:drop-shadow(0 4px 10px rgba(0,0,0,.4));}
+.poster .g,.poster .t{position:relative;}
+.poster .g{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:88%;font-size:.58rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800;opacity:.9;margin-bottom:.15rem;}
+.poster .t{font-size:.92rem;line-height:1.15;font-weight:800;}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:.4rem 0 1.2rem;}
+.feat{background:linear-gradient(180deg,var(--surface),var(--surface2));border:1px solid var(--line);border-radius:20px;padding:1.25rem 1.3rem;
+      transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;animation:rise .55s ease both;}
+.feat:nth-child(2){animation-delay:.08s}.feat:nth-child(3){animation-delay:.16s}
+.feat:hover{transform:translateY(-4px);border-color:rgba(255,122,26,.45);box-shadow:0 18px 40px rgba(0,0,0,.35),0 0 0 1px rgba(255,122,26,.12);}
+.feat .ico{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;margin-bottom:.8rem;box-shadow:0 10px 24px rgba(0,0,0,.35);}
+.feat h4{margin:0 0 .3rem;font-size:1.02rem;font-weight:800;}.feat p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.55;}
+.shelf{background:linear-gradient(180deg,var(--surface),var(--surface2));border:1px solid var(--line);border-radius:20px;padding:1.05rem 1.1rem 1.1rem;}
+.shelf .hd{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.75rem;}
+.shelf .hd b{font-size:1rem;}.shelf .hd span{font-size:.78rem;color:var(--muted);}
+.shelf .row{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem;}
+.shelf .poster{border-radius:14px;padding:.6rem .7rem;aspect-ratio:16/11;}.shelf .poster .t{font-size:.82rem;}.shelf .poster .ic{font-size:1.4rem;top:.45rem;right:.6rem;}
+.shelf .poster .g{font-size:.55rem;}
+.verdict2{display:grid;grid-template-columns:128px 1.5fr 1fr;gap:1.5rem;align-items:center;border-radius:22px;padding:1.3rem 1.5rem;border:1px solid var(--line2);
+         background:linear-gradient(135deg,rgba(255,122,26,.10),rgba(255,61,119,.07)),var(--surface);margin:.5rem 0 1rem;animation:rise .45s ease both;}
+.verdict2 .eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:700;}
+.verdict2 h2{font-size:1.6rem;margin:.25rem 0 .5rem;font-weight:800;}
+.verdict2 p{margin:.4rem 0 0;color:var(--muted);line-height:1.55;font-size:.95rem;}
+.stage-cap{font-size:.7rem;color:var(--faint);text-align:center;margin-top:.4rem;}
+@media (max-width:980px){.hero2{grid-template-columns:1fr;}.stage{display:none;}.hero2 h1{font-size:2.2rem;}.feats{grid-template-columns:1fr;}
+  .verdict2{grid-template-columns:1fr;}.verdict2 .poster{max-width:130px;}}
 </style>
 """
 
@@ -167,36 +218,80 @@ def gauge(score: float, tiers: dict | None = None) -> str:
             % (s * 100, t["medium"] * 100, t["high"] * 100, t["medium"], t["high"]))
 
 
+_STYLES = [  # (keywords, emoji, gradient)
+    (("werewolf", "vampire", "transmigration", "fantasy"), "\U0001F319", "#7B2FF7,#2A1B5C"),
+    (("rebirth", "time-loop"), "⏳", "#38BDF8,#6D28D9"),
+    (("medical",), "\U0001FA7A", "#14B8A6,#1E3A8A"),
+    (("sports",), "\U0001F3CF", "#22C55E,#0F5132"),
+    (("school",), "\U0001F393", "#38BDF8,#7C3AED"),
+    (("food",), "\U0001F35C", "#FFB020,#E5484D"),
+    (("corporate", "workplace"), "\U0001F4BC", "#4F46E5,#FF7A1A"),
+    (("hidden-heir",), "\U0001F451", "#FFB020,#B3124F"),
+    (("comedy",), "\U0001F604", "#FFB020,#FF3D77"),
+    (("crime", "thriller"), "\U0001F575️", "#3B3F9E,#FF3D77"),
+    (("family", "revenge"), "\U0001F3AD", "#FF7A1A,#B3124F"),
+    (("romance", "marriage", "identity", "amnesia", "baby"), "\U0001F495", "#FF5C8A,#7B2FF7"),
+]
+
+
+def poster(title: str, genre: str = "", extra: str = "") -> str:
+    g = (genre or "").lower()
+    emoji, grad = next(((e, gr) for kws, e, gr in _STYLES if any(k in g for k in kws)), ("\U0001F3AC", "#FF7A1A,#FF3D77"))
+    return ('<div class="poster %s" style="background:linear-gradient(160deg,%s)"><div class="ic">%s</div><div class="g">%s</div><div class="t">%s</div></div>'
+            % (extra, grad, emoji, esc(genre or "story"), esc(title)))
+
+
 def topbar() -> str:
-    return ('<div class="topbar"><div class="brand"><div class="logo">&#127916;</div><div>StoryDNA<small>Story redundancy review</small></div></div>'
-            '<span class="tag">Prototype &middot; AI Generalist assignment &middot; not an official Kuku product</span></div>')
+    return ('<div class="topbar"><div class="brand"><div class="logo">&#127916;</div><div>StoryDNA<small>Story redundancy review</small></div></div></div>')
 
 
-def hero() -> str:
-    return ('<div class="hero"><h1>Is this pitch a <span class="grad">new story</span>, or one we have already told?</h1>'
-            '<p>Paste a microdrama pitch. StoryDNA checks it against your catalogue, separates a <b>repeated plot</b> from a harmless '
-            '<b>repeated trope</b>, shows the evidence beat by beat, and suggests ways to make the pitch more original.</p>'
-            '<div class="chips"><span class="chip"><b>&#10003;</b> Plot vs trope</span><span class="chip"><b>&#10003;</b> Evidence you can read</span>'
-            '<span class="chip"><b>&#10003;</b> Fresh-angle ideas</span><span class="chip"><b>&#10003;</b> English, Hindi &amp; Hinglish</span></div></div>')
+def hero(cards: list[tuple[str, str]] | None = None) -> str:
+    cards = (cards or [])[:3]
+    while len(cards) < 3:
+        cards.append(("Your next pitch", "drama"))
+    art = ('<div class="stage">%s%s%s'
+           '<div class="float f1"><small>Example result</small><div class="t"><b>Same plot, different names</b></div>%s</div>'
+           '<div class="float f2"><small>Idea to stand out</small><div class="t">Move the secret from the family to the workplace and change who finds out.</div></div></div>'
+           % (poster(*cards[0], extra="p1"), poster(*cards[1], extra="p2"), poster(*cards[2], extra="p3"), gauge(0.87)))
+    return ('<div class="hero2"><div><h1>Is this pitch a <span class="grad">new story</span>, or one we have already told?</h1>'
+            '<p>Paste a microdrama pitch and see, beat by beat, whether the plot already exists in your catalogue &mdash; and how to make it more original.</p>'
+            '<a class="cta" href="#check-a-pitch">Check a pitch &darr;</a></div>%s</div>' % art)
 
 
-def how_it_works(n_stories: int, cat_name: str) -> str:
-    return ('<div class="card"><h4>How it works</h4><div class="steps">'
-            '<div class="step"><div class="num">1</div><span><b>Paste a pitch</b> of 4 to 12 event sentences, or pick a sample.</span></div>'
-            '<div class="step"><div class="num">2</div><span><b>Compare.</b> Every sentence is tagged with story events and matched in order against each catalogue story.</span></div>'
-            '<div class="step"><div class="num">3</div><span><b>Read the evidence</b> and the &ldquo;make it more original&rdquo; ideas, then record your decision.</span></div></div>'
-            '<div class="fine"><b style="color:var(--text)">%d stories</b> loaded &middot; %s</div></div>' % (n_stories, esc(cat_name)))
+_ICONS = {
+    "plot": '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+            '<circle cx="5" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><circle cx="19" cy="7" r="2.2"/><path d="M6.6 7.6 10.6 16M13.8 16.6 17.6 8.8"/></svg>',
+    "evidence": '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+                '<rect x="3" y="4" width="8" height="16" rx="2"/><rect x="13" y="4" width="8" height="16" rx="2"/><path d="M5.5 9h3M5.5 13h3M15.5 9h3M15.5 13h3"/></svg>',
+    "idea": '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+            '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.6.5 1 1.2 1 2V16h5.2v-.2c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></svg>',
+}
 
 
-def verdict(c: dict, rep: dict) -> str:
+def features() -> str:
+    items = [("plot", "Plot, not just topic", "Tells a repeated chain of events apart from a harmless repeated trope like a hidden CEO or a contract marriage.", "#FF7A1A,#FF3D77"),
+             ("evidence", "Evidence you can read", "Side-by-side beats show exactly why a story was flagged, so the call never rests on a number alone.", "#7B2FF7,#FF3D77"),
+             ("idea", "Ideas to stand out", "When overlap is high, get concrete ways to rewrite the pitch, with an estimate of how much each change helps.", "#FFB020,#FF7A1A")]
+    return '<div class="feats">%s</div>' % "".join(
+        '<div class="feat"><div class="ico" style="background:linear-gradient(135deg,%s)">%s</div><h4>%s</h4><p>%s</p></div>' % (g, _ICONS[k], esc(t), esc(d))
+        for k, t, d, g in items)
+
+
+def shelf(cards: list[tuple[str, str]], n_stories: int, cat_name: str) -> str:
+    return ('<div class="shelf"><div class="hd"><b>Your catalogue</b><span>%d stories</span></div><div class="row">%s</div>'
+            '<div class="fine">Every pitch is compared against all of them. Upload your own catalogue in the sidebar.</div></div>'
+            % (n_stories, "".join(poster(t, g) for t, g in cards[:4])))
+
+
+def verdict(c: dict, rep: dict, genre: str = "") -> str:
     tier = c["review_priority"]
     sc = c["retrieval_score"]
     tiers = rep["config"]["tiers"]
     shared = c["shared_distinctive_events"]
     why = ("Shared distinctive events: <b>%s</b>." % esc(", ".join(e.replace("_", " ").title() for e in shared))) if shared else "No distinctive shared events."
-    return ('<div class="verdict"><div><div class="eyebrow">Closest story in the catalogue</div><h2>%s</h2>%s'
+    return ('<div class="verdict2">%s<div><div class="eyebrow">Closest story in the catalogue</div><h2>%s</h2>%s'
             '<p>%s %s</p></div><div><div class="big">%.2f<small>review score</small></div>%s</div></div>'
-            % (esc(c["candidate_title"]), pill(tier), why, esc(NEXT_STEP.get(tier, "")), sc, gauge(sc, tiers)))
+            % (poster(c["candidate_title"], genre), esc(c["candidate_title"]), pill(tier), why, esc(NEXT_STEP.get(tier, "")), sc, gauge(sc, tiers)))
 
 
 def kpis(rep: dict, ms: float | None) -> str:

@@ -76,13 +76,29 @@ except InputError as e:
 st.sidebar.success("%d stories loaded (%s)" % (index.n, cat_name))
 
 # ----------------------------------------------------------------------------------------------- header + input
+def _showcase(cards, k):
+    """k posters with different looks, so the hero/shelf do not show three identical tiles."""
+    seen, out = set(), []
+    for c in cards:
+        key = (c.genre or "").split(" ")[-1]
+        if key not in seen:
+            seen.add(key)
+            out.append((c.title, c.genre))
+        if len(out) == k:
+            break
+    return out
+
+
+GENRE = {c.title: c.genre for c in index.cards}
 st.markdown(T.topbar(), unsafe_allow_html=True)
-st.markdown(T.hero(), unsafe_allow_html=True)
+st.markdown(T.hero(_showcase(index.cards, 3)), unsafe_allow_html=True)
+st.markdown(T.features(), unsafe_allow_html=True)
 
 if st.query_params.get("demo") == "1" and "_demo_init" not in st.session_state:   # shareable demo link: ?demo=1
     st.session_state["sample_choice"] = DEMO
     st.session_state["_demo_init"] = True
 
+st.markdown('<div id="check-a-pitch"></div>' + T.section("Check a pitch", "paste 4 to 12 event sentences, or pick a sample"), unsafe_allow_html=True)
 left, right = st.columns([1.6, 1], gap="large")
 with left:
     choice = st.selectbox("Try a sample", list(SAMPLES), key="sample_choice")
@@ -100,7 +116,7 @@ with left:
         title = st.text_input("Pitch title (optional)", "")
     go = st.button("Compare stories", type="primary")
 with right:
-    st.markdown(T.how_it_works(index.n, cat_name), unsafe_allow_html=True)
+    st.markdown(T.shelf(_showcase(index.cards, 4), index.n, cat_name), unsafe_allow_html=True)
 
 if go:
     try:
@@ -137,7 +153,7 @@ if rep:
         notes.append(T.note("Report failed validation: %s" % rep["validation"]["problems"], "bad"))
     st.markdown(T.section("Result", "run %s" % rep["run_id"]), unsafe_allow_html=True)
     if lg.get("method") != "unsupported":
-        st.markdown(T.verdict(cands[0], rep), unsafe_allow_html=True)
+        st.markdown(T.verdict(cands[0], rep, GENRE.get(cands[0]["candidate_title"], "")), unsafe_allow_html=True)
     st.markdown(T.kpis(rep, st.session_state.get("ms")), unsafe_allow_html=True)
     if notes:
         st.markdown("".join(notes), unsafe_allow_html=True)
