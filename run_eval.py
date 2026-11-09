@@ -90,7 +90,7 @@ def main():
     for k, case in enumerate(cases, start=1):
         t0 = time.perf_counter()
         rep = review_pitch(ix, case["text"], query_id=case["qid"], title="%s [%s]" % (case["qid"], case["category"]),
-                           top_k=5, run_label=a.round)
+                           top_k=5, run_label=a.round, suggest=False)
         lat = (time.perf_counter() - t0) * 1000
         rep["benchmark_label"] = {"category": case["category"], "relevant": case["relevant"], "expected_tiers": case["expected"]}
         (out / ("run_%03d_%s.json" % (k, case["qid"]))).write_text(json.dumps(rep, indent=2))

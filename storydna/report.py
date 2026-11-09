@@ -16,6 +16,7 @@ import re
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 
 from .textproc import split_sentences
+from .suggest import suggest_for_candidate
 from .translate import prepare_text
 
 CAVEAT = ("Review priority is an editorial triage signal, not a probability of copying and not a legal "
@@ -53,11 +54,15 @@ def _trim_evidence(c: dict) -> dict:
 
 def review_pitch(index: StoryIndex, text: str, *, query_id: str = "pitch", title: str = "", top_k: int = 5,
                  adapter=None, llm_top_n: int = 3, redact_input: bool = False, run_label: str = "",
-                 translate: str = "auto", translate_with_model: bool = False) -> dict:
+                 translate: str = "auto", translate_with_model: bool = False,
+                 suggest: bool = True, suggest_with_model: bool = False, llm_compare: bool | None = None) -> dict:
     """Compare one pitch against the indexed catalogue and return a JSON-serialisable report.
 
     translate: 'auto' (default) routes non-English pitches through the language layer (storydna.translate);
     'off' disables it (the old English-only behaviour). translate_with_model lets the configured model translate.
+    suggest: attach ways to make the pitch less similar to High/Medium candidates (storydna.suggest); suggest_with_model
+    additionally asks the configured model for fresh angles. llm_compare=False keeps the model out of the pair-by-pair
+    double-check even when an adapter is passed (it is still used for translation / ideas if those are requested).
     """
     text = clean_pitch(text)
     prep = prepare_text(text, adapter if translate_with_model else None, mode=translate)
@@ -82,13 +87,16 @@ def review_pitch(index: StoryIndex, text: str, *, query_id: str = "pitch", title
                      shared_distinctive_events=[], shared_generic_tropes=[],
                      recommendation="Not assessed: the pitch language is not supported without a model (see warnings).")
         candidates.append(c)
+    if suggest and prep.method != "unsupported":
+        for c in [c for c in candidates if c["review_priority"] in ("High", "Medium")][:3]:
+            c["differentiation"] = suggest_for_candidate(index, c, working, adapter if suggest_with_model else None)
     llm_info = {"adapter": "none"}
-    if adapter is not None and getattr(adapter, "name", "none") != "none":
-        from .llm import llm_compare
+    if adapter is not None and getattr(adapter, "name", "none") != "none" and llm_compare is not False:
+        from .llm import llm_compare as _llm_compare
         llm_info = {"adapter": adapter.name}
         for c in (candidates[:llm_top_n] if prep.method != "unsupported" else []):
             cand_card = index.by_id[c["candidate_id"]]
-            c["llm_review"] = llm_compare(q.beats, cand_card.beats, adapter)
+            c["llm_review"] = _llm_compare(q.beats, cand_card.beats, adapter)
             v = c["llm_review"].get("verdict")
             if v == "shared_tropes_only" and c["review_priority"] == "High":
                 c["failure_notes"] = "Model and heuristic disagree: heuristic High, model says tropes only. Human check."
@@ -209,5 +217,21 @@ def report_to_markdown(report: dict) -> str:
                 L.append("    (original pitch sentence: \"%s\")" % m["pitch_text_original"])
         for d in c["differentiating_beats"]:
             L.append("- differs (%s): \"%s\"" % (d["side"], d["text"]))
+        df = c.get("differentiation")
+        if df:
+            L += ["", "**How to make this pitch more original** - %s" % df["headline"]]
+            pv = df.get("rewrite_preview") or {}
+            if pv.get("after"):
+                L.append("- What-if: rewriting beat(s) %s moves the score %.2f (%s) -> %.2f (%s)." % (
+                    ", ".join(str(i + 1) for i in pv["beats_to_rewrite"]), pv["before"]["score"], pv["before"]["tier"],
+                    pv["after"]["score"], pv["after"]["tier"]))
+            for f in df["beat_fixes"]:
+                L.append("- Beat %d (\"%s\") mirrors \"%s\"" % (f["pitch_beat_index"] + 1, f["pitch_text"], f["mirrors"]))
+                for i in f["ideas"]:
+                    L.append("    - %s" % i["idea"])
+            for a in df["angles"]:
+                L.append("- %s: %s" % (a["title"], a["idea"]))
+            for i in ((df.get("model_ideas") or {}).get("ideas") or []):
+                L.append("- Model idea: %s" % i["idea"])
         L.append("- Recommendation: %s" % c["recommendation"])
     return "\n".join(L)

@@ -5,6 +5,14 @@ from streamlit.testing.v1 import AppTest
 APP = str(Path(__file__).resolve().parent.parent / "app/streamlit_app.py")
 
 
+def md(at):
+    return " ".join(m.value for m in at.markdown)
+
+
+def tab_labels(at):
+    return " ".join(t.label for t in at.tabs)
+
+
 def fresh():
     at = AppTest.from_file(APP, default_timeout=60)
     at.run()
@@ -17,7 +25,7 @@ def test_compare_sample_end_to_end():
     at.selectbox[0].select("Sample: hotel heiress (unseen pitch)").run()
     at.button[0].click().run()
     assert not at.exception, at.exception
-    assert any("The Intern Who Owns the Floor" in df.value.to_string() for df in at.dataframe)
+    assert "The Intern Who Owns the Floor" in md(at) and "Make it more original" in tab_labels(at)
     assert at.session_state["report"]["validation"]["ok"]
     assert len(at.session_state["report"]["top_candidates"]) == 5
 
@@ -53,7 +61,7 @@ def test_hindi_sample_end_to_end():
     assert not at.exception, at.exception
     rep = at.session_state["report"]
     assert rep["language"]["method"] == "glossary" and rep["top_candidates"][0]["candidate_id"] == "S12"
-    assert any("Language detected" in i.value for i in at.info)
+    assert "Language detected" in md(at)
 
 
 def test_spanish_sample_is_not_assessed_with_clear_error():
@@ -62,4 +70,4 @@ def test_spanish_sample_is_not_assessed_with_clear_error():
     at.button[0].click().run()
     assert not at.exception, at.exception
     assert all(c["review_priority"] == "Not assessed" for c in at.session_state["report"]["top_candidates"])
-    assert any("NOT evidence of originality" in e.value or "Low reliability" in e.value for e in at.error)
+    assert "Low reliability" in md(at) and "Not assessed" in md(at)

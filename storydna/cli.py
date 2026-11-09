@@ -28,12 +28,14 @@ def main(argv=None) -> int:
     c.add_argument("--llm-extract", action="store_true", help="also condense a long pitch into beats with the model first")
     c.add_argument("--llm-translate", action="store_true", help="let the model translate non-English pitch/catalogue text (any language). Without it, only Hindi/Hinglish is handled (offline glossary)")
     c.add_argument("--translate", choices=["auto", "off"], default="auto", help="off = old English-only behaviour")
+    c.add_argument("--no-suggest", action="store_true", help="skip the 'how to make it more original' suggestions")
+    c.add_argument("--llm-ideas", action="store_true", help="also ask the model for fresh angles on High/Medium candidates")
     c.add_argument("--redact-input", action="store_true", help="store only a hash of the pitch in the report")
     a = ap.parse_args(argv)
 
     try:
         text = sys.stdin.read() if a.pitch == "-" else Path(a.pitch).read_text(encoding="utf-8", errors="replace")
-        adapter = adapter_from_env() if (a.llm or a.llm_extract or a.llm_translate) else None
+        adapter = adapter_from_env() if (a.llm or a.llm_extract or a.llm_translate or a.llm_ideas) else None
         cards, cat_notes = prepare_catalogue(load_catalogue(a.catalogue), adapter if a.llm_translate else None, mode=a.translate)
         for n in cat_notes:
             print("catalogue note: " + n, file=sys.stderr)
@@ -43,7 +45,8 @@ def main(argv=None) -> int:
             text = " ".join(beats)
         rep = review_pitch(index, text, query_id=Path(a.pitch).stem if a.pitch != "-" else "stdin",
                            title=a.title, top_k=a.top, adapter=adapter, redact_input=a.redact_input,
-                           translate=a.translate, translate_with_model=a.llm_translate)
+                           translate=a.translate, translate_with_model=a.llm_translate,
+                           suggest=not a.no_suggest, suggest_with_model=a.llm_ideas)
     except (InputError, AdapterError, FileNotFoundError, ValueError) as e:
         print("ERROR: %s" % e, file=sys.stderr)
         return 2

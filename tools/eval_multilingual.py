@@ -22,7 +22,7 @@ def main():
     for setname in SETS:
         for q in json.loads((ROOT / "data/benchmark" / setname).read_text(encoding="utf-8"))["queries"]:
             for mode in ("off", "auto"):
-                rep = review_pitch(ix, q["text"], query_id=q["qid"], top_k=10, translate=mode, run_label="%s/%s" % (a.label, mode))
+                rep = review_pitch(ix, q["text"], query_id=q["qid"], top_k=10, translate=mode, run_label="%s/%s" % (a.label, mode), suggest=False)
                 d = base / mode; d.mkdir(parents=True, exist_ok=True)
                 (d / ("%s.json" % q["qid"])).write_text(json.dumps(rep, indent=1, ensure_ascii=False), encoding="utf-8")
                 ids = [c["candidate_id"] for c in rep["top_candidates"]]

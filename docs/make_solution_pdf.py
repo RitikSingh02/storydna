@@ -86,16 +86,16 @@ def build():
                "tiers; schema/evidence validation. <b>Model (optional, one adapter):</b> re-checks the top 3 and condenses long text. Provider and model are env-vars "
                "(Anthropic or any OpenAI-compatible endpoint), prompts are plain files, and <b>every model answer is validated</b>: cited beats must exist, claims need a reason, “same plot” with no valid evidence is downgraded to “unverified”, "
                "and a model/heuristic disagreement is flagged to the human, never silently resolved. "
-               "<b>Human:</b> sees the matched beats side by side, the generic-trope events separated from distinctive ones, and the beats that differ, then marks <i>needs review / false alarm / safe</i>."))
+               "<b>Human:</b> sees the matched beats side by side, the generic-trope events separated from distinctive ones, and the beats that differ, then marks <i>needs review / false alarm / safe</i>. High/Medium matches also get ideas for making the pitch more original (a what-if re-score, beat-level prompts); rewriting the two flagged sample beats took it from High to below High."))
 
     f.append(p("4. Prototype output (real run on an unseen pitch I wrote; not in the catalogue)", H))
-    img = Image(str(ROOT / "docs/img/app_results_crop.png"), width=10.4 * cm, height=10.4 * cm * 850 / 1040)
+    img = Image(str(ROOT / "docs/img/app_results_new.png"), width=9.2 * cm, height=9.2 * cm * 692 / 840)
     right = [p("The pitch is a hotel-heiress story that shares its skeleton with catalogue card <i>The Intern Who Owns the Floor</i> and a framing beat with <i>Night Shift Owner</i>. "
                "The tool returns S05 as <b>High</b> and S02 as <b>Medium</b>, labels PUBLIC_REVEAL and COMEUPPANCE as <i>trope-only</i>, and lists the beats that differ. "
                "Honest miss: the tagger did not recognise “hides her family name” as concealed identity, so one distinctive event is missing from the evidence.", B),
              p("<b>Run it again:</b> paste any new pitch, upload a .txt, or swap the catalogue for your own CSV/JSON (<font face='Courier'>story_id,title,synopsis</font>). "
-               "CLI: <font face='Courier'>python -m storydna compare --pitch new.txt</font>. Exports JSON/CSV with the reviewer’s decision. Median 4 ms per pitch, no API key needed.", B)]
-    t = Table([[img, right]], colWidths=[10.6 * cm, W - 10.6 * cm])
+               "CLI: <font face='Courier'>python -m storydna compare --pitch new.txt</font>. Exports JSON/CSV with the reviewer’s decision. About 35 ms per pitch including the what-if preview, no API key needed.", B)]
+    t = Table([[img, right]], colWidths=[9.4 * cm, W - 9.4 * cm])
     t.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "TOP"), ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 4), ("TOPPADDING", (0, 0), (-1, -1), 0)]))
     f.append(t)
     f.append(p("<font color='#5b5b66'>Prototype, raw outputs, tests and README are in the repo submitted with this form. Page 2: how I know it works, and where it fails.</font>", SM))

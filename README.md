@@ -17,6 +17,13 @@ No API key is needed. Network is only needed to `pip install`.
 Catalogue: `.json` list or `.csv` with columns `story_id,title,synopsis` (optional `genre,source_url,provenance,language`).
 Pitch: any `.txt` of 4-12 event-by-event sentences. Both can be uploaded in the app; no code changes.
 
+## Make a pitch more original (new)
+For every High/Medium match the report adds a `differentiation` block and the site shows it in the **Make it more original** tab:
+a what-if score (the scorer re-run with the overlapping beats removed, per beat and together), beat-by-beat writer prompts chosen from the
+events that actually matched, and bigger story levers (change who/where/what is at stake/the villain's reason/the ending). Optional:
+`--llm-ideas` (or the sidebar box) adds model-written angles, each validated (length, beat numbers, not copied from the existing story).
+These are prompts for writers, not instructions; the what-if is an estimate, so re-run the rewrite. `--no-suggest` turns it off. Code: `storydna/suggest.py`.
+
 ## Languages
 | Input | What happens | Needs a model? |
 |---|---|---|
@@ -38,7 +45,7 @@ Prompts: `storydna/prompts/*.txt`. Every answer is validated (`storydna/llm.py`)
 (mock models only, including one that fabricates evidence); first run with your key may need small fixes.
 
 ## Layout
-`storydna/` package (textproc, events, matcher, report, llm, cli) | `app/` Streamlit UI | `data/` catalogue + frozen benchmarks + hashes |
+`storydna/` package (textproc, events, matcher, report, suggest, lang, translate, llm, cli) | `app/` Streamlit site (`streamlit_app.py` pages, `theme.py` look and colours) | `data/` catalogue + frozen benchmarks + hashes |
 `tools/` calibration, robustness, scale, summaries | `raw_outputs/` all unedited run outputs (see its README) | `docs/` solution PDF, video script | `tests/`.
 
 ## Deploy

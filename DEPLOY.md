@@ -4,11 +4,12 @@
 | Path | What it is | Needed to run the website? |
 |---|---|---|
 | `app/streamlit_app.py` | **The website.** One Streamlit page: upload/select catalogue, paste or upload a pitch, compare, read evidence, record decisions, download reports | **yes (entry file)** |
-| `storydna/` | The engine (a Python package). `textproc.py` sentence/name/stem handling, `events.py` 31 story-event rules, `matcher.py` scoring, `calibration.json` fitted weights, `report.py` report + validation + CSV/Markdown, `catalogue.py` loading/validation, `lang.py` + `translate.py` + `glossary_hi.py` language layer, `llm.py` + `prompts/` optional swappable model, `cli.py` command line | **yes** |
+| `app/theme.py` | The look of the site: all colours, fonts and card styles (change colours at the top of the CSS to re-brand) | **yes** |
+| `storydna/` | The engine (a Python package). `suggest.py` the "make it more original" ideas, `textproc.py` sentence/name/stem handling, `events.py` 31 story-event rules, `matcher.py` scoring, `calibration.json` fitted weights, `report.py` report + validation + CSV/Markdown, `catalogue.py` loading/validation, `lang.py` + `translate.py` + `glossary_hi.py` language layer, `llm.py` + `prompts/` optional swappable model, `cli.py` command line | **yes** |
 | `data/catalogue.json` | The 30 AI-written story cards the site compares against (default catalogue) | **yes** |
 | `samples/` | Pitches for the sample dropdown (English, Hindi, Hinglish, Spanish demo) | **yes** (the app reads them at start) |
 | `requirements.txt` | Libraries the site needs (numpy, scikit-learn, streamlit) | **yes** |
-| `.streamlit/config.toml` | Turns off usage stats, 5 MB upload cap | optional |
+| `.streamlit/config.toml` | Dark theme colours, usage stats off, 5 MB upload cap | recommended |
 | `README.md` | How to run, how to use your own catalogue, limits | for reviewers |
 | `raw_outputs/` | Unedited outputs of every evaluation run (brief requires this) + its README | for reviewers |
 | `docs/StoryDNA_Solution.pdf` | The 2-page solution document you submit | for reviewers |
@@ -59,6 +60,7 @@ python -m storydna compare --pitch samples/unseen_pitch_01.txt --out out/
   - language banner (when Hindi/Hinglish was converted) + expander with the English text actually compared;
   - warnings (short pitch, unreadable language, unrecognised words) and a red "low reliability" box when needed;
   - ranked table: story, review priority (High / Medium / Low / Not assessed), score, distinctive shared events, generic tropes shared;
-  - one expander per candidate: recommendation, source/provenance, **matching beats side by side in story order** (in the writer's own language when translated), trope-only flags, **beats that differ**, optional model verdict, and a **reviewer decision** (needs review / false alarm / safe to proceed);
+  - a verdict card (closest story, tier badge, score gauge) and four stat tiles;
+  - one expander per candidate with three tabs: **Evidence** (matching beats side by side, trope-only flags, beats that differ, optional model verdict), **Make it more original** (what-if score, beat-level ideas, story levers, optional model angles; only for High/Medium) and **Your review** (needs review / false alarm / safe to proceed);
   - downloads: full report (JSON, with run id, catalogue fingerprint, scores, evidence, decisions) and summary (CSV).
 * **No database, no login, nothing stored on the server** - each visitor's session lives in their browser tab; the demo link is `?demo=1`.
